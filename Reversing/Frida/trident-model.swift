@@ -30,7 +30,7 @@ class AppConfigEntity: Object {
 
     // TODO
     
-    /// [_configName, id]
+    /// [_configName, _id]
     static let keys = [
         ["appAssets", 27],
         ["appVersionAssetDownloadedKey", 28],

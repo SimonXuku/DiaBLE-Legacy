@@ -5,6 +5,7 @@ import Foundation
 
 extension String {
     /// Converts a LibreView account ID string into a receiverID
+    /// i.e. "2977dec2-492a-11ea-9702-0242ac110002" -> 524381581
     var fnv32Hash: UInt32 { UInt32(self.reduce(0) { 0xFFFFFFFF & (UInt64($0) * 0x811C9DC5) ^ UInt64($1.asciiValue!) }) }
 }
 
@@ -829,6 +830,39 @@ let patchSingningKeys = [
     "04 B6 9D 17 34 F5 E4 25 BC C0 57 6A D1 F7 27 C1 31 1C 90 B6 EA 98 6F 00 6E 7E 9F 90 96 F6 A8 28 4F 12 BF 7D DF E1 54 A3 F1 D4 5A 0F 27 34 EC AB CA 6B 9E B5 6E E4 EC CA 87 85 3A D8 53 B6 A6 41 80",
     "04 A2 D8 47 89 90 94 5F 70 A9 57 0A DE 07 B1 55 BC 90 4D 2D 38 06 47 58 7B 12 39 17 01 30 9B D1 0B 59 90 C4 C4 7C 47 F1 F0 80 46 CB 6F 2D E0 74 8D 1F A7 F7 37 90 EC 9D 8D D6 37 21 27 78 52 88 38"
 ]
+
+
+struct Libre3SKBCryptoLib {
+    let g_engine: Int
+    let CRYPTO_RETURN_INVALID_COMMAND: Int = 0
+    let CRYPTO_RETURN_SUCCESS: Int = 1
+    let CRYPTO_RETURN_INVALID_PARAM: Int = -1
+    let CRYPTO_RETURN_LIB_ERROR: Int = -2
+    let CRYPTO_RETURN_LOW_MEMORY: Int = -3
+    let CRYPTO_RETURN_VERITY_FAILED: Int = -4
+
+    let CRYPTO_EXTENSION_INIT_LIB: Int = 1
+    let CRYPTO_EXTENSION_INIT_ECDH: Int = 2
+    let CRYPTO_EXTENSION_SET_PATCH_ATTRIB: Int = 3
+    let CRYPTO_EXTENSION_SET_CERTIFICATE: Int = 4
+    let CRYPTO_EXTENSION_GENERATE_EPHEMERAL: Int = 5
+    let CRYPTO_EXTENSION_GENERATE_KAUTH: Int = 6
+    let CRYPTO_EXTENSION_ENCRYPT: Int = 7
+    let CRYPTO_EXTENSION_DECRYPT: Int = 8
+    let CRYPTO_EXTENSION_EXPORT_KAUTH: Int = 9
+    let CRYPTO_EXTENSION_GENERATE_DB_KEY: Int = 10
+    let CRYPTO_EXTENSION_WRAP_DB_KEY: Int = 11
+    let CRYPTO_EXTENSION_UNWRAP_DB_KEY: Int = 12
+    let CRYPTO_EXTENSION_WRAP_DIAGNOSTIC_DATA: Int = 13
+
+    let PUBLIC_KEY_TYPE_UNCOMPRESSED: UInt8 = 4
+    let CRYPTO_PUBLIC_KEY_SIZE: Int
+    let patchSigningKey: Data
+    let securityVersion: Int
+    let max_key_index: Int = 2
+    let app_private_key: Data
+    let app_certificate: Data
+}
 
 
 // https://github.dev/j-kaltes/Juggluco/blob/primary/Common/src/libre3/java/tk/glucodata/Libre3GattCallback.java
