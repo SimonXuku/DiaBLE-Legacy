@@ -455,7 +455,8 @@ class Libre3: Sensor {
     // notify 1BEE  20 + 20 bytes       // event log
     // notify 1338  10 bytes            // ending in 01 00
     // write  1338  13 bytes            // command ending in 02 00
-    // notify 1D24  20 * 10 + 17 bytes  // 195-byte factory data
+    // notify 1D24  20 * 11 + 12 bytes  // factory data (with latest firmwares, otherwise 10/11 varying packets)
+                                        // 20 * 10 + 17 bytes when reactivating (195-byte factory data)
     // notify 1338  10 bytes            // ending in 02 00
     //
     // Shutdown:
@@ -644,7 +645,10 @@ class Libre3: Sensor {
                     for i in 0 ..< (buffer.count + 19) / 20 {
                         packets.append(Data(buffer[i * 20 ... min(i * 20 + 17, buffer.count - 3)]))
                     }
-                    if buffer.count == 217 {
+                    // TODO:
+                    // when reactivating a sensor received 20 * 10 + 17 bytes
+                    // otherwise receiving 20 * 11 + 12 bytes with the latest firmwares
+                    if buffer.count == 217 || buffer.count == 232 {
                         log("\(type) \(transmitter!.peripheral!.name!): received \(packets.count) packets of factory data, payload: \(Data(packets.joined()).hexBytes)")
                     }
                 }
