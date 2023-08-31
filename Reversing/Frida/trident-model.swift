@@ -173,7 +173,7 @@ class AppEventEntity: Object {
 }
 
 class GlucoseReadingEntity: Object {
-    @objc dynamic var _compositeKey: Int = 0
+    @objc dynamic var _compositeKey: Int = 0         // sensor._id << 32 + _lifeCount
     @objc dynamic var _id: Int = 0
     @objc dynamic var _sensor: SensorEntity?
     @objc dynamic var _lifeCount: Int = 0
@@ -264,7 +264,7 @@ class ReminderEntity: Object {
 class SensorEntity: Object {
     @objc dynamic var _id: Int = 0
     @objc dynamic var _serialNumber: String = ""
-    @objc dynamic var _sensorUID: String = ""
+    @objc dynamic var _sensorUID: String = ""        // BLE address hex
     @objc dynamic var _productType: Int = 0
     @objc dynamic var _localization: Int = 0
     @objc dynamic var _generation: Int = 0
@@ -279,7 +279,7 @@ class SensorEntity: Object {
     @objc dynamic var _lastHistoricReading: Int = 0
     @objc dynamic var _status: Int = 0
     @objc dynamic var _receiverID: Int = 0
-    @objc dynamic var _factoryData: String = ""
+    @objc dynamic var _factoryData: String = ""      // 148 bytes hex (final CRC)
     @objc dynamic var _securityVersion: Int = 0
     @objc dynamic var _lastEvent: Int = 0
 
