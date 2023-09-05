@@ -14,10 +14,12 @@ FIXME
 TODO
 ----
 
-* Apple Watch app: workout and extended runtime background sessions, complications
+* Apple Watch app:
+  - workout and extended runtime background sessions, complications
+  - new iOS 17 NavigationSplitViews and TabViews
 * alarm snooze, public timers instead of SwiftUI private ones
 * scrollable graph, offline trend arrow, landscape mode, realtime RSSI
 * smooth the historic values and project the trend ones (see [LibreTransmitter](https://github.com/dabear/LibreTransmitter/commit/49b50d7995955b76861440e5e34a0accd064d18f))
 * log: limit to a number of readings, prepend time, Share menu, record to a file, add Logger support
 * new iOS 16 Widgets and App Intents (see [Glucose Direct](https://github.com/creepymonster/GlucoseDirect))
-* TabularData as persistence layer (see [Glupreview](https://github.com/solanovisitor/glupreview) for CoreML use)
+* SwiftData and/or TabularData as persistence layers (see [Glupreview](https://github.com/solanovisitor/glupreview) for CoreML use)
