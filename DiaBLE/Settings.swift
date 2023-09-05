@@ -65,7 +65,7 @@ class Settings: ObservableObject {
 
     @Published var preferredTransmitter: TransmitterType = TransmitterType(rawValue: UserDefaults.standard.string(forKey: "preferredTransmitter")!) ?? .none {
         willSet(type) {
-            if type == .dexcom || type == .miaomiao && readingInterval > 5 {
+            if type == .dexcom {
                 readingInterval = 5
             } else if type == .abbott {
                 readingInterval = 1
