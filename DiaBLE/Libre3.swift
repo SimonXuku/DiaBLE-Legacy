@@ -708,7 +708,9 @@ class Libre3: Sensor {
                 }
             }
             if currentSecurityCommand == .security_03 && lastSecurityEvent == .certificateAccepted {
-                send(securityCommand: .security_09)
+                if settings.userLevel < .test { // not sniffing Trident
+                    send(securityCommand: .security_09)
+                }
             }
 
 
@@ -727,14 +729,18 @@ class Libre3: Sensor {
                 switch currentSecurityCommand {
 
                 case .security_09:
-                    log("\(type) \(transmitter!.peripheral!.name!): patch certificate: \(payload.hex)")
-                    send(securityCommand: .security_0D)
-                    // TODO
+                    if settings.userLevel < .test { // not sniffing Trident
+                        log("\(type) \(transmitter!.peripheral!.name!): patch certificate: \(payload.hex)")
+                        send(securityCommand: .security_0D)
+                        // TODO
+                    }
 
                 case .ephemeralLoadDone:
-                    log("\(type) \(transmitter!.peripheral!.name!): patch ephemeral: \(payload.hex)")
-                    send(securityCommand: .readChallenge)
-                    // TODO
+                    if settings.userLevel < .test { // not sniffing Trident
+                        log("\(type) \(transmitter!.peripheral!.name!): patch ephemeral: \(payload.hex)")
+                        send(securityCommand: .readChallenge)
+                        // TODO
+                    }
 
                 case .readChallenge:
 
@@ -752,7 +758,7 @@ class Libre3: Sensor {
                     // TODO:
                     // let response = process2(command: 7, nonce1, Data(r1 + r2 + blePIN))
 
-                    if settings.userLevel < .test { // TEST: sniff Trident
+                    if settings.userLevel < .test { // not sniffing Trident
                         log("\(type) \(transmitter!.peripheral!.name!): writing 40-zero challenge response")
 
                         let challengeData = Data(count: 40)
