@@ -32,7 +32,6 @@ extension Sensor {
     var backdoor: Data {
         switch self.type {
         case .libre1:    Data([0xc2, 0xad, 0x75, 0x21])
-        case .libreProH: Data([0xc2, 0xad, 0x00, 0x90])
         default:         Data([0xde, 0xad, 0xbe, 0xef])
         }
     }
@@ -41,8 +40,6 @@ extension Sensor {
         switch self.type {
         case .libre1:
             NFCCommand(code: 0xA0, parameters: backdoor, description: "activate")
-        case .libreProH:
-            NFCCommand(code: 0xA0, parameters: backdoor + readerSerial, description: "activate")
         case .libre2:
             nfcCommand(.activate)
         case .libre3:
@@ -316,8 +313,6 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                         sensor = Libre3(main: main)
                     case .libre2:
                         sensor = Libre2(main: main)
-                    case .libreProH:
-                        sensor = LibrePro(main: main)
                     default:
                         sensor = Sensor(main: main)
                     }
@@ -419,7 +414,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
 
             }
 
-            var blocks = sensor.type != .libreProH ? 43 : 22 + 24    // (32 * 6 / 8)
+            var blocks =  43
             if taskRequest == .readFRAM {
                 if sensor.type == .libre1 {
                     blocks = 244
@@ -433,7 +428,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                     log("NFC: Gen2 security challenge: \(securityChallenge.hex)")
                 }
 
-                var (start, data) = try await sensor.securityGeneration < 2 ?
+                let (start, data) = try await sensor.securityGeneration < 2 ?
                 read(fromBlock: 0, count: blocks) : readBlocks(from: 0, count: blocks)
 
                 log(data.hexDump(header: "NFC: did read \(data.count / 8) FRAM blocks:", startBlock: start))
@@ -445,11 +440,6 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                     self.main.app.lastReadingDate = lastReadingDate
                 }
                 sensor.lastReadingDate = lastReadingDate
-
-                // if settings.userLevel >= .test { sensor = LibrePro.test(main: main); data = sensor.fram }   // TEST
-                if sensor.type == .libreProH {
-                    data = try await (sensor as! LibrePro).scanHistory(nfc: self, fram: data)
-                }
 
                 AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
                 session.invalidate()
@@ -541,7 +531,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
 
     func readBlocks(from start: Int, count blocks: Int, requesting: Int = 3) async throws -> (Int, Data) {
 
-        if sensor.securityGeneration < 1 && sensor.type != .libreProH {
+        if sensor.securityGeneration < 1 {
             debugLog("readBlocks() B3 command not supported by \(sensor.type)")
             throw NFCError.commandNotSupported
         }
@@ -607,7 +597,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
 
     func readRaw(_ address: Int, _ bytes: Int) async throws -> (Int, Data) {
 
-        if sensor.type != .libre1 && sensor.type != .libreProH {
+        if sensor.type != .libre1 {
             debugLog("readRaw() A3 command not supported by \(sensor.type)")
             throw NFCError.commandNotSupported
         }
