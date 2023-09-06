@@ -35,7 +35,8 @@ let package = Package(
             capabilities: [
                 .bluetoothAlways(purposeString: "DiaBLE uses Bluetooth to receive glucose data from Libre sensors."),
                 .calendars(purposeString: "DiaBLE creates events to be displayed in Apple Watch complications."),
-                .outgoingNetworkConnections()
+                .outgoingNetworkConnections(),
+                .fileAccess(.userSelectedFiles, mode: .readWrite)
             ]
         )
     ],
