@@ -330,7 +330,6 @@ extension NFC {
                         sensor.activationTime = activationResponse.activationTime
                         sensor.lastReadingDate = Date()
                         sensor.age = Int(Date().timeIntervalSince(Date(timeIntervalSince1970: Double(sensor.activationTime)))) / 60
-                        (sensor as! Libre3).parsePatchInfo()
                     }
                 }
 

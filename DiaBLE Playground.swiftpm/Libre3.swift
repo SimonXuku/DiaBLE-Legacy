@@ -95,7 +95,7 @@ class Libre3: Sensor {
 
     enum ProductType: Int, CustomStringConvertible {
         case others = 1
-        case sensor = 4
+        case sensor = 4    // very probably Libre 3's product family
 
         var description: String {
             switch self {
@@ -632,9 +632,8 @@ class Libre3: Sensor {
         let productType = Int(patchInfo[12])  // 04 = SENSOR
         log("Libre 3: product type: \(ProductType(rawValue: productType)?.description ?? "unknown") (0x\(productType.hex))")
 
-        // TODO: verify
         let warmupTime = patchInfo[13]
-        log("Libre 3: warmup time: \(warmupTime * 5) minutes (0x\(warmupTime.hex) * 5?)")
+        log("Libre 3: warmup time: \(warmupTime * 5) minutes (0x\(warmupTime.hex) * 5)")
 
         let sensorState = patchInfo[14]
         // TODO: manage specific Libre 3 states
