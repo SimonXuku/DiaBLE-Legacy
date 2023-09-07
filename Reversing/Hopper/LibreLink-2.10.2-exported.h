@@ -5108,7 +5108,7 @@ struct anonymous_type_19 {
 @property (nonatomic,retain) _TtC9LibreLink13LLCheckButton * checkGlucoseButton;
 - (void)viewWillAppear:(bool)v1;
 - (void)viewDidLoad;
-- (void)viewDidDisappear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
 - (void)viewWillLayoutSubviews;
 - (void)updateGraphOnExternalEvent:(id)v1;
 - (void)checkUpdateGraph;
@@ -5222,10 +5222,9 @@ struct anonymous_type_19 {
 @property (nonatomic,retain) _TtC9LibreLink13RegularButton * dateRightButton;
 @property (nonatomic,retain) _TtC9LibreLink13RegularButton * dateLeftButton;
 @property (nonatomic,retain) UISegmentedControl * periodPicker;
-- (void)dealloc;
 - (void)viewDidLoad;
 - (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
 - (void)notificationReceived:(id)v1;
 - (void)prepareForSegue:(id)v1 sender:(id)v2;
 - (long long)numberOfSectionsInCollectionView:(id)v1;
@@ -7135,7 +7134,7 @@ struct anonymous_type_19 {
 - (void)viewDidLoad;
 - (void)viewWillAppear:(bool)v1;
 - (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
 - (void)updateDynamicData;
 - (void)addReminder:(id)v1;
 - (long long)numberOfSectionsInTableView:(id)v1;
@@ -7350,6 +7349,7 @@ struct anonymous_type_19 {
 @property (nonatomic,retain) UIView * separator;
 - (void)prepareForReuse;
 - (void)editDoneTapped:(id)v1;
+- (void)textFieldDidBeginEditing:(id)v1;
 - (void)textFieldDidEndEditing:(id)v1;
 - (bool)textField:(id)v1 shouldChangeCharactersInRange:(struct _NSRange)v2 replacementString:(id)v3;
 - (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
@@ -9041,7 +9041,6 @@ struct anonymous_type_19 {
     id oneDayWithoutDataTimer;
 }
 - (void)viewDidLoad;
-- (void)dealloc;
 - (void)viewWillAppear:(bool)v1;
 - (void)viewDidAppear:(bool)v1;
 - (void)viewWillDisappear:(bool)v1;
@@ -9400,6 +9399,7 @@ struct anonymous_type_19 {
     id addPenImageView;
     id actionButtonLabel;
     id addPenActionButton;
+    id hud;
     id tapRecognizer;
     id userInsulinPens;
     id isToolTipActive;
@@ -9418,6 +9418,8 @@ struct anonymous_type_19 {
 - (void)unwindToIPInventory:(id)v1;
 - (void)addPen;
 - (void)notificationReceived;
+- (void)showActivityIndicator:(id)v1;
+- (void)hideActivityIndicator;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -9728,7 +9730,7 @@ struct anonymous_type_19 {
 - (void)viewDidAppear:(bool)v1;
 - (void)viewDidLoad;
 - (void)viewWillLayoutSubviews;
-- (void)dealloc;
+- (void)viewWillDisappear:(bool)v1;
 - (bool)gestureRecognizer:(id)v1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)v2;
 - (bool)gestureRecognizer:(id)v1 shouldReceiveTouch:(id)v2;
 - (void)warningViewTapped:(id)v1;
@@ -9982,11 +9984,10 @@ struct anonymous_type_19 {
 @property (nonatomic,retain) UILabel * warningLabel;
 @property (nonatomic,retain) UILabel * timeLabel;
 @property (nonatomic,retain) NSLayoutConstraint * warningLabelLeadingConstraint;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void)dealloc;
 - (void)awakeFromNib;
 - (void)timerFired:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
 @end
 
@@ -12109,7 +12110,7 @@ struct anonymous_type_19 {
 - (id)init;
 - (bool)loadBinaryImagesFromFile:(id)v1;
 - (id)loadedBinaryImageForPC:(unsigned long long)v1;
-fillInImageDetails:forUUID: (IMP @0x100d8341c);
+fillInImageDetails:forUUID: (IMP @0x10097c368);
 - (id)frameForAddress:(unsigned long long)v1;
 - (bool)updateStackFrame:(id)v1;
 - (void).cxx_destruct;
@@ -12926,6 +12927,7 @@ fillInImageDetails:forUUID: (IMP @0x100d8341c);
 + (void)setDefaultDispatchQueue:(id)v1;
 + (id)pendingPromise;
 + (id)resolvedWith:(id)v1;
++ (void)noop;
 - (void (^ /* unknown block signature */)(void))validate;
 - (void (^ /* unknown block signature */)(void))validateOn;
 - (id)validate:(void (^ /* unknown block signature */)(void))v1;

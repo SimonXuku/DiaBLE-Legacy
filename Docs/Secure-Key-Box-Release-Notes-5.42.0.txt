@@ -1,0 +1,1261 @@
+# Release 5.42.0
+
+**Release Date**: March 16, 2023
+
+
+
+## New Features and Changes
+
+This section lists the new features and changes in this release.
+
+* SKB now supports unwrapping private 786-bit to 2048-bit RSA keys in the Chinese Reminder Theorem (CRT) format using 128-bit, 192-bit, and 256-bit AES in ECB mode (no padding) and CBC mode (no padding).
+
+* SKB can now get a public RSA key from a private RSA key without specifying the public exponent.
+
+* The Derived Unique Key Per Transaction (DUKPT) API now supports the "Calculate Update Key" procedure. For this purpose, the `SKB_DukptState_CalculateDukptUpdateKey` function has been added to the API.
+
+* The minimum Android API level for using the Secure PIN library has been lowered to 30.
+
+## Additional Documentation
+
+For additional documentation, please refer to the following sources:
+
+* The [Developer Portal](https://devportal.whitecryption.com/doc/en/zkeybox/), which provides the latest user documentation, including the User Guide, Release Notes, and articles
+
+* The User Guide in PDF format (`Secure-Key-Box-User-Guide.pdf`), which is included in the SKB package
+
+## Third-Party Software
+
+The following third-party software may get included in applications linked with the SKB library:
+
+* Atomix C Runtime System
+
+* LibTomCrypt
+
+* LibTomMath
+
+* LZMA SDK
+
+* OpenSSL
+
+* SQLite
+
+For details and license information regarding the software listed above, please see the `License.txt` file, which is available in the SKB package.
+
+## Previous Releases
+
+**Release 5.41.0 (February 20, 2023)**
+
+* The `SkbTrustedStorage` library is now supported for the iOS arm64 target.
+
+* The `SKB_TS_ReadObjectIds` function has been added to the `SkbTrustedStorage` library. This function is used to extract object identifiers from the Trusted Storage.
+
+* Two new examples are introduced to show the recommended way for creating and setting the device ID when using device binding:
+
+    * `KeyStoreDeviceID` for Android
+
+    * `KeyChainDeviceID` for iOS
+
+* The minimum Android API level for using the Secure PIN library has been changed to 31.
+
+**Release 5.40.0 (January 3, 2023)**
+
+* Triple DES unwrapping now also supports ECB mode with XML encryption padding, and CBC mode with no padding.
+
+* AES unwrapping now also supports ECB mode with XML encryption padding.
+
+* In connection with the first two items, the following structures have been renamed in the native API:
+
+    * `SKB_CbcPadding` is renamed to `SKB_PaddingType`.
+
+    * `SKB_AesUnwrapParameters` is renamed to `SKB_BlockCipherUnwrapParameters`.
+
+    * `SKB_AesWrapParameters` is renamed to `SKB_BlockCipherWrapParameters`.
+
+* For wrapping of raw bytes using Triple DES, the parameter structure containing the initialization vector (`SKB_BlockCipherWrapParameters`) can now be specified.
+
+* For unwrapping of raw bytes using Triple DES, the parameter structure containing the padding scheme (`SKB_BlockCipherUnwrapParameters`) can now be specified.
+
+* In the SKB Java Cryptography Architecture (JCA) Provider, the support of block cipher modes and padding schemes has been expanded for the DES and Triple DES algorithms.
+
+* RSA signature support is added to the SKB provider for OpenSSL 3.
+
+* Secure PIN is now available in two editions:
+
+    * The development edition is provided in SKB packages that are not protected with zShield. It allows running the application on Android emulators and has many of the runtime protection features disabled.
+
+    * The production edition is provided in zShield-protected SKB packages. It includes the complete set of security features, and supports only the 32-bit and 64-bit ARM architectures. This is the edition you must use to comply with the industry security standards.
+
+* The `LMAssets` class used in Secure PIN is renamed to `SecurePinAssets`.
+
+* A new example named `AndroidTlsClient` is introduced. It demonstrates how to create a Transport Layer Security (TLS) connection with an SKB-protected private key using the SKB Java Cryptography Architecture Provider and the `HttpsURLConnection` class.
+
+* The `SkbOpenSslProvider\TlsClient` example is updated to demonstrate how the TLS handshake can be enabled with an RSA key.
+
+* Visual Studio 2013 target is deprecated and will be removed in future releases of SKB.
+
+* 32-bit iOS target architectures (armv7, armv7s) are deprecated and will be removed in future releases of SKB.
+
+* Embedded bitcode support for Apple targets is deprecated and will be removed in future releases of SKB.
+
+**Release 5.39.1 (November 17, 2022)**
+
+* zPIN is renamed to Secure PIN. This change is applied both in code, and documentation.
+
+* The PKCS#8 data format is now supported for P-192, P-224, P-384, P-521, Curve25519, and Ed25519 curves in addition to the P-256 curve.
+
+* Two new methods are added to the SKB JavaScript API:
+
+    * `window.skb_crypto.subtle.setExportKey` sets the export key if your SKB package contains the Key Embedding Tool.
+
+    * `window.skb_crypto.subtle.setDeviceId` sets the device ID for binding exported keys to specific devices.
+
+* The `SkbTrustedStorage` library is supported on the Android 32-bit ARM architecture.
+
+**Release 5.38.0 (September 6, 2022)**
+
+* Secure PIN entry (zPIN) is introduced, which allows you to implement a secure form for entering PIN numbers in Android applications.
+
+* Ability to retrieve generic data and keys from the Trusted Storage of Trustonic Application Protection SDK is introduced.
+
+**Release 5.37.0 (May 5, 2022)**
+
+* The PlayStation 5 target is introduced.
+
+* The Xbox (Series S and X) target is introduced.
+
+* The SKB OpenSSL example has been updated to include ECIES encryption and decryption.
+
+* The endianness of the X25519 key agreement static keys has been changed to big-endian to conform to other SKB keys of the raw bytes type.
+
+**Release 5.36.2 (March 16, 2022)**
+
+* The SKB JavaScript API supports the `SKB_CIPHER_FLAG_BALANCED` AES implementation for the "AES-CTR", "AES-CBC", and "AES-GCM" encryption and decryption algorithms.
+
+* The `SKB_SecureData_GetPublicKey` method now supports obtaining the public Ed25519 key from the private key.
+
+**Release 5.35.0 (March 2, 2022)**
+
+* The SHA-512 key derivation algorithm with plain prefix and suffix is introduced. In connection with this, the `SKB_Sha256DerivationParameters` structure has been renamed to `SKB_Sha2DerivationParameters`.
+
+* The Secure Database Library is introduced. It is an extension of SQLite that provides the ability to use encrypted databases protected by SKB.
+
+* Two new data types are introduced for private RSA keys (`SKB_DATA_TYPE_RSA_STATIC_UNWRAP_CONTEXT` and `SKB_DATA_TYPE_RSA_STATIC_SIGN_CONTEXT`). They restrict the usage of their corresponding keys to only one particular operation (unwrapping or signing). This is a security enhancement, which prevents the same RSA key from being used by attackers in an unintended way. These data types can only be prepared by the Key Export Tool.
+
+* The ability to remove SKB modules from the binary at link time is deprecated and will be removed in future releases of SKB.
+
+**Release 5.34.0 (December 29, 2021)**
+
+* The SKB provider for OpenSSL 3 is introduced. This provider offers secure implementation of certain OpenSSL operations and algorithms, which means that the secret keys involved are protected at all times, even when in use. Consequently, the proprietary SKB TLS library is deprecated and will be removed in future releases of SKB.
+
+**Release 5.33.0 (December 3, 2021)**
+
+* A new AES implementation is introduced, which can optionally be enabled when creating the AES cipher object. This new AES implementation provides a good balance between speed and security.
+
+**Release 5.32.2 (September 8, 2021)**
+
+* You may now set a fixed private key when using the `SKB_KEY_AGREEMENT_ALGORITHM_X25519` key agreement algorithm. To do so, you must set the `key_agreement_parameters` parameter of the `SKB_Engine_CreateKeyAgreement` method to point to the `SKB_EddhParameters` structure, which specifies the private key.
+
+* You may now modify the way SKB allocates and releases memory. To do it, you must modify the implementation of functions `new` and `delete` in the `SkbPlatformUtils.cpp` file, which is located in the `src\SkbPlatform` directory.
+
+**Release 5.31.0 (July 6, 2021)**
+
+* The watchOS and watchOS Simulator targets are introduced.
+
+* The HMAC key derivation algorithm is introduced. Three hash functions are supported—SHA-256, SHA-384, and SHA-512.
+
+* Wrapping of raw bytes, private ECC keys, and private DSA keys with 128-bit, 192-bit, and 256-bit AES now supports the ECB (no padding) and CTR modes.
+
+* The ability of loading plain public RSA keys using the native SKB API is introduced as a convenience feature.
+
+**Release 5.30.1 (April 9, 2021)**
+
+* Unwrapping of raw bytes using RSA can now be performed with private RSA keys that are up to 4096 bits long.
+
+* Wrapping of raw bytes using RSA can now be performed with public RSA keys that are up to 4096 bits long.
+
+* Unwrapping of RSA private keys using AES can now be performed on private RSA keys that are up to 4096 bits long.
+
+* The 64-bit ARM architecture is now included in the fat binaries for the macOS, Mac Catalyst, iOS Simulator, and tvOS Simulator targets.
+
+* The SKB command-line tools for macOS are now signed and notarized.
+
+* Key unwrapping and derivation algorithms of the *CMLA Technical Specification* have been discontinued.
+
+**Release 5.29.2 (March 5, 2021)**
+
+* The algorithm for wrapping and unwrapping raw bytes as defined by *Interoperable Secure Key Exchange Key Block Specification (ASC X9 TR 31-2018)*** is introduced, supporting 128-bit, 192-bit, and 256-bit AES and two-key (128-bit) and three-key (192-bit) Triple DES.
+
+* Wrapping and unwrapping of raw bytes using Triple DES in ECB mode (no padding) and CBC mode (XML encryption padding) is introduced.
+
+* The Derived Unique Key Per Transaction (DUKPT) key management scheme is now supported.
+
+* PlayStation 3 is no longer supported.
+
+**Release 5.28.0 (December 22, 2020)**
+
+* The glibc/Linux 32-bit ARM hard float target (gnueabihf) is now supported.
+
+* Integration with whiteCryption Code Protection is now supported for the tvOS and bitcode-enabled iOS targets.
+
+* Now it is possible to request SKB packages that can only verify HMAC, CMAC, and Retail MAC signatures without the ability to sign.
+
+* Now it is possible to link several SKB packages into the same executable (useful when independent parts of code and key hierarchies for handling different protected assets must coexist).
+
+**Release 5.27.2 (September 29, 2020)**
+
+* The iOS and tvOS simulator targets with bitcode support are added.
+
+**Release 5.27.1 (August 28, 2020)**
+
+* Unwrapping of raw bytes, private RSA keys, and private ECC keys using the GCM mode of the AES algorithm is introduced.
+
+* Triple DES encryption and decryption key derivation algorithms are introduced.
+
+* A new variation of the block slicing derivation algorithm can now be selected in which the block size is a multiple of 16 bytes.
+
+**Release 5.26.1 (June 22, 2020)**
+
+* The SKB JavaScript API supports the high-speed AES implementation for the "AES-CTR", "AES-CBC", and "AES-GCM" encryption and decryption algorithms.
+
+* OAEP padding with SHA-256 for MGF1 can now be used for wrapping and unwrapping raw bytes using RSA.
+
+* The Mac Catalyst target is now supported. If you select any of the iOS target platforms when requesting an SKB package, the Mac Catalyst target will be included in the package as a separate subdirectory of the `lib` directory.
+
+* Getting an RSA public key in the OpenSSL (`SubjectPublicKeyInfo`) format from an RSA private key without specifying the public exponent has been temporarily disabled.
+
+**Release 5.25.1 (May 21, 2020)**
+
+* Getting an RSA public key in the OpenSSL (`SubjectPublicKeyInfo`) format from an RSA private key no longer requires specifying the public exponent.
+
+**Release 5.25.0 (May 15, 2020)**
+
+* Unwrapping of AES-wrapped private ECC keys stored according to the PKCS#8 format is supported. Currently, this feature can only be used with the P-256 curve.
+
+* Unwrapping of AES-wrapped RSA private keys stored in the CRT format using five parameters of equal length is supported.
+
+**Release 5.24.0 (April 30, 2020)**
+
+* The Platform-Specific Library and the SKB library no longer have a circular dependency. This was achieved by separating the Platform-Specific Library from the code that deals with removal of SKB modules.
+
+* The SKB Java API now supports the following algorithms:
+
+    * `AES/ECB/PKCS5Padding`
+
+    * `AES/CBC/PKCS5Padding`
+
+    * `AES/CTR/PKCS5Padding`
+
+* The SKB TLS library can now be used in server applications.
+
+* SKB TLS handshake can now process certificate chains.
+
+* Integration with whiteCryption Code Protection is now supported for all glibc, uClibc, and musl Linux targets, except the MIPS architecture.
+
+**Release 5.23.0 (March 13, 2020)**
+
+* An additional subject type parameter has been added to the `SKB_TLS_CreateSelfSignedCertificate` function.
+
+* The SKB JavaScript API is introduced. It provides an SKB-protected implementation of the Web Cryptography API specification, which allows using cryptographic algorithms in JavaScript code.
+
+**Release 5.22.0 (February 3, 2020)**
+
+* HMAC-based Extract-and-Expand Key Derivation Function (HKDF) with SHA-256 as defined by RFC 5869 is supported.
+
+**Release 5.21.3 (January 30, 2020)**
+
+* The `SKB_DATA_FORMAT_ECC_BINARY` value of the `SKB_DataFormat` enumeration is deprecated. The new values `SKB_DATA_FORMAT_ECC_PRIVATE` and `SKB_DATA_FORMAT_ECC_PUBLIC` should be used instead.
+
+* The following new values of the `SKB_DataFormat` enumeration are introduced specifically for use with public ECC keys:
+
+    * `SKB_DATA_FORMAT_ECC_PUBLIC_POINT`
+
+    * `SKB_DATA_FORMAT_ECC_PUBLIC_X9_62`
+
+* Support for X.509 certificates with `GeneralizedTime` dates has been added to the SKB TLS library.
+
+* The `SKB_TLS_OpenConnection` function now also supports the `SKB_CIPHER_ALGORITHM_AES_256_GCM` encryption algorithm and the `SKB_DIGEST_ALGORITHM_SHA384` digest algorithm.
+
+* Parameters `connection_timeout` and `read_write_timeout` have been added to the `SKB_TLS_ConnectionParameters` structure.
+
+* Error handling of the SKB TLS library has been improved.
+
+* An additional start date offset parameter has been added to the `SKB_TLS_CreateSelfSignedCertificate` function.
+
+**Release 5.20.1 (October 22, 2019)**
+
+* The `SKB_TLS_OpenConnection` function now also supports the `SKB_SIGNATURE_ALGORITHM_ECDSA_SHA256` (`secp256r1` curve) and `SKB_SIGNATURE_ALGORITHM_RSA_SHA256` signature algorithms.
+
+* The `SKB_TLS_OpenConnection` function now also supports the `SKB_KEY_AGREEMENT_ALGORITHM_ECDH` (`secp256r1` curve) key agreement algorithm.
+
+* The `SKB_TLS_CERTIFICATE_PIN_HASH` enumeration has been renamed to `SKB_TLS_CERTIFICATE_PIN_HASH_TBS_CERTIFICATE`, and enumerations `SKB_TLS_CERTIFICATE_PIN_HASH_CERTIFICATE` and `SKB_TLS_CERTIFICATE_PIN_NONE` have been introduced.
+
+* The `SKB_TLS_CreateSelfSignedCertificate` function now produces a self-signed certificate with the `CA` attribute set to `FALSE`.
+
+**Release 5.19.0 (September 11, 2019)**
+
+* The Transport Layer Security (TLS) API is introduced. The purpose of this API is to protect keys involved in the client-side processes of TLS communication.
+
+* The X25519 key agreement algorithm is introduced.
+
+* The elliptic curve signing algorithm using EdDSA and Curve25519 is introduced.
+
+* The specific build tools used for compiling the SKB library have changed for multiple target platforms.
+
+* The 32-bit ARM target (gnueabi) is now supported for Linux.
+
+**Release 5.18.1 (June 4, 2019)**
+
+* The specific build tools used for compiling the SKB library have changed for multiple target platforms.
+
+**Release 5.18.0 (May 15, 2019)**
+
+* The WebAssembly target is now supported.
+
+* The Universal Windows Platform target is now supported.
+
+* The Key Embedding Tool is introduced. This utility allows customers to set the export key used by SKB.
+
+**Release 5.17.0 (April 2, 2019)**
+
+* The `SKB_DERIVATION_ALGORITHM_BLOCK_SLICE` algorithm now allows the index of the first byte and the number of bytes in the substring to be multiples of 8 instead of 16.
+
+* The algorithm defined by NIST in RFC 3394 (`SKB_CIPHER_ALGORITHM_NIST_AES`) now also supports decryption and wrapping.
+
+* OpenSSL examples have been improved.
+
+**Release 5.16.1 (December 21, 2018)**
+
+* The SKB package structure has been significantly changed.
+
+* SKB examples have been significantly reworked and restructured. Please refer to the `README.txt` file of each example to learn how to build and run it.
+
+* The naming pattern of the version ZIP files placed inside the main SKB package ZIP file has been changed. In earlier releases such a file used to be named something like "5.15.0-CustomerName-div#0-ver#0.zip". With the new naming pattern, the file would be named "5.16.1-CustomerName-ver0.zip".
+
+* Visual Studio 2010 and 2012 are no longer supported.
+
+* The Key Export Tool now supports several new input formats for loading plain keys.
+
+* A new output format ("java") is added to the Key Export Tool, which outputs the protected data buffer as a file containing a Java byte array.
+
+* A new parameter (`--array-name`) has been added to the Key Export Tool, which specifies the name of the generated byte array when you choose the "source" or "java" output format.
+
+* PDF decryption is no longer supported.
+
+**Release 5.15.0 (August 31, 2018)**
+
+* Values returned by SKB API methods are now randomized, which means that they differ from one SKB package to another. Therefore, you must now always refer to the return values by their macro names.
+
+* 192-bit and 256-bit AES-CMAC signing and verification algorithms are now supported.
+
+* A new derivation algorithm is introduced (`SKB_DERIVATION_ALGORITHM_BLOCK_CONCATENATE`), which produces a new secure data object by concatenating two existing secure data objects.
+
+* The former *Secure Key Box Java API User Guide* is no longer delivered as a separate manual. Its content is now merged into the main User Guide.
+
+* Examples are added that show how to use the OpenSSL command-line tools in combination with the Key Export Tool to prepare data for use with SKB.
+
+**Release 5.14.0 (August 7, 2018)**
+
+* Introduced SKB API obfuscation, which means that public function names and enumeration values are now randomized and different for each package. No change in the usage of SKB is needed because the SKB header file translates the human-readable names to the obfuscated ones.
+
+* Two example projects are included in the SKB package, in the `Java/Examples/Android` directory:
+
+    * `SkbAndroidJavaExample` is an example application that demonstrates how to use SKB from Java on Android.
+
+    * `SkbAndroidNativeExample` is an example application that demonstrates how to use SKB from native code on Android.
+
+**Release 5.13.2 (April 25, 2018)**
+
+* Speck-CMAC is now supported as the pseudorandom function of the NIST 800-108 key derivation algorithm.
+
+* The `SKB_Nist800108CounterCmacAes128Parameters` structure is deprecated and will be removed in future releases of SKB. Instead, you must use the `SKB_Nist800108KdfDerivationParameters` structure.
+
+**Release 5.13.1 (April 18, 2018)**
+
+* The Speck cipher implementation is modified to use the little-endian format.
+
+* The counter size for Speck can now be any value from 1 to 8.
+
+* Speck-CMAC signing and verification algorithm is now supported.
+
+**Release 5.13.0 (March 28, 2018)**
+
+* Speck cipher (encryption and decryption) is introduced, using 128-bit keys and 64-bit blocks in ECB mode (no padding), CBC mode (no padding), and CTR mode.
+
+* The list of architectures supported by the `APP_ABI` parameter, which is used when building the Android target, has been changed. Namely, the value "armeabi" has been replaced by "armeabi-v7a".
+
+**Release 5.12.0 (January 30, 2018)**
+
+* AES encryption and decryption in the CCM mode is now supported.
+
+**Release 5.11.0 (December 19, 2017)**
+
+* Visual Studio 2017 is supported.
+
+* Windows XP is no longer supported.
+
+* The 32-bit and 64-bit MIPS architectures of the Android target are no longer supported.
+
+**Release 5.10.0 (October 4, 2017)**
+
+* Wrapping plain data now supports the Triple DES cipher in the ECB and CBC modes.
+
+**Release 5.9.0 (August 9, 2017)**
+
+* The SKB Java API package is renamed from `com.cryptanium` to `com.whitecryption`.
+
+* The JAR file containing the SKB Java API files is renamed from `cryptanium-skb-«version».jar` to `skb-«version».jar`.
+
+* The reference name of the SKB Java API `SkbProvider` class has been changed from `Cryptanium` to `whiteCryption`. Similarly, the reference name of the `SkbHighSpeedAesProvider` class has been changed from `CryptaniumHighSpeedAes` to `whiteCryptionHighSpeedAes`.
+
+* Debug logging can now be enabled in the evaluation edition of SKB.
+
+**Release 5.8.0 (July 14, 2017)**
+
+* The `SKB_GetKeyCacheDBPath` and `SKB_GetConfigPath` methods declared in the `SkbPlatform.h` file no longer return a dynamically allocated memory buffer.
+
+* Several examples for using SKB from the Swift and Objective-C languages have been added.
+
+* A demo application has been added to the SKB installation package, which shows how to use SKB within an iOS framework.
+
+**Release 5.7.1 (June 19, 2017)**
+
+* The Key Export Tool now performs more validation on data buffers provided as input. In connection with this, an additional Key Export Tool parameter `--input-custom` is introduced for special cases when you need to input a buffer of raw bytes whose size does not correspond to the key sizes of the supported DES and AES algorithms.
+
+* The `SKB_PrimeDhParameters` structure has been changed. Now it requires only one data buffer as input, which contains the `p` and `g` parameters in protected form. This protected data buffer can be obtained using the Diffie-Hellman Tool. Please note that this utility now uses slightly different input parameters. Additionally, the `SKB_PrimeDhLength` enumeration is no longer used.
+
+* The CentOS target platform is now supported.
+
+* SKB Java API now supports the Windows and macOS target platforms.
+
+* SKB Java API now supports the `KeyStore` class.
+
+**Release 5.6.0 (April 6, 2017)**
+
+* Leading zeros are now preserved when generating a shared secret with the classical Diffie-Hellman algorithm.
+
+**Release 5.5.0 (February 9, 2017)**
+
+* AES encryption and decryption in the GCM mode is now supported.
+
+* glibc/Linux is now supported for the 64-bit ARM architecture.
+
+* Support for the x86 architecture of the macOS target platform is discontinued.
+
+* The macOS, iOS, and tvOS Xcode projects, used for building SKB examples, tests, and the Platform-Specific Library, are now merged into one Xcode project, which is available in the `Build/Targets/apple` directory.
+
+**Release 5.4.0 (December 1, 2016)**
+
+* Windows API for Visual Studio 2015 is now supported.
+
+* Windows Runtime and Windows Phone targets are discontinued.
+
+* Windows API targets have been merged into one solution with different configurations for each of the supported Visual Studio targets.
+
+* Android targets have been merged into one target google-android. The target architecture must now be specified by providing the `APP_ABI` parameter to the `ndk-build` utility.
+
+**Release 5.3.0 (October 11, 2016)**
+
+* Apple TV is now supported.
+
+* musl-based Linux (for example, Alpine Linux) is now supported for the x86_64 architecture.
+
+* A new secure object data type `SKB_DATA_TYPE_UNWRAP_BYTES` is introduced to be used solely for unwrapping keys of the AES-based unwrapping algorithms.
+
+**Release 5.2.0 (September 28, 2016)**
+
+* Key caching has been redesigned:
+
+    * The SQLite-based key cache implementation has been replaced by a proprietary implementation, which is now enabled on most platforms by default.
+
+    * Key caching can be configured using flags and compiler macros.
+
+    * Caching of private ECC keys has been discontinued.
+
+* Significant changes have been implemented in the way SKB uses ECC curves:
+
+    * The `SKB_EccDomainParameters` structure has been replaced by a different structure named `SKB_EccCurveParameters`.
+
+    * The Custom ECC Tool is now used to generate complete definitions of the new `SKB_EccCurveParameters` structure.
+
+    * SKB now contains two run-time instances of ECC. One instance supports only 150 to 264 bit curves, but is faster. The other supports the entire range of 150 to 528 bit curves, but is slower. When generating definitions of custom curves, you must now specify the ECC runtime instance you want to use.
+
+* The binary size for all ECC algorithms has been significantly reduced.
+
+* Performance of most ECC algorithms has been significantly improved.
+
+**Release 5.1.4 (August 19, 2016)**
+
+* Performance of ECC algorithms has been slightly improved on most platforms.
+
+**Release 5.1.0 (August 2, 2016)**
+
+* Support for the legacy export format version 0 has been discontinued.
+
+**Release 5.0.0 (July 1, 2016)**
+
+* Caching of exported and imported keys is introduced.
+
+* Caching of the initialized form of private ECC keys is now supported for the ElGamal ECC algorithms (decryption and wrapping).
+
+* The device ID is now also applied to keys exported using the cross-engine export format, and to keys stored in the key cache.
+
+* The ISO/IEC 9797-1 MAC algorithm 3 for DES (also known as Retail MAC) is now supported.
+
+* SKB no longer supports ECDSA algorithms that use a fixed random.
+
+* Evaluation packages of SKB now produce a text file that can help you determine the set of SKB features that are actually used at runtime.
+
+**Release 4.29.0 (May 24, 2016)**
+
+* Performance of the high-speed AES and classical Diffie-Hellman algorithms has been improved for several target platforms.
+
+**Release 4.28.1 (April 26, 2016)**
+
+* Performance of RSA algorithms has been improved on most platforms.
+
+* The binary size footprint has been decreased for most algorithms.
+
+**Release 4.27.1 (March 9, 2016)**
+
+* The universal-apple-macosx, arm-apple-ios, and arm64-apple-ios targets are now built using Xcode 7.1.1.
+
+* Private ECC keys can now be unwrapped using the AES algorithm in ECB mode if the length of the private ECC key is a multiple of 128 bits.
+
+**Release 4.27.0 (February 26, 2016)**
+
+* The ECDSA and RSA signing algorithms now also support the MD5, SHA-224, SHA-384, and SHA-512 hash functions.
+
+* OAEP padding of the RSA decryption cipher now also supports MD5, SHA-224, SHA-384, and SHA-512 hash functions.
+
+* The following new key derivation algorithms are introduced:
+
+    * AES-based decryption
+
+    * DES-based encryption and decryption
+
+    * NIST 800-108 key derivation with 128-bit AES-CMAC in counter mode using the 16-bit parameter "L"
+
+    * XOR-ing a key with either plain data, or another key
+
+* For the ECDSA and RSA signing algorithms, the `SKB_Transform_AddSecureData` method can now be used only if the corresponding digest algorithm is also included in the SKB library. Otherwise, you will be allowed to provide only plain input to the signature algorithm.
+
+* For the arm-apple-ios target, support for the ARMv7s architecture has been restored.
+
+**Release 4.26.1 (February 4, 2016)**
+
+* SKB now supports all private RSA key sizes between 1024 and 2048 bits that are multiples of 128 bits.
+
+**Release 4.25.1 (January 21, 2016)**
+
+* SKB now provides the HMAC signing and verification algorithm that uses MD5 as the hash function.
+
+* The MD5 digest algorithm is now available.
+
+* The DES and Triple DES ciphers now support the CBC mode.
+
+* It is now possible to remove individual SKB algorithms and features from the final executable, thus reducing the binary size. This change has introduced a circular dependency between the main SKB library and the Platform-Specific Library. This means that if you are building your application using a build system other than Visual Studio and Xcode, you have to make sure the Secure Key Box library is linked twice using the linking sequence: SecureKeyBox > SkbPlatform > SecureKeyBox.
+
+**Release 4.24.5 (December 4, 2015)**
+
+* The universal-apple-macosx and arm-apple-ios targets are now built using Xcode 7.1.1.
+
+* For the arm-apple-ios target, the deployment target is now set to "iOS 6.0", and support for the ARMv7s architecture has been discontinued.
+
+**Release 4.24.4 (November 24, 2015)**
+
+* The universal-apple-macosx and arm-apple-ios targets are now built using Xcode 6.4.
+
+**Release 4.24.3 (November 16, 2015)**
+
+* The mips-unknown-linux and mipsel-unknown-linux targets are built with the `-mhard-float` linker parameter.
+
+**Release 4.24.0 (October 28, 2015)**
+
+* The SHA-224 digest algorithm is introduced.
+
+* The HMAC-SHA-224 signing and verification algorithm is introduced.
+
+**Release 4.23.0 (September 30, 2015)**
+
+* SKB Java API is now supported also on the x86 and x86_64 Linux architectures.
+
+* Optimizations on the nacl/arm target are enabled again.
+
+* Key Export Tool stability problems are resolved; the utility now works correctly when invoked from parallel threads.
+
+**Release 4.22.0 (July 21, 2015)**
+
+* SKB Java API is now supported also on the x86, x86_64, 64-bit ARM, MIPS, and 64-bit MIPS architectures for Android.
+
+* A new key agreement algorithm `SKB_KEY_AGREEMENT_ALGORITHM_ECDH_STATIC` is introduced that allows specifying a fixed private key as a secure data object. For this purpose, a new parameter structure `SKB_EcdhParameters` is added to the SKB API. Note that the new key agreement algorithm is not yet supported by the SKB JCA Provider.
+
+* Tamper resistant SKB library is now supported also for the 64-bit ARM architecture on Android.
+
+**Release 4.21.0 (June 5, 2015)**
+
+* Wrapping raw bytes using 1024-bit and 2048-bit RSA is supported. The supported padding types are no padding, PKCS#1 version 1.5 padding, and OAEP padding. In connection with this new algorithm, public RSA keys can be imported as secure data objects.
+
+* SKB is supported for the MinGW target on the x86 and x86_64 architectures.
+
+* Key Export Tool improvements:
+
+    * The input can be provided as a hexadecimal string.
+
+    * The output can be produced as a hexadecimal string.
+
+    * The output can be displayed in the standard output.
+
+    * Device ID can be provided as a string literal or a hexadecimal string.
+
+* The mipsel-broadcom-linux target is renamed to mipsel-unknown-linux.
+
+* Buildroot is used to build SKB for Linux on ARM, MIPS, and MIPSel architectures.
+
+* GCC version 4.9 is used instead of version 4.4 to build SKB for GNU/Linux.
+
+* Due to Pepper compiler issues, optimizations on the nacl/arm target are temporarily disabled.
+
+**Release 4.20.0 (March 17, 2015)**
+
+* An additional SKB JCA Provider `SkbHighSpeedAesProvider` is added, which enables high-speed AES encryption/decryption. It can be invoked using the name "CryptaniumHighSpeedAes".
+
+* SKB now supports the x86_64, 64-bit ARM, MIPS, and 64-bit MIPS architectures for Android.
+
+* SKB now supports multi-part encryption/decryption of the AES cipher in the CBC and CTR modes, which is useful for very large data buffers.
+
+* You can now order a tamper resistant SKB library that invokes custom callback functions when attacks are detected.
+
+**Release 4.19.0 (January 16, 2015)**
+
+* Native client (NaCl) libraries are now built with the Pepper 39 toolchain.
+
+* AES now supports in-place encryption/decryption for all block chaining modes.
+
+* SKB now supports custom feature sets.
+
+**Release 4.18.4 (December 4, 2014)**
+
+* Dependency on the SQLite library is removed for Windows and Android targets if RSA features are not included.
+
+* The engine property `build_id` is removed.
+
+* Content of the *Release Checklist* is now merged into the User Guide.
+
+**Release 4.18.2 (October 24, 2014)**
+
+* Windows Phone 8.1 is now supported using Visual Studio 2013. In line with this, the arm-windows-phone-vs2013 target is introduced.
+
+* The arm-windows-phone target is renamed to arm-windows-phone-vs2012.
+
+**Release 4.18.0 (October 10, 2014)**
+
+* The Google Native Client (NaCl and PNaCl) target is supported.
+
+* The PlayStation 3 target is supported.
+
+* The compiled SQLite static library is provided in the `Libraries` directory.
+
+* The arm-unknown-linux target is built with the following compiler parameters:
+
+    * `-march=armv7-a`
+
+    * `-marm`
+
+    * `-mthumb-interwork`
+
+    * `-mfloat-abi=hard`
+
+    * `-mfpu=neon`
+
+    * `-mtune=cortex-a9`
+
+**Release 4.17.0 (August 18, 2014)**
+
+* The XOR wrapping and unwrapping algorithms are introduced.
+
+* A new key derivation algorithm is introduced based on encryption of data using 128-bit AES with a concatenated key and optional SHA-1 function.
+
+**Release 4.16.0 (July 1, 2014)**
+
+* The device ID can now be set when using Key Export Tool.
+
+* `libSkb` is renamed to `libSecureKeyBox` for all SCons, Android, and OS X targets.
+
+* Instead of GCC 4.6.2, GCC 4.4.3 is now the supported build system for GNU/Linux on the x86 architecture.
+
+* Libraries and tools of the all-microsoft-win32-vs2012 and all-microsoft-win32-vs2013 targets are now compatible with Windows XP.
+
+* The SKB library is built using position independant code (PIC) for Linux, ARM, MIPS, and MIPSel targets.
+
+* Key caching now falls back to the in-memory caching mode if a path with permissions to create the database file is not found.
+
+**Release 4.15.0 (May 10, 2014)**
+
+* Triple DES cipher is introduced.
+
+* SHA-256 derivation with plain prefix and suffix buffers is introduced.
+
+* A new slicing derivation is introduced that only allows deriving blocks that are multiples of 16 bytes.
+
+**Release 4.14.1 (March 26, 2014)**
+
+* Visual Studio 2013 for Windows API and Windows Runtime is now supported.
+
+* Windows Phone 8 is now supported.
+
+* SHA-384 and SHA-512 digest algorithms are introduced.
+
+* HMAC-SHA-512 signing and verification algorithm is introduced.
+
+* Performance is improved for the Android ARM target.
+
+* Tamper resistant SKB library for iOS now supports the ARMv8 (arm64) architecture.
+
+* Tamper resistant SKB library now includes the Binary Update Tool.
+
+**Release 4.13.1 (February 7, 2014)**
+
+* SKB JCA Provider supports almost all algorithms of the native SKB. The only unsupported algorithms are the following:
+
+    * wrapping plain data using 128-bit, 192-bit, and 256-bit AES
+
+    * key derivation algorithms
+
+    * device binding
+
+    * PDF decryption
+
+* SKB library for iOS includes support for the arm64 architecture.
+
+* Tamper resistant SKB library for iOS is reworked to include regular simulator and arm64 architectures in addition to the armv7 and armv7s architectures (all in one fat binary).
+
+* Tamper resistant SKB library is now available for the Visual Studio 2012 target and Android x86 architecture.
+
+* Diffie-Hellman Tool can now provide the output as a binary file.
+
+**Release 4.12.2 (January 8, 2014)**
+
+* HMAC-SHA-384 signing and verification algorithm is introduced.
+
+* The x86-microsoft-win32-vs2010 target is renamed to all-microsoft-win32-vs2010.
+
+* Additional algorithms are now supported by the SKB JCA Provider:
+
+    * DES encryption and decryption in ECB mode (no padding)
+
+    * 1024-bit and 2048-bit RSA decryption (no padding, PKCS#1 version 1.5 padding, and OAEP padding)
+
+    * 128-bit, 192-bit, and 256-bit AES unwrapping in CTR mode
+
+    * 1024-bit and 2048-bit RSA unwrapping (PKCS#1 version 1.5 padding and OAEP padding)
+
+    * Importing and exporting of DES keys and RSA private keys
+
+    * Generating of DES keys
+
+**Release 4.11.0 (October 30, 2013)**
+
+* SKB Java API is introduced for the Android platform. The Java API consists of two parts:
+
+    * SKB JCA Provider
+
+    * SKB Java Binding
+
+**Release 4.10.0 (September 19, 2013)**
+
+* The product is renamed to "Secure Key Box".
+
+* The debug mode of the 32-bit OS X target is supported.
+
+* Android binaries are built with Android NDK r9.
+
+* iOS binaries include support for the iOS simulator.
+
+* Integration with Cryptanium Code Protection is improved.
+
+* The `SKB_Engine_Release` method will fail if other objects still hold references to the engine.
+
+* Signature bytes are copied to an internal buffer during a call to the `SKB_Engine_CreateTransform` method when the `SKB_TRANSFORM_TYPE_VERIFY` type is set. Therefore, signature bytes do not have to be preserved until the actual signature verification takes place.
+
+**Release 4.9.1 (July 15, 2013)**
+
+* Fixed the problem when the Custom ECC Tool was sometimes not included in the package.
+
+* Tamper resistance is improved.
+
+**Release 4.9.0 (June 26, 2013)**
+
+* Some functions used for PDF decryption are changed to facilitate decryption of parts of PDF objects.
+
+**Release 4.8.1 (May 31, 2013)**
+
+* Signature of the `SKB_Pdf_AuthenticateUserPassword` function has been slightly changed.
+
+* The endianness of the output can be specified when deriving raw bytes from an ECC private key.
+
+**Release 4.8.0 (May 25, 2013)**
+
+* You can now order tamper-resistant editions of the Secure Keychain library.
+
+* PDF password authentication is now fully implemented.
+
+* Configuration bugs are fixed in examples.
+
+**Release 4.7.0 (May 3, 2013)**
+
+* The product name is changed to "Cryptanium Secure Keychain".
+
+* Functions for decrypting PDF files are introduced.
+
+* Wrapping of ECC private keys using 128-bit, 192-bit, and 256-bit AES in CBC mode is introduced.
+
+**Release 4.6.0 (February 26, 2013)**
+
+* RSA signing based on the Probabilistic Signature Scheme using SHA-256 as the hash function is introduced.
+
+* A new target for the Android x86 architecture is introduced.
+
+* AES unwrapping in CBC mode with no padding is introduced.
+
+* The binary size of the SKB library is reduced.
+
+* Introduced a new key caching option `SKB_USE_KEY_CACHE_NONE`.
+
+* Fixed unwrapping of raw bytes with AES to work with keys longer than 255 bytes.
+
+* Updated the default `SKB.db` file location on Android to work with Android 4.x.
+
+**Release 4.5.0 (December 11, 2012)**
+
+* CMLA IP specific key unwrapping and derivation algorithms are introduced.
+
+* The salt value and length can be specified for the RSA PSS signature algorithm that uses SHA-1 as the hash function.
+
+* The initialization vector can be specified for the AES wrapping algorithm.
+
+* Added a new engine property `build_id` that identifies a particular SKB build.
+
+* Compiler errors no longer appear when using the Windows Runtime target with the ARM platform.
+
+**Release 4.4.0 (November 2, 2012)**
+
+* The binary size has been reduced.
+
+* Windows Runtime support is added.
+
+* A one-way key upgrading example is added.
+
+* ARM7s support is added for iOS. ARM6 is no longer supported.
+
+**Release 4.3.1 (March 27, 2013)**
+
+* Merged the `SkbSecureKeyBoxEx.h` file into the `SkbSecureKeyBox.h` file.
+
+**Release 4.3.0 (September 25, 2012)**
+
+* One-way key upgrading is introduced.
+
+* The derivation algorithm for deriving raw bytes from an ECC private key is introduced.
+
+* Several new error codes are added.
+
+* Default key cache implementation is updated to SQLite 3.7.14.
+
+* SQLite key cache implementation is restored for the Windows Runtime target.
+
+**Release 4.2.0 (August 13, 2012)**
+
+* TomCrypt dependency is removed. However, TomCrypt is still used for tests.
+
+* The derivation algorithm for selecting odd and even bytes is introduced.
+
+* The derivation algorithm using AES encrypting is introduced.
+
+* New method is introduced for wrapping plain input data.
+
+* GNU/Linux ARM target is introduced.
+
+* Fixed output compatibility issues with the classical Diffie-Hellman algorithm.
+
+**Release 4.1.0 (June 27, 2012)**
+
+* The method `SKB_Engine_SetDeviceId` is introduced to support device binding.
+
+* Performance is increased for RSA and ECC algorithms.
+
+* The x86-microsoft-win32-vs11 target is renamed to all-microsoft-win32-vs2012.
+
+* The universal-microsoft-winrt-vs11 target is renamed to all-microsoft-winrt-vs2012.
+
+**Release 4.0.1 (June 13, 2012)**
+
+* Fixed the buffer overflow error with the classical Diffie-Hellman algorithm when requesting a shared secret shorter than 128 bytes.
+
+* The x86-unknown-linux target now produces a 32-bit binary on a 64-bit host.
+
+* Fixed the `ReleaseWithDebugInfo` configuration for the universal-microsoft-winrt-vs11 target.
+
+* The SCons option `map_file=true` now generates three map files (for `SkbExamples`, `SkbTestSuite`, and `SkbSpeedTests`) instead of one.
+
+**Release 4.0.0 (May 31, 2012)**
+
+* BlackBerry PlayBook target is introduced.
+
+* Beta Windows Runtime target is introduced.
+
+* MIPS target is introduced.
+
+* Targets built with SCons are now stripped in the release mode.
+
+**Release 3.9.0 (April 28, 2012)**
+
+* The binary size is reduced.
+
+* Improved security for unwrapping RSA keys with AES.
+
+* Visual Studio 2005 is no longer supported.
+
+**Release 3.8.2 (April 20, 2012)**
+
+* Fixed importing of secure data that was exported by whiteCryption SKB before version 3.0.
+
+**Release 3.8.1 (April 20, 2012)**
+
+* Fixed a linker error for Xcode 3.6.2.
+
+* Fixed the bug in RSA unwrapping with AES.
+
+**Release 3.8.0 (April 13, 2012)**
+
+* RSA signature algorithm based on the Probabilistic Signature Scheme is introduced.
+
+* New key derivation algorithm is introduced based on KDF2 used in the RSAES-KEM-KWS scheme of the OMA DRM specification.
+
+* AES key unwrapping algorithm defined by NIST with 128-bit, 192-bit, and 256-bit AES keys is introduced.
+
+* Visual Studio 11 target is introduced.
+
+* RSA decryption and unwrapping without padding is introduced.
+
+* Increased security for unwrapping raw bytes with RSA and unwrapping RSA keys with AES.
+
+* Support for export format version 0 is restored. You can now import keys that were exported with whiteCryption SKB older than version 2.4.0.
+
+**Release 3.7.0 (March 16, 2012)**
+
+* Improved security for AES keys.
+
+* Wrapping with AES in CTR mode is discontinued.
+
+**Release 3.6.1 (February 23, 2012)**
+
+* Fixed a security issue with ECC random key generation and ECDH.
+
+**Release 3.6.0 (February 8, 2012)**
+
+* Key wrapping operation is introduced. This release supports wrapping of raw bytes with 128-bit, 192-bit, and 256-bit AES in CBC and CTR modes.
+
+* New key derivation algorithm is introduced based on the NIST 800-108 key derivation function in counter mode using AES CMAC-128 as the pseudorandom function.
+
+* DES encryption and decryption is introduced.
+
+* SHA performance is enhanced. As a result, the following algorithms are improved:
+
+    * SHA-1 and SHA-256 digests
+
+    * HMAC-SHA-1 and HMAC-SHA-256 signing and verification
+
+    * RSA-1024-SHA-1, RSA-2048-SHA-1, RSA-1024-SHA-256, and RSA-2048-SHA-256 signing
+
+    * ECDSA-SHA-1 and ECDSA-SHA-256 signing
+
+* SCons support for Mac OS is discontinued in favor of Xcode.
+
+* Introduced the ndk-build makefile for the Android platform.
+
+**Release 3.5.2 (January 23, 2012)**
+
+* Fixed a configurability issue with the GCC compiler.
+
+* The platform-specific library (`SkbPlatform`) is no longer automatically built in binary version. The pre-built library is used instead.
+
+* Fixed a performance regression in exporting RSA and ECC keys.
+
+**Release 3.5.1 (January 17, 2012)**
+
+* Fixed a problem with missing file for Xcode projects.
+
+* Added the missing `extern "C"` for some functions.
+
+**Release 3.5.0 (January 13, 2012)**
+
+* The MCFACT protection mode is now fully supported.
+
+* Security of the PCT protection mode is improved.
+
+* 192-bit and 256-bit AES encrypting and decrypting is introduced.
+
+* 192-bit and 256-bit AES unwrapping of raw bytes is introduced.
+
+* High-speed AES is restored.
+
+* The Mac OS X target is reworked for Xcode.
+
+* A new derivation algorithm is introduced allowing to create a secure data object with a reversed order of bytes.
+
+* The main whiteCryption SKB API no longer depends on the sensitive operations library (`SkbInternalHelpers`).
+
+* The API of the sensitive operations library (`SkbInternalHelpers`) is changed and extended with functions that allow exporting keys in plain form.
+
+* Platform-specific library is now delivered also in binary format.
+
+* Added an evaluation edition notice in the Release Notes.
+
+* ECDH output is now in the big-endian notation, to be compatible with other crypto libraries.
+
+**Release 3.4.1 (December 2, 2011)**
+
+* Fixed a linker error, which occurs when compiling Key Export Tool in certain configurations.
+
+**Release 3.4.0 (November 30, 2011)**
+
+* Import from plain functions are externalized into a separate library called `SkbInternalHelpers`.
+
+* The Classical Diffie-Hellman key exchange is introduced.
+
+**Release 3.3.0 (November 17, 2011)**
+
+* The underlying security platform of whiteCryption SKB is significantly improved, resulting in faster execution speed, better security, and smaller binary size.
+
+* ECDSA signing algorithm that operates on plain input is introduced.
+
+* SHA-384 derivation is introduced.
+
+* ECC key generation now also works with custom curves.
+
+* Functions that require platform-specific implementations (logging, mutexes, random generation, and key caching) are derived into a separate library called `SkbPlatform`. You can create custom implementations of these functions, for example, to compile whiteCryption SKB for platforms that are not directly supported.
+
+* Standard and high-speed AES now have the same performance.
+
+* Examples are reworked.
+
+* Speed tests are introduced.
+
+* NDK 6b is now required to build whiteCryption SKB on Android.
+
+* The arm-android-linux target is renamed to arm-google-android.
+
+* WebOS target is discontinued.
+
+* Export format version 2 is introduced. Importing from version 1 is still supported.
+
+**Release 3.2.0 (September 20, 2011)**
+
+* whiteCryption SKB is now delivered as a static library; it is no longer available in source format.
+
+* The key caching component is now a separate module.
+
+* The *whiteCryption SKB Release Checklist* is introduced.
+
+**Release 3.1.2 (September 8, 2011)**
+
+* Fixed a bug in ECDSA. An incorrect portion of the hash value was used for signing, which resulted in incompatibility with third party implementations.
+
+* To improve the binary compatibility, the size of public API enumerations now is always 32 bits.
+
+* The bit length of the order domain parameter must now be specified in the `SKB_EccDomainParameters` structure.
+
+* The format of the ECDSA output is slightly changed.
+
+* ECDSA with custom curves now must use one of the following algorithms for creating `SKB_Transform` objects:
+
+    * `SKB_SIGNATURE_ALGORITHM_ECDSA_SHA1`
+
+    * `SKB_SIGNATURE_ALGORITHM_ECDSA_SHA256`
+
+* ECDSA and ECDH now support custom curves with prime length starting with 150 bits.
+
+**Release 3.1.0 (August 15, 2011)**
+
+* Added an option to specify a fixed random value for the ECDSA and ECDH algorithms.
+
+* Fixed the API inconsistency for ECDSA and ECDH algorithms with custom domain parameters.
+
+* Updated the Xcode project to strip the internal symbols.
+
+* The binary size is smaller if RSA signing and RSA decryption are used simultaneously.
+
+* Key Export Tool now supports ECC private keys.
+
+**Release 3.0.0 (July 20, 2011)**
+
+* The webOS target is introduced.
+
+* The ECC curve type must now be specified when using the ECDSA signing algorithm.
+
+* Several engine properties, including the export key identifier and diversification identifier, are now returned using the `SKB_Engine_GetInfo` function.
+
+* Support for export format version 0 is discontinued.
+
+**Release 2.5.0 (June 20, 2011)**
+
+* Introduced an ability to generate ECC private keys and raw byte buffers as secure data objects.
+
+* Introduced the ability to derive the public ECC key from the private ECC key.
+
+* Significantly reduced the library size for GCC builds.
+
+* Introduced the ability to cache keys in memory.
+
+* Introduced the ability to build whiteCryption SKB as a shared library with SCons. By default, a static library is built.
+
+* Improved the performance of whiteCryption SKB when it is statically compiled for desktop platforms.
+
+* Improved the ECDSA implementation.
+
+* Introduced ElGamal unwrapping of a raw buffer of bytes.
+
+* Restored the support of Visual Studio 2005.
+
+* Tests no longer fail if the export key is changed.
+
+**Release 2.4.0 (May 16, 2011)**
+
+* Key Embedding Tool is introduced.
+
+* whiteCryption SKB configurability is improved.
+
+* Android target now uses NDK 5b.
+
+* Added the 64-bit Windows target.
+
+* Dependency to the Atomix library is removed.
+
+* Visual Studio 2005 target is discontinued.
+
+* Native error logging is introduced.
+
+* Removed the cross-engine export type. Multi-threaded applications can now share `SKB_SecureData` objects directly.
+
+* Export format version 1 is introduced. Importing from version 0 is still supported.
+
+**Release 1.3.3 (May 5, 2011)**
+
+* Minor configurability improvements.
+
+**Release 1.3.2 (April 13, 2011)**
+
+* Increased security and performance of PCT protection (by default used on mobile devices).
+
+**Release 1.3.1 (April 7, 2011)**
+
+* Build target for MIPS is added.
+
+**Release 1.3.0 (March 28, 2011)**
+
+* ElGamal ECC cipher is introduced (decrypting only).
+
+* 160-bit ECC curve is introduced.
+
+* Ability to use custom ECC curves with configurable domain parameters is added.
+
+* AES-CMAC signature algorithm is introduced.
+
+* Xcode build target for iOS is added.
+
+* AES unwrapping in the CTR mode is now supported.
+
+* Up to 2 times faster AES for Android.
+
+* Up to 2 times faster high-speed AES for desktop computers.
+
+* Improved security of high-speed AES implementation.
+
+**Release 1.2.0 (February 22, 2011)**
+
+* Improved AES security and performance.
+
+* RSA key caching is introduced.
+
+* Unit test suite is introduced.
+
+* Minor changes in directory structure.
+
+**Release 1.1.3 (January 26, 2011)**
+
+* About 3 times faster AES for Android.
+
+* About 3 times faster high-speed AES for desktop computers.
+
+* The *whiteCryption SKB User's Guide* is introduced.
+
+* Several whiteCryption SKB example projects are added.
+
+* The Key Export Tool is introduced.
+
+**Release 1.1.2 (January 5, 2011)**
+
+* Added the example project `WhiteCryptionSKBKeyExportExample`.
+
+* Fixed compilation issues for Android.
+
+* Reduced stack usage for RSA.
+
+* Added the Microsoft Visual Studio 2010 build target.
+
+* Added the LLVM GCC 4.2.1 build target for Android.
+
+**Release 1.1.1 (December 22, 2010)**
+
+* Ciphers
+
+    * AES (ECB, CBC, CTR)
+
+    * RSA-1024 (#1.5, OAEP) decryption
+
+    * RSA-2048 (#1.5, OAEP) decryption
+
+* Signing
+
+    * HMAC-SHA1
+
+    * HMAC-SHA256
+
+    * RSA-1024 (PKCS #1 block type 1)
+
+    * RSA-1024-SHA1
+
+    * RSA-1024-SHA256
+
+    * RSA-2048
+
+    * RSA-2048-SHA1
+
+    * RSA-2048-SHA256
+
+    * ECDSA-SHA1 (NIST-192, NIST-224, NIST-256, NIST-384, NIST-521)
+
+    * ECDSA-SHA256 (NIST-192, NIST-224, NIST-256, NIST-384, NIST-521)
+
+* Verification
+
+    * HMAC-SHA1
+
+    * HMAC-SHA256
+
+* Digests
+
+    * SHA1
+
+    * SHA256
+
+* Derivation
+
+    * Slicing
+
+    * Iterated SHA1
+
+* Key agreement
+
+    * ECDH (NIST-192, NIST-224, NIST-256, NIST-384, NIST-521)
