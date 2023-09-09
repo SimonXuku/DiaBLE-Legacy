@@ -58,8 +58,17 @@ struct ShellView: View {
                                     for plist in preferencesContents {
                                         if plist.hasPrefix("com.abbott.libre3") {
                                             if let plistData = fileManager.contents(atPath:"\(tridentContainer)/Library/Preferences/\(plist)") {
-                                                app.main.log("cat \(plist)\n\(plistData.string)")
-                                                // TODO: parse Info.plist
+                                                if let libre3Plist = try? PropertyListSerialization.propertyList(from: plistData, options: [], format: nil) as? [String: Any] {
+                                                    app.main.log("cat \(plist)\n\(libre3Plist)")
+                                                    let realmEncryptionKey = libre3Plist["RealmEncryptionKey"] as! [UInt8]
+                                                    let realmEncryptionKeyInt8 = realmEncryptionKey.map { Int8(bitPattern: $0) }
+                                                    app.main.log("realmEncryptionKey:\n\(realmEncryptionKey)\n\nas Int8 array:\n\(realmEncryptionKeyInt8)")
+
+                                                    // let unwrappedUInt8: [UInt8] = unwrappedInt8.map { UInt8(bitPattern: $0) }
+                                                    // log(Data(unwrappedUInt8).reduce("", { $0 + String(format: "%02x", $1)}))
+
+                                                    // TODO: parse rest of libre3Plist
+                                                }
                                             }
                                         }
                                     }
