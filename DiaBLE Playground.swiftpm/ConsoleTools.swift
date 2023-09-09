@@ -31,8 +31,7 @@ struct ShellView: View {
             ) { result in
                 switch result {
                 case .success(let directory):
-                    let gotAccess = directory.startAccessingSecurityScopedResource()
-                    if !gotAccess { return }
+                    if !directory.startAccessingSecurityScopedResource() { return }
                     tridentContainer = directory.path
                     let fileManager = FileManager.default
                     let containerDirs = try! fileManager.contentsOfDirectory(atPath: tridentContainer)
@@ -61,7 +60,7 @@ struct ShellView: View {
                                                     app.main.log("cat \(plist)\n\(libre3Plist)")
                                                     let realmEncryptionKey = libre3Plist["RealmEncryptionKey"] as! [UInt8]
                                                     let realmEncryptionKeyInt8 = realmEncryptionKey.map { Int8(bitPattern: $0) }
-                                                    app.main.log("realmEncryptionKey:\n\(realmEncryptionKey)\n\nas Int8 array:\n\(realmEncryptionKeyInt8)")
+                                                    app.main.log("realmEncryptionKey:\n\(realmEncryptionKey)\nas Int8 array:\n\(realmEncryptionKeyInt8)")
 
                                                     // https://frdmtoplay.com/freeing-glucose-data-from-the-freestyle-libre-3/
                                                     //
@@ -94,7 +93,6 @@ struct ShellView: View {
                     // TODO
                     app.main.log("\(error)")
                 }
-                showingFileImporter = false
             }
 
             Spacer()
