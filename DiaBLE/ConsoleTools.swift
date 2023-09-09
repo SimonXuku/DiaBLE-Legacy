@@ -100,8 +100,13 @@ struct ShellView: View {
         .padding(20)
         // TODO
         .toolbar {
-            Button("Shell", systemImage: "fossil.shell") {
+            Button {
                 print("TODO: shell toobar icon")
+            } label: {
+                VStack(spacing: 0) {
+                    Image(systemName: "fossil.shell")
+                    Text("Shell").font(.footnote)
+                }
             }
         }
     }
