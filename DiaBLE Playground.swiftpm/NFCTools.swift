@@ -326,6 +326,7 @@ extension NFC {
                         log("NFC: Libre 3 activation response: \(activationResponse), BLE address: \(activationResponse.bdAddress.hexAddress), BLE PIN: \(activationResponse.BLE_Pin.hex), activation time: \(Date(timeIntervalSince1970: Double(activationResponse.activationTime))), CRC: \(crc.hex), computed CRC: \(computedCrc.hex)")
 
                         // TODO
+                        sensor.transmitter?.macAddress = activationResponse.bdAddress
                         (sensor as! Libre3).blePIN = activationResponse.BLE_Pin
                         sensor.activationTime = activationResponse.activationTime
                         sensor.lastReadingDate = Date()

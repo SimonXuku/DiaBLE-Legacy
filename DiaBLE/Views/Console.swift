@@ -224,13 +224,9 @@ struct Console: View {
 
 
                 } label: {
-                    Label {
-                        Text("Tools")
-                    } icon: {
-                        VStack(spacing: 0) {
-                            Image(systemName: "wrench.and.screwdriver")
-                            Text("Tools").font(.footnote)
-                        }
+                    VStack(spacing: 0) {
+                        Image(systemName: "wrench.and.screwdriver")
+                        Text("Tools").font(.footnote)
                     }
                 }
             }

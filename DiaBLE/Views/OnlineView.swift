@@ -72,6 +72,7 @@ struct OnlineView: View {
                             if trend.isEmpty || lastMeasurement.id > trend[0].id {
                                 trend.insert(lastMeasurement.glucose, at: 0)
                             }
+                            // keep only the latest 22 minutes considering the 17-minute latency of the historic values update
                             trend = trend.filter { lastMeasurement.id - $0.id < 22 }
                             history.factoryTrend = trend
                             // TODO: merge and update sensor history / trend
