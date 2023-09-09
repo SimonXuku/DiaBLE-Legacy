@@ -27,11 +27,14 @@ struct Console: View {
     @State private var showingResetConfirmationDialog = false
     @State private var showingProlongConfirmationDialog = false
     @State private var showingActivateConfirmationDialog = false
+
     @State private var showingFilterField = false
     @State private var filterString = ""
 
     var body: some View {
         VStack(spacing: 0) {
+
+            ShellView()
 
             if showingFilterField {
                 HStack {
