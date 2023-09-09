@@ -1,5 +1,4 @@
 import Foundation
-import Combine
 import SwiftUI
 
 
@@ -64,6 +63,20 @@ struct ShellView: View {
                                                     let realmEncryptionKeyInt8 = realmEncryptionKey.map { Int8(bitPattern: $0) }
                                                     app.main.log("realmEncryptionKey:\n\(realmEncryptionKey)\n\nas Int8 array:\n\(realmEncryptionKeyInt8)")
 
+                                                    // https://frdmtoplay.com/freeing-glucose-data-from-the-freestyle-libre-3/
+                                                    //
+                                                    // adb root
+                                                    // sudo waydroid shell
+                                                    // # /data/local/tmp/frida-server &
+                                                    //
+                                                    // $ frida -U "Libre 3"
+                                                    // Frida-> Java.perform(function(){}); // Seems necessary to use Java.use
+                                                    // Frida-> var crypto_lib_def = Java.use("com.adc.trident.app.frameworks.mobileservices.libre3.security.Libre3SKBCryptoLib");
+                                                    // Frida-> var crypto_lib = crypto_lib_def.$new()
+                                                    // Frida-> unwrapped = crypto_lib.unWrapDBEncryptionKey([<realmEncryptionKeyInt8>])
+                                                    //
+                                                    //
+                                                    // let unwrappedInt8: [Int8] = [<unwrapped>]
                                                     // let unwrappedUInt8: [UInt8] = unwrappedInt8.map { UInt8(bitPattern: $0) }
                                                     // log(Data(unwrappedUInt8).reduce("", { $0 + String(format: "%02x", $1)}))
 
