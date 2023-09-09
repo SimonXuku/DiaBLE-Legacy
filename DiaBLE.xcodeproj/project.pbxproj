@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C50B9AD32AA7396500FF1EA3 /* ConsoleTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */; };
-		C50B9AD42AA7396500FF1EA3 /* ConsoleTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */; };
 		C51F1B0929B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
 		C51F1B0A29B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
 		C55D12B229ACAE8F0050F567 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55D12B129ACAE8F0050F567 /* CryptoSwift */; };
@@ -445,7 +444,6 @@
 				C59184462981E73400A6DA89 /* App.swift in Sources */,
 				C5E4007D29825E4E0021C6B7 /* Abbott.swift in Sources */,
 				C5916E5529827E860051AC06 /* ContentView.swift in Sources */,
-				C50B9AD42AA7396500FF1EA3 /* ConsoleTools.swift in Sources */,
 				C5E4006C29825DDE0021C6B7 /* Bluetooth.swift in Sources */,
 				C5916E4E29827E860051AC06 /* DataView.swift in Sources */,
 				C5916E5429827E860051AC06 /* Monitor.swift in Sources */,

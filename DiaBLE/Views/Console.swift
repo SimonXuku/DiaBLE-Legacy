@@ -33,6 +33,11 @@ struct Console: View {
     var body: some View {
         VStack(spacing: 0) {
 
+            // TODO: iOS
+            #if targetEnvironment(macCatalyst)
+            ShellView()
+            #endif
+
             if showingFilterField {
                 HStack {
 
