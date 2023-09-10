@@ -43,9 +43,9 @@ struct ShellView: View {
                             app.main.log("ls \(tridentContainer)\n\(containerDirs)")
                             for dir in containerDirs {
                                 if dir == "Documents" {
-                                    let documentsDirs = try! fileManager.contentsOfDirectory(atPath: "\(tridentContainer)/Documents")
-                                    app.main.log("ls Documents\n\(documentsDirs)")
-                                    for file in documentsDirs {
+                                    let documentsFiles = try! fileManager.contentsOfDirectory(atPath: "\(tridentContainer)/Documents")
+                                    app.main.log("ls Documents\n\(documentsFiles)")
+                                    for file in documentsFiles {
                                         if file == "trident.realm" {
                                             // TODO
                                         }
@@ -95,7 +95,6 @@ struct ShellView: View {
                             }
                             directory.stopAccessingSecurityScopedResource()
                         case .failure(let error):
-                            // TODO
                             app.main.log("\(error)")
                         }
                     }
@@ -105,7 +104,6 @@ struct ShellView: View {
                 .padding(20)
             }
         }
-        // TODO
         .toolbar {
             Button {
                 withAnimation {
