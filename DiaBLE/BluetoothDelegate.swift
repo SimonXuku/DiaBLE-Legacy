@@ -420,7 +420,7 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
 
             if serviceUUID == Libre3.UUID.security.rawValue {
                 if sensor.transmitter == nil { sensor.transmitter = app.transmitter }
-                if settings.userLevel < .test { // TEST: sniff Trident
+                if settings.userLevel < .test { // not sniffing Trident
                     ((app.device as? Abbott)?.sensor as? Libre3)?.send(securityCommand: .readChallenge)
                     // ((app.device as? Abbott)?.sensor as? Libre3)?.pair()  // TEST
                 }
@@ -435,7 +435,7 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
                 debugLog("Bluetooth: sent \(app.device.name) read security challenge")
 
             } else if sensor.uid.count > 0 && settings.activeSensorInitialPatchInfo.count > 0 {
-                if settings.userLevel < .test {  // sniffing Libre 2
+                if settings.userLevel < .test {  // not sniffing Libre 2
                     sensor.streamingUnlockCount += 1
                     settings.activeSensorStreamingUnlockCount += 1
                     let unlockPayload = Libre2.streamingUnlockPayload(id: sensor.uid, info: settings.activeSensorInitialPatchInfo, enableTime: sensor.streamingUnlockCode, unlockCount: sensor.streamingUnlockCount)

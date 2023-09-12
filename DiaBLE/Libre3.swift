@@ -755,7 +755,7 @@ class Libre3: Sensor {
                     debugLog("\(type): r1: \(r1.hex), r2: \(r2.hex), nonce1: \(nonce1.hex)")
 
                     // TODO:
-                    // let response = process2(command: 7, nonce1, Data(r1 + r2 + blePIN))
+                    // let response = process2(command: 7, nonce1, Data(r1 + r2 + blePIN)) // CRYPTO_EXTENSION_ENCRYPT
 
                     if settings.userLevel < .test { // not sniffing Trident
                         log("\(type) \(transmitter!.peripheral!.name!): writing 40-zero challenge response")
