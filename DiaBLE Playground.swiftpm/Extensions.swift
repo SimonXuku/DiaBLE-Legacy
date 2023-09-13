@@ -122,10 +122,6 @@ extension String {
 
 
 extension Double {
-    var units: String {
-        UserDefaults.standard.bool(forKey: "displayingMillimoles") ?
-        String(format: "%.1f", self / 18.0182) : String(format: "%.0f", self)
-    }
     var formattedInterval: String {
         let formatter = DateComponentsFormatter()
         formatter.allowedUnits = [.day, .hour, .minute]
@@ -144,10 +140,6 @@ extension Double {
 
 extension Int {
     var hex: String { String(format: "%.2x", self) }
-    var units: String {
-        UserDefaults.standard.bool(forKey: "displayingMillimoles") ?
-        String(format: "%.1f", Double(self) / 18.0182) : String(self)
-    }
     var formattedInterval: String { Double(self * 60).formattedInterval }
     var shortFormattedInterval: String {
         let formatter = DateComponentsFormatter()
