@@ -186,14 +186,3 @@ extension Date {
         return formatter.string(from: self)
     }
 }
-
-
-protocol Logging {
-    var main: MainDelegate! { get set }
-}
-
-extension Logging {
-    func log(_ msg: String) { main?.log(msg) }
-    func debugLog(_ msg: String) { main?.debugLog(msg) }
-    var settings: Settings { main.settings }
-}

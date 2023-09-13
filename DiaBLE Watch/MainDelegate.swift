@@ -4,6 +4,17 @@ import AVFoundation
 import os.log
 
 
+protocol Logging {
+    var main: MainDelegate! { get set }
+}
+
+extension Logging {
+    func log(_ msg: String) { main?.log(msg) }
+    func debugLog(_ msg: String) { main?.debugLog(msg) }
+    var settings: Settings { main.settings }
+}
+
+
 public class MainDelegate: NSObject, WKApplicationDelegate, WKExtendedRuntimeSessionDelegate {
 
     var app: AppState
