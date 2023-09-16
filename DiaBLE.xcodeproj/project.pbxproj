@@ -10,6 +10,8 @@
 		C50B9AD32AA7396500FF1EA3 /* ConsoleTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */; };
 		C51F1B0929B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
 		C51F1B0A29B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
+		C55A112C2AB668D2004E26D3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112B2AB668D2004E26D3 /* Realm */; };
+		C55A112E2AB668D2004E26D3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112D2AB668D2004E26D3 /* RealmSwift */; };
 		C55D12B229ACAE8F0050F567 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55D12B129ACAE8F0050F567 /* CryptoSwift */; };
 		C55D12B429ACB5E00050F567 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D12B329ACB5E00050F567 /* Crypto.swift */; };
 		C55D12B529ACB5E00050F567 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D12B329ACB5E00050F567 /* Crypto.swift */; };
@@ -190,6 +192,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C55A112E2AB668D2004E26D3 /* RealmSwift in Frameworks */,
+				C55A112C2AB668D2004E26D3 /* Realm in Frameworks */,
 				C55D12B229ACAE8F0050F567 /* CryptoSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +362,8 @@
 			name = DiaBLE;
 			packageProductDependencies = (
 				C55D12B129ACAE8F0050F567 /* CryptoSwift */,
+				C55A112B2AB668D2004E26D3 /* Realm */,
+				C55A112D2AB668D2004E26D3 /* RealmSwift */,
 			);
 			productName = DiaBLE;
 			productReference = C5AAA6152981CF7000CA3EC1 /* DiaBLE.app */;
@@ -392,6 +398,7 @@
 			mainGroup = C5AAA60C2981CF7000CA3EC1;
 			packageReferences = (
 				C55D12B029ACAE8F0050F567 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				C55A112A2AB668D2004E26D3 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = C5AAA6162981CF7000CA3EC1 /* Products */;
 			projectDirPath = "";
@@ -855,6 +862,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C55A112A2AB668D2004E26D3 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C55D12B029ACAE8F0050F567 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
@@ -866,6 +881,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C55A112B2AB668D2004E26D3 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C55A112A2AB668D2004E26D3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		C55A112D2AB668D2004E26D3 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C55A112A2AB668D2004E26D3 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		C55D12B129ACAE8F0050F567 /* CryptoSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C55D12B029ACAE8F0050F567 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
