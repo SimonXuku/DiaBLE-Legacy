@@ -10,6 +10,7 @@
 		C50B9AD32AA7396500FF1EA3 /* ConsoleTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */; };
 		C51F1B0929B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
 		C51F1B0A29B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
+		C541C75A2AB66ABB0049ECFF /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C541C7592AB66ABB0049ECFF /* Realm.swift */; };
 		C55A112C2AB668D2004E26D3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112B2AB668D2004E26D3 /* Realm */; };
 		C55A112E2AB668D2004E26D3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112D2AB668D2004E26D3 /* RealmSwift */; };
 		C55D12B229ACAE8F0050F567 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55D12B129ACAE8F0050F567 /* CryptoSwift */; };
@@ -123,6 +124,7 @@
 		C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTools.swift; sourceTree = "<group>"; };
 		C51F1B0829B243AE0014A500 /* Dexcom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dexcom.swift; sourceTree = "<group>"; };
 		C53F77C529894478004F275A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C541C7592AB66ABB0049ECFF /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		C55D12B329ACB5E00050F567 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		C5916E4629827E860051AC06 /* DataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		C5916E4729827E860051AC06 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 				C5E4008C29825ED00021C6B7 /* Health.swift */,
 				C5E4008F29825EED0021C6B7 /* NFC.swift */,
 				C5E4009229825EF90021C6B7 /* NFCTools.swift */,
+				C541C7592AB66ABB0049ECFF /* Realm.swift */,
 				C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */,
 				C5E4009529825F120021C6B7 /* LibreLink.swift */,
 				C5E4009829825F1C0021C6B7 /* Nightscout.swift */,
@@ -494,6 +497,7 @@
 				C5E4005929825C930021C6B7 /* DataView.swift in Sources */,
 				C5E4006229825C930021C6B7 /* ContentView.swift in Sources */,
 				C5E4008D29825ED00021C6B7 /* Health.swift in Sources */,
+				C541C75A2AB66ABB0049ECFF /* Realm.swift in Sources */,
 				C5E4008229825E8B0021C6B7 /* Libre2.swift in Sources */,
 				C5E4005C29825C930021C6B7 /* ViewRepresentables.swift in Sources */,
 				C5E4006829825DCD0021C6B7 /* Settings.swift in Sources */,
