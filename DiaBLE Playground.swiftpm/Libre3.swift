@@ -492,7 +492,7 @@ class Libre3: Sensor {
     // notify 1338  10 bytes            // ending in 01 00
     // write  1338  13 bytes            // command ending in 02 00
     // notify 1D24  20 * 11 + 12 bytes  // factory data (with latest firmwares, otherwise 10/11 varying packets)
-                                        // 20 * 10 + 17 bytes when reactivating (195-byte factory data)
+    //                                  // 20 * 10 + 17 bytes when reactivating (195-byte factory data)
     // notify 1338  10 bytes            // ending in 02 00
     //
     // Shutdown:
@@ -895,9 +895,19 @@ class Libre3: Sensor {
         write(certificate, for: .certificateData)
         send(securityCommand: .security_03)
         // TODO
+    }
 
 
     // MARK: - Constants
+
+
+    class Libre3BLESensor {
+        static let STATE_NONE           = 0
+        static let STATE_AUTHENTICATING = 5
+        static let STATE_AUTHORIZING    = 8
+        static let MAX_WRITE_OFFSET_DATA_LENGTH = 18
+        static let HISTORIC_POINT_LATENCY = 17
+    }
 
 
     struct MSLibre3Constants {
@@ -957,7 +967,45 @@ class Libre3: Sensor {
     }
 
 
-}
+    // Android libre3SecurityConstants
+    struct Libre3SecurityConstants {
+        static let CERT_PATCH_DATE_STAMP_LENGTH: Int = 2
+        static let CERT_PATCH_LENGTH: Int = 140
+        static let CERT_PATCH_VERSION_LENGTH: Int = 1
+        static let CERT_PUBLIC_KEY_LENGTH: Int = 65
+        static let CERT_SERIAL_NUMBER_LENGTH: Int = 8
+        static let CERT_SIGNATURE_LENGTH: Int = 64
+
+        static let CMD_AUTHORIZATION_CHALLENGE: UInt8 = 0x07
+        static let CMD_AUTHORIZED: UInt8 = 0x05
+        static let CMD_AUTHORIZE_ECDSA: UInt8 = 0x06
+        static let CMD_AUTHORIZE_SYMMETRIC: UInt8 = 0x11
+        static let CMD_CERT_ACCEPTED: UInt8 = 0x04
+        static let CMD_CERT_READY: UInt8 = 0x0A
+        static let CMD_CHALLENGE_LOAD_DONE: UInt8 = 0x08
+        static let CMD_ECDH_COMPLETE: UInt8 = 0x10
+        static let CMD_ECDH_START: UInt8 = 0x01
+        static let CMD_EPHEMERAL_KEY_READY: UInt8 = 0x0F
+        static let CMD_EPHEMERAL_LOAD_DONE: UInt8 = 0x0E
+        static let CMD_IV_AUTHENTICATED_SEND: UInt8 = 0x0B
+        static let CMD_IV_READY: UInt8 = 0x0C
+        static let CMD_KEY_AGREEMENT: UInt8 = 0x0D
+        static let CMD_LOAD_CERT_DATA: UInt8 = 0x02
+        static let CMD_LOAD_CERT_DONE: UInt8 = 0x03
+        static let CMD_MODE_SWITCH: UInt8 = 0x12
+        static let CMD_SEND_CERT: UInt8 = 0x09
+        static let CMD_VERIFICATION_FAILURE: UInt8 = 0x13
+
+        static let CRYPTO_KEY_LENGTH_BYTES: Int = 16
+        static let CRYPTO_MAC_LENGTH_BYTES: Int = 4
+        static let L3_SEC_ERROR_AUTHENTICATION_FAILED: Int = 902
+        static let L3_SEC_ERROR_AUTHORIZATION_FAILED: Int = 903
+        static let L3_SEC_ERROR_DECRYPTION_FAILED: Int = 904
+        static let L3_SEC_ERROR_ENCRYPTION_FAILED: Int = 905
+        static let L3_SEC_ERROR_INVALID_CERTIFICATE: Int = 901
+        static let L3_SEC_ERROR_LIB_ERROR: Int = 906
+    }
+
 
     // https://github.dev/j-kaltes/Juggluco/blob/primary/Common/src/libre3/java/tk/glucodata/ECDHCrypto.java
 
@@ -1078,14 +1126,6 @@ class Libre3: Sensor {
     }
 
 
-    // Libre3BLESensor
-    static let STATE_NONE           = 0
-    static let STATE_AUTHENTICATING = 5
-    static let STATE_AUTHORIZING    = 8
-    static let MAX_WRITE_OFFSET_DATA_LENGTH = 18
-    static let HISTORIC_POINT_LATENCY = 17
-
-
     // Trident ISecurityContext
     static let IV_ENC_SIZE = 8
     static let MODE_DECRYPT = 2
@@ -1126,42 +1166,5 @@ class Libre3: Sensor {
     static let L3_ACTIVATION_ERROR_SENSOR_NOT_YOURS: UInt = 0xDEADBEEF
     static let L3_ACTIVATION_ERROR_NOT_MEASUREMENT_STATE: UInt = 0xDEADBEEF
 
-
-    // Trident libre3SecurityConstants
-    static let CERT_PATCH_DATE_STAMP_LENGTH: Int = 2
-    static let CERT_PATCH_LENGTH: Int = 140
-    static let CERT_PATCH_VERSION_LENGTH: Int = 1
-    static let CERT_PUBLIC_KEY_LENGTH: Int = 65
-    static let CERT_SERIAL_NUMBER_LENGTH: Int = 8
-    static let CERT_SIGNATURE_LENGTH: Int = 64
-
-    static let CMD_AUTHORIZATION_CHALLENGE: UInt8 = 0x07
-    static let CMD_AUTHORIZED: UInt8 = 0x05
-    static let CMD_AUTHORIZE_ECDSA: UInt8 = 0x06
-    static let CMD_AUTHORIZE_SYMMETRIC: UInt8 = 0x11
-    static let CMD_CERT_ACCEPTED: UInt8 = 0x04
-    static let CMD_CERT_READY: UInt8 = 0x0A
-    static let CMD_CHALLENGE_LOAD_DONE: UInt8 = 0x08
-    static let CMD_ECDH_COMPLETE: UInt8 = 0x10
-    static let CMD_ECDH_START: UInt8 = 0x01
-    static let CMD_EPHEMERAL_KEY_READY: UInt8 = 0x0F
-    static let CMD_EPHEMERAL_LOAD_DONE: UInt8 = 0x0E
-    static let CMD_IV_AUTHENTICATED_SEND: UInt8 = 0x0B
-    static let CMD_IV_READY: UInt8 = 0x0C
-    static let CMD_KEY_AGREEMENT: UInt8 = 0x0D
-    static let CMD_LOAD_CERT_DATA: UInt8 = 0x02
-    static let CMD_LOAD_CERT_DONE: UInt8 = 0x03
-    static let CMD_MODE_SWITCH: UInt8 = 0x12
-    static let CMD_SEND_CERT: UInt8 = 0x09
-    static let CMD_VERIFICATION_FAILURE: UInt8 = 0x13
-
-    static let CRYPTO_KEY_LENGTH_BYTES: Int = 16
-    static let CRYPTO_MAC_LENGTH_BYTES: Int = 4
-    static let L3_SEC_ERROR_AUTHENTICATION_FAILED: Int = 902
-    static let L3_SEC_ERROR_AUTHORIZATION_FAILED: Int = 903
-    static let L3_SEC_ERROR_DECRYPTION_FAILED: Int = 904
-    static let L3_SEC_ERROR_ENCRYPTION_FAILED: Int = 905
-    static let L3_SEC_ERROR_INVALID_CERTIFICATE: Int = 901
-    static let L3_SEC_ERROR_LIB_ERROR: Int = 906
 
 }
