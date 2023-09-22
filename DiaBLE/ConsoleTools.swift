@@ -49,6 +49,7 @@ struct ShellView: View {
                             let fileManager = FileManager.default
                             let containerDirs = try! fileManager.contentsOfDirectory(atPath: tridentContainer)
                             app.main.log("ls \(tridentContainer)\n\(containerDirs)")
+
                             for dir in containerDirs {
 
                                 if dir == "Library" {
@@ -118,7 +119,8 @@ struct ShellView: View {
                                                     let sensors = realm.objects(SensorEntity.self)
                                                     app.main.log("Realm: sensors: \(sensors)")
                                                     let appConfig = realm.objects(AppConfigEntity.self)
-                                                    app.main.log("Realm: app config: \(appConfig), total entries count: \(appConfig.count)")
+                                                    // overcome limit of max 100 objects in a result description
+                                                    app.main.log(appConfig.reduce("Realm: app config:", { $0 + "\n" + $1.description }))
                                                     let libre3WrappedKAuth = realm.object(ofType: AppConfigEntity.self, forPrimaryKey: "Libre3WrappedKAuth")!["_configValue"]!
                                                     app.main.log("Realm: libre3WrappedKAuth: \(libre3WrappedKAuth)")
                                                     // TODO
@@ -132,7 +134,9 @@ struct ShellView: View {
                                         }
                                     }
                                 }
+
                             }
+
                             directory.stopAccessingSecurityScopedResource()
                         case .failure(let error):
                             app.main.log("\(error.localizedDescription)")
