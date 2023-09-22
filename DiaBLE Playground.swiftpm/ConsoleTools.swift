@@ -1,6 +1,13 @@
 import Foundation
 import SwiftUI
 
+#if os(macOS)
+import RealmSwift
+#endif
+
+
+// TODO: rename to Copilot when smarter :-)
+
 
 struct ShellView: View {
 
@@ -23,6 +30,8 @@ struct ShellView: View {
                     Spacer()
 
                     TextField("Trident Container", text: $tridentContainer)
+                        .truncationMode(.head)
+
 
                     Button {
                         showingFileImporter = true
@@ -42,15 +51,36 @@ struct ShellView: View {
                             let containerDirs = try! fileManager.contentsOfDirectory(atPath: tridentContainer)
                             app.main.log("ls \(tridentContainer)\n\(containerDirs)")
                             for dir in containerDirs {
+
+                                #if os(macOS)
                                 if dir == "Documents" {
-                                    let documentsDirs = try! fileManager.contentsOfDirectory(atPath: "\(tridentContainer)/Documents")
-                                    app.main.log("ls Documents\n\(documentsDirs)")
-                                    for file in documentsDirs {
+                                    let documentsFiles = try! fileManager.contentsOfDirectory(atPath: "\(tridentContainer)/Documents")
+                                    app.main.log("ls Documents\n\(documentsFiles)")
+                                    for file in documentsFiles {
                                         if file == "trident.realm" {
-                                            // TODO
+                                            do {
+                                                let realm = try Realm(fileURL: URL(filePath: "\(tridentContainer)/Documents/\(file)"))
+                                            } catch {
+                                                app.main.log("\(error.localizedDescription)")
+                                                // TODO: dialog "128-character hex-encoded encyption key"
+                                            }
+                                        }
+                                        if file == "trident-decrypted.realm" {
+                                            do {
+                                                var config = Realm.Configuration.defaultConfiguration
+                                                config.fileURL = URL(filePath: "\(tridentContainer)/Documents/\(file)")
+                                                config.schemaVersion = 8  // as for RealmStudio 14
+                                                let realm = try Realm(configuration: config)
+                                                app.main.debugLog("Realm: opened decrypted \(tridentContainer)/Documents/\(file)")
+                                                // TODO
+                                            } catch {
+                                                app.main.log("\(error.localizedDescription)")
+                                            }
                                         }
                                     }
                                 }
+                                #endif // os(macOS))
+
                                 if dir == "Library" {
                                     let libraryDirs = try! fileManager.contentsOfDirectory(atPath: "\(tridentContainer)/Library")
                                     app.main.log("ls Library\n\(libraryDirs)")
@@ -96,7 +126,7 @@ struct ShellView: View {
                             directory.stopAccessingSecurityScopedResource()
                         case .failure(let error):
                             // TODO
-                            app.main.log("\(error)")
+                            app.main.log("\(error.localizedDescription)")
                         }
                     }
 
