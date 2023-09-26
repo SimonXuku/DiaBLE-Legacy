@@ -161,7 +161,7 @@ struct ShellView: View {
             VStack(spacing: 20) {
                 Text("The Realm might be encrypted").fontWeight(.bold)
                 Text("Either this is not a Realm file or it's encrypted.")
-                TextField("128-character hex-encoded encyption key", text: $tridentRealmKey) // TODO: iOS 16 axis: .vertical
+                TextField("128-character hex-encoded encryption key", text: $tridentRealmKey) // TODO: iOS 16 axis: .vertical
                     .textFieldStyle(.roundedBorder)
                     .padding()
                 HStack {
