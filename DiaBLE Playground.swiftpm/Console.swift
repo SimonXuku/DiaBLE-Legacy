@@ -32,46 +32,47 @@ struct Console: View {
     @State private var filterString = ""
 
     var body: some View {
-        VStack(spacing: 0) {
 
-            ShellView()
+        HStack(spacing: 0) {
 
-            if showingFilterField {
-                HStack {
+            VStack(spacing: 0) {
 
+                ShellView()
+
+                if showingFilterField {
                     HStack {
-                        Image(systemName: "magnifyingglass").padding(.leading).foregroundColor(Color(.lightGray))
-                        TextField("Filter", text: $filterString)
-                            .autocapitalization(.none)
-                            .padding(.vertical, 8)
-                            .foregroundColor(.accentColor)
-                        if filterString.count > 0 {
-                            Button {
-                                filterString = ""
-                            } label: {
-                                Image(systemName: "xmark.circle.fill").padding(.trailing)
+
+                        HStack {
+                            Image(systemName: "magnifyingglass").padding(.leading).foregroundColor(Color(.lightGray))
+                            TextField("Filter", text: $filterString)
+                                .autocapitalization(.none)
+                                .padding(.vertical, 8)
+                                .foregroundColor(.accentColor)
+                            if filterString.count > 0 {
+                                Button {
+                                    filterString = ""
+                                } label: {
+                                    Image(systemName: "xmark.circle.fill").padding(.trailing)
+                                }
                             }
                         }
-                    }
-                    .background(Color(.secondarySystemBackground))
-                    .cornerRadius(10)
-                    .padding()
+                        .background(Color(.secondarySystemBackground))
+                        .cornerRadius(10)
+                        .padding()
 
-                    HStack {
-                        ForEach(Array(log.labels), id: \.self) { label in
-                            Button {
-                                filterString = label
-                            } label: {
-                                Text(label).font(.footnote).foregroundColor(.blue)
+                        HStack {
+                            ForEach(Array(log.labels), id: \.self) { label in
+                                Button {
+                                    filterString = label
+                                } label: {
+                                    Text(label).font(.footnote).foregroundColor(.blue)
+                                }
                             }
                         }
-                    }
-                    .padding()
+                        .padding()
 
+                    }
                 }
-            }
-
-            HStack(spacing: 4) {
 
                 ScrollViewReader { proxy in
                     ScrollView(showsIndicators: true) {
@@ -79,11 +80,13 @@ struct Console: View {
                             if filterString.isEmpty {
                                 ForEach(log.entries) { entry in
                                     Text(entry.message)
+                                        .textSelection(.enabled)
                                 }
                             } else {
                                 let pattern = filterString.lowercased()
                                 ForEach(log.entries.filter { $0.message.lowercased().contains(pattern) }) { entry in
                                     Text(entry.message)
+                                        .textSelection(.enabled)
                                 }
                             }
                         }
@@ -112,13 +115,15 @@ struct Console: View {
                             }
                         }
                     }
-                }
 
-                ConsoleSidebar(showingNFCAlert: $showingNFCAlert)
+                }
             }
 #if targetEnvironment(macCatalyst)
             .padding(.horizontal, 15)
 #endif
+
+            ConsoleSidebar(showingNFCAlert: $showingNFCAlert)
+
         }
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Console")

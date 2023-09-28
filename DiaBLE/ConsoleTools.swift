@@ -25,7 +25,7 @@ struct ShellView: View {
         VStack(spacing: 0) {
 
             if showingStack {
-                VStack(spacing: 0) {
+                VStack {
                     HStack {
 
                         TextField("Trident Container", text: $tridentContainer)
@@ -153,6 +153,7 @@ struct ShellView: View {
 
             }
         }
+        .background(.thinMaterial, ignoresSafeAreaEdges: [])
         .sheet(isPresented: $showingRealmKeyPrompt) {
             VStack(spacing: 20) {
                 Text("The Realm might be encrypted").fontWeight(.bold)
