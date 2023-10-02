@@ -141,16 +141,28 @@ public class MainDelegate: NSObject, WKApplicationDelegate, WKExtendedRuntimeSes
         }
         if centralManager.state == .poweredOn {
             settings.stoppedBluetooth = false
-            if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Libre3.UUID.data.rawValue)]).first {
-                bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Libre3.UUID.data.rawValue)]], rssi: 0)
-            } else if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Abbott.dataServiceUUID)]).first {
-                bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Abbott.dataServiceUUID)]], rssi: 0)
-            } else if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Dexcom.UUID.advertisement.rawValue)]).first {
-                bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Dexcom.UUID.advertisement.rawValue)]], rssi: 0)
-            } else {
-                centralManager.scanForPeripherals(withServices: nil, options: nil)
+            if !(settings.preferredDevicePattern.matches("abbott") || settings.preferredDevicePattern.matches("dexcom")) {
+                log("Bluetooth: scanning...")
                 status("Scanning...")
+                centralManager.scanForPeripherals(withServices: nil, options: nil)
+            } else {
+                if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Libre3.UUID.data.rawValue)]).first {
+                    log("Bluetooth: retrieved \(peripheral.name ?? "unnamed peripheral")")
+                    bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Libre3.UUID.data.rawValue)]], rssi: 0)
+                } else if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Abbott.dataServiceUUID)]).first {
+                    log("Bluetooth: retrieved \(peripheral.name ?? "unnamed peripheral")")
+                    bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Abbott.dataServiceUUID)]], rssi: 0)
+                } else if let peripheral = centralManager.retrieveConnectedPeripherals(withServices: [CBUUID(string: Dexcom.UUID.advertisement.rawValue)]).first {
+                    log("Bluetooth: retrieved \(peripheral.name ?? "unnamed peripheral")")
+                      bluetoothDelegate.centralManager(centralManager, didDiscover: peripheral, advertisementData: [CBAdvertisementDataServiceUUIDsKey: [CBUUID(string: Dexcom.UUID.advertisement.rawValue)]], rssi: 0)
+                } else {
+                    log("Bluetooth: scanning for Libre/Dexcom...")
+                    status("Scanning for a Libre/Dexcom...")
+                    centralManager.scanForPeripherals(withServices: nil, options: nil)
+                }
             }
+        } else {
+            log("Bluetooth is powered off: cannot scan")
         }
         healthKit?.read()
         nightscout?.read()
