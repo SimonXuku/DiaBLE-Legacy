@@ -183,9 +183,9 @@ struct Details: View {
 
                         HStack {
                             Text("Patch Info")
+                            Spacer(minLength: 32)
                             TextField("Patch Info", value: $settings.activeSensorInitialPatchInfo, formatter: HexDataFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                         }
-                        // TODO: allow editing when a transmitter is not available
                         HStack {
                             Text("Calibration Info")
                             Spacer()
@@ -200,31 +200,37 @@ struct Details: View {
                                 Section(header: Text("Calibration Info")) {
                                     HStack {
                                         Text("i1")
+                                        Spacer(minLength: 64)
                                         TextField("i1", value: $settings.activeSensorCalibrationInfo.i1,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
                                     HStack {
                                         Text("i2")
+                                        Spacer(minLength: 64)
                                         TextField("i2", value: $settings.activeSensorCalibrationInfo.i2,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
                                     HStack {
                                         Text("i3")
+                                        Spacer(minLength: 64)
                                         TextField("i3", value: $settings.activeSensorCalibrationInfo.i3,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
                                     HStack {
                                         Text("i4")
+                                        Spacer(minLength: 64)
                                         TextField("i4", value: $settings.activeSensorCalibrationInfo.i4,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
                                     HStack {
                                         Text("i5")
+                                        Spacer(minLength: 64)
                                         TextField("i5", value: $settings.activeSensorCalibrationInfo.i5,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
                                     HStack {
                                         Text("i6")
+                                        Spacer(minLength: 64)
                                         TextField("i6", value: $settings.activeSensorCalibrationInfo.i6,
                                                   formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                                     }
@@ -247,10 +253,12 @@ struct Details: View {
                         }
                         HStack {
                             Text("Unlock Code")
+                            Spacer(minLength: 32)
                             TextField("Unlock Code", value: $settings.activeSensorStreamingUnlockCode, formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                         }
                         HStack {
                             Text("Unlock Count")
+                            Spacer(minLength: 32)
                             TextField("Unlock Count", value: $settings.activeSensorStreamingUnlockCount, formatter: NumberFormatter()).multilineTextAlignment(.trailing).foregroundColor(.blue)
                         }
 
@@ -289,8 +297,12 @@ struct Details: View {
                 if settings.userLevel > .basic {
                     Section(header: Text("Known Devices")) {
                         VStack(alignment: .leading) {
-                            ForEach(app.main.bluetoothDelegate.knownDevices.sorted(by: <), id: \.key) { key, value in
-                                Text(value).font(.callout).foregroundColor(.blue)
+                            ForEach(app.main.bluetoothDelegate.knownDevices.sorted(by: { $0.key < $1.key }), id: \.key) { uuid, device in
+                                Text(device.name).font(.callout).foregroundColor(.blue)
+                                if !device.isConnectable {
+                                    Spacer()
+                                    Image(systemName: "nosign").foregroundColor(.red)
+                                }
                             }
                         }
                     }

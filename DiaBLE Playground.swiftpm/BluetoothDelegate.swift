@@ -7,7 +7,9 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
     var main: MainDelegate!
     var centralManager: CBCentralManager { main.centralManager }
     var app: AppState { main.app }
-    @Published var knownDevices: [String: String] = [:]
+
+    /// [uuid: (name, isConnectable)]
+    @Published var knownDevices: [String: (name: String, isConnectable: Bool)] = [:]
 
 
     public func centralManagerDidUpdateState(_ manager: CBCentralManager) {
@@ -98,10 +100,11 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
         }
 
         let identifier = peripheral.identifier
+        let deviceIsConnectable = advertisement[CBAdvertisementDataIsConnectable] as? Int ?? 1 != 0
         var msg = "Bluetooth: \(name!)'s device identifier \(identifier)"
         if knownDevices[identifier.uuidString] == nil {
             msg += " not yet known"
-            knownDevices[identifier.uuidString] = name!.contains("unnamed") ? name : peripheral.name!
+            knownDevices[identifier.uuidString] = (name!.contains("unnamed") ? name! : peripheral.name!, deviceIsConnectable)
             if settings.userLevel > .basic {
                 msg += " (advertised data: \(advertisement))"
             }
@@ -110,7 +113,7 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
         }
         debugLog("\(msg)")
 
-        if advertisement[CBAdvertisementDataIsConnectable] as? Int == 0
+        if !deviceIsConnectable
             || (didFindATransmitter && !settings.preferredDevicePattern.isEmpty && !name!.matches(settings.preferredDevicePattern))
             || (!didFindATransmitter && (settings.preferredTransmitter != .none || (!settings.preferredDevicePattern.isEmpty && !name!.matches(settings.preferredDevicePattern)))) {
             var scanningFor = "Scanning"
@@ -119,7 +122,7 @@ class BluetoothDelegate: NSObject, CBCentralManagerDelegate, CBPeripheralDelegat
             }
             main.status("\(scanningFor)...\nSkipped \(name!)")
             msg = "Bluetooth: skipped \(name!)"
-            if advertisement[CBAdvertisementDataIsConnectable] as? Int == 0 {
+            if !deviceIsConnectable {
                 if !settings.preferredDevicePattern.isEmpty && name!.matches(settings.preferredDevicePattern) {
                     msg += " because not connectable"
                     main.errorStatus("(not connectable)")
