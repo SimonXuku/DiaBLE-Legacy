@@ -1,19 +1,30 @@
+struct anonymous_type_9 {
+    unsigned int major;
+    unsigned int minor;
+    unsigned int bugfix;
+};
+
 struct _NSRange {
     unsigned long long field_1;
     unsigned long long field_2;
 };
 
+struct anonymous_type_15 {
+    unsigned int major;
+    unsigned int minor;
+    unsigned int bugfix;
+};
+
 struct anonymous_type_24 {
-    char field_1[33];
-    bool field_2;
-    struct anonymous_type_25 field_3;
-    struct anonymous_type_26 field_4;
-    struct anonymous_type_27 field_5;
-    void field_6;
-    unsigned long long field_7;
-    void * field_8;
-    void * field_9;
-    void * field_10;
+    unsigned int field_1;
+    unsigned int field_2;
+    unsigned int field_3;
+};
+
+struct anonymous_type_25 {
+    unsigned int field_1;
+    unsigned int field_2;
+    unsigned int field_3;
 };
 
 struct opaqueCMSampleBuffer {
@@ -26,12 +37,6 @@ struct UIEdgeInsets {
     double field_4;
 };
 
-struct anonymous_type_14 {
-    unsigned int field_1;
-    unsigned int field_2;
-    unsigned int field_3;
-};
-
 struct _google_crashlytics_Report {
     struct pb_bytes_array_s * field_1;
     struct pb_bytes_array_s * field_2;
@@ -40,17 +45,26 @@ struct _google_crashlytics_Report {
     struct pb_bytes_array_s * field_5;
     struct pb_bytes_array_s * field_6;
     struct _google_crashlytics_FilesPayload field_7;
+    struct pb_bytes_array_s * field_8;
+    struct pb_bytes_array_s * field_9;
+};
+
+struct anonymous_type_23 {
+    char field_1[33];
+    bool field_2;
+    struct anonymous_type_24 field_3;
+    struct anonymous_type_25 field_4;
+    struct anonymous_type_26 field_5;
+    void field_6;
+    unsigned long long field_7;
+    void * field_8;
+    void * field_9;
+    void * field_10;
 };
 
 struct CGPoint {
     double field_1;
     double field_2;
-};
-
-struct anonymous_type_13 {
-    unsigned int field_1;
-    unsigned int field_2;
-    unsigned int field_3;
 };
 
 struct __SCNetworkReachability {
@@ -59,46 +73,15 @@ struct __SCNetworkReachability {
 struct __CFString {
 };
 
-struct _logs_proto_mobilesdk_ios_ICoreConfiguration {
-    bool field_1;
-    int field_2;
-    unsigned int field_3;
-    int * field_4;
-    struct pb_bytes_array_s * field_5;
-    struct pb_bytes_array_s * field_6;
-    struct pb_bytes_array_s * field_7;
-    bool field_8;
-    int field_9;
-    struct pb_bytes_array_s * field_10;
-    struct pb_bytes_array_s * field_11;
-    bool field_12;
-    int field_13;
-    bool field_14;
-    int field_15;
-    struct pb_bytes_array_s * field_16;
-    struct pb_bytes_array_s * field_17;
-    bool field_18;
-    bool field_19;
-    bool field_20;
-    bool field_21;
-    bool field_22;
-    int field_23;
-    struct pb_bytes_array_s * field_24;
-    bool field_25;
-    bool field_26;
-    bool field_27;
-    int field_28;
-    struct pb_bytes_array_s * field_29;
-    bool field_30;
-    bool field_31;
-    bool field_32;
-    bool field_33;
+struct _google_crashlytics_FilesPayload {
+    unsigned int field_1;
+    struct _google_crashlytics_FilesPayload_File * field_2;
 };
 
 struct anonymous_type_12 {
-    unsigned int major;
-    unsigned int minor;
-    unsigned int bugfix;
+    unsigned int field_1;
+    unsigned int field_2;
+    unsigned int field_3;
 };
 
 struct FIRCLSMachOFile {
@@ -107,25 +90,7 @@ struct FIRCLSMachOFile {
     void * mappedFile;
 };
 
-struct _google_crashlytics_FilesPayload {
-    unsigned int field_1;
-    struct _google_crashlytics_FilesPayload_File * field_2;
-};
-
-struct anonymous_type_30 {
-    char * incrementalPath;
-    char * compactedPath;
-    unsigned int maxIncrementalCount;
-    unsigned int maxCount;
-};
-
 struct anonymous_type_11 {
-    unsigned int major;
-    unsigned int minor;
-    unsigned int bugfix;
-};
-
-struct anonymous_type_20 {
     unsigned int field_1;
     unsigned int field_2;
     unsigned int field_3;
@@ -137,6 +102,12 @@ struct anonymous_type_8 {
     void * * field_3;
     void * * field_4;
     void * * field_5;
+};
+
+struct anonymous_type_10 {
+    unsigned int major;
+    unsigned int minor;
+    unsigned int bugfix;
 };
 
 struct CGSize {
@@ -157,13 +128,20 @@ struct anonymous_type_29 {
     unsigned int maxCount;
 };
 
-struct anonymous_type_19 {
+struct anonymous_type_28 {
+    char * incrementalPath;
+    char * compactedPath;
+    unsigned int maxIncrementalCount;
+    unsigned int maxCount;
+};
+
+struct anonymous_type_18 {
     unsigned int field_1;
     unsigned int field_2;
     unsigned int field_3;
 };
 
-struct anonymous_type_28 {
+struct anonymous_type_27 {
     char * aPath;
     char * bPath;
     unsigned int maxSize;
@@ -172,144 +150,33 @@ struct anonymous_type_28 {
     unsigned int * entryCount;
 };
 
-struct anonymous_type_18 {
-    unsigned int major;
-    unsigned int minor;
-    unsigned int bugfix;
-};
-
-struct anonymous_type_27 {
-};
-
 struct CGRect {
     struct CGPoint field_1;
     struct CGSize field_2;
 };
 
 struct anonymous_type_17 {
-    unsigned int major;
-    unsigned int minor;
-    unsigned int bugfix;
+    unsigned int field_1;
+    unsigned int field_2;
+    unsigned int field_3;
 };
 
 struct _google_crashlytics_FilesPayload_File; /* Incomplete type */
 
 struct anonymous_type_26 {
-    unsigned int field_1;
-    unsigned int field_2;
-    unsigned int field_3;
 };
 
 struct _NSZone {
 };
 
-struct pb_bytes_array_s; /* Incomplete type */
-
-struct anonymous_type_25 {
-    unsigned int field_1;
-    unsigned int field_2;
-    unsigned int field_3;
+struct anonymous_type_16 {
+    unsigned int major;
+    unsigned int minor;
+    unsigned int bugfix;
 };
 
+struct pb_bytes_array_s; /* Incomplete type */
 
-
-/*****************************************************************/
-
-@protocol UICollectionViewDelegateFlowLayout<UICollectionViewDelegate>
-
-@optional
-- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
-- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
-- (struct UIEdgeInsets)collectionView:(id)v1 layout:(id)v2 insetForSectionAtIndex:(long long)v3;
-- (struct UIEdgeInsets)collectionView:(id)v1 layout:(id)v2 insetForSectionAtIndex:(long long)v3;
-- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
-- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
-- (double)collectionView:(id)v1 layout:(id)v2 minimumInteritemSpacingForSectionAtIndex:(long long)v3;
-- (double)collectionView:(id)v1 layout:(id)v2 minimumInteritemSpacingForSectionAtIndex:(long long)v3;
-- (struct CGSize)collectionView:(id)v1 layout:(id)v2 referenceSizeForHeaderInSection:(long long)v3;
-- (struct CGSize)collectionView:(id)v1 layout:(id)v2 referenceSizeForFooterInSection:(long long)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol NSObject
-@property (nonatomic,readonly) long long hash;
-@property (nonatomic,readonly) Class superclass;
-@property (nonatomic,readonly) NSString * description;
-@property (nonatomic,readonly) NSString * debugDescription;
-- (bool)isEqual:(id)v1;
-- (long long)hash;
-- (Class)superclass;
-- (Class)class;
-- (id)self;
-- (id)performSelector:(SEL)v1;
-- (id)performSelector:(SEL)v1;
-- (id)performSelector:(SEL)v1 withObject:(id)v2;
-- (id)performSelector:(SEL)v1 withObject:(id)v2;
-- (id)performSelector:(SEL)v1 withObject:(id)v2 withObject:(id)v3;
-- (id)performSelector:(SEL)v1 withObject:(id)v2 withObject:(id)v3;
-- (bool)isProxy;
-- (bool)isKindOfClass:(Class)v1;
-- (bool)isKindOfClass:(Class)v1;
-- (bool)isMemberOfClass:(Class)v1;
-- (bool)isMemberOfClass:(Class)v1;
-- (bool)conformsToProtocol:(id)v1;
-- (bool)conformsToProtocol:(id)v1;
-- (bool)respondsToSelector:(SEL)v1;
-- (bool)respondsToSelector:(SEL)v1;
-- (id)retain;
-- (oneway  void)release;
-- (id)autorelease;
-- (unsigned long long)retainCount;
-- (struct _NSZone *)zone;
-- (id)description;
-
-@optional
-- (id)debugDescription;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIAdaptivePresentationControllerDelegate<NSObject>
-
-@optional
-- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
-- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
-- (long long)adaptivePresentationStyleForPresentationController:(id)v1 traitCollection:(id)v2;
-- (long long)adaptivePresentationStyleForPresentationController:(id)v1 traitCollection:(id)v2;
-- (void)presentationController:(id)v1 prepareAdaptivePresentationController:(id)v2;
-- (void)presentationController:(id)v1 prepareAdaptivePresentationController:(id)v2;
-- (id)presentationController:(id)v1 viewControllerForAdaptivePresentationStyle:(long long)v2;
-- (void)presentationController:(id)v1 willPresentWithAdaptiveStyle:(long long)v2 transitionCoordinator:(id)v3;
-- (bool)presentationControllerShouldDismiss:(id)v1;
-- (void)presentationControllerWillDismiss:(id)v1;
-- (void)presentationControllerDidDismiss:(id)v1;
-- (void)presentationControllerDidAttemptToDismiss:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@protocol DXCMLegalAgreementsVCDelegate<NSObject>
-- (void)userAgreed;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIViewControllerAnimatedTransitioning<NSObject>
-- (double)transitionDuration:(id)v1;
-- (double)transitionDuration:(id)v1;
-- (void)animateTransition:(id)v1;
-- (void)animateTransition:(id)v1;
-
-@optional
-- (id)interruptibleAnimatorForTransition:(id)v1;
-- (id)interruptibleAnimatorForTransition:(id)v1;
-- (void)animationEnded:(bool)v1;
-@end
 
 
 /*****************************************************************/
@@ -338,167 +205,41 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@protocol WKNavigationDelegate<NSObject>
-
-@optional
-- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 preferences:(id)v3 decisionHandler:(void (^ /* unknown block signature */)(void))v4;
-- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 preferences:(id)v3 decisionHandler:(void (^ /* unknown block signature */)(void))v4;
-- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 didStartProvisionalNavigation:(id)v2;
-- (void)webView:(id)v1 didReceiveServerRedirectForProvisionalNavigation:(id)v2;
-- (void)webView:(id)v1 didFailProvisionalNavigation:(id)v2 withError:(id)v3;
-- (void)webView:(id)v1 didCommitNavigation:(id)v2;
-- (void)webView:(id)v1 didCommitNavigation:(id)v2;
-- (void)webView:(id)v1 didFinishNavigation:(id)v2;
-- (void)webView:(id)v1 didFinishNavigation:(id)v2;
-- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
-- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
-- (void)webView:(id)v1 didReceiveAuthenticationChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 didReceiveAuthenticationChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webViewWebContentProcessDidTerminate:(id)v1;
-- (void)webView:(id)v1 authenticationChallenge:(id)v2 shouldAllowDeprecatedTLS:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 navigationAction:(id)v2 didBecomeDownload:(id)v3;
-- (void)webView:(id)v1 navigationAction:(id)v2 didBecomeDownload:(id)v3;
-- (void)webView:(id)v1 navigationResponse:(id)v2 didBecomeDownload:(id)v3;
-- (void)webView:(id)v1 navigationResponse:(id)v2 didBecomeDownload:(id)v3;
+@protocol UIKeyInput<UITextInputTraits>
+@property (nonatomic,readonly) bool hasText;
+- (bool)hasText;
+- (void)insertText:(id)v1;
+- (void)deleteBackward;
 @end
 
 
 /*****************************************************************/
 
-@protocol UITextInputTraits<NSObject>
-@property (nonatomic) long long autocapitalizationType;
-@property (nonatomic) long long autocorrectionType;
-@property (nonatomic) long long spellCheckingType;
-@property (nonatomic) long long smartQuotesType;
-@property (nonatomic) long long smartDashesType;
-@property (nonatomic) long long smartInsertDeleteType;
-@property (nonatomic) long long keyboardType;
-@property (nonatomic) long long keyboardAppearance;
-@property (nonatomic) long long returnKeyType;
-@property (nonatomic) bool enablesReturnKeyAutomatically;
-@property (nonatomic) bool secureTextEntry;
-@property (nonatomic) bool secureTextEntry;
-@property (nonatomic,copy) NSString * textContentType;
-@property (nonatomic,copy) UITextInputPasswordRules * passwordRules;
+@protocol UITextViewDelegate<NSObject,UIScrollViewDelegate>
 
 @optional
-- (long long)autocapitalizationType;
-- (void)setAutocapitalizationType:(long long)v1;
-- (long long)autocorrectionType;
-- (void)setAutocorrectionType:(long long)v1;
-- (long long)spellCheckingType;
-- (void)setSpellCheckingType:(long long)v1;
-- (long long)smartQuotesType;
-- (void)setSmartQuotesType:(long long)v1;
-- (long long)smartDashesType;
-- (void)setSmartDashesType:(long long)v1;
-- (long long)smartInsertDeleteType;
-- (void)setSmartInsertDeleteType:(long long)v1;
-- (long long)keyboardType;
-- (void)setKeyboardType:(long long)v1;
-- (long long)keyboardAppearance;
-- (void)setKeyboardAppearance:(long long)v1;
-- (long long)returnKeyType;
-- (void)setReturnKeyType:(long long)v1;
-- (bool)enablesReturnKeyAutomatically;
-- (void)setEnablesReturnKeyAutomatically:(bool)v1;
-- (bool)isSecureTextEntry;
-- (void)setSecureTextEntry:(bool)v1;
-- (bool)isSecureTextEntry;
-- (void)setSecureTextEntry:(bool)v1;
-- (id)textContentType;
-- (void)setTextContentType:(id)v1;
-- (id)passwordRules;
-- (void)setPasswordRules:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@protocol UISceneDelegate<NSObject>
-
-@optional
-- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
-- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
-- (void)sceneDidDisconnect:(id)v1;
-- (void)sceneDidBecomeActive:(id)v1;
-- (void)sceneWillResignActive:(id)v1;
-- (void)sceneWillEnterForeground:(id)v1;
-- (void)sceneDidEnterBackground:(id)v1;
-- (void)scene:(id)v1 openURLContexts:(id)v2;
-- (id)stateRestorationActivityForScene:(id)v1;
-- (id)stateRestorationActivityForScene:(id)v1;
-- (void)scene:(id)v1 restoreInteractionStateWithUserActivity:(id)v2;
-- (void)scene:(id)v1 restoreInteractionStateWithUserActivity:(id)v2;
-- (void)scene:(id)v1 willContinueUserActivityWithType:(id)v2;
-- (void)scene:(id)v1 continueUserActivity:(id)v2;
-- (void)scene:(id)v1 continueUserActivity:(id)v2;
-- (void)scene:(id)v1 didFailToContinueUserActivityWithType:(id)v2 error:(id)v3;
-- (void)scene:(id)v1 didUpdateUserActivity:(id)v2;
-- (void)scene:(id)v1 didUpdateUserActivity:(id)v2;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIWindowSceneDelegate<UISceneDelegate>
-@property (nonatomic,retain) UIWindow * window;
-
-@optional
-- (id)window;
-- (void)setWindow:(id)v1;
-- (void)windowScene:(id)v1 didUpdateCoordinateSpace:(id)v2 interfaceOrientation:(long long)v3 traitCollection:(id)v4;
-- (void)windowScene:(id)v1 didUpdateCoordinateSpace:(id)v2 interfaceOrientation:(long long)v3 traitCollection:(id)v4;
-- (void)windowScene:(id)v1 performActionForShortcutItem:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)windowScene:(id)v1 performActionForShortcutItem:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIGestureRecognizerDelegate<NSObject>
-
-@optional
-- (bool)gestureRecognizerShouldBegin:(id)v1;
-- (bool)gestureRecognizer:(id)v1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldRequireFailureOfGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldRequireFailureOfGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldBeRequiredToFailByGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldBeRequiredToFailByGestureRecognizer:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceiveTouch:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceiveTouch:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceivePress:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceivePress:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceiveEvent:(id)v2;
-- (bool)gestureRecognizer:(id)v1 shouldReceiveEvent:(id)v2;
-@end
-
-
-/*****************************************************************/
-
-@protocol UICollectionViewDataSource<NSObject>
-- (long long)collectionView:(id)v1 numberOfItemsInSection:(long long)v2;
-- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
-- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
-
-@optional
-- (long long)numberOfSectionsInCollectionView:(id)v1;
-- (long long)numberOfSectionsInCollectionView:(id)v1;
-- (id)collectionView:(id)v1 viewForSupplementaryElementOfKind:(id)v2 atIndexPath:(id)v3;
-- (id)collectionView:(id)v1 viewForSupplementaryElementOfKind:(id)v2 atIndexPath:(id)v3;
-- (bool)collectionView:(id)v1 canMoveItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canMoveItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 moveItemAtIndexPath:(id)v2 toIndexPath:(id)v3;
-- (void)collectionView:(id)v1 moveItemAtIndexPath:(id)v2 toIndexPath:(id)v3;
-- (id)indexTitlesForCollectionView:(id)v1;
-- (id)indexTitlesForCollectionView:(id)v1;
-- (id)collectionView:(id)v1 indexPathForIndexTitle:(id)v2 atIndex:(long long)v3;
-- (id)collectionView:(id)v1 indexPathForIndexTitle:(id)v2 atIndex:(long long)v3;
+- (bool)textViewShouldBeginEditing:(id)v1;
+- (bool)textViewShouldEndEditing:(id)v1;
+- (void)textViewDidBeginEditing:(id)v1;
+- (void)textViewDidEndEditing:(id)v1;
+- (bool)textView:(id)v1 shouldChangeTextInRange:(struct _NSRange)v2 replacementText:(id)v3;
+- (bool)textView:(id)v1 shouldChangeTextInRange:(struct _NSRange)v2 replacementText:(id)v3;
+- (void)textViewDidChange:(id)v1;
+- (void)textViewDidChangeSelection:(id)v1;
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
+- (bool)textView:(id)v1 shouldInteractWithTextAttachment:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
+- (bool)textView:(id)v1 shouldInteractWithTextAttachment:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3;
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3;
+- (bool)textView:(id)v1 shouldInteractWithTextAttachment:(id)v2 inRange:(struct _NSRange)v3;
+- (bool)textView:(id)v1 shouldInteractWithTextAttachment:(id)v2 inRange:(struct _NSRange)v3;
+- (id)textView:(id)v1 editMenuForTextInRange:(struct _NSRange)v2 suggestedActions:(id)v3;
+- (id)textView:(id)v1 editMenuForTextInRange:(struct _NSRange)v2 suggestedActions:(id)v3;
+- (void)textView:(id)v1 willPresentEditMenuWithAnimator:(id)v2;
+- (void)textView:(id)v1 willPresentEditMenuWithAnimator:(id)v2;
+- (void)textView:(id)v1 willDismissEditMenuWithAnimator:(id)v2;
+- (void)textView:(id)v1 willDismissEditMenuWithAnimator:(id)v2;
 @end
 
 
@@ -517,29 +258,6 @@ struct anonymous_type_25 {
 - (id)interactionControllerForDismissal:(id)v1;
 - (id)presentationControllerForPresentedViewController:(id)v1 presentingViewController:(id)v2 sourceViewController:(id)v3;
 - (id)presentationControllerForPresentedViewController:(id)v1 presentingViewController:(id)v2 sourceViewController:(id)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIPopoverPresentationControllerDelegate<UIAdaptivePresentationControllerDelegate>
-
-@optional
-- (void)prepareForPopoverPresentation:(id)v1;
-- (bool)popoverPresentationControllerShouldDismissPopover:(id)v1;
-- (void)popoverPresentationControllerDidDismissPopover:(id)v1;
-- (void)popoverPresentationController:(id)v1 willRepositionPopoverToRect:(struct CGRect *)v2 inView:(id *)v3;
-- (void)popoverPresentationController:(id)v1 willRepositionPopoverToRect:(struct CGRect *)v2 inView:(id *)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIKeyInput<UITextInputTraits>
-@property (nonatomic,readonly) bool hasText;
-- (bool)hasText;
-- (void)insertText:(id)v1;
-- (void)deleteBackward;
 @end
 
 
@@ -624,6 +342,47 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
+@protocol UNUserNotificationCenterDelegate<NSObject>
+
+@optional
+- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)userNotificationCenter:(id)v1 openSettingsForNotification:(id)v2;
+- (void)userNotificationCenter:(id)v1 openSettingsForNotification:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@protocol UITableViewDataSource<NSObject>
+- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
+- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+
+@optional
+- (long long)numberOfSectionsInTableView:(id)v1;
+- (long long)numberOfSectionsInTableView:(id)v1;
+- (id)tableView:(id)v1 titleForHeaderInSection:(long long)v2;
+- (id)tableView:(id)v1 titleForFooterInSection:(long long)v2;
+- (bool)tableView:(id)v1 canEditRowAtIndexPath:(id)v2;
+- (bool)tableView:(id)v1 canEditRowAtIndexPath:(id)v2;
+- (bool)tableView:(id)v1 canMoveRowAtIndexPath:(id)v2;
+- (bool)tableView:(id)v1 canMoveRowAtIndexPath:(id)v2;
+- (id)sectionIndexTitlesForTableView:(id)v1;
+- (id)sectionIndexTitlesForTableView:(id)v1;
+- (long long)tableView:(id)v1 sectionForSectionIndexTitle:(id)v2 atIndex:(long long)v3;
+- (long long)tableView:(id)v1 sectionForSectionIndexTitle:(id)v2 atIndex:(long long)v3;
+- (void)tableView:(id)v1 commitEditingStyle:(long long)v2 forRowAtIndexPath:(id)v3;
+- (void)tableView:(id)v1 commitEditingStyle:(long long)v2 forRowAtIndexPath:(id)v3;
+- (void)tableView:(id)v1 moveRowAtIndexPath:(id)v2 toIndexPath:(id)v3;
+- (void)tableView:(id)v1 moveRowAtIndexPath:(id)v2 toIndexPath:(id)v3;
+@end
+
+
+/*****************************************************************/
+
 @protocol UITextFieldDelegate<NSObject>
 
 @optional
@@ -643,6 +402,413 @@ struct anonymous_type_25 {
 - (void)textField:(id)v1 willPresentEditMenuWithAnimator:(id)v2;
 - (void)textField:(id)v1 willDismissEditMenuWithAnimator:(id)v2;
 - (void)textField:(id)v1 willDismissEditMenuWithAnimator:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@protocol NSObject
+@property (nonatomic,readonly) long long hash;
+@property (nonatomic,readonly) Class superclass;
+@property (nonatomic,readonly) NSString * description;
+@property (nonatomic,readonly) NSString * debugDescription;
+- (bool)isEqual:(id)v1;
+- (long long)hash;
+- (Class)superclass;
+- (Class)class;
+- (id)self;
+- (id)performSelector:(SEL)v1;
+- (id)performSelector:(SEL)v1;
+- (id)performSelector:(SEL)v1 withObject:(id)v2;
+- (id)performSelector:(SEL)v1 withObject:(id)v2;
+- (id)performSelector:(SEL)v1 withObject:(id)v2 withObject:(id)v3;
+- (id)performSelector:(SEL)v1 withObject:(id)v2 withObject:(id)v3;
+- (bool)isProxy;
+- (bool)isKindOfClass:(Class)v1;
+- (bool)isKindOfClass:(Class)v1;
+- (bool)isMemberOfClass:(Class)v1;
+- (bool)isMemberOfClass:(Class)v1;
+- (bool)conformsToProtocol:(id)v1;
+- (bool)conformsToProtocol:(id)v1;
+- (bool)respondsToSelector:(SEL)v1;
+- (bool)respondsToSelector:(SEL)v1;
+- (id)retain;
+- (oneway  void)release;
+- (id)autorelease;
+- (unsigned long long)retainCount;
+- (struct _NSZone *)zone;
+- (id)description;
+
+@optional
+- (id)debugDescription;
+@end
+
+
+/*****************************************************************/
+
+@protocol UICollectionViewDelegateFlowLayout<UICollectionViewDelegate>
+
+@optional
+- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
+- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
+- (struct UIEdgeInsets)collectionView:(id)v1 layout:(id)v2 insetForSectionAtIndex:(long long)v3;
+- (struct UIEdgeInsets)collectionView:(id)v1 layout:(id)v2 insetForSectionAtIndex:(long long)v3;
+- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
+- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
+- (double)collectionView:(id)v1 layout:(id)v2 minimumInteritemSpacingForSectionAtIndex:(long long)v3;
+- (double)collectionView:(id)v1 layout:(id)v2 minimumInteritemSpacingForSectionAtIndex:(long long)v3;
+- (struct CGSize)collectionView:(id)v1 layout:(id)v2 referenceSizeForHeaderInSection:(long long)v3;
+- (struct CGSize)collectionView:(id)v1 layout:(id)v2 referenceSizeForFooterInSection:(long long)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol UINavigationControllerDelegate<NSObject>
+
+@optional
+- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
+- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
+- (void)navigationController:(id)v1 didShowViewController:(id)v2 animated:(bool)v3;
+- (void)navigationController:(id)v1 didShowViewController:(id)v2 animated:(bool)v3;
+- (unsigned long long)navigationControllerSupportedInterfaceOrientations:(id)v1;
+- (long long)navigationControllerPreferredInterfaceOrientationForPresentation:(id)v1;
+- (id)navigationController:(id)v1 interactionControllerForAnimationController:(id)v2;
+- (id)navigationController:(id)v1 interactionControllerForAnimationController:(id)v2;
+- (id)navigationController:(id)v1 animationControllerForOperation:(long long)v2 fromViewController:(id)v3 toViewController:(id)v4;
+- (id)navigationController:(id)v1 animationControllerForOperation:(long long)v2 fromViewController:(id)v3 toViewController:(id)v4;
+@end
+
+
+/*****************************************************************/
+
+@protocol UICollectionViewDataSource<NSObject>
+- (long long)collectionView:(id)v1 numberOfItemsInSection:(long long)v2;
+- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
+- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
+
+@optional
+- (long long)numberOfSectionsInCollectionView:(id)v1;
+- (long long)numberOfSectionsInCollectionView:(id)v1;
+- (id)collectionView:(id)v1 viewForSupplementaryElementOfKind:(id)v2 atIndexPath:(id)v3;
+- (id)collectionView:(id)v1 viewForSupplementaryElementOfKind:(id)v2 atIndexPath:(id)v3;
+- (bool)collectionView:(id)v1 canMoveItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canMoveItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 moveItemAtIndexPath:(id)v2 toIndexPath:(id)v3;
+- (void)collectionView:(id)v1 moveItemAtIndexPath:(id)v2 toIndexPath:(id)v3;
+- (id)indexTitlesForCollectionView:(id)v1;
+- (id)indexTitlesForCollectionView:(id)v1;
+- (id)collectionView:(id)v1 indexPathForIndexTitle:(id)v2 atIndex:(long long)v3;
+- (id)collectionView:(id)v1 indexPathForIndexTitle:(id)v2 atIndex:(long long)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIPopoverPresentationControllerDelegate<UIAdaptivePresentationControllerDelegate>
+
+@optional
+- (void)prepareForPopoverPresentation:(id)v1;
+- (bool)popoverPresentationControllerShouldDismissPopover:(id)v1;
+- (void)popoverPresentationControllerDidDismissPopover:(id)v1;
+- (void)popoverPresentationController:(id)v1 willRepositionPopoverToRect:(struct CGRect *)v2 inView:(id *)v3;
+- (void)popoverPresentationController:(id)v1 willRepositionPopoverToRect:(struct CGRect *)v2 inView:(id *)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol DXCMLegalAgreementsVCDelegate<NSObject>
+- (void)userAgreed;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIScrollViewDelegate<NSObject>
+
+@optional
+- (void)scrollViewDidScroll:(id)v1;
+- (void)scrollViewDidZoom:(id)v1;
+- (void)scrollViewWillBeginDragging:(id)v1;
+- (void)scrollViewWillEndDragging:(id)v1 withVelocity:(struct CGPoint)v2 targetContentOffset:(struct CGPoint *)v3;
+- (void)scrollViewDidEndDragging:(id)v1 willDecelerate:(bool)v2;
+- (void)scrollViewWillBeginDecelerating:(id)v1;
+- (void)scrollViewDidEndDecelerating:(id)v1;
+- (void)scrollViewDidEndScrollingAnimation:(id)v1;
+- (id)viewForZoomingInScrollView:(id)v1;
+- (id)viewForZoomingInScrollView:(id)v1;
+- (void)scrollViewWillBeginZooming:(id)v1 withView:(id)v2;
+- (void)scrollViewWillBeginZooming:(id)v1 withView:(id)v2;
+- (void)scrollViewDidEndZooming:(id)v1 withView:(id)v2 atScale:(double)v3;
+- (void)scrollViewDidEndZooming:(id)v1 withView:(id)v2 atScale:(double)v3;
+- (bool)scrollViewShouldScrollToTop:(id)v1;
+- (void)scrollViewDidScrollToTop:(id)v1;
+- (void)scrollViewDidChangeAdjustedContentInset:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@protocol WKNavigationDelegate<NSObject>
+
+@optional
+- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 preferences:(id)v3 decisionHandler:(void (^ /* unknown block signature */)(void))v4;
+- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 preferences:(id)v3 decisionHandler:(void (^ /* unknown block signature */)(void))v4;
+- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 didStartProvisionalNavigation:(id)v2;
+- (void)webView:(id)v1 didReceiveServerRedirectForProvisionalNavigation:(id)v2;
+- (void)webView:(id)v1 didFailProvisionalNavigation:(id)v2 withError:(id)v3;
+- (void)webView:(id)v1 didCommitNavigation:(id)v2;
+- (void)webView:(id)v1 didCommitNavigation:(id)v2;
+- (void)webView:(id)v1 didFinishNavigation:(id)v2;
+- (void)webView:(id)v1 didFinishNavigation:(id)v2;
+- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
+- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
+- (void)webView:(id)v1 didReceiveAuthenticationChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 didReceiveAuthenticationChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webViewWebContentProcessDidTerminate:(id)v1;
+- (void)webView:(id)v1 authenticationChallenge:(id)v2 shouldAllowDeprecatedTLS:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 navigationAction:(id)v2 didBecomeDownload:(id)v3;
+- (void)webView:(id)v1 navigationAction:(id)v2 didBecomeDownload:(id)v3;
+- (void)webView:(id)v1 navigationResponse:(id)v2 didBecomeDownload:(id)v3;
+- (void)webView:(id)v1 navigationResponse:(id)v2 didBecomeDownload:(id)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol AVAudioPlayerDelegate<NSObject>
+
+@optional
+- (void)audioPlayerDidFinishPlaying:(id)v1 successfully:(bool)v2;
+- (void)audioPlayerDecodeErrorDidOccur:(id)v1 error:(id)v2;
+- (void)audioPlayerBeginInterruption:(id)v1;
+- (void)audioPlayerEndInterruption:(id)v1 withOptions:(unsigned long long)v2;
+- (void)audioPlayerEndInterruption:(id)v1 withFlags:(unsigned long long)v2;
+- (void)audioPlayerEndInterruption:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@protocol AVCaptureVideoDataOutputSampleBufferDelegate<NSObject>
+
+@optional
+- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
+- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
+- (void)captureOutput:(id)v1 didDropSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
+- (void)captureOutput:(id)v1 didDropSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol UITextInputTraits<NSObject>
+@property (nonatomic) long long autocapitalizationType;
+@property (nonatomic) long long autocorrectionType;
+@property (nonatomic) long long spellCheckingType;
+@property (nonatomic) long long smartQuotesType;
+@property (nonatomic) long long smartDashesType;
+@property (nonatomic) long long smartInsertDeleteType;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic) long long returnKeyType;
+@property (nonatomic) bool enablesReturnKeyAutomatically;
+@property (nonatomic) bool secureTextEntry;
+@property (nonatomic) bool secureTextEntry;
+@property (nonatomic,copy) NSString * textContentType;
+@property (nonatomic,copy) UITextInputPasswordRules * passwordRules;
+
+@optional
+- (long long)autocapitalizationType;
+- (void)setAutocapitalizationType:(long long)v1;
+- (long long)autocorrectionType;
+- (void)setAutocorrectionType:(long long)v1;
+- (long long)spellCheckingType;
+- (void)setSpellCheckingType:(long long)v1;
+- (long long)smartQuotesType;
+- (void)setSmartQuotesType:(long long)v1;
+- (long long)smartDashesType;
+- (void)setSmartDashesType:(long long)v1;
+- (long long)smartInsertDeleteType;
+- (void)setSmartInsertDeleteType:(long long)v1;
+- (long long)keyboardType;
+- (void)setKeyboardType:(long long)v1;
+- (long long)keyboardAppearance;
+- (void)setKeyboardAppearance:(long long)v1;
+- (long long)returnKeyType;
+- (void)setReturnKeyType:(long long)v1;
+- (bool)enablesReturnKeyAutomatically;
+- (void)setEnablesReturnKeyAutomatically:(bool)v1;
+- (bool)isSecureTextEntry;
+- (void)setSecureTextEntry:(bool)v1;
+- (bool)isSecureTextEntry;
+- (void)setSecureTextEntry:(bool)v1;
+- (id)textContentType;
+- (void)setTextContentType:(id)v1;
+- (id)passwordRules;
+- (void)setPasswordRules:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIWindowSceneDelegate<UISceneDelegate>
+@property (nonatomic,retain) UIWindow * window;
+
+@optional
+- (id)window;
+- (void)setWindow:(id)v1;
+- (void)windowScene:(id)v1 didUpdateCoordinateSpace:(id)v2 interfaceOrientation:(long long)v3 traitCollection:(id)v4;
+- (void)windowScene:(id)v1 didUpdateCoordinateSpace:(id)v2 interfaceOrientation:(long long)v3 traitCollection:(id)v4;
+- (void)windowScene:(id)v1 performActionForShortcutItem:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)windowScene:(id)v1 performActionForShortcutItem:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIPickerViewDataSource<NSObject>
+- (long long)numberOfComponentsInPickerView:(id)v1;
+- (long long)numberOfComponentsInPickerView:(id)v1;
+- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
+@end
+
+
+/*****************************************************************/
+
+@protocol UICollectionViewDelegate<UIScrollViewDelegate>
+
+@optional
+- (bool)collectionView:(id)v1 shouldHighlightItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldHighlightItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didHighlightItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didHighlightItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didUnhighlightItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didUnhighlightItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldSelectItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldSelectItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldDeselectItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldDeselectItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didDeselectItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didDeselectItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canPerformPrimaryActionForItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canPerformPrimaryActionForItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 performPrimaryActionForItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 performPrimaryActionForItemAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 willDisplayCell:(id)v2 forItemAtIndexPath:(id)v3;
+- (void)collectionView:(id)v1 willDisplayCell:(id)v2 forItemAtIndexPath:(id)v3;
+- (void)collectionView:(id)v1 willDisplaySupplementaryView:(id)v2 forElementKind:(id)v3 atIndexPath:(id)v4;
+- (void)collectionView:(id)v1 willDisplaySupplementaryView:(id)v2 forElementKind:(id)v3 atIndexPath:(id)v4;
+- (void)collectionView:(id)v1 didEndDisplayingCell:(id)v2 forItemAtIndexPath:(id)v3;
+- (void)collectionView:(id)v1 didEndDisplayingCell:(id)v2 forItemAtIndexPath:(id)v3;
+- (void)collectionView:(id)v1 didEndDisplayingSupplementaryView:(id)v2 forElementOfKind:(id)v3 atIndexPath:(id)v4;
+- (void)collectionView:(id)v1 didEndDisplayingSupplementaryView:(id)v2 forElementOfKind:(id)v3 atIndexPath:(id)v4;
+- (bool)collectionView:(id)v1 shouldShowMenuForItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldShowMenuForItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canPerformAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
+- (bool)collectionView:(id)v1 canPerformAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
+- (void)collectionView:(id)v1 performAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
+- (void)collectionView:(id)v1 performAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
+- (id)collectionView:(id)v1 transitionLayoutForOldLayout:(id)v2 newLayout:(id)v3;
+- (bool)collectionView:(id)v1 canFocusItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canFocusItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldUpdateFocusInContext:(id)v2;
+- (bool)collectionView:(id)v1 shouldUpdateFocusInContext:(id)v2;
+- (void)collectionView:(id)v1 didUpdateFocusInContext:(id)v2 withAnimationCoordinator:(id)v3;
+- (void)collectionView:(id)v1 didUpdateFocusInContext:(id)v2 withAnimationCoordinator:(id)v3;
+- (id)indexPathForPreferredFocusedViewInCollectionView:(id)v1;
+- (id)indexPathForPreferredFocusedViewInCollectionView:(id)v1;
+- (bool)collectionView:(id)v1 selectionFollowsFocusForItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 selectionFollowsFocusForItemAtIndexPath:(id)v2;
+- (id)collectionView:(id)v1 targetIndexPathForMoveOfItemFromOriginalIndexPath:(id)v2 atCurrentIndexPath:(id)v3 toProposedIndexPath:(id)v4;
+- (id)collectionView:(id)v1 targetIndexPathForMoveFromItemAtIndexPath:(id)v2 toProposedIndexPath:(id)v3;
+- (id)collectionView:(id)v1 targetIndexPathForMoveFromItemAtIndexPath:(id)v2 toProposedIndexPath:(id)v3;
+- (struct CGPoint)collectionView:(id)v1 targetContentOffsetForProposedContentOffset:(struct CGPoint)v2;
+- (bool)collectionView:(id)v1 canEditItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 canEditItemAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldSpringLoadItemAtIndexPath:(id)v2 withContext:(id)v3;
+- (bool)collectionView:(id)v1 shouldSpringLoadItemAtIndexPath:(id)v2 withContext:(id)v3;
+- (bool)collectionView:(id)v1 shouldBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
+- (bool)collectionView:(id)v1 shouldBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
+- (void)collectionView:(id)v1 didBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
+- (void)collectionViewDidEndMultipleSelectionInteraction:(id)v1;
+- (id)collectionView:(id)v1 contextMenuConfigurationForItemsAtIndexPaths:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 contextMenuConfigurationForItemsAtIndexPaths:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 highlightPreviewForItemAtIndexPath:(id)v3;
+- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 highlightPreviewForItemAtIndexPath:(id)v3;
+- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 dismissalPreviewForItemAtIndexPath:(id)v3;
+- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 dismissalPreviewForItemAtIndexPath:(id)v3;
+- (void)collectionView:(id)v1 willPerformPreviewActionForMenuWithConfiguration:(id)v2 animator:(id)v3;
+- (void)collectionView:(id)v1 willPerformPreviewActionForMenuWithConfiguration:(id)v2 animator:(id)v3;
+- (void)collectionView:(id)v1 willDisplayContextMenuWithConfiguration:(id)v2 animator:(id)v3;
+- (void)collectionView:(id)v1 willDisplayContextMenuWithConfiguration:(id)v2 animator:(id)v3;
+- (void)collectionView:(id)v1 willEndContextMenuInteractionWithConfiguration:(id)v2 animator:(id)v3;
+- (void)collectionView:(id)v1 willEndContextMenuInteractionWithConfiguration:(id)v2 animator:(id)v3;
+- (id)collectionView:(id)v1 sceneActivationConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 sceneActivationConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 contextMenuConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 contextMenuConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
+- (id)collectionView:(id)v1 previewForHighlightingContextMenuWithConfiguration:(id)v2;
+- (id)collectionView:(id)v1 previewForDismissingContextMenuWithConfiguration:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIPickerViewDelegate<NSObject>
+
+@optional
+- (double)pickerView:(id)v1 widthForComponent:(long long)v2;
+- (double)pickerView:(id)v1 rowHeightForComponent:(long long)v2;
+- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
+- (id)pickerView:(id)v1 attributedTitleForRow:(long long)v2 forComponent:(long long)v3;
+- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
+- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
+- (void)pickerView:(id)v1 didSelectRow:(long long)v2 inComponent:(long long)v3;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIGestureRecognizerDelegate<NSObject>
+
+@optional
+- (bool)gestureRecognizerShouldBegin:(id)v1;
+- (bool)gestureRecognizer:(id)v1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldRecognizeSimultaneouslyWithGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldRequireFailureOfGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldRequireFailureOfGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldBeRequiredToFailByGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldBeRequiredToFailByGestureRecognizer:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceiveTouch:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceiveTouch:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceivePress:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceivePress:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceiveEvent:(id)v2;
+- (bool)gestureRecognizer:(id)v1 shouldReceiveEvent:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@protocol UIViewControllerAnimatedTransitioning<NSObject>
+- (double)transitionDuration:(id)v1;
+- (double)transitionDuration:(id)v1;
+- (void)animateTransition:(id)v1;
+- (void)animateTransition:(id)v1;
+
+@optional
+- (id)interruptibleAnimatorForTransition:(id)v1;
+- (id)interruptibleAnimatorForTransition:(id)v1;
+- (void)animationEnded:(bool)v1;
 @end
 
 
@@ -749,217 +915,74 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@protocol UNUserNotificationCenterDelegate<NSObject>
+@protocol UIAdaptivePresentationControllerDelegate<NSObject>
 
 @optional
-- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)userNotificationCenter:(id)v1 openSettingsForNotification:(id)v2;
-- (void)userNotificationCenter:(id)v1 openSettingsForNotification:(id)v2;
+- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
+- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
+- (long long)adaptivePresentationStyleForPresentationController:(id)v1 traitCollection:(id)v2;
+- (long long)adaptivePresentationStyleForPresentationController:(id)v1 traitCollection:(id)v2;
+- (void)presentationController:(id)v1 prepareAdaptivePresentationController:(id)v2;
+- (void)presentationController:(id)v1 prepareAdaptivePresentationController:(id)v2;
+- (id)presentationController:(id)v1 viewControllerForAdaptivePresentationStyle:(long long)v2;
+- (void)presentationController:(id)v1 willPresentWithAdaptiveStyle:(long long)v2 transitionCoordinator:(id)v3;
+- (bool)presentationControllerShouldDismiss:(id)v1;
+- (void)presentationControllerWillDismiss:(id)v1;
+- (void)presentationControllerDidDismiss:(id)v1;
+- (void)presentationControllerDidAttemptToDismiss:(id)v1;
 @end
 
 
 /*****************************************************************/
 
-@protocol UIScrollViewDelegate<NSObject>
+@protocol UISceneDelegate<NSObject>
 
 @optional
-- (void)scrollViewDidScroll:(id)v1;
-- (void)scrollViewDidZoom:(id)v1;
-- (void)scrollViewWillBeginDragging:(id)v1;
-- (void)scrollViewWillEndDragging:(id)v1 withVelocity:(struct CGPoint)v2 targetContentOffset:(struct CGPoint *)v3;
-- (void)scrollViewDidEndDragging:(id)v1 willDecelerate:(bool)v2;
-- (void)scrollViewWillBeginDecelerating:(id)v1;
-- (void)scrollViewDidEndDecelerating:(id)v1;
-- (void)scrollViewDidEndScrollingAnimation:(id)v1;
-- (id)viewForZoomingInScrollView:(id)v1;
-- (id)viewForZoomingInScrollView:(id)v1;
-- (void)scrollViewWillBeginZooming:(id)v1 withView:(id)v2;
-- (void)scrollViewWillBeginZooming:(id)v1 withView:(id)v2;
-- (void)scrollViewDidEndZooming:(id)v1 withView:(id)v2 atScale:(double)v3;
-- (void)scrollViewDidEndZooming:(id)v1 withView:(id)v2 atScale:(double)v3;
-- (bool)scrollViewShouldScrollToTop:(id)v1;
-- (void)scrollViewDidScrollToTop:(id)v1;
-- (void)scrollViewDidChangeAdjustedContentInset:(id)v1;
+- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
+- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
+- (void)sceneDidDisconnect:(id)v1;
+- (void)sceneDidBecomeActive:(id)v1;
+- (void)sceneWillResignActive:(id)v1;
+- (void)sceneWillEnterForeground:(id)v1;
+- (void)sceneDidEnterBackground:(id)v1;
+- (void)scene:(id)v1 openURLContexts:(id)v2;
+- (id)stateRestorationActivityForScene:(id)v1;
+- (id)stateRestorationActivityForScene:(id)v1;
+- (void)scene:(id)v1 restoreInteractionStateWithUserActivity:(id)v2;
+- (void)scene:(id)v1 restoreInteractionStateWithUserActivity:(id)v2;
+- (void)scene:(id)v1 willContinueUserActivityWithType:(id)v2;
+- (void)scene:(id)v1 continueUserActivity:(id)v2;
+- (void)scene:(id)v1 continueUserActivity:(id)v2;
+- (void)scene:(id)v1 didFailToContinueUserActivityWithType:(id)v2 error:(id)v3;
+- (void)scene:(id)v1 didUpdateUserActivity:(id)v2;
+- (void)scene:(id)v1 didUpdateUserActivity:(id)v2;
 @end
 
 
 /*****************************************************************/
 
-@protocol UIPickerViewDelegate<NSObject>
+@protocol WCSessionDelegate<NSObject>
+- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
+- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
+- (void)sessionDidBecomeInactive:(id)v1;
+- (void)sessionDidDeactivate:(id)v1;
 
 @optional
-- (double)pickerView:(id)v1 widthForComponent:(long long)v2;
-- (double)pickerView:(id)v1 rowHeightForComponent:(long long)v2;
-- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
-- (id)pickerView:(id)v1 attributedTitleForRow:(long long)v2 forComponent:(long long)v3;
-- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
-- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
-- (void)pickerView:(id)v1 didSelectRow:(long long)v2 inComponent:(long long)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol AVAudioPlayerDelegate<NSObject>
-
-@optional
-- (void)audioPlayerDidFinishPlaying:(id)v1 successfully:(bool)v2;
-- (void)audioPlayerDecodeErrorDidOccur:(id)v1 error:(id)v2;
-- (void)audioPlayerBeginInterruption:(id)v1;
-- (void)audioPlayerEndInterruption:(id)v1 withOptions:(unsigned long long)v2;
-- (void)audioPlayerEndInterruption:(id)v1 withFlags:(unsigned long long)v2;
-- (void)audioPlayerEndInterruption:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@protocol UITableViewDataSource<NSObject>
-- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
-- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
-- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
-
-@optional
-- (long long)numberOfSectionsInTableView:(id)v1;
-- (long long)numberOfSectionsInTableView:(id)v1;
-- (id)tableView:(id)v1 titleForHeaderInSection:(long long)v2;
-- (id)tableView:(id)v1 titleForFooterInSection:(long long)v2;
-- (bool)tableView:(id)v1 canEditRowAtIndexPath:(id)v2;
-- (bool)tableView:(id)v1 canEditRowAtIndexPath:(id)v2;
-- (bool)tableView:(id)v1 canMoveRowAtIndexPath:(id)v2;
-- (bool)tableView:(id)v1 canMoveRowAtIndexPath:(id)v2;
-- (id)sectionIndexTitlesForTableView:(id)v1;
-- (id)sectionIndexTitlesForTableView:(id)v1;
-- (long long)tableView:(id)v1 sectionForSectionIndexTitle:(id)v2 atIndex:(long long)v3;
-- (long long)tableView:(id)v1 sectionForSectionIndexTitle:(id)v2 atIndex:(long long)v3;
-- (void)tableView:(id)v1 commitEditingStyle:(long long)v2 forRowAtIndexPath:(id)v3;
-- (void)tableView:(id)v1 commitEditingStyle:(long long)v2 forRowAtIndexPath:(id)v3;
-- (void)tableView:(id)v1 moveRowAtIndexPath:(id)v2 toIndexPath:(id)v3;
-- (void)tableView:(id)v1 moveRowAtIndexPath:(id)v2 toIndexPath:(id)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol UICollectionViewDelegate<UIScrollViewDelegate>
-
-@optional
-- (bool)collectionView:(id)v1 shouldHighlightItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldHighlightItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didHighlightItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didHighlightItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didUnhighlightItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didUnhighlightItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldSelectItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldSelectItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldDeselectItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldDeselectItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didDeselectItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didDeselectItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canPerformPrimaryActionForItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canPerformPrimaryActionForItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 performPrimaryActionForItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 performPrimaryActionForItemAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 willDisplayCell:(id)v2 forItemAtIndexPath:(id)v3;
-- (void)collectionView:(id)v1 willDisplayCell:(id)v2 forItemAtIndexPath:(id)v3;
-- (void)collectionView:(id)v1 willDisplaySupplementaryView:(id)v2 forElementKind:(id)v3 atIndexPath:(id)v4;
-- (void)collectionView:(id)v1 willDisplaySupplementaryView:(id)v2 forElementKind:(id)v3 atIndexPath:(id)v4;
-- (void)collectionView:(id)v1 didEndDisplayingCell:(id)v2 forItemAtIndexPath:(id)v3;
-- (void)collectionView:(id)v1 didEndDisplayingCell:(id)v2 forItemAtIndexPath:(id)v3;
-- (void)collectionView:(id)v1 didEndDisplayingSupplementaryView:(id)v2 forElementOfKind:(id)v3 atIndexPath:(id)v4;
-- (void)collectionView:(id)v1 didEndDisplayingSupplementaryView:(id)v2 forElementOfKind:(id)v3 atIndexPath:(id)v4;
-- (bool)collectionView:(id)v1 shouldShowMenuForItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldShowMenuForItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canPerformAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
-- (bool)collectionView:(id)v1 canPerformAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
-- (void)collectionView:(id)v1 performAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
-- (void)collectionView:(id)v1 performAction:(SEL)v2 forItemAtIndexPath:(id)v3 withSender:(id)v4;
-- (id)collectionView:(id)v1 transitionLayoutForOldLayout:(id)v2 newLayout:(id)v3;
-- (bool)collectionView:(id)v1 canFocusItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canFocusItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldUpdateFocusInContext:(id)v2;
-- (bool)collectionView:(id)v1 shouldUpdateFocusInContext:(id)v2;
-- (void)collectionView:(id)v1 didUpdateFocusInContext:(id)v2 withAnimationCoordinator:(id)v3;
-- (void)collectionView:(id)v1 didUpdateFocusInContext:(id)v2 withAnimationCoordinator:(id)v3;
-- (id)indexPathForPreferredFocusedViewInCollectionView:(id)v1;
-- (id)indexPathForPreferredFocusedViewInCollectionView:(id)v1;
-- (bool)collectionView:(id)v1 selectionFollowsFocusForItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 selectionFollowsFocusForItemAtIndexPath:(id)v2;
-- (id)collectionView:(id)v1 targetIndexPathForMoveOfItemFromOriginalIndexPath:(id)v2 atCurrentIndexPath:(id)v3 toProposedIndexPath:(id)v4;
-- (id)collectionView:(id)v1 targetIndexPathForMoveFromItemAtIndexPath:(id)v2 toProposedIndexPath:(id)v3;
-- (id)collectionView:(id)v1 targetIndexPathForMoveFromItemAtIndexPath:(id)v2 toProposedIndexPath:(id)v3;
-- (struct CGPoint)collectionView:(id)v1 targetContentOffsetForProposedContentOffset:(struct CGPoint)v2;
-- (bool)collectionView:(id)v1 canEditItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 canEditItemAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldSpringLoadItemAtIndexPath:(id)v2 withContext:(id)v3;
-- (bool)collectionView:(id)v1 shouldSpringLoadItemAtIndexPath:(id)v2 withContext:(id)v3;
-- (bool)collectionView:(id)v1 shouldBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
-- (bool)collectionView:(id)v1 shouldBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
-- (void)collectionView:(id)v1 didBeginMultipleSelectionInteractionAtIndexPath:(id)v2;
-- (void)collectionViewDidEndMultipleSelectionInteraction:(id)v1;
-- (id)collectionView:(id)v1 contextMenuConfigurationForItemsAtIndexPaths:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 contextMenuConfigurationForItemsAtIndexPaths:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 highlightPreviewForItemAtIndexPath:(id)v3;
-- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 highlightPreviewForItemAtIndexPath:(id)v3;
-- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 dismissalPreviewForItemAtIndexPath:(id)v3;
-- (id)collectionView:(id)v1 contextMenuConfiguration:(id)v2 dismissalPreviewForItemAtIndexPath:(id)v3;
-- (void)collectionView:(id)v1 willPerformPreviewActionForMenuWithConfiguration:(id)v2 animator:(id)v3;
-- (void)collectionView:(id)v1 willPerformPreviewActionForMenuWithConfiguration:(id)v2 animator:(id)v3;
-- (void)collectionView:(id)v1 willDisplayContextMenuWithConfiguration:(id)v2 animator:(id)v3;
-- (void)collectionView:(id)v1 willDisplayContextMenuWithConfiguration:(id)v2 animator:(id)v3;
-- (void)collectionView:(id)v1 willEndContextMenuInteractionWithConfiguration:(id)v2 animator:(id)v3;
-- (void)collectionView:(id)v1 willEndContextMenuInteractionWithConfiguration:(id)v2 animator:(id)v3;
-- (id)collectionView:(id)v1 sceneActivationConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 sceneActivationConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 contextMenuConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 contextMenuConfigurationForItemAtIndexPath:(id)v2 point:(struct CGPoint)v3;
-- (id)collectionView:(id)v1 previewForHighlightingContextMenuWithConfiguration:(id)v2;
-- (id)collectionView:(id)v1 previewForDismissingContextMenuWithConfiguration:(id)v2;
-@end
-
-
-/*****************************************************************/
-
-@protocol UIPickerViewDataSource<NSObject>
-- (long long)numberOfComponentsInPickerView:(id)v1;
-- (long long)numberOfComponentsInPickerView:(id)v1;
-- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
-@end
-
-
-/*****************************************************************/
-
-@protocol AVCaptureVideoDataOutputSampleBufferDelegate<NSObject>
-
-@optional
-- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
-- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
-- (void)captureOutput:(id)v1 didDropSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
-- (void)captureOutput:(id)v1 didDropSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
-@end
-
-
-/*****************************************************************/
-
-@protocol UINavigationControllerDelegate<NSObject>
-
-@optional
-- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
-- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
-- (void)navigationController:(id)v1 didShowViewController:(id)v2 animated:(bool)v3;
-- (void)navigationController:(id)v1 didShowViewController:(id)v2 animated:(bool)v3;
-- (unsigned long long)navigationControllerSupportedInterfaceOrientations:(id)v1;
-- (long long)navigationControllerPreferredInterfaceOrientationForPresentation:(id)v1;
-- (id)navigationController:(id)v1 interactionControllerForAnimationController:(id)v2;
-- (id)navigationController:(id)v1 interactionControllerForAnimationController:(id)v2;
-- (id)navigationController:(id)v1 animationControllerForOperation:(long long)v2 fromViewController:(id)v3 toViewController:(id)v4;
-- (id)navigationController:(id)v1 animationControllerForOperation:(long long)v2 fromViewController:(id)v3 toViewController:(id)v4;
+- (void)sessionWatchStateDidChange:(id)v1;
+- (void)sessionCompanionAppInstalledDidChange:(id)v1;
+- (void)sessionReachabilityDidChange:(id)v1;
+- (void)session:(id)v1 didReceiveMessage:(id)v2;
+- (void)session:(id)v1 didReceiveMessage:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)session:(id)v1 didReceiveMessageData:(id)v2;
+- (void)session:(id)v1 didReceiveMessageData:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)session:(id)v1 didReceiveApplicationContext:(id)v2;
+- (void)session:(id)v1 didFinishUserInfoTransfer:(id)v2 error:(id)v3;
+- (void)session:(id)v1 didFinishUserInfoTransfer:(id)v2 error:(id)v3;
+- (void)session:(id)v1 didReceiveUserInfo:(id)v2;
+- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
+- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
+- (void)session:(id)v1 didReceiveFile:(id)v2;
+- (void)session:(id)v1 didReceiveFile:(id)v2;
 @end
 
 
@@ -1098,33 +1121,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@protocol WCSessionDelegate<NSObject>
-- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
-- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
-- (void)sessionDidBecomeInactive:(id)v1;
-- (void)sessionDidDeactivate:(id)v1;
-
-@optional
-- (void)sessionWatchStateDidChange:(id)v1;
-- (void)sessionCompanionAppInstalledDidChange:(id)v1;
-- (void)sessionReachabilityDidChange:(id)v1;
-- (void)session:(id)v1 didReceiveMessage:(id)v2;
-- (void)session:(id)v1 didReceiveMessage:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)session:(id)v1 didReceiveMessageData:(id)v2;
-- (void)session:(id)v1 didReceiveMessageData:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)session:(id)v1 didReceiveApplicationContext:(id)v2;
-- (void)session:(id)v1 didFinishUserInfoTransfer:(id)v2 error:(id)v3;
-- (void)session:(id)v1 didFinishUserInfoTransfer:(id)v2 error:(id)v3;
-- (void)session:(id)v1 didReceiveUserInfo:(id)v2;
-- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
-- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
-- (void)session:(id)v1 didReceiveFile:(id)v2;
-- (void)session:(id)v1 didReceiveFile:(id)v2;
-@end
-
-
-/*****************************************************************/
-
 @protocol FIRLibrary
 + (id)componentsToRegister;
 
@@ -1142,15 +1138,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@protocol FIRCoreDiagnosticsData<NSObject>
-@property (retain,nonatomic) NSDictionary * diagnosticObjects;
-- (id)diagnosticObjects;
-- (void)setDiagnosticObjects:(id)v1;
-@end
-
-
-/*****************************************************************/
-
 @protocol FIRHeartbeatLoggerProtocol<NSObject>
 - (void)log;
 - (id)flushHeartbeatsIntoPayload;
@@ -1162,13 +1149,6 @@ struct anonymous_type_25 {
 
 @protocol NSCopying
 - (id)copyWithZone:(struct _NSZone *)v1;
-@end
-
-
-/*****************************************************************/
-
-@protocol FIRCoreDiagnosticsInterop<NSObject>
-+ (void)sendDiagnosticsData:(id)v1;
 @end
 
 
@@ -1438,6 +1418,20 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
+@protocol NSURLSessionDelegate<NSObject>
+
+@optional
+- (void)URLSession:(id)v1 didBecomeInvalidWithError:(id)v2;
+- (void)URLSession:(id)v1 didBecomeInvalidWithError:(id)v2;
+- (void)URLSession:(id)v1 didReceiveChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)URLSession:(id)v1 didReceiveChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(id)v1;
+- (void)URLSessionDidFinishEventsForBackgroundURLSession:(id)v1;
+@end
+
+
+/*****************************************************************/
+
 @protocol NSXMLParserDelegate<NSObject>
 
 @optional
@@ -1466,6 +1460,24 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
+@interface _TtC10Dexcom_ONE19DebugViewController (Dexcom_ONE1)
+- (long long)numberOfComponentsInPickerView:(id)v1;
+- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
+- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
+- (bool)textField:(id)v1 shouldChangeCharactersInRange:(struct _NSRange)v2 replacementString:(id)v3;
+- (bool)textFieldShouldReturn:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32OnboardingOverviewViewController (Dexcom_ONE)<DXCMLegalAgreementsVCDelegate>
+- (void)userAgreed;
+@end
+
+
+/*****************************************************************/
+
 @interface _TtC10Dexcom_ONE24TrendGraphViewController (Dexcom_ONE)
 - (void)didScrubWithGestureRecognizer:(id)v1;
 @end
@@ -1473,17 +1485,23 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE25CrawlerMenuViewController (Dexcom_ONE)<UICollectionViewDelegate>
-- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
+@interface _TtC10Dexcom_ONE34CalibrationLearnMoreViewController (Dexcom_ONE)<UITextViewDelegate>
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE20ActionSheetContainer (Dexcom_ONE)<UIPopoverPresentationControllerDelegate>
-- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
-- (bool)popoverPresentationControllerShouldDismissPopover:(id)v1;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
+@interface _TtC10Dexcom_ONE24MainTabBarViewController (Dexcom_ONE)<UITabBarControllerDelegate>
+- (bool)tabBarController:(id)v1 shouldSelectViewController:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10CameraView (Dexcom_ONE)<AVCaptureVideoDataOutputSampleBufferDelegate>
+- (void)touchesBegan:(id)v1 withEvent:(id)v2;
+- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
 @end
 
 
@@ -1499,61 +1517,8 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE21GlucoseViewController (Dexcom_ONE)<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
-- (long long)numberOfSectionsInCollectionView:(id)v1;
-- (long long)collectionView:(id)v1 numberOfItemsInSection:(long long)v2;
-- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
-- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
-- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19DebugViewController (Dexcom_ONE)
-- (bool)textField:(id)v1 shouldChangeCharactersInRange:(struct _NSRange)v2 replacementString:(id)v3;
-- (bool)textFieldShouldReturn:(id)v1;
-- (long long)numberOfComponentsInPickerView:(id)v1;
-- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
-- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE17WebViewController (Dexcom_ONE)<WKNavigationDelegate>
-- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)webView:(id)v1 didFailProvisionalNavigation:(id)v2 withError:(id)v3;
-- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
-- (void)webView:(id)v1 didFinishNavigation:(id)v2;
-@end
-
-
-/*****************************************************************/
-
-@interface UINavigationController (Dexcom_ONE)
-@property (nonatomic,readonly) bool shouldPopOnTransition;
-- (bool)shouldPopOnTransition;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24MainTabBarViewController (Dexcom_ONE)<UITabBarControllerDelegate>
-- (bool)tabBarController:(id)v1 shouldSelectViewController:(id)v2;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE22SettingsViewController (Dexcom_ONE)<UITableViewDataSource,UITableViewDelegate>
-- (id)tableView:(id)v1 viewForHeaderInSection:(long long)v2;
-- (double)tableView:(id)v1 heightForHeaderInSection:(long long)v2;
-- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
-- (long long)numberOfSectionsInTableView:(id)v1;
-- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
-- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+@interface _TtC10Dexcom_ONE33ActionSheetPresentationController (Dexcom_ONE)
+- (void)handleTapWithRecognizer:(id)v1;
 @end
 
 
@@ -1570,22 +1535,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE37BackdoorHumanFactorTestViewController (Dexcom_ONE)<UIPickerViewDelegate,UIPickerViewDataSource>
-- (long long)numberOfComponentsInPickerView:(id)v1;
-- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
-- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33ActionSheetPresentationController (Dexcom_ONE)
-- (void)handleTapWithRecognizer:(id)v1;
-@end
-
-
-/*****************************************************************/
-
 @interface _TtC10Dexcom_ONE11AudioPlayer (Dexcom_ONE)<AVAudioPlayerDelegate>
 - (void)audioPlayerDidFinishPlaying:(id)v1 successfully:(bool)v2;
 @end
@@ -1593,8 +1542,38 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE32OnboardingOverviewViewController (Dexcom_ONE)<DXCMLegalAgreementsVCDelegate>
-- (void)userAgreed;
+@interface _TtC10Dexcom_ONE20ActionSheetContainer (Dexcom_ONE)<UIPopoverPresentationControllerDelegate>
+- (long long)adaptivePresentationStyleForPresentationController:(id)v1;
+- (bool)popoverPresentationControllerShouldDismissPopover:(id)v1;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32CalibrationDetailsViewController (Dexcom_ONE)
+- (double)tableView:(id)v1 heightForHeaderInSection:(long long)v2;
+- (double)tableView:(id)v1 heightForFooterInSection:(long long)v2;
+- (id)tableView:(id)v1 viewForHeaderInSection:(long long)v2;
+- (id)tableView:(id)v1 viewForFooterInSection:(long long)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE11AppDelegate (Dexcom_ONE)<UNUserNotificationCenterDelegate>
+- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30SensorCodeManualViewController (Dexcom_ONE)<UIKeyInput>
+@property (nonatomic,readonly) bool hasText;
+- (bool)hasText;
+- (void)insertText:(id)v1;
+- (void)deleteBackward;
 @end
 
 
@@ -1607,19 +1586,15 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE33PhoneConflictDetailViewController (Dexcom_ONE)<UITableViewDelegate,UITableViewDataSource>
-- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
-- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+@interface _TtC10Dexcom_ONE28EventValueCollectionViewCell (Dexcom_ONE)<UITextFieldDelegate>
+- (bool)textField:(id)v1 shouldChangeCharactersInRange:(struct _NSRange)v2 replacementString:(id)v3;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE30SensorCodeManualViewController (Dexcom_ONE)<UIKeyInput>
-@property (nonatomic,readonly) bool hasText;
-- (bool)hasText;
-- (void)insertText:(id)v1;
-- (void)deleteBackward;
+@interface _TtC10Dexcom_ONE25CalibrationViewController (Dexcom_ONE)<UICollectionViewDelegate>
+- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
 @end
 
 
@@ -1652,17 +1627,99 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE10CameraView (Dexcom_ONE1)<AVCaptureVideoDataOutputSampleBufferDelegate>
-- (void)captureOutput:(id)v1 didOutputSampleBuffer:(struct opaqueCMSampleBuffer *)v2 fromConnection:(id)v3;
-- (void)touchesBegan:(id)v1 withEvent:(id)v2;
+@interface UINavigationController (Dexcom_ONE)
+@property (nonatomic,readonly) bool shouldPopOnTransition;
+- (bool)shouldPopOnTransition;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE11AppDelegate (Dexcom_ONE)<UNUserNotificationCenterDelegate>
-- (void)userNotificationCenter:(id)v1 didReceiveNotificationResponse:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)userNotificationCenter:(id)v1 willPresentNotification:(id)v2 withCompletionHandler:(void (^ /* unknown block signature */)(void))v3;
+@interface _TtC10Dexcom_ONE33PhoneConflictDetailViewController (Dexcom_ONE)<UITableViewDelegate,UITableViewDataSource>
+- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
+- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37BackdoorHumanFactorTestViewController (Dexcom_ONE)<UIPickerViewDelegate,UIPickerViewDataSource>
+- (long long)numberOfComponentsInPickerView:(id)v1;
+- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
+- (id)pickerView:(id)v1 titleForRow:(long long)v2 forComponent:(long long)v3;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE22SettingsViewController (Dexcom_ONE1)<UITableViewDelegate,UITableViewDataSource>
+- (long long)numberOfSectionsInTableView:(id)v1;
+- (long long)tableView:(id)v1 numberOfRowsInSection:(long long)v2;
+- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+- (id)tableView:(id)v1 viewForHeaderInSection:(long long)v2;
+- (double)tableView:(id)v1 heightForHeaderInSection:(long long)v2;
+- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17WebViewController (Dexcom_ONE)<WKNavigationDelegate>
+- (void)webView:(id)v1 decidePolicyForNavigationAction:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 decidePolicyForNavigationResponse:(id)v2 decisionHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)webView:(id)v1 didFailProvisionalNavigation:(id)v2 withError:(id)v3;
+- (void)webView:(id)v1 didFailNavigation:(id)v2 withError:(id)v3;
+- (void)webView:(id)v1 didFinishNavigation:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37CalibrationConfirmationViewController (Dexcom_ONE)<UITableViewDelegate>
+- (double)tableView:(id)v1 heightForHeaderInSection:(long long)v2;
+- (id)tableView:(id)v1 viewForHeaderInSection:(long long)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21GlucoseViewController (Dexcom_ONE)<UICollectionViewDelegateFlowLayout,UICollectionViewDelegate,UICollectionViewDataSource>
+- (long long)numberOfSectionsInCollectionView:(id)v1;
+- (long long)collectionView:(id)v1 numberOfItemsInSection:(long long)v2;
+- (id)collectionView:(id)v1 cellForItemAtIndexPath:(id)v2;
+- (struct CGSize)collectionView:(id)v1 layout:(id)v2 sizeForItemAtIndexPath:(id)v3;
+- (double)collectionView:(id)v1 layout:(id)v2 minimumLineSpacingForSectionAtIndex:(long long)v3;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21CalibrationFooterView (Dexcom_ONE)<UITextViewDelegate>
+- (bool)textView:(id)v1 shouldInteractWithURL:(id)v2 inRange:(struct _NSRange)v3 interaction:(long long)v4;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25CrawlerMenuViewController (Dexcom_ONE)<UICollectionViewDelegate>
+- (void)collectionView:(id)v1 didSelectItemAtIndexPath:(id)v2;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18WatchCommunication (CgmKit)<WCSessionDelegate>
+- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
+- (void)sessionReachabilityDidChange:(id)v1;
+- (void)sessionDidBecomeInactive:(id)v1;
+- (void)sessionDidDeactivate:(id)v1;
+- (void)sessionWatchStateDidChange:(id)v1;
+- (void)session:(id)v1 didReceiveMessage:(id)v2;
+- (void)session:(id)v1 didReceiveMessage:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
+- (void)session:(id)v1 didReceiveUserInfo:(id)v2;
+- (void)session:(id)v1 didReceiveApplicationContext:(id)v2;
+- (void)session:(id)v1 didReceiveFile:(id)v2;
+- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
 @end
 
 
@@ -1699,23 +1756,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC9DexAppKit18WatchCommunication (DexAppKit)<WCSessionDelegate>
-- (void)session:(id)v1 activationDidCompleteWithState:(long long)v2 error:(id)v3;
-- (void)sessionReachabilityDidChange:(id)v1;
-- (void)sessionDidBecomeInactive:(id)v1;
-- (void)sessionDidDeactivate:(id)v1;
-- (void)sessionWatchStateDidChange:(id)v1;
-- (void)session:(id)v1 didReceiveMessage:(id)v2;
-- (void)session:(id)v1 didReceiveMessage:(id)v2 replyHandler:(void (^ /* unknown block signature */)(void))v3;
-- (void)session:(id)v1 didReceiveUserInfo:(id)v2;
-- (void)session:(id)v1 didReceiveApplicationContext:(id)v2;
-- (void)session:(id)v1 didReceiveFile:(id)v2;
-- (void)session:(id)v1 didFinishFileTransfer:(id)v2 error:(id)v3;
-@end
-
-
-/*****************************************************************/
-
 @interface NSNumber (FIRCLSWrappedReportAction)
 - (long long)reportActionValue;
 @end
@@ -1730,7 +1770,14 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC19SecureNetworkingAPI17XMLResponseParser (SecureNetworkingAPI)<NSXMLParserDelegate>
+@interface _TtC16SecureNetworking19SecureNetworkClient (SecureNetworking)<NSURLSessionDelegate>
+- (void)URLSession:(id)v1 didReceiveChallenge:(id)v2 completionHandler:(void (^ /* unknown block signature */)(void))v3;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking17XMLResponseParser (SecureNetworking)<NSXMLParserDelegate>
 - (void)parser:(id)v1 didStartElement:(id)v2 namespaceURI:(id)v3 qualifiedName:(id)v4 attributes:(id)v5;
 - (void)parser:(id)v1 parseErrorOccurred:(id)v2;
 @end
@@ -1742,147 +1789,6 @@ struct anonymous_type_25 {
 - (void)parser:(id)v1 didStartElement:(id)v2 namespaceURI:(id)v3 qualifiedName:(id)v4 attributes:(id)v5;
 - (void)parser:(id)v1 foundCharacters:(id)v2;
 - (void)parser:(id)v1 didEndElement:(id)v2 namespaceURI:(id)v3 qualifiedName:(id)v4;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19ACMDetailsViewModel : _TtCs12_SwiftObject {
-    id resultId;
-    id screenTitle;
-    id message;
-    id messageID;
-    id canAcknowledge;
-    id moreInfoUrl;
-    id upgradeUrl;
-    id primaryButtonTitle;
-    id secondaryButtonTitle;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26WarmupStatusViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id warmupTime;
-    id statusLabel;
-    id titleLabel;
-    id detailLabel;
-    id helpButton;
-    id titleLabelTopConstraint;
-    id warmupStatusViewModel;
-    id statusTextSubscriber;
-    id timeRemainingTextSubscriber;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * warmupTime;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) NSLayoutConstraint * titleLabelTopConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE35BriefSensorIssueAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id noAlertsLabel;
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE18BulkDataCGMLogging : _TtCs12_SwiftObject {
-    id subscribers;
-    id alertProfileRepoMonitor;
-    id daysOfWeekList;
-    id settingDate;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30BaseUICollectionViewController : UICollectionViewController {
-    id screenDisplayStartTime;
-}
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
-- (id)initWithCollectionViewLayout:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE34AppBluetoothOffAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id noAlertsLabel;
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27AlertsEnabledViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id messageView;
-}
-@property (nonatomic) UILabel * messageView;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE37ThirtyMinuteSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
 @end
 
 
@@ -1906,96 +1812,110 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE29GcsConfirmUoMOptionsViewModel : _TtCs12_SwiftObject {
-    id unitOfMeasure;
-    id countryCode;
+@interface _TtC10Dexcom_ONE11CalloutView : _TtC10Dexcom_ONE12DXCMCardView {
+    id timeLabel;
+    id glucoseLabel;
+}
+- (id)init;
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21WarmupStatusViewModel : _TtCs12_SwiftObject {
+    id _statusText;
+    id _timeRemainingText;
+    id warmupTimeSubscriber;
+    id timeRemaining;
+    id warmupCompleteToastIdentifier;
+    id warmingInProgressToastIdentifier;
+    id warmingInProgressToastKey;
+    id warmingToast;
+    id currentVisibleToast;
+    id warmUpCompleteMessage;
+    id warmUpCompleteButtonTitle;
+    id warmingInProgressMessage;
+    id warmingInProgressButtonTitle;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE31TransmitterSNHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id transmitterIDLabel;
+@interface _TtC10Dexcom_ONE32SensorExpiredAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id bannerTitleLabel;
+    id noAlertsLabel;
     id titleLabel;
-    id subTitle1Label;
-    id description1Label;
-    id subTitle2Label;
-    id description2Label;
-    id enterTxSnButton;
-    id backButtonAccessibilityIDText;
-    id txId;
+    id descriptionLabel;
+    id okButton;
+    id sensorRemovalInstructionsButton;
 }
-@property (nonatomic) UILabel * transmitterIDLabel;
+@property (nonatomic) UILabel * bannerTitleLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
 @property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * subTitle1Label;
-@property (nonatomic) UILabel * description1Label;
-@property (nonatomic) UILabel * subTitle2Label;
-@property (nonatomic) UILabel * description2Label;
-@property (nonatomic) UIButton * enterTxSnButton;
-- (id)initWithCoder:(id)v1;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
 - (void)viewDidLoad;
-- (void)editTransmitterSNButtonTapped:(id)v1;
+- (void)OKButtonPressed;
+- (void)sensorRemovalInstructionsButtonPressed;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE14AboutViewModel : _TtCs12_SwiftObject {
-    id accessibilityIDText;
+@interface _TtC10Dexcom_ONE36StopSensorConfirmationViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id cancelButton;
+    id barTitleLabel;
+    id sensorSessionTitle;
+    id descriptionTitleLabel;
+    id sensorImageView;
+    id timeLeftLabel;
+    id descriptionLabel;
+    id stopSensorButton;
+    id lifeMeterContainer;
+    id lifeMeter;
+    id warmupTimeLabel;
+    id viewModel;
+    id delegate;
+    id sensorInfoRefreshTimer;
+    id barTitleText;
+    id descriptionTitleText;
 }
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE22SettingsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id tableView;
-    id titleIconCellIdentifier;
-    id headerViewIdentifier;
-    id sensorCellIdentifier;
-    id transmitterCellIdentifier;
-    id appleHealthCellIdentifier;
-    id settingsViewModel;
-    id sensorSessionViewModel;
-    id headerHeight;
-    id transmitterSettingsModelSubscriber;
-    id appleHealthModelSubscriber;
-    id subscriptions;
-    id sensorSessionCell;
-}
-@property (nonatomic,retain) UITableView * tableView;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewWillDisappear:(bool)v1;
-- (void)viewDidAppear:(bool)v1;
+@property (nonatomic) UIButton * cancelButton;
+@property (nonatomic) UILabel * barTitleLabel;
+@property (nonatomic) UILabel * sensorSessionTitle;
+@property (nonatomic) UILabel * descriptionTitleLabel;
+@property (nonatomic) UIImageView * sensorImageView;
+@property (nonatomic) UILabel * timeLeftLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * stopSensorButton;
+@property (nonatomic) UIView * lifeMeterContainer;
+@property (nonatomic) _TtC10Dexcom_ONE9LifeMeter * lifeMeter;
+@property (nonatomic) UILabel * warmupTimeLabel;
+- (id)initWithCoder:(id)v1;
 - (void)dealloc;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)cancelTapped:(id)v1;
+- (void)stopSensorTapped:(id)v1;
+- (void)updateSessionInfoIfNeeded;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE23HealthKitSetupAssistant : _TtCs12_SwiftObject {
-    id healthKitStore;
-    id healthKitDataTypeProvider;
-    id healthKitQueue;
+@interface _TtC10Dexcom_ONE15D1PrimaryButton : _TtC10Dexcom_ONE12D1PillButton {
+    id primaryButtonProps;
 }
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE10BackButton : UIButton {
-    id contentView;
-    id button;
-}
-@property (nonatomic,retain) UIView * contentView;
-@property (nonatomic) UIButton * button;
 - (id)initWithFrame:(struct CGRect)v1;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -2004,56 +1924,55 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE21BulkDataLoggingHelper : _TtCs12_SwiftObject {
-    id cgmBulkDataLogger;
+@interface _TtC10Dexcom_ONE24TrendGraphViewController : UIViewController {
+    id xAxisUpdateTimer;
     id subscribers;
-    id firstTime;
+    id graphContainer;
+    id skView;
+    id moreButton;
+    id hourButton3;
+    id hourButton6;
+    id hourButton12;
+    id hourButton24;
+    id graphContainerTopSpacing;
+    id graphContainerHeight;
+    id graphContainerHeightRatio;
+    id skViewBottomSpacing;
+    id skViewTopSpacing;
+    id moreButtonHeight;
+    id _timeProvider;
+    id hourButtons;
+    id selectedTimeInterval;
+    id calloutBubble;
+    id dottedLineLayer;
+    id currentEGVDataDot;
+    id glucoseHapticFeedbackGenerator;
+    id glucoseSwimlanePresenter;
+    id timelineSwimlanePresenter;
+    id tickmarkInterval;
+    id glucoseViewDataSource;
+    id trendgraphDataSource;
+    id pendingActions;
 }
-- (void)logAppBecomesInactive;
-- (void)appWillTerminate;
-- (void)logPowerStateChanged;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE35PairTransmitterManualViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextInputTraits> {
-    id enterTxSNLabel;
-    id transmitterSNStackView;
-    id successSnackBar;
-    id submitButton;
-    id submitView;
-    id submitViewBottomConstraint;
-    id snackBarBottomConstraint;
-    id snackBarText;
-    id isKeyBoardShown;
-    id transmitterSN;
-    id maxTransmitterSNLength;
-    id snackBarBottomConstant;
-    id accessibilityIDText;
-    id delegate;
-    id keyboardType;
-    id keyboardAppearance;
-    id canEdit;
-}
-@property (nonatomic) UILabel * enterTxSNLabel;
-@property (nonatomic) UIStackView * transmitterSNStackView;
-@property (nonatomic) UIView * successSnackBar;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * submitButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * submitView;
-@property (nonatomic) NSLayoutConstraint * submitViewBottomConstraint;
-@property (nonatomic) NSLayoutConstraint * snackBarBottomConstraint;
-@property (nonatomic) UILabel * snackBarText;
-@property (nonatomic) long long keyboardType;
-@property (nonatomic) long long keyboardAppearance;
-@property (nonatomic,readonly) bool canBecomeFirstResponder;
+@property (nonatomic) UIView * graphContainer;
+@property (nonatomic) _TtC12PhoenixUIKit18GraphContainerView * skView;
+@property (nonatomic) UIButton * moreButton;
+@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton3;
+@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton6;
+@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton12;
+@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton24;
+@property (nonatomic) NSLayoutConstraint * graphContainerTopSpacing;
+@property (nonatomic) NSLayoutConstraint * graphContainerHeight;
+@property (nonatomic) NSLayoutConstraint * graphContainerHeightRatio;
+@property (nonatomic) NSLayoutConstraint * skViewBottomSpacing;
+@property (nonatomic) NSLayoutConstraint * skViewTopSpacing;
+@property (nonatomic) NSLayoutConstraint * moreButtonHeight;
 - (id)initWithCoder:(id)v1;
+- (void)dealloc;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(bool)v1;
-- (void)viewWillDisappear:(bool)v1;
-- (void)keyboardActivityWithNotification:(id)v1;
-- (void)submitButtonTapped:(id)v1;
-- (void)showKeyboard;
+- (void)selectTimeIntervalWithSender:(id)v1;
+- (void)moreButtonAction:(id)v1;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (void).cxx_destruct;
 @end
@@ -2061,91 +1980,27 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE22PhoneConflictViewModel : _TtCs12_SwiftObject {
-    id _count;
-    id currentConflicts;
-    id currentBlockingConflicts;
-    id offerHelp;
-    id snackBarDisplayHistory;
-    id phoneConflictSubscriptions;
-    id backgroundTimerSubscription;
-    id displayHistoryRepo;
-    id phoneConflictRepo;
-    id backgroundTimer;
+@interface _TtC10Dexcom_ONE27ObservedNotificationManager : _TtCs12_SwiftObject {
+    id userNotificationRequestsSubscriber;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE32ActionSheetInteractionController : UIPercentDrivenInteractiveTransition<UIGestureRecognizerDelegate> {
-    id shouldCompleteTransition;
-    id viewController;
-    id interactionInProgress;
-    id isCanceled;
+@interface _TtC10Dexcom_ONE37ThirtyMinuteSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
 }
-- (bool)gestureRecognizerShouldBegin:(id)v1;
-- (void)handleGesture:(id)v1;
-- (void)cancelInteractiveTransition;
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19TimeServiceProvider : _TtCs12_SwiftObject {
-    id _passedBackgroundTimeThreshold;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12SplashScreen : _TtC10Dexcom_ONE20BaseUIViewController {
-    id copyrightLabel;
-}
-@property (nonatomic) UILabel * copyrightLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
 - (void)viewDidLoad;
+- (void)OKButtonPressed;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26SensorSessionCellViewModel : _TtCs12_SwiftObject {
-    id displayStateSubscriber;
-    id warmupTimeSubscriber;
-    id sessionModeSubscriber;
-    id mode;
-    id delegate;
-    id warmupTime;
-    id insertionTime;
-    id expireTime;
-    id transmitterIsPairing;
-    id maximumGracePeriod;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE20BaseUIViewController : UIViewController {
-    id screenDisplayStartTime;
-}
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24DisplayHistoryRepository : _TtCs12_SwiftObject
 @end
 
 
@@ -2168,22 +2023,121 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE20TargetRangeViewModel : _TtCs12_SwiftObject {
-    id isOn;
-    id accessibilityIDText;
+@interface _TtC10Dexcom_ONE36OnboardingEnableAlertsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id titleLabel;
+    id alertsLabel;
+    id alertDescriptionLabel;
+    id iWouldLikeLabel;
+    id alertsOnLabel;
+    id alertsOffLabel;
+    id alertSettingsDescriptionLabel;
+    id technicalAlertsDescriptionLabel;
+    id alertsOnButton;
+    id alertsOffButton;
+    id nextButton;
+    id originalNextBackgroundColor;
+    id alertsEnabled;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * alertsLabel;
+@property (nonatomic) UILabel * alertDescriptionLabel;
+@property (nonatomic) UILabel * iWouldLikeLabel;
+@property (nonatomic) UILabel * alertsOnLabel;
+@property (nonatomic) UILabel * alertsOffLabel;
+@property (nonatomic) UILabel * alertSettingsDescriptionLabel;
+@property (nonatomic) UILabel * technicalAlertsDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE11RadioButton * alertsOnButton;
+@property (nonatomic) _TtC10Dexcom_ONE11RadioButton * alertsOffButton;
+@property (nonatomic) UIButton * nextButton;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)alertsOn;
+- (void)alertsOff;
+- (void)next;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21GlucoseViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id collectionView;
+    id phoneConflictIconView;
+    id phoneConflictCountLabel;
+    id layout;
+    id phoneConflictToastId;
+    id cellID;
+    id cellSpacing;
+    id phoneConflictViewModel;
+    id glucoseSubscribers;
+    id phoneConflictSubscribers;
+    id glucoseViewDataSource;
+    id phoneConflictSnackBar;
+    id treatmentDecisionToast;
+    id createdToaster;
+    id magGlassViewController;
+    id trendGraphViewController;
+    id statusViewController;
+    id cellItem;
+}
+@property (nonatomic,retain) UICollectionView * collectionView;
+@property (nonatomic) UIView * phoneConflictIconView;
+@property (nonatomic) _TtC10Dexcom_ONE10BadgeLabel * phoneConflictCountLabel;
+@property (nonatomic) UICollectionViewFlowLayout * layout;
+- (id)initWithCoder:(id)v1;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (void)touchesBegan:(id)v1 withEvent:(id)v2;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30AlertProfilesRepositoryMonitor : _TtCs12_SwiftObject {
+    id alertProfileRepository;
+    id alertThresholds;
+    id lastProfileUpdate;
+    id onAlertProfilesUpdate;
+    id _timeProvider;
+    id alertProfiles;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE36PhoneBluetoothOffAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id noAlertsLabel;
+@interface _TtC10Dexcom_ONE27CalibrationDetailsViewModel : _TtCs12_SwiftObject {
+    id detailsType;
+    id segueType;
+    id $__lazy_storage_$_dateFormatter;
+    id $__lazy_storage_$_timeFormatter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17AlertsCoreService : _TtCs12_SwiftObject {
+    id alertsStatusLogger;
+    id subscribers;
+    id alertsMapPublisher;
+    id formatter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32TwoHourSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
     id titleLabel;
     id descriptionLabel;
     id okButton;
 }
-@property (nonatomic) UILabel * noAlertsLabel;
 @property (nonatomic) UILabel * titleLabel;
 @property (nonatomic) UILabel * descriptionLabel;
 @property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
@@ -2197,56 +2151,17 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE33AppBluetoothOffHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+@interface _TtC10Dexcom_ONE30BluetoothOffHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
     id actionSheetDelegate;
     id titleLabel;
     id textLabel1;
     id textLabel2;
     id textLabel3;
-    id textLabel4;
-    id phoneSettingsButton;
 }
 @property (nonatomic) UILabel * titleLabel;
 @property (nonatomic) UILabel * textLabel1;
 @property (nonatomic) UILabel * textLabel2;
 @property (nonatomic) UILabel * textLabel3;
-@property (nonatomic) UILabel * textLabel4;
-@property (nonatomic) UIButton * phoneSettingsButton;
-- (void)viewDidLoad;
-- (void)openAppSettings:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE34BriefSensorIssueHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id actionSheetDelegate;
-    id titleLabel;
-    id topTextLabel;
-    id subtitle1Label;
-    id subtext1Label;
-    id subtitle2Label;
-    id listItem1Label;
-    id listItem1aLabel;
-    id techSupportTextView;
-    id listItem2Label;
-    id listItem3Label;
-    id bottomTextLabel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * topTextLabel;
-@property (nonatomic) UILabel * subtitle1Label;
-@property (nonatomic) UILabel * subtext1Label;
-@property (nonatomic) UILabel * subtitle2Label;
-@property (nonatomic) UILabel * listItem1Label;
-@property (nonatomic) UILabel * listItem1aLabel;
-@property (nonatomic) UITextView * techSupportTextView;
-@property (nonatomic) UILabel * listItem2Label;
-@property (nonatomic) UILabel * listItem3Label;
-@property (nonatomic) UILabel * bottomTextLabel;
 - (void)viewDidLoad;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
@@ -2256,47 +2171,21 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE31InvalidSensorCodeViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id reEnterCodeLabel;
-    id takePhotoButton;
-    id enterCodeManuallyButton;
-    id actionSheetDelegate;
-    id delegate;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * reEnterCodeLabel;
-@property (nonatomic) UIButton * takePhotoButton;
-@property (nonatomic) UIButton * enterCodeManuallyButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)takePhotoButtonTapped:(id)v1;
-- (void)enterCodeManuallyButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
+@interface _TtC10Dexcom_ONE8Toasters : _TtCs12_SwiftObject
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE32SensorCodeTimedOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id noCodeFoundLabel;
-    id takePhotoButton;
-    id enterCodeManuallyButton;
-    id actionSheetDelegate;
-    id delegate;
+@interface _TtC10Dexcom_ONE18TakePhotoViewModel : _TtCs12_SwiftObject {
+    id objectType;
 }
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * noCodeFoundLabel;
-@property (nonatomic) UIButton * takePhotoButton;
-@property (nonatomic) UIButton * enterCodeManuallyButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)takePhotoPressed:(id)v1;
-- (void)enterManuallyPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24DisplayHistoryRepository : _TtCs12_SwiftObject
 @end
 
 
@@ -2313,6 +2202,61 @@ struct anonymous_type_25 {
 - (id)initWithAddress:(id)v1;
 - (id)initWithURL:(id)v1;
 - (id)initWithURLRequest:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B7Toaster : _TtCs12_SwiftObject {
+    id viewController;
+    id baseInset;
+    id animationDuration;
+    id containerView;
+    id toasts;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23D1PrimaryOutlinedButton : _TtC10Dexcom_ONE12D1PillButton {
+    id primaryOutlinedButtonProps;
+}
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE39SensorPeelOffInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
+    id step4Title;
+    id step4Text;
+    id step5Title;
+    id step5aText;
+    id step5bText;
+    id step5cText;
+    id step5dText;
+    id step6Title;
+    id step6Text;
+    id nextButton;
+}
+@property (nonatomic) UILabel * step4Title;
+@property (nonatomic) UILabel * step4Text;
+@property (nonatomic) UILabel * step5Title;
+@property (nonatomic) UILabel * step5aText;
+@property (nonatomic) UILabel * step5bText;
+@property (nonatomic) UILabel * step5cText;
+@property (nonatomic) UILabel * step5dText;
+@property (nonatomic) UILabel * step6Title;
+@property (nonatomic) UILabel * step6Text;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)nextButtonTapped:(id)v1;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -2367,1967 +2311,10 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE25BaseUITableViewController : UITableViewController {
-    id screenDisplayStartTime;
-}
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
-- (id)initWithStyle:(long long)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE22LegalAgreementsManager : DXCMLegalAgreementsManager
-- (void)presentViewOnlyAgreementsFromVC:(id)v1;
-- (id)init;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27ObservedNotificationManager : _TtCs12_SwiftObject {
-    id userNotificationRequestsSubscriber;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE10CameraView : UIView {
-    id timeoutLength;
-    id zoomFactor;
-    id captureSession;
-    id captureDevice;
-    id pixelBuffer;
-    id $__lazy_storage_$_detectBarcodeRequest;
-    id timeoutTimer;
-    id subscribers;
-    id scannerPreviewLayer;
-    id delegate;
-}
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void)layoutSubviews;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30TechnicalAlertDetailsViewModel : _TtCs12_SwiftObject {
-    id accessibilityText;
-    id defaultTechnicalAlertSound;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE16ReLoginViewModel : _TtCs12_SwiftObject {
-    id appCore;
-    id localizeURL;
-    id webViewAction;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE38SensorFailedRestartAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id bannerTitleLabel;
-    id noAlertsLabel;
-    id instructionTitleLabel;
-    id instructionDescriptionLabel;
-    id okButton;
-    id sensorRemovalInstructionsButton;
-}
-@property (nonatomic) UILabel * bannerTitleLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * instructionTitleLabel;
-@property (nonatomic) UILabel * instructionDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (void)sensorRemovalInstructionsButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24PersistentCountdownTimer : _TtCs12_SwiftObject {
-    id _countdownCompleted;
-    id countdownCheckTimer;
-    id countdownTimerName;
-    id countdownStartDate;
-    id countdownTimeInterval;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B7Toaster : _TtCs12_SwiftObject {
-    id viewController;
-    id baseInset;
-    id animationDuration;
-    id containerView;
-    id toasts;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B5Toast : _TtCs12_SwiftObject {
-    id uuid;
-    id state;
-    id toastableView;
-    id needsDismissal;
-    id horizontalPadding;
-    id siblingToasterIDs;
-    id containerView;
-    id leftConstraint;
-    id rightConstraint;
-    id bottomConstraint;
-    id heightConstraint;
-}
-- (void)dismiss;
-- (void)tap;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26TransmitterSNHintViewModel : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE47AlertThresholdsActionSheetContentViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id actionSheetDelegate;
-    id viewModel;
-    id recommendedSettingsViewModel;
-    id snackBar;
-    id subscribers;
-    id alertsTitleLabel;
-    id highAlertLabel;
-    id lowAlertLabel;
-    id lowThresholdSwitch;
-    id highThresholdSwitch;
-    id lowThresholdSlider;
-    id highThresholdSlider;
-    id lowSliderView;
-    id highSliderView;
-    id lowThresholdValueLabel;
-    id highThresholdValueLabel;
-    id lowThresholdStatusLabel;
-    id highThresholdStatusLabel;
-    id sliderHapticFeedbackGenerator;
-    id previousSliderValue;
-    id alertProfiles;
-}
-@property (nonatomic) UILabel * alertsTitleLabel;
-@property (nonatomic) UILabel * highAlertLabel;
-@property (nonatomic) UILabel * lowAlertLabel;
-@property (nonatomic) UISwitch * lowThresholdSwitch;
-@property (nonatomic) UISwitch * highThresholdSwitch;
-@property (nonatomic) UISlider * lowThresholdSlider;
-@property (nonatomic) UISlider * highThresholdSlider;
-@property (nonatomic) UIView * lowSliderView;
-@property (nonatomic) UIView * highSliderView;
-@property (nonatomic) UILabel * lowThresholdValueLabel;
-@property (nonatomic) UILabel * highThresholdValueLabel;
-@property (nonatomic) UILabel * lowThresholdStatusLabel;
-@property (nonatomic) UILabel * highThresholdStatusLabel;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewWillDisappear:(bool)v1;
-- (void)switchChanged:(id)v1;
-- (void)sliderChange:(id)v1;
-- (void)didEndChanging:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21WarmupStatusViewModel : _TtCs12_SwiftObject {
-    id _statusText;
-    id _timeRemainingText;
-    id warmupTimeSubscriber;
-    id timeRemaining;
-    id warmupCompleteToastIdentifier;
-    id warmingInProgressToastIdentifier;
-    id warmingInProgressToastKey;
-    id warmingToast;
-    id currentVisibleToast;
-    id warmUpCompleteMessage;
-    id warmUpCompleteButtonTitle;
-    id warmingInProgressMessage;
-    id warmingInProgressButtonTitle;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31SensorFailedAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id bannerTitleLabel;
-    id noAlertsLabel;
-    id instructionTitleLabel;
-    id instructionDescriptionLabel;
-    id okButton;
-    id sensorRemovalInstructionsButton;
-}
-@property (nonatomic) UILabel * bannerTitleLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * instructionTitleLabel;
-@property (nonatomic) UILabel * instructionDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (void)sensorRemovalInstructionsButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29SensorCodeStartViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id accessibilityIDText;
-    id heightConstant;
-    id onboardingModel;
-    id enterSensorLabel;
-    id enterSensorDescriptionLabel;
-    id backButton;
-    id imageHeightConstraint;
-    id alreadyInSessionButton;
-    id takePhotoButton;
-    id enterCodeManuallyButton;
-}
-@property (nonatomic) UILabel * enterSensorLabel;
-@property (nonatomic) UILabel * enterSensorDescriptionLabel;
-@property (nonatomic) UIBarButtonItem * backButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-@property (nonatomic) _TtC10Dexcom_ONE16DesignableButton * alreadyInSessionButton;
-@property (nonatomic) UIButton * takePhotoButton;
-@property (nonatomic) UIButton * enterCodeManuallyButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)backPressed:(id)v1;
-- (void)takePhotoButtonTapped:(id)v1;
-- (void)enterCodeManuallyButtonTapped:(id)v1;
-- (void)alreadyInSessionButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE35OnboardingTargetRangeViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id targetRangeImage;
-    id titleLabel;
-    id targetRangeTitleLabel;
-    id targetRangeDescription;
-    id nextButton;
-}
-@property (nonatomic) UIImageView * targetRangeImage;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * targetRangeTitleLabel;
-@property (nonatomic) UILabel * targetRangeDescription;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)next;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30BriefSensorIssueViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-    id imageHeightConstraint;
-    id imageTopConstraint;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19DebugViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate> {
-    id trendPickerComponentNumber;
-    id egvTextField;
-    id trendPickerView;
-    id secretTextField;
-    id messageLabel;
-    id trendPickerData;
-}
-@property (nonatomic) UITextField * egvTextField;
-@property (nonatomic) UIPickerView * trendPickerView;
-@property (nonatomic) UITextField * secretTextField;
-@property (nonatomic) UILabel * messageLabel;
-- (void)sendNewEGVPressed:(id)v1;
-- (void)sendThreeDaysOfEGVPressed:(id)v1;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)dismissPressedWithSender:(id)v1;
-- (void)showDBInfo:(id)v1;
-- (void)showHumanFactorViewController:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29InLineAcknowledgableToastable : UIView {
-    id contentView;
-    id bodyLabel;
-    id acknowledgeButton;
-    id body;
-    id identifier;
-    id timeToDismiss;
-    id completion;
-}
-@property (nonatomic,retain) UIView * contentView;
-@property (nonatomic) UILabel * bodyLabel;
-@property (nonatomic) UIButton * acknowledgeButton;
-- (id)initWithCoder:(id)v1;
-- (void)acknowledgeButtonPressed:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE20SupportTableViewCell : UITableViewCell {
-    id titleLabel;
-    id badge;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * badge;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26BluetoothOffViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-    id imageHeightConstraint;
-    id imageTopConstraint;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE34InvalidTransmitterSNViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id reEnterSNLabel;
-    id takePhotoButton;
-    id enterSNButton;
-    id actionSheetDelegate;
-    id delegate;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * reEnterSNLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterSNButton;
-- (void)takePhotoPressed:(id)v1;
-- (void)enterManuallyPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24ConnectionErrorViewModel : _TtCs12_SwiftObject {
-    id appCore;
-    id gcsService;
-    id accessToken;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12CAMSCloudAPI : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE14AppCoreService : _TtCs12_SwiftObject {
-    id d1DisplayState;
-    id bleState;
-    id blePermissionState;
-    id authStatus;
-    id persistenceError;
-    id isCommunicatingWithTx;
-    id lifeCycleManager;
-    id healthSystemBackgroundTaskName;
-    id healthKitQueue;
-    id appCore;
-    id appCoreEventSubscriptions;
-    id $__lazy_storage_$_bulkDataLogging;
-    id lastThirdPartyUpload;
-    id thirdPartyHealthSystem;
-    id _storedSensorCode;
-    id _isNewSensorPaired;
-}
-- (void)refreshDisplayState;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE17BaseUIApplication : UIApplication
-- (bool)sendAction:(SEL)v1 to:(id)v2 from:(id)v3 forEvent:(id)v4;
-- (id)init;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28MVVMOnboardingViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id viewModel;
-}
-- (id)initWithCoder:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24WarmupHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id helpTextLabel;
-    id bottomConstraint;
-    id actionSheetDelegate;
-    id bottomConstraintFactor;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * helpTextLabel;
-@property (nonatomic) NSLayoutConstraint * bottomConstraint;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31DiskSpaceLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21ReportsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id clarityViewModel;
-    id clarityDayCountSubscriber;
-    id clarityInfoButtonSubscriber;
-    id clarityDayCountKey;
-    id glucoseRepositoryMonitor;
-    id clarityCardViewModel;
-    id createdToaster;
-}
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)viewDidLayoutSubviews;
-- (void)viewDidAppear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24GlucoseRepositoryMonitor : _TtCs12_SwiftObject {
-    id displayStateSubscriber;
-    id bleStateSubscriber;
-    id warmupTimer;
-    id pairingExpireTimer;
-    id warmupInfo;
-    id checkSubscriber;
-    id warmupSnackbarDelegate;
-    id _glucoseReadingModels;
-    id _hasHistoricalGlucoseData;
-    id _displayState;
-    id _warmupTimeRemaining;
-    id onTxSessionStateUpdate;
-    id onBluetoothStateUpdate;
-    id persistenceErrorEventSubscriber;
-}
-- (void)updateWarmupTime;
-- (void)updateTransmitterPairingStatus;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32AllowNotificationsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id shortNextButton;
-    id fullWhiteNextButton;
-    id fullGreenNextButton;
-    id titleLabel;
-    id descriptionLabel;
-}
-@property (nonatomic) UIButton * shortNextButton;
-@property (nonatomic) UIButton * fullWhiteNextButton;
-@property (nonatomic) UIButton * fullGreenNextButton;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)viewWillAppear:(bool)v1;
-- (void)appMovedToForeground;
-- (void)fullGreenNextButtonPressed;
-- (void)shortNextButtonPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25BulkDataAlertStateTracker : _TtCs12_SwiftObject {
-    id alertStatusMap;
-    id inAppMap;
-    id queue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29FeatureFlagsRepositoryMonitor : _TtCs12_SwiftObject {
-    id featureFlagRepository;
-    id onFeatureFlagUpdate;
-    id featureFlags;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE40TransmitterPairingTimedOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id takePhotoButton;
-    id enterManuallyButton;
-    id actionSheetDelegate;
-    id delegate;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterManuallyButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)takePhotoPressed:(id)v1;
-- (void)enterManuallyPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE37TransmitterExpiredAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id bannerTitleLabel;
-    id noAlertsLabel;
-    id instructionTitleLabel;
-    id instructionDescriptionLabel;
-    id okButton;
-    id sensorRemovalInstructionsButton;
-}
-@property (nonatomic) UILabel * bannerTitleLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * instructionTitleLabel;
-@property (nonatomic) UILabel * instructionDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed:(id)v1;
-- (void)sensorRemovalInstructionsButtonPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE9LifeMeter : UIView {
-    id contentView;
-    id fineIndicatorView;
-    id coarseIndicatorStackView;
-    id fineViewWidthConstraint;
-    id fineIndicatorViewBackground;
-    id timeLeft;
-}
-@property (nonatomic,retain) UIView * contentView;
-@property (nonatomic) UIView * fineIndicatorView;
-@property (nonatomic) UIStackView * coarseIndicatorStackView;
-@property (nonatomic) NSLayoutConstraint * fineViewWidthConstraint;
-@property (nonatomic) UIView * fineIndicatorViewBackground;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30BluetoothOffHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id actionSheetDelegate;
-    id titleLabel;
-    id textLabel1;
-    id textLabel2;
-    id textLabel3;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * textLabel1;
-@property (nonatomic) UILabel * textLabel2;
-@property (nonatomic) UILabel * textLabel3;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE11AppDelegate : UIResponder<UIApplicationDelegate> {
-    id applicationServiceStarter;
-}
-- (bool)application:(id)v1 didFinishLaunchingWithOptions:(id)v2;
-- (bool)application:(id)v1 shouldAllowExtensionPointIdentifier:(id)v2;
-- (void)applicationWillEnterForeground:(id)v1;
-- (void)applicationDidBecomeActive:(id)v1;
-- (id)application:(id)v1 configurationForConnectingSceneSession:(id)v2 options:(id)v3;
-- (void)application:(id)v1 didDiscardSceneSessions:(id)v2;
-- (void)applicationWillTerminate:(id)v1;
-- (void)applicationSignificantTimeChange:(id)v1;
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE18TakePhotoViewModel : _TtCs12_SwiftObject {
-    id objectType;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26SignalLossDetailsViewModel : _TtCs12_SwiftObject {
-    id indexPaths;
-    id accessibilityIDText;
-    id accessibilityText;
-    id defaultSignalLossAlertSound;
-    id forMoreThanMinuteInterval;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30RecoverableErrorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id subtitleLabel;
-    id bodyLabel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * subtitleLabel;
-@property (nonatomic) UILabel * bodyLabel;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25ApplicationServiceStarter : _TtCs12_SwiftObject {
-    id cancelTimer;
-    id cancellable;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12WebViewModel : _TtCs12_SwiftObject {
-    id url;
-    id localizeURL;
-    id webViewAction;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25AppStateRepositoryMonitor : _TtCs12_SwiftObject {
-    id keyValueRepository;
-    id _showAlertThresholdWarning;
-    id _showAlertSettingsWarning;
-    id _showLowGlucoseAlertInfo;
-    id _showHighGlucoseAlertInfo;
-    id _showInitialLegalAgreements;
-    id _showGCSConfirmationModal;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33SensorInsertionHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id mainTitleLabel;
-    id instructionsLabel;
-    id instructionsButton;
-    id backButtonAccessibilityIDText;
-}
-@property (nonatomic) UILabel * mainTitleLabel;
-@property (nonatomic) UILabel * instructionsLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * instructionsButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)insertionInstructionsButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21BlockingAlertsMonitor : _TtCs12_SwiftObject {
-    id diskSpaceEventPublisher;
-    id databaseEventPublisher;
-    id currentBlockingAlert;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE15LegalAgreements : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE20BlockingAlertsHelper : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28OnboardingHomeViewController : UINavigationController<UINavigationControllerDelegate>
-- (void)viewDidLoad;
-- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
-- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
-- (id)initWithRootViewController:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27TransmitterEOLTwoWeeksAlert : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26MinutePickerViewController : _TtC10Dexcom_ONE20BaseUIViewController<UIPickerViewDataSource,UIPickerViewDelegate> {
-    id saveButton;
-    id cancelButton;
-    id minutePickerView;
-    id minuteLabel;
-    id alertTitleLabel;
-    id alertDescriptionLabel;
-    id minutesLeadingConstraint;
-    id minutePickerViewBottomConstraint;
-    id delegate;
-    id actionSheetDelegate;
-    id alertTitle;
-    id alertDescription;
-    id valueComponentIndex;
-    id defaultCompnentCount;
-    id minutePickerViewModel;
-    id pickerViewLeadingConstant;
-    id pickerViewHeightConstant;
-    id pickerViewBottomPaddingConstant;
-}
-@property (nonatomic) UIButton * saveButton;
-@property (nonatomic) UIButton * cancelButton;
-@property (nonatomic) UIPickerView * minutePickerView;
-@property (nonatomic) UILabel * minuteLabel;
-@property (nonatomic) UILabel * alertTitleLabel;
-@property (nonatomic) UILabel * alertDescriptionLabel;
-@property (nonatomic) NSLayoutConstraint * minutesLeadingConstraint;
-@property (nonatomic) NSLayoutConstraint * minutePickerViewBottomConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)savePressed:(id)v1;
-- (void)cancelPressed:(id)v1;
-- (long long)numberOfComponentsInPickerView:(id)v1;
-- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
-- (double)pickerView:(id)v1 rowHeightForComponent:(long long)v2;
-- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
-- (void)pickerView:(id)v1 didSelectRow:(long long)v2 inComponent:(long long)v3;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29GcsConfirmationViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id countryOfResidenceLabel;
-    id unitOfMeasureLabel;
-    id wrongCountryButton;
-    id confirmButton;
-    id $__lazy_storage_$_appStateRepository;
-}
-@property (nonatomic) UILabel * countryOfResidenceLabel;
-@property (nonatomic) UILabel * unitOfMeasureLabel;
-@property (nonatomic) UIButton * wrongCountryButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * confirmButton;
-- (void)viewDidLoad;
-- (void)onTechnicalSupportButtonTap:(id)v1;
-- (void)onConfirmButtonTap:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29SignalLossAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id noAlertsLabel;
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE10GCSService : _TtCs12_SwiftObject {
-    id cloudSyncOperationQueue;
-    id gcsURLRepositoryMonitor;
-    id featureFlagRepositoryMonitor;
-    id alertProfileRepositoryMonitor;
-    id gcsApi;
-    id statusPublisher;
-    id gcsURLResult;
-    id gcsFeatureFlagResult;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28DataReConsentsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id consentRequiredLabel;
-    id tapContinueLabel;
-    id continueButton;
-    id dismissButton;
-    id actionSheetDelegate;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * consentRequiredLabel;
-@property (nonatomic) UILabel * tapContinueLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * continueButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * dismissButton;
-- (void)viewDidLoad;
-- (void)onContinueButtonTap:(id)v1;
-- (void)dismissButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32TransmitterPairingViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id descriptionLabel;
-    id helpButton;
-    id loadingImageView;
-    id noAlertsLabel;
-    id txId;
-    id subscribers;
-}
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) UIImageView * loadingImageView;
-@property (nonatomic) UILabel * noAlertsLabel;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)helpButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
 @interface _TtC10Dexcom_ONE27AppleHealthSummaryViewModel : _TtCs12_SwiftObject {
     id _appleHealthSummaryModel;
     id observers;
 }
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24SignalLossViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-    id imageHeightConstraint;
-    id imageTopConstraint;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28AllowBluetoothViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id titleText;
-    id descriptionText;
-    id step1Label;
-    id step2Label;
-    id step3Label;
-    id step4Label;
-    id allowButton;
-    id nextButton;
-    id instructionsStackView;
-    id scrollViewTopConstraint;
-    id scrollView;
-    id contentStackView;
-    id blePermissionStatusSubscription;
-    id appLifeCycleSubscription;
-}
-@property (nonatomic) UILabel * titleText;
-@property (nonatomic) UILabel * descriptionText;
-@property (nonatomic) UILabel * step1Label;
-@property (nonatomic) UILabel * step2Label;
-@property (nonatomic) UILabel * step3Label;
-@property (nonatomic) UILabel * step4Label;
-@property (nonatomic) UIButton * allowButton;
-@property (nonatomic) UIButton * nextButton;
-@property (nonatomic) UIStackView * instructionsStackView;
-@property (nonatomic) NSLayoutConstraint * scrollViewTopConstraint;
-@property (nonatomic) UIScrollView * scrollView;
-@property (nonatomic) UIStackView * contentStackView;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewDidLayoutSubviews;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)enableBluetooth;
-- (void)nextButtonPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30AlertProfilesRepositoryMonitor : _TtCs12_SwiftObject {
-    id alertProfileRepository;
-    id alertThresholds;
-    id timeManager;
-    id alertScheduleQueue;
-    id alertScheduleTimer;
-    id alertScheduleTrigger;
-    id lastProfileUpdate;
-    id onAlertProfilesUpdate;
-    id alertProfiles;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24AppleHealthTableViewCell : UITableViewCell {
-    id titleLabel;
-    id statusLabel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * statusLabel;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32EnterTransmitterSNViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id enterTxSNLabel;
-    id enterTxSNDescriptionLabel;
-    id takePhotoButton;
-    id enterSNManuallyButton;
-    id backButton;
-    id alreadyInSessionButton;
-    id imageHeightConstraint;
-    id onboardingModel;
-    id accessibilityIDText;
-    id heightConstant;
-}
-@property (nonatomic) UILabel * enterTxSNLabel;
-@property (nonatomic) UILabel * enterTxSNDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterSNManuallyButton;
-@property (nonatomic) UIBarButtonItem * backButton;
-@property (nonatomic) _TtC10Dexcom_ONE16DesignableButton * alreadyInSessionButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)backPressed:(id)v1;
-- (void)takePhotoButtonTapped:(id)v1;
-- (void)enterSNManuallyButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE34PhoneConflictSummaryViewController : UIViewController {
-    id closeBarButtonItem;
-    id conflictsTitle;
-    id tableView;
-    id phoneConflictsIcon;
-    id mainDescription;
-    id viewModel;
-    id conflictItemIdentifier;
-    id phoneConflictHelpSubscription;
-    id $__lazy_storage_$_dataSource;
-}
-@property (nonatomic) UIBarButtonItem * closeBarButtonItem;
-@property (nonatomic) UILabel * conflictsTitle;
-@property (nonatomic) UITableView * tableView;
-@property (nonatomic) UIImageView * phoneConflictsIcon;
-@property (nonatomic) UILabel * mainDescription;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)close:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21GlucoseViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id collectionView;
-    id phoneConflictIconView;
-    id phoneConflictCountLabel;
-    id layout;
-    id phoneConflictToastId;
-    id cellID;
-    id cellSpacing;
-    id phoneConflictViewModel;
-    id glucoseSubscribers;
-    id phoneConflictSubscribers;
-    id glucoseViewDataSource;
-    id phoneConflictSnackBar;
-    id treatmentDecisionToast;
-    id createdToaster;
-    id magGlassViewController;
-    id trendGraphViewController;
-    id cellItem;
-}
-@property (nonatomic,retain) UICollectionView * collectionView;
-@property (nonatomic) UIView * phoneConflictIconView;
-@property (nonatomic) _TtC10Dexcom_ONE10BadgeLabel * phoneConflictCountLabel;
-@property (nonatomic) UICollectionViewFlowLayout * layout;
-- (id)initWithCoder:(id)v1;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewWillDisappear:(bool)v1;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (void)touchesBegan:(id)v1 withEvent:(id)v2;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32TransmitterSettingsTableViewCell : UITableViewCell {
-    id titleLabel;
-    id transmitterIcon;
-    id statusLabel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UIImageView * transmitterIcon;
-@property (nonatomic) UILabel * statusLabel;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE39SensorPeelOffInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
-    id step4Title;
-    id step4Text;
-    id step5Title;
-    id step5aText;
-    id step5bText;
-    id step5cText;
-    id step5dText;
-    id step6Title;
-    id step6Text;
-    id nextButton;
-}
-@property (nonatomic) UILabel * step4Title;
-@property (nonatomic) UILabel * step4Text;
-@property (nonatomic) UILabel * step5Title;
-@property (nonatomic) UILabel * step5aText;
-@property (nonatomic) UILabel * step5bText;
-@property (nonatomic) UILabel * step5cText;
-@property (nonatomic) UILabel * step5dText;
-@property (nonatomic) UILabel * step6Title;
-@property (nonatomic) UILabel * step6Text;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)nextButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21ToolTipViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id descriptionLabel;
-    id contentView;
-    id descriptionText;
-    id currentSettingText;
-}
-@property (nonatomic,retain) UILabel * descriptionLabel;
-@property (nonatomic,retain) UIView * contentView;
-- (void)viewDidLoad;
-- (void)viewSafeAreaInsetsDidChange;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21MinutePickerViewModel : _TtCs12_SwiftObject {
-    id pickerMinutes;
-    id originalMinutes;
-    id currentRow;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24MainTabBarViewController : UITabBarController {
-    id mainTabBar;
-    id repositoryMonitor;
-    id warmingProcessViewModel;
-    id subscribers;
-}
-@property (nonatomic) UITabBar * mainTabBar;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE36TransmitterPairingHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id searchingLabel;
-    id pairingLabel;
-    id toPairLabel;
-    id sensorLabel;
-    id transmitterLabel;
-    id keepPhoneCloseLabel;
-    id checkTransmitterLabel;
-    id doneButton;
-    id navItem;
-    id transmitterAttachedView;
-    id transmitterHolderView;
-    id keepPhoneCloseView;
-    id checkTransmitterSNView;
-    id topConstraint;
-    id topConstraintFactor;
-    id bottomConstraintFactor;
-    id backButtonAccessibilityIDText;
-    id txId;
-}
-@property (nonatomic) UILabel * searchingLabel;
-@property (nonatomic) UILabel * pairingLabel;
-@property (nonatomic) UILabel * toPairLabel;
-@property (nonatomic) UILabel * sensorLabel;
-@property (nonatomic) UILabel * transmitterLabel;
-@property (nonatomic) UILabel * keepPhoneCloseLabel;
-@property (nonatomic) UILabel * checkTransmitterLabel;
-@property (nonatomic) UIBarButtonItem * doneButton;
-@property (nonatomic) UINavigationItem * navItem;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterAttachedView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterHolderView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * keepPhoneCloseView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * checkTransmitterSNView;
-@property (nonatomic) NSLayoutConstraint * topConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)dismissHelpScreen;
-- (void)doneButtonTapped:(id)v1;
-- (void)touchesBegan:(id)v1 withEvent:(id)v2;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23TimeIssueViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE13AlertsManager : _TtCs12_SwiftObject {
-    id timeManager;
-    id minimumAlertTimeSpacing;
-    id _nextUIAlert;
-    id currentNotificationViewController;
-    id latestUIAlertLocalNotificationIdentifier;
-    id firedLocalNotificationIdentifiers;
-    id nextUIAlertSubscriber;
-    id scheduledAlertTimes;
-    id localNotificationSubscriberPool;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12DebugAppCore : _TtCs12_SwiftObject {
-    id isCommunicatingWithTx;
-    id glucoseReadings;
-    id acceleratedTimeInterval;
-    id fixedCurrentTime;
-    id d1DisplayState;
-    id bleState;
-    id blePermissionState;
-    id authStatus;
-    id persistenceErrorEvent;
-    id timeLossState;
-    id diskSpaceState;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28ActionSheetDismissalAnimator : NSObject<UIViewControllerAnimatedTransitioning> {
-    id interactionController;
-}
-- (double)transitionDuration:(id)v1;
-- (void)animateTransition:(id)v1;
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE14LoginViewModel : _TtCs12_SwiftObject {
-    id appCore;
-    id gcsService;
-    id localizeURL;
-    id showLogin;
-    id webViewAction;
-    id gcsResult;
-    id subscribers;
-    id maximumRetryCount;
-    id retryCount;
-    id accessToken;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE8Toasters : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28BackdoorDebugAlertsViewModel : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE34LegalAgreementsModalViewController : DXCMLegalAgreementsModalVC {
-    id networkReachability;
-    id subscribers;
-    id networkIsReachable;
-}
-- (void)viewDidAppear:(bool)v1;
-- (id)initWithAddress:(id)v1;
-- (id)initWithURL:(id)v1;
-- (id)initWithURLRequest:(id)v1;
-- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
-- (id)initWithRootViewController:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23GCSURLRepositoryMonitor : _TtCs12_SwiftObject {
-    id urlRepository;
-    id onURLUpdate;
-    id urls;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24ComputeACMViewController : _TtC10Dexcom_ONE20BaseUIViewController
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25GlucoseTimeIntervalButton : _TtC10Dexcom_ONE14DXCMPillButton {
-    id timeInterval;
-}
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33PairingUnsuccessfulViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-    id txId;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)helpButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23AlertsSettingsPublisher : _TtCs12_SwiftObject {
-    id initialValue;
-    id newSettings;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE13SceneDelegate : UIResponder<UIWindowSceneDelegate> {
-    id applicationServiceStarter;
-    id window;
-    id splashWindow;
-    id privacyWindow;
-    id onboardingState;
-}
-@property (nonatomic,retain) UIWindow * window;
-- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
-- (void)sceneWillEnterForeground:(id)v1;
-- (void)sceneDidEnterBackground:(id)v1;
-- (void)sceneDidBecomeActive:(id)v1;
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE8Snackbar : UIView {
-    id animationDirection;
-    id contentView;
-    id stackView;
-    id messageLabel;
-    id contentHeight;
-    id animationDuration;
-    id animatedConstraint;
-    id swipeRecognizer;
-    id viewController;
-    id contentViewController;
-    id duration;
-    id message;
-    id dismissCompletion;
-}
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) UIStackView * stackView;
-@property (nonatomic) UILabel * messageLabel;
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void)dealloc;
-- (void)hide;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE14DesignableView : UIView
-@property (nonatomic) double borderWidth;
-@property (nonatomic,retain) UIColor * borderColor;
-@property (nonatomic) double cornerRadius;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19BSIDetailsViewModel : _TtCs12_SwiftObject {
-    id indexPaths;
-    id accessibilityIDText;
-    id accessibilityText;
-    id defaultBSIAlertSound;
-    id forMoreThanMinuteInterval;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE20SetupWizardViewModel : _TtCs12_SwiftObject {
-    id accessibilityIDText;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE41OnboardingSafetyInformationViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-    id fullStatementButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * fullStatementButton;
-- (void)viewDidLoad;
-- (void)next;
-- (void)showSafetyStatement;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE37PairingUnsuccessfulHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id tryAgainButton;
-    id troubleshootingLabel;
-    id tip1TitleLabel;
-    id tip2TitleLabel;
-    id tip3TitleLabel;
-    id tip4TitleLabel;
-    id doneButton;
-    id tryPairingAgainButton;
-    id replaceSensorButton;
-    id transmitterAttachedView;
-    id transmitterHolderView;
-    id keepPhoneCloseView;
-    id checkTransmitterView;
-    id navItem;
-    id scrollView;
-    id contentView;
-    id backButtonAccessibilityIDText;
-    id txId;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UIButton * tryAgainButton;
-@property (nonatomic) UILabel * troubleshootingLabel;
-@property (nonatomic) UILabel * tip1TitleLabel;
-@property (nonatomic) UILabel * tip2TitleLabel;
-@property (nonatomic) UILabel * tip3TitleLabel;
-@property (nonatomic) UILabel * tip4TitleLabel;
-@property (nonatomic) UIBarButtonItem * doneButton;
-@property (nonatomic) UIButton * tryPairingAgainButton;
-@property (nonatomic) UIButton * replaceSensorButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterAttachedView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterHolderView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * keepPhoneCloseView;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * checkTransmitterView;
-@property (nonatomic) UINavigationItem * navItem;
-@property (nonatomic) UIScrollView * scrollView;
-@property (nonatomic) UIView * contentView;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (void)doneButtonTapped:(id)v1;
-- (void)tryPairingAgainButtonTapped:(id)v1;
-- (void)replaceSensorButtonTapped:(id)v1;
-- (void)onTransmitterAttachedViewTapped:(id)v1;
-- (void)onTransmitterHolderViewTapped:(id)v1;
-- (void)onPhoneCloseViewTapped:(id)v1;
-- (void)onCheckTransmitterSNViewTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE21PhoneConflictItemCell : UITableViewCell {
-    id conflictName;
-}
-@property (nonatomic) UILabel * conflictName;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27BackdoorTableViewController : _TtC10Dexcom_ONE25BaseUITableViewController {
-    id mockSwitch;
-    id unitsOfMeasureValueLabel;
-    id targetRangeValueLabel;
-    id switchEnvironmentsCell;
-    id debugViewModel;
-}
-@property (nonatomic) UISwitch * mockSwitch;
-@property (nonatomic) UILabel * unitsOfMeasureValueLabel;
-@property (nonatomic) UILabel * targetRangeValueLabel;
-@property (nonatomic) UITableViewCell * switchEnvironmentsCell;
-- (void)viewDidLoad;
-- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
-- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
-- (void)mockSwitchChangeWithSender:(id)v1;
-- (id)initWithStyle:(long long)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33PhoneConflictNavigationController : UINavigationController {
-    id viewModel;
-    id phoneConflictHelpSubscription;
-}
-- (void)viewDidLoad;
-- (id)initWithCoder:(id)v1;
-- (void)dismissViewControllerAnimated:(bool)v1 completion:(void (^ /* unknown block signature */)(void))v2;
-- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
-- (id)initWithRootViewController:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27TimeIssueHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id actionSheetDelegate;
-    id noAlertsWarningLabel;
-    id titleLabel;
-    id textLabel1;
-    id textLabel2;
-}
-@property (nonatomic) UILabel * noAlertsWarningLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * textLabel1;
-@property (nonatomic) UILabel * textLabel2;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12DXCMCardView : UIView {
-    id cornerRadius;
-    id shadowRadius;
-    id shadowOffset;
-    id shadowColor;
-    id shadowOpacity;
-    id borderWidth;
-    id borderColor;
-}
-@property (nonatomic) double cornerRadius;
-@property (nonatomic) double shadowRadius;
-@property (nonatomic) struct CGSize shadowOffset;
-@property (nonatomic,retain) UIColor * shadowColor;
-@property (nonatomic) float shadowOpacity;
-@property (nonatomic) double borderWidth;
-@property (nonatomic,retain) UIColor * borderColor;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void)prepareForInterfaceBuilder;
-- (void)layoutSubviews;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE18RepositoryMonitors : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE16HeaderFooterView : UITableViewHeaderFooterView {
-    id label;
-    id bottomConstraint;
-    id viewType;
-    id isHeader;
-}
-@property (nonatomic) UILabel * label;
-@property (nonatomic) NSLayoutConstraint * bottomConstraint;
-- (id)initWithReuseIdentifier:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29PhoneConflictInstructionsCell : UITableViewCell {
-    id lineNumber;
-    id instructionLabel;
-    id lineNumberWidth;
-}
-@property (nonatomic) UILabel * lineNumber;
-@property (nonatomic) UILabel * instructionLabel;
-@property (nonatomic) NSLayoutConstraint * lineNumberWidth;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24LocalNotificationManager : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25SettingsRepositoryMonitor : _TtCs12_SwiftObject {
-    id _appleHealthEnabledStatus;
-    id _unitOfMeasure;
-    id _thresholds;
-    id _trendGraphHeight;
-    id _trendGraphTargetRangeStatus;
-    id _trendGraphTimeRange;
-    id observers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30GlucoseContainerViewController : UIViewController {
-    id glucoseViewDataSource;
-    id observers;
-    id glucoseViewController;
-    id glucoseContainerHeaderView;
-}
-@property (nonatomic) UIView * glucoseContainerHeaderView;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewDidAppear:(bool)v1;
-- (id)embedGlucoseViewControllerWithCoder:(id)v1 sender:(id)v2 segueIdentifier:(id)v3;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29CrawlerMenuCollectionViewCell : UICollectionViewCell {
-    id menuElementLabel;
-    id menuElement;
-}
-@property (nonatomic) UILabel * menuElementLabel;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE13HelpViewModel : _TtCs12_SwiftObject {
-    id accessibilityIDText;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE36SensorInstructionsBaseViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id delegate;
-    id viewModel;
-}
-- (void)viewDidLoad;
-- (void)showConfirmationModal;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32PairNewTransmitterViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id pairNewTransmitterButton;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * pairNewTransmitterButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)pairNewTransmitterPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE14BulkDataLogger : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24TrendGraphViewController : UIViewController {
-    id xAxisUpdateTimer;
-    id subscribers;
-    id graphContainer;
-    id skView;
-    id moreButton;
-    id hourButton3;
-    id hourButton6;
-    id hourButton12;
-    id hourButton24;
-    id graphContainerTopSpacing;
-    id graphContainerHeight;
-    id graphContainerHeightRatio;
-    id skViewBottomSpacing;
-    id skViewTopSpacing;
-    id moreButtonHeight;
-    id timeManager;
-    id hourButtons;
-    id selectedTimeInterval;
-    id calloutBubble;
-    id dottedLineLayer;
-    id currentEGVDataDot;
-    id glucoseHapticFeedbackGenerator;
-    id glucoseSwimlanePresenter;
-    id timelineSwimlanePresenter;
-    id tickmarkInterval;
-    id glucoseViewDataSource;
-    id trendgraphDataSource;
-    id pendingActions;
-}
-@property (nonatomic) UIView * graphContainer;
-@property (nonatomic) _TtC12PhoenixUIKit18GraphContainerView * skView;
-@property (nonatomic) UIButton * moreButton;
-@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton3;
-@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton6;
-@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton12;
-@property (nonatomic) _TtC10Dexcom_ONE25GlucoseTimeIntervalButton * hourButton24;
-@property (nonatomic) NSLayoutConstraint * graphContainerTopSpacing;
-@property (nonatomic) NSLayoutConstraint * graphContainerHeight;
-@property (nonatomic) NSLayoutConstraint * graphContainerHeightRatio;
-@property (nonatomic) NSLayoutConstraint * skViewBottomSpacing;
-@property (nonatomic) NSLayoutConstraint * skViewTopSpacing;
-@property (nonatomic) NSLayoutConstraint * moreButtonHeight;
-- (id)initWithCoder:(id)v1;
-- (void)dealloc;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)selectTimeIntervalWithSender:(id)v1;
-- (void)moreButtonAction:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
 @end
 
 
@@ -4351,70 +2338,12 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE31DiskSpaceCriticalViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsTitle;
-    id appStoppedWorkingTitle;
-    id diskSpaceMessage;
+@interface _TtC10Dexcom_ONE19CustomCodeLabelView : UIView {
+    id codeLabel;
+    id grayView;
 }
-@property (nonatomic) UILabel * noAlertsTitle;
-@property (nonatomic) UILabel * appStoppedWorkingTitle;
-@property (nonatomic) UILabel * diskSpaceMessage;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28SecurityScreenViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id copyrightLabel;
-}
-@property (nonatomic) UILabel * copyrightLabel;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24ClarityCardInfoViewModel : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE38SensorAttachInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
-    id sensorAttachStep7Title;
-    id sensorAttachStep7aText;
-    id sensorAttachStep7bText;
-    id sensorAttachStep7cText;
-    id sensorAttachStep7dText;
-    id sensorAttachStep7eText;
-    id nextButton;
-}
-@property (nonatomic) UILabel * sensorAttachStep7Title;
-@property (nonatomic) UILabel * sensorAttachStep7aText;
-@property (nonatomic) UILabel * sensorAttachStep7bText;
-@property (nonatomic) UILabel * sensorAttachStep7cText;
-@property (nonatomic) UILabel * sensorAttachStep7dText;
-@property (nonatomic) UILabel * sensorAttachStep7eText;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)nextButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE25GlucoseCollectionViewCell : UICollectionViewCell
-- (id)preferredLayoutAttributesFittingAttributes:(id)v1;
+@property (nonatomic,retain) UILabel * codeLabel;
+@property (nonatomic,retain) UIView * grayView;
 - (id)initWithFrame:(struct CGRect)v1;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -4423,343 +2352,10 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE34OnboardingTrendGraphViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id trendGraphImage;
-    id titleLabel;
-    id trendGraphTitleLabel;
-    id trendGraphDescription;
-    id nextButton;
-}
-@property (nonatomic) UIImageView * trendGraphImage;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * trendGraphTitleLabel;
-@property (nonatomic) UILabel * trendGraphDescription;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)nextButtonPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE14DXCMPillButton : UIButton {
-    id customTitleInsets;
-    id isHaptic;
-    id borderColor;
-    id borderWidth;
-    id tapMargin;
-    id alwaysShowBorder;
-}
-@property (nonatomic) bool isHaptic;
-@property (nonatomic,retain) UIColor * borderColor;
-@property (nonatomic) double borderWidth;
-@property (nonatomic) double tapMargin;
-@property (nonatomic) bool alwaysShowBorder;
-@property (nonatomic,readonly) struct CGSize intrinsicContentSize;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void)prepareForInterfaceBuilder;
-- (void)layoutSubviews;
-- (void)sendAction:(SEL)v1 to:(id)v2 forEvent:(id)v3;
-- (bool)pointInside:(struct CGPoint)v1 withEvent:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE38TransmitterSettingsTableViewController : _TtC10Dexcom_ONE25BaseUITableViewController {
-    id pairNewTitle;
-    id snTitle;
-    id abTitle;
-    id activatedOnTitle;
-    id firmwareTitle;
-    id softwareNumberTitle;
-    id pairNewTransmitterCell;
-    id snValueLabel;
-    id abValueLabel;
-    id activatedOnLabel;
-    id firmwareValueLabel;
-    id softwareNumberValueLabel;
-    id transmitterSettingsSubscriber;
-    id sensorSessionViewModel;
-    id settingsViewModel;
-    id accessibilityIDText;
-}
-@property (nonatomic) UILabel * pairNewTitle;
-@property (nonatomic) UILabel * snTitle;
-@property (nonatomic) UILabel * abTitle;
-@property (nonatomic) UILabel * activatedOnTitle;
-@property (nonatomic) UILabel * firmwareTitle;
-@property (nonatomic) UILabel * softwareNumberTitle;
-@property (nonatomic) UITableViewCell * pairNewTransmitterCell;
-@property (nonatomic) UILabel * snValueLabel;
-@property (nonatomic) UILabel * abValueLabel;
-@property (nonatomic) UILabel * activatedOnLabel;
-@property (nonatomic) UILabel * firmwareValueLabel;
-@property (nonatomic) UILabel * softwareNumberValueLabel;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
-- (id)initWithStyle:(long long)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30HourMinutePickerViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id saveButton;
-    id cancelButton;
-    id hourMinutePickerView;
-    id alertTitleLabel;
-    id alertDescriptionLabel;
-    id hourMinutePickerViewBottomConstraint;
-    id delegate;
+@interface _TtC10Dexcom_ONE23BaseAlertViewController : _TtC10Dexcom_ONE20BaseUIViewController {
     id actionSheetDelegate;
-    id duration;
-    id originalDuration;
-    id minuteInterval;
-    id alertTitle;
-    id alertDescription;
-    id valueComponentIndex;
-    id pickerViewBottomPaddingConstant;
 }
-@property (nonatomic) UIButton * saveButton;
-@property (nonatomic) UIButton * cancelButton;
-@property (nonatomic) UIDatePicker * hourMinutePickerView;
-@property (nonatomic) UILabel * alertTitleLabel;
-@property (nonatomic) UILabel * alertDescriptionLabel;
-@property (nonatomic) NSLayoutConstraint * hourMinutePickerViewBottomConstraint;
-- (void)hourMinutePickerTimeIntervalChanged:(id)v1;
-- (void)savePressed:(id)v1;
-- (void)cancelPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27SensorRemovalViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id step1Title;
-    id step1Text;
-    id step2Title;
-    id step2Text;
-    id step3Title;
-    id step3Text;
-    id backButton;
-    id accessibilityIDText;
-}
-@property (nonatomic) UILabel * step1Title;
-@property (nonatomic) UILabel * step1Text;
-@property (nonatomic) UILabel * step2Title;
-@property (nonatomic) UILabel * step2Text;
-@property (nonatomic) UILabel * step3Title;
-@property (nonatomic) UILabel * step3Text;
-@property (nonatomic,retain) UIBarButtonItem * backButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)backPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30SensorCodeManualViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextInputTraits> {
-    id enterSensorCodeLabel;
-    id sensorCodeStackView;
-    id successSnackBar;
-    id submitButton;
-    id submitView;
-    id submitViewBottomConstraint;
-    id snackBarBottomConstraint;
-    id successSnackBarLabel;
-    id isKeyBoardShown;
-    id sensorCode;
-    id maxSensorCodeLength;
-    id sensorCodeSpacingConstant;
-    id snackBarBottomConstant;
-    id delegate;
-    id keyboardType;
-    id keyboardAppearance;
-    id canEdit;
-}
-@property (nonatomic) UILabel * enterSensorCodeLabel;
-@property (nonatomic) UIStackView * sensorCodeStackView;
-@property (nonatomic) UIView * successSnackBar;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * submitButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * submitView;
-@property (nonatomic) NSLayoutConstraint * submitViewBottomConstraint;
-@property (nonatomic) NSLayoutConstraint * snackBarBottomConstraint;
-@property (nonatomic) UILabel * successSnackBarLabel;
-@property (nonatomic) long long keyboardType;
-@property (nonatomic) long long keyboardAppearance;
-@property (nonatomic,readonly) bool canBecomeFirstResponder;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewWillDisappear:(bool)v1;
-- (void)keyboardActivityWithNotification:(id)v1;
-- (void)submitButtonTapped:(id)v1;
-- (void)showKeyboard;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31AlertThresholdSettingsViewModel : _TtCs12_SwiftObject {
-    id thresholdDataSource;
-    id toolTipDescription;
-    id currentSetting;
-    id tooltipDelegate;
-    id showLowGlucoseAlertInfo;
-    id showHighGlucoseAlertInfo;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE17SnackbarToastable : UIView {
-    id contentView;
-    id stackView;
-    id iconImageView;
-    id messageLabel;
-    id duration;
-    id message;
-    id icon;
-}
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) UIStackView * stackView;
-@property (nonatomic) UIImageView * iconImageView;
-@property (nonatomic) UILabel * messageLabel;
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B20ToasterContainerView : UIView {
-    id touchableFrame;
-}
-- (bool)pointInside:(struct CGPoint)v1 withEvent:(id)v2;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE38OnboardingSensorReadingsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id magGlassImage;
-    id sensorReadingTitleLabel;
-    id numAndArrowLabel;
-    id magGlassImageDescription1;
-    id magGlassImageDescription2;
-    id trendArrowsTitleLabel;
-    id arrowsDescription1;
-    id arrowsDescription2;
-    id arrowsDescription3;
-    id arrowsDescription4;
-    id arrowsDescription5;
-    id arrowsDescription6;
-    id nextButton;
-}
-@property (nonatomic) UIImageView * magGlassImage;
-@property (nonatomic) UILabel * sensorReadingTitleLabel;
-@property (nonatomic) UILabel * numAndArrowLabel;
-@property (nonatomic) UILabel * magGlassImageDescription1;
-@property (nonatomic) UILabel * magGlassImageDescription2;
-@property (nonatomic) UILabel * trendArrowsTitleLabel;
-@property (nonatomic) UILabel * arrowsDescription1;
-@property (nonatomic) UILabel * arrowsDescription2;
-@property (nonatomic) UILabel * arrowsDescription3;
-@property (nonatomic) UILabel * arrowsDescription4;
-@property (nonatomic) UILabel * arrowsDescription5;
-@property (nonatomic) UILabel * arrowsDescription6;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)nextButtonPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31ActionSheetPresentationAnimator : NSObject<UIViewControllerAnimatedTransitioning>
-- (double)transitionDuration:(id)v1;
-- (void)animateTransition:(id)v1;
-- (id)init;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23CgmStatusViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id dexcomLogo;
-    id glucoseCompass;
-    id glucoseCompassTopSpacing;
-    id glucoseViewDataSource;
-    id viewModelSubscriptions;
-    id glucoseCompassPresenter;
-}
-@property (nonatomic) UIImageView * dexcomLogo;
-@property (nonatomic) _TtC12PhoenixUIKit14GlucoseCompass * glucoseCompass;
-@property (nonatomic) NSLayoutConstraint * glucoseCompassTopSpacing;
-- (void)doubleTapMagGlass:(id)v1;
-- (void)viewDidLoad;
-- (id)initWithCoder:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27ReplaceSensorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id startNewSensorButton;
-    id titleLabel;
-}
-@property (nonatomic) UIButton * startNewSensorButton;
-@property (nonatomic) UILabel * titleLabel;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)startNewSensor:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE35DiskSpaceVeryLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -4768,53 +2364,12 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE23SensorCodeHintViewModel : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19AccountWebViewModel : _TtCs12_SwiftObject {
-    id appCore;
-    id localizeURL;
-    id webViewAction;
+@interface _TtC10Dexcom_ONE31SignalLossAlertOnViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id messageView;
 }
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24ACMTimeOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id dimmingView;
-    id loadingImageView;
-    id connectionErrorLabel;
-    id retryButton;
-    id retryingLabel;
-    id retryBlock;
-}
-@property (nonatomic) UIView * dimmingView;
-@property (nonatomic) UIImageView * loadingImageView;
-@property (nonatomic) UILabel * connectionErrorLabel;
-@property (nonatomic) UIButton * retryButton;
-@property (nonatomic) UILabel * retryingLabel;
+@property (nonatomic) UILabel * messageView;
 - (void)viewDidLoad;
-- (void)retryButtonPressed:(id)v1;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE16DesignableButton : UIButton {
-    id imageColor;
-}
-@property (nonatomic) double borderWidth;
-@property (nonatomic,retain) UIColor * borderColor;
-@property (nonatomic) double cornerRadius;
-@property (nonatomic,retain) UIColor * imageColor;
-- (id)initWithFrame:(struct CGRect)v1;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
 @end
@@ -4837,695 +2392,17 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE20ActionSheetContainer : _TtC10Dexcom_ONE20BaseUIViewController {
-    id contentView;
-    id contentViewHeightConstraint;
-    id contentViewController;
-    id presentationManager;
-    id interactionController;
-    id toolTipDescription;
-    id isDismissable;
+@interface _TtC10Dexcom_ONE16HeaderFooterView : UITableViewHeaderFooterView {
+    id label;
+    id bottomConstraint;
+    id viewType;
+    id isHeader;
 }
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) NSLayoutConstraint * contentViewHeightConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19AlertsSettingsModel : _TtCs12_SwiftObject {
-    id alertThresholdSettingsViewModel;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE24DataConsentsWebViewModel : _TtCs12_SwiftObject {
-    id appCore;
-    id localizeURL;
-    id webViewAction;
-    id subscribers;
-    id isDataSharePermitted;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE38TransmitterPlacementHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id backButtonAccessibilityIDText;
-}
-@property (nonatomic) UILabel * titleLabel;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33ActionSheetPresentationController : UIPresentationController {
-    id dimmingView;
-    id dimmingViewAlpha;
-}
-@property (nonatomic,readonly) struct CGRect frameOfPresentedViewInContainerView;
-- (id)initWithPresentedViewController:(id)v1 presentingViewController:(id)v2;
-- (void)presentationTransitionWillBegin;
-- (void)dismissalTransitionWillBegin;
-- (void)containerViewWillLayoutSubviews;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31PhoneConflictHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id phoneConflictsIcon;
-    id tableView;
-    id tableViewHeight;
-    id mainTitle;
-    id mainDescription;
-    id howToFixButton;
-    id dismissButton;
-    id conflictItemIdentifier;
-    id viewModel;
-    id phoneConflictHelpSubscription;
-    id $__lazy_storage_$_dataSource;
-    id actionSheetDelegate;
-}
-@property (nonatomic) UIImageView * phoneConflictsIcon;
-@property (nonatomic) UITableView * tableView;
-@property (nonatomic) NSLayoutConstraint * tableViewHeight;
-@property (nonatomic) UILabel * mainTitle;
-@property (nonatomic) UILabel * mainDescription;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * howToFixButton;
-@property (nonatomic) UIButton * dismissButton;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)showHowTo:(id)v1;
-- (void)dismiss:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE39TransmitterPairingSuccessViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id sensorCode;
-    id shouldJoinExistingSession;
-    id titleLabel;
-    id descriptionLabel;
-    id startSensorButton;
-    id startSensorWarmupButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * startSensorButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * startSensorWarmupButton;
-- (void)viewDidLoad;
-- (id)initWithCoder:(id)v1;
-- (void)startSensorWarmupButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23AlertInfoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id icon;
-    id titleLabel;
-    id descriptionTextView;
-    id acknowledgeButton;
-    id onAcknowledge;
-}
-@property (nonatomic) UIImageView * icon;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UITextView * descriptionTextView;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * acknowledgeButton;
-- (void)viewDidLoad;
-- (void)onAcknowledge:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
+@property (nonatomic) UILabel * label;
+@property (nonatomic) NSLayoutConstraint * bottomConstraint;
+- (id)initWithReuseIdentifier:(id)v1;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31SignalLossAlertOnViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id messageView;
-}
-@property (nonatomic) UILabel * messageView;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE17MaterialTextField : UIView {
-    id errorText;
-    id inactiveBorderColor;
-    id inactivePlaceholderColor;
-    id inactiveBackgroundColor;
-    id editingBorderColor;
-    id editingPlaceholderColor;
-    id editingBackgroundColor;
-    id invalidBorderColor;
-    id invalidPlaceholderColor;
-    id invalidBackgroundColor;
-    id contentView;
-    id stack;
-    id borderAndBackgroundContainer;
-    id placeholderLabel;
-    id textField;
-    id clearTextButton;
-    id errorLabel;
-    id errorBadge;
-    id _text;
-    id editingBegan;
-    id editingEnded;
-}
-@property (nonatomic) double borderWidth;
-@property (nonatomic) double cornerRadius;
-@property (nonatomic,copy) NSString * placeholder;
-@property (nonatomic,copy) NSString * errorText;
-@property (nonatomic,retain) UIColor * inactiveBorderColor;
-@property (nonatomic,retain) UIColor * inactivePlaceholderColor;
-@property (nonatomic,retain) UIColor * inactiveBackgroundColor;
-@property (nonatomic,retain) UIColor * editingBorderColor;
-@property (nonatomic,retain) UIColor * editingPlaceholderColor;
-@property (nonatomic,retain) UIColor * editingBackgroundColor;
-@property (nonatomic,retain) UIColor * invalidBorderColor;
-@property (nonatomic,retain) UIColor * invalidPlaceholderColor;
-@property (nonatomic,retain) UIColor * invalidBackgroundColor;
-@property (nonatomic,retain) UIView * contentView;
-@property (nonatomic) UIStackView * stack;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * borderAndBackgroundContainer;
-@property (nonatomic) UILabel * placeholderLabel;
-@property (nonatomic) UITextField * textField;
-@property (nonatomic) UIButton * clearTextButton;
-@property (nonatomic) UILabel * errorLabel;
-@property (nonatomic) UIButton * errorBadge;
-@property (nonatomic,readonly) struct CGSize intrinsicContentSize;
-@property (nonatomic,copy) NSString * accessibilityIdentifier;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (bool)becomeFirstResponder;
-- (bool)resignFirstResponder;
-- (void)editingDidBegin;
-- (void)editingChanged;
-- (void)eiditingDidEnd;
-- (void)clearTextTapped;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23TakePhotoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id cameraView;
-    id successSnackBar;
-    id snackBarText;
-    id cancelButton;
-    id topLabel;
-    id firstInstructionLabel;
-    id secondInstructionLabel;
-    id tipLabel;
-    id instructionsScrollView;
-    id instructionsContentView;
-    id scrollViewIndicator;
-    id delegate;
-    id viewModel;
-}
-@property (nonatomic,retain) _TtC10Dexcom_ONE10CameraView * cameraView;
-@property (nonatomic) UIView * successSnackBar;
-@property (nonatomic) UILabel * snackBarText;
-@property (nonatomic) UIButton * cancelButton;
-@property (nonatomic) UILabel * topLabel;
-@property (nonatomic) UILabel * firstInstructionLabel;
-@property (nonatomic) UILabel * secondInstructionLabel;
-@property (nonatomic) UILabel * tipLabel;
-@property (nonatomic) UIScrollView * instructionsScrollView;
-@property (nonatomic) UIView * instructionsContentView;
-@property (nonatomic) UIView * scrollViewIndicator;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewWillDisappear:(bool)v1;
-- (void)cancel;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26SettingsTitleTableViewCell : UITableViewCell {
-    id iconImageView;
-    id titleLabel;
-}
-@property (nonatomic) UIImageView * iconImageView;
-@property (nonatomic) UILabel * titleLabel;
-- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23AcknowledgableToastable : UIView {
-    id stackView;
-    id titleLabel;
-    id bodyLabel;
-    id contentView;
-    id acknowledgeButton;
-    id title;
-    id body;
-    id buttonTitle;
-    id identifier;
-    id timeToDismiss;
-    id completion;
-    id defaultSpacing;
-}
-@property (nonatomic) UIStackView * stackView;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * bodyLabel;
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) UIButton * acknowledgeButton;
-- (id)initWithCoder:(id)v1;
-- (void)acknowledgeButtonPressed:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32OnboardingOverviewViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id overviewCard;
-    id overviewButton;
-    id overviewTitleLabel;
-    id overviewDescriptionLabel;
-    id overviewImage;
-    id overviewTopSpacer;
-    id appSetupCard;
-    id appSetupTopSpacer;
-    id appSetupImage;
-    id appSetupButton;
-    id appSetupTitleLabel;
-    id appSetupDescriptionLabel;
-    id startSensorCard;
-    id startSensorTopSpacer;
-    id startSensorImage;
-    id startSensorButton;
-    id startSensorTitleLabel;
-    id startSensorDescriptionLabel;
-    id subscribers;
-    id showInitialLegalAgreements;
-    id showGCSConfirmationModal;
-}
-@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * overviewCard;
-@property (nonatomic) UIButton * overviewButton;
-@property (nonatomic) UILabel * overviewTitleLabel;
-@property (nonatomic) UILabel * overviewDescriptionLabel;
-@property (nonatomic) UIImageView * overviewImage;
-@property (nonatomic) UIView * overviewTopSpacer;
-@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * appSetupCard;
-@property (nonatomic) UIView * appSetupTopSpacer;
-@property (nonatomic) UIImageView * appSetupImage;
-@property (nonatomic) UIButton * appSetupButton;
-@property (nonatomic) UILabel * appSetupTitleLabel;
-@property (nonatomic) UILabel * appSetupDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * startSensorCard;
-@property (nonatomic) UIView * startSensorTopSpacer;
-@property (nonatomic) UIImageView * startSensorImage;
-@property (nonatomic) UIButton * startSensorButton;
-@property (nonatomic) UILabel * startSensorTitleLabel;
-@property (nonatomic) UILabel * startSensorDescriptionLabel;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(bool)v1;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)handleOverviewTap:(id)v1;
-- (void)handleAppSetupTap:(id)v1;
-- (void)handleStartSensorTap:(id)v1;
-- (void)overviewTapped:(id)v1;
-- (void)appSetupTapped:(id)v1;
-- (void)onStartSensor;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30OnboardingAlertsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id titleLabel;
-    id alertsTitleLabel;
-    id alertsDescriptionLabel;
-    id alertsYellowLineDescription;
-    id alertsRedLineDescriptionLabel;
-    id alertSettingsTitleLabel;
-    id settingsAlertsDescriptionLabel;
-    id lowAlertLabel;
-    id highAlertLabel;
-    id signalLossLabel;
-    id bsiLabel;
-    id alertGraphImage;
-    id defaultLowAlertLabel;
-    id defaultHighAlertLabel;
-    id defaultSignalLossAlertLabel;
-    id defaultBSIAlertLabel;
-    id nextButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * alertsTitleLabel;
-@property (nonatomic) UILabel * alertsDescriptionLabel;
-@property (nonatomic) UILabel * alertsYellowLineDescription;
-@property (nonatomic) UILabel * alertsRedLineDescriptionLabel;
-@property (nonatomic) UILabel * alertSettingsTitleLabel;
-@property (nonatomic) UILabel * settingsAlertsDescriptionLabel;
-@property (nonatomic) UILabel * lowAlertLabel;
-@property (nonatomic) UILabel * highAlertLabel;
-@property (nonatomic) UILabel * signalLossLabel;
-@property (nonatomic) UILabel * bsiLabel;
-@property (nonatomic) UIImageView * alertGraphImage;
-@property (nonatomic) UILabel * defaultLowAlertLabel;
-@property (nonatomic) UILabel * defaultHighAlertLabel;
-@property (nonatomic) UILabel * defaultSignalLossAlertLabel;
-@property (nonatomic) UILabel * defaultBSIAlertLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)nextButtonPressed:(id)v1;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19NetworkReachability : _TtCs12_SwiftObject {
-    id networkStatus;
-    id monitor;
-    id queue;
-    id currentNetworkPath;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32UnrecoverableErrorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id subtitleLabel;
-    id bodyLabel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * subtitleLabel;
-@property (nonatomic) UILabel * bodyLabel;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE40TransmitterBatteryLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE30ActionSheetPresentationManager : NSObject<UIViewControllerTransitioningDelegate> {
-    id dimmingViewAlpha;
-}
-- (id)animationControllerForPresentedController:(id)v1 presentingController:(id)v2 sourceController:(id)v3;
-- (id)animationControllerForDismissedController:(id)v1;
-- (id)interactionControllerForPresentation:(id)v1;
-- (id)interactionControllerForDismissal:(id)v1;
-- (id)presentationControllerForPresentedViewController:(id)v1 presentingViewController:(id)v2 sourceViewController:(id)v3;
-- (id)init;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31GlucoseAlertsInfoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id lineDescriptionLabel;
-    id imageView;
-    id scrollView;
-    id contentView;
-    id okButton;
-    id thresholdType;
-    id trendGraphImage;
-    id actionSheetDelegate;
-    id _glucoseAlertsInfoAction;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UILabel * lineDescriptionLabel;
-@property (nonatomic) UIImageView * imageView;
-@property (nonatomic) UIScrollView * scrollView;
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) UIButton * okButton;
-- (void)onConfirmButtonTap:(id)v1;
-- (void)viewDidLoad;
-- (void)viewDidLayoutSubviews;
-- (id)initWithCoder:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE12SoundManager : _TtCs12_SwiftObject {
-    id alertProfilesRepositoryMonitor;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE11CalloutView : _TtC10Dexcom_ONE12DXCMCardView {
-    id timeLabel;
-    id glucoseLabel;
-}
-- (id)init;
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE11RadioButton : UIButton {
-    id outerCircleLayer;
-    id innerCircleLayer;
-    id outerCircleColor;
-    id innerCircleCircleColor;
-    id outerCircleLineWidth;
-    id innerCircleGap;
-    id outerCircleShouldChangeColor;
-}
-@property (nonatomic,retain) UIColor * outerCircleColor;
-@property (nonatomic,retain) UIColor * innerCircleCircleColor;
-@property (nonatomic) double outerCircleLineWidth;
-@property (nonatomic) double innerCircleGap;
-@property (nonatomic) bool outerCircleShouldChangeColor;
-@property (nonatomic) bool selected;
-- (id)initWithFrame:(struct CGRect)v1;
-- (id)initWithCoder:(id)v1;
-- (void)prepareForInterfaceBuilder;
-- (void)layoutSubviews;
-- (bool)isSelected;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE29AppBluetoothOffViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id noAlertsLabel;
-    id statusLabel;
-    id detailLabel;
-    id helpButton;
-    id imageHeightConstraint;
-    id imageTopConstraint;
-}
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * statusLabel;
-@property (nonatomic) UILabel * detailLabel;
-@property (nonatomic) UIButton * helpButton;
-@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
-@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
-- (id)initWithCoder:(id)v1;
-- (void)viewDidLoad;
-- (void)helpButtonClicked:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE26SessionEndedViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id sessionEndedBannerView;
-    id alertsIconHeightConstraint;
-    id contentView;
-    id scrollView;
-    id sessionEndedLabel;
-    id noAlertsLabel;
-    id removeSensorTitleLabel;
-    id descriptionLabel;
-    id okButton;
-    id sensorRemovalButton;
-    id contentHeight;
-    id actionSheetDelegate;
-}
-@property (nonatomic) UIView * sessionEndedBannerView;
-@property (nonatomic) NSLayoutConstraint * alertsIconHeightConstraint;
-@property (nonatomic) UIView * contentView;
-@property (nonatomic) UIScrollView * scrollView;
-@property (nonatomic) UILabel * sessionEndedLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * removeSensorTitleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * sensorRemovalButton;
-- (void)viewDidLoad;
-- (void)okButtonTapped:(id)v1;
-- (void)removeSensorInstructionsButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE17AlertsCoreService : _TtCs12_SwiftObject {
-    id alertRepository;
-    id bulkDataLogger;
-    id timeManager;
-    id settingsPublisher;
-    id glucoseRepositoryMonitor;
-    id blockingAlertsMonitor;
-    id timeLossMonitor;
-    id settingsRepositoryMonitor;
-    id bulkDataAlertStateTracker;
-    id alertsEngine;
-    id subscribers;
-    id _persistedBluetoothState;
-    id _persistedBluetoothStateTimestamp;
-    id _persistedTxSessionState;
-    id _persistedTxSessionStateTimestamp;
-    id currentAlertMapPublisher;
-    id $__lazy_storage_$_txSessionEventPublisher;
-    id $__lazy_storage_$_bluetoothEventPublisher;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23AcknowledgeableSnackBar : _TtC10Dexcom_ONE8Snackbar
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32TwoHourSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE36OnboardingEnableAlertsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
-    id titleLabel;
-    id alertsLabel;
-    id alertDescriptionLabel;
-    id iWouldLikeLabel;
-    id alertsOnLabel;
-    id alertsOffLabel;
-    id alertSettingsDescriptionLabel;
-    id technicalAlertsDescriptionLabel;
-    id alertsOnButton;
-    id alertsOffButton;
-    id nextButton;
-    id originalNextBackgroundColor;
-    id alertsEnabled;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * alertsLabel;
-@property (nonatomic) UILabel * alertDescriptionLabel;
-@property (nonatomic) UILabel * iWouldLikeLabel;
-@property (nonatomic) UILabel * alertsOnLabel;
-@property (nonatomic) UILabel * alertsOffLabel;
-@property (nonatomic) UILabel * alertSettingsDescriptionLabel;
-@property (nonatomic) UILabel * technicalAlertsDescriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE11RadioButton * alertsOnButton;
-@property (nonatomic) _TtC10Dexcom_ONE11RadioButton * alertsOffButton;
-@property (nonatomic) UIButton * nextButton;
-- (void)viewDidLoad;
-- (void)prepareForSegue:(id)v1 sender:(id)v2;
-- (void)alertsOn;
-- (void)alertsOff;
-- (void)next;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE18SystemTimeProvider : _TtCs12_SwiftObject
 @end
 
 
@@ -5578,6 +2455,15 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
+@interface _TtC10Dexcom_ONE25ApplicationServiceStarter : _TtCs12_SwiftObject {
+    id cancelTimer;
+    id cancellable;
+}
+@end
+
+
+/*****************************************************************/
+
 @interface _TtC10Dexcom_ONE40BackdoorPairNewTransmitterViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextFieldDelegate> {
     id transmitterIdTextField;
     id sensorCodeTextField;
@@ -5586,6 +2472,7 @@ struct anonymous_type_25 {
     id pairNewTransmitterButton;
     id startSensorButton;
     id stopSensorButton;
+    id _appCoreService;
     id displayStateSubscriber;
 }
 @property (nonatomic) UITextField * transmitterIdTextField;
@@ -5608,62 +2495,123 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE21GlucoseAlertViewModel : _TtCs12_SwiftObject {
-    id glucoseViewDataSource;
-    id alertType;
-    id glucoseCompassPresenter;
-    id viewModelSubscriber;
-    id _shouldDismissPublisher;
-    id _currentGlucose;
+@interface _TtC10Dexcom_ONE34InvalidTransmitterSNViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id reEnterSNLabel;
+    id takePhotoButton;
+    id enterSNButton;
+    id actionSheetDelegate;
+    id delegate;
 }
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * reEnterSNLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterSNButton;
+- (void)takePhotoPressed:(id)v1;
+- (void)enterManuallyPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE21AlertDetailsViewModel : _TtCs12_SwiftObject {
-    id selectedIndex;
-    id accessibilityText;
-    id accessibilityIDText;
-    id alertLevelPickerData;
-    id levelPickerData;
-    id levelPickerSelectedIndex;
-    id thresholdType;
-    id defaultLowAlertSound;
-    id defaultHighAlertSound;
-    id toolTipDescription;
-    id currentSetting;
-    id tooltipDelegate;
-    id alertThresholdSettingsViewModel;
-    id thresholdSettings;
+@interface _TtC10Dexcom_ONE30HourMinutePickerViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id saveButton;
+    id cancelButton;
+    id hourMinutePickerView;
+    id alertTitleLabel;
+    id alertDescriptionLabel;
+    id hourMinutePickerViewBottomConstraint;
+    id delegate;
+    id actionSheetDelegate;
+    id duration;
+    id originalDuration;
+    id minuteInterval;
+    id alertTitle;
+    id alertDescription;
+    id valueComponentIndex;
+    id pickerViewBottomPaddingConstant;
+}
+@property (nonatomic) UIButton * saveButton;
+@property (nonatomic) UIButton * cancelButton;
+@property (nonatomic) UIDatePicker * hourMinutePickerView;
+@property (nonatomic) UILabel * alertTitleLabel;
+@property (nonatomic) UILabel * alertDescriptionLabel;
+@property (nonatomic) NSLayoutConstraint * hourMinutePickerViewBottomConstraint;
+- (void)hourMinutePickerTimeIntervalChanged:(id)v1;
+- (void)savePressed:(id)v1;
+- (void)cancelPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE18BulkDataCGMLogging : _TtCs12_SwiftObject {
     id subscribers;
-    id showLowGlucoseAlertInfo;
-    id showHighGlucoseAlertInfo;
-    id forMoreThanMinuteInterval;
-    id minimumSnoozeDurationForHigh;
-    id minimumSnoozeDurationForLow;
-    id minimumDelayFirstAlertDuration;
-    id maximumSnoozeDuration;
-    id maximumDelayFirstAlertDuration;
-    id delayFirstAlertSection;
+    id alertProfileRepoMonitor;
+    id daysOfWeekList;
+    id settingDate;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE24InvalidCORViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id errorTitle;
-    id invalidCORTitle;
-    id descriptionLabel;
-    id step1Description;
-    id step2Description;
+@interface _TtC10Dexcom_ONE35OnboardingTargetRangeViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id targetRangeImage;
+    id titleLabel;
+    id targetRangeTitleLabel;
+    id targetRangeDescription;
+    id nextButton;
 }
-@property (nonatomic) UILabel * errorTitle;
-@property (nonatomic) UILabel * invalidCORTitle;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UILabel * step1Description;
-@property (nonatomic) UILabel * step2Description;
+@property (nonatomic) UIImageView * targetRangeImage;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * targetRangeTitleLabel;
+@property (nonatomic) UILabel * targetRangeDescription;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)next;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34BriefSensorIssueHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id actionSheetDelegate;
+    id titleLabel;
+    id topTextLabel;
+    id subtitle1Label;
+    id subtext1Label;
+    id subtitle2Label;
+    id listItem1Label;
+    id listItem1aLabel;
+    id techSupportTextView;
+    id listItem2Label;
+    id listItem3Label;
+    id bottomTextLabel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * topTextLabel;
+@property (nonatomic) UILabel * subtitle1Label;
+@property (nonatomic) UILabel * subtext1Label;
+@property (nonatomic) UILabel * subtitle2Label;
+@property (nonatomic) UILabel * listItem1Label;
+@property (nonatomic) UILabel * listItem1aLabel;
+@property (nonatomic) UITextView * techSupportTextView;
+@property (nonatomic) UILabel * listItem2Label;
+@property (nonatomic) UILabel * listItem3Label;
+@property (nonatomic) UILabel * bottomTextLabel;
 - (void)viewDidLoad;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
@@ -5673,26 +2621,11 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE17SettingsViewModel : _TtCs12_SwiftObject {
-    id _transmitterSettingsModel;
-    id observers;
-    id _appleHealthModel;
-    id displayStateSubscriber;
-    id displayStateSubscription;
-    id accessibilityIDText;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE27TimeLossAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id noAlertsLabel;
+@interface _TtC10Dexcom_ONE40TransmitterBatteryLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
     id titleLabel;
     id descriptionLabel;
     id okButton;
 }
-@property (nonatomic) UILabel * noAlertsLabel;
 @property (nonatomic) UILabel * titleLabel;
 @property (nonatomic) UILabel * descriptionLabel;
 @property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
@@ -5706,29 +2639,24 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE9TactSMach : _TtCs12_SwiftObject
+@interface _TtC10Dexcom_ONE19TimeServiceProvider : _TtCs12_SwiftObject {
+    id _passedBackgroundTimeThreshold;
+}
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE36TransmitterFailedAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id bannerTitleLabel;
-    id noAlertsLabel;
-    id instructionTitleLabel;
-    id instructionDescriptionLabel;
+@interface _TtC10Dexcom_ONE32SixHourSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
     id okButton;
-    id sensorRemovalInstructionsButton;
 }
-@property (nonatomic) UILabel * bannerTitleLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * instructionTitleLabel;
-@property (nonatomic) UILabel * instructionDescriptionLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
 @property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
 - (void)viewDidLoad;
 - (void)OKButtonPressed;
-- (void)sensorRemovalInstructionsButtonPressed;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -5737,24 +2665,139 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE21GlucoseViewDataSource : _TtCs12_SwiftObject {
-    id _trendGraphDataSource;
-    id _cgmStatusViewModel;
-    id _trendGraphAvailable;
-    id _timeIntervalInHours;
-    id cgmStatusSubscriber;
-    id trendGraphCombinedSubscriber;
-    id trendGraphCGMReadingsSubscriber;
-    id trendGraphAvailabilitySubscriber;
-    id glucoseRepositoryMonitor;
-    id settingsRepositoryMonitor;
+@interface _TtC10Dexcom_ONE33SensorInsertionHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id mainTitleLabel;
+    id instructionsLabel;
+    id instructionsButton;
+    id backButtonAccessibilityIDText;
 }
+@property (nonatomic) UILabel * mainTitleLabel;
+@property (nonatomic) UILabel * instructionsLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * instructionsButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)insertionInstructionsButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE10ColorTheme : _TtCs12_SwiftObject
+@interface _TtC10Dexcom_ONE31DiskSpaceCriticalViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsTitle;
+    id appStoppedWorkingTitle;
+    id diskSpaceMessage;
+}
+@property (nonatomic) UILabel * noAlertsTitle;
+@property (nonatomic) UILabel * appStoppedWorkingTitle;
+@property (nonatomic) UILabel * diskSpaceMessage;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23CgmStatusViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id dexcomLogo;
+    id glucoseCompass;
+    id glucoseCompassTopSpacing;
+    id glucoseViewDataSource;
+    id viewModelSubscriptions;
+    id glucoseCompassPresenter;
+}
+@property (nonatomic) UIImageView * dexcomLogo;
+@property (nonatomic) _TtC12PhoenixUIKit14GlucoseCompass * glucoseCompass;
+@property (nonatomic) NSLayoutConstraint * glucoseCompassTopSpacing;
+- (void)viewDidLoad;
+- (id)initWithCoder:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27ReplaceSensorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id startNewSensorButton;
+    id titleLabel;
+}
+@property (nonatomic) UIButton * startNewSensorButton;
+@property (nonatomic) UILabel * titleLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)startNewSensor:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31GlucoseAlertsInfoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id lineDescriptionLabel;
+    id imageView;
+    id scrollView;
+    id contentView;
+    id okButton;
+    id thresholdType;
+    id trendGraphImage;
+    id actionSheetDelegate;
+    id _glucoseAlertsInfoAction;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) UILabel * lineDescriptionLabel;
+@property (nonatomic) UIImageView * imageView;
+@property (nonatomic) UIScrollView * scrollView;
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) UIButton * okButton;
+- (void)onConfirmButtonTap:(id)v1;
+- (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
+- (id)initWithCoder:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B20ToasterContainerView : UIView {
+    id touchableFrame;
+}
+- (bool)pointInside:(struct CGPoint)v1 withEvent:(id)v2;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28DataReConsentsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id consentRequiredLabel;
+    id tapContinueLabel;
+    id continueButton;
+    id dismissButton;
+    id actionSheetDelegate;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * consentRequiredLabel;
+@property (nonatomic) UILabel * tapContinueLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * continueButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * dismissButton;
+- (void)viewDidLoad;
+- (void)onContinueButtonTap:(id)v1;
+- (void)dismissButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
 @end
 
 
@@ -5763,319 +2806,23 @@ struct anonymous_type_25 {
 @interface _TtC10Dexcom_ONE17BackdoorViewModel : _TtCs12_SwiftObject {
     id thresholdsViewModel;
     id alertProfilesRepositoryMonitor;
+    id _appCoreService;
+    id _authManager;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE30PhoneConflictRepositoryMonitor : _TtCs12_SwiftObject {
-    id _currentConflicts;
-    id _currentBlockingConflicts;
-    id applicationStatusSubscriber;
-    id notificationCenter;
-    id phoneConflictListUpdated;
-    id phoneConflictDetailsVisible;
+@interface _TtC10Dexcom_ONE30ActionSheetPresentationManager : NSObject<UIViewControllerTransitioningDelegate> {
+    id dimmingViewAlpha;
 }
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE28SensorCodeHintViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id hintLabel;
-    id viewModel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * hintLabel;
-- (void)viewWillAppear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE32SensorExpiredAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id bannerTitleLabel;
-    id noAlertsLabel;
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-    id sensorRemovalInstructionsButton;
-}
-@property (nonatomic) UILabel * bannerTitleLabel;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (void)sensorRemovalInstructionsButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19OnboardingViewModel : _TtCs12_SwiftObject {
-    id glucoseUnits;
-    id mode;
-    id popToViewController;
-    id normalFont;
-    id boldFont;
-    id blePermission;
-    id notificationPermission;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE10BadgeLabel : UILabel
-- (id)initWithCoder:(id)v1;
-- (id)initWithFrame:(struct CGRect)v1;
-- (void)prepareForInterfaceBuilder;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE36SensorSiteInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
-    id step1Title;
-    id step1Text1;
-    id step1Text2;
-    id step1Text3;
-    id step1Text4;
-    id step1Text5;
-    id step1Text5Bones;
-    id step1Text5IrritatedSkin;
-    id step1Text5Tatoos;
-    id step1Text5bumpedAreas;
-    id step2Title;
-    id step2Text1;
-    id step2Text2;
-    id step2Text3;
-    id step3Title;
-    id step3Text1;
-    id step3Text2;
-    id nextButton;
-}
-@property (nonatomic) UILabel * step1Title;
-@property (nonatomic) UILabel * step1Text1;
-@property (nonatomic) UILabel * step1Text2;
-@property (nonatomic) UILabel * step1Text3;
-@property (nonatomic) UILabel * step1Text4;
-@property (nonatomic) UILabel * step1Text5;
-@property (nonatomic) UILabel * step1Text5Bones;
-@property (nonatomic) UILabel * step1Text5IrritatedSkin;
-@property (nonatomic) UILabel * step1Text5Tatoos;
-@property (nonatomic) UILabel * step1Text5bumpedAreas;
-@property (nonatomic) UILabel * step2Title;
-@property (nonatomic) UILabel * step2Text1;
-@property (nonatomic) UILabel * step2Text2;
-@property (nonatomic) UILabel * step2Text3;
-@property (nonatomic) UILabel * step3Title;
-@property (nonatomic) UILabel * step3Text1;
-@property (nonatomic) UILabel * step3Text2;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
-- (void)viewDidLoad;
-- (void)nextButtonTapped:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE37BriefSensorIssueAlertOnViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id messageView;
-}
-@property (nonatomic) UILabel * messageView;
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE36StopSensorConfirmationViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id cancelButton;
-    id barTitleLabel;
-    id sensorSessionTitle;
-    id descriptionTitleLabel;
-    id sensorImageView;
-    id timeLeftLabel;
-    id descriptionLabel;
-    id stopSensorButton;
-    id lifeMeterContainer;
-    id lifeMeter;
-    id warmupTimeLabel;
-    id viewModel;
-    id delegate;
-    id sensorInfoRefreshTimer;
-    id barTitleText;
-    id descriptionTitleText;
-}
-@property (nonatomic) UIButton * cancelButton;
-@property (nonatomic) UILabel * barTitleLabel;
-@property (nonatomic) UILabel * sensorSessionTitle;
-@property (nonatomic) UILabel * descriptionTitleLabel;
-@property (nonatomic) UIImageView * sensorImageView;
-@property (nonatomic) UILabel * timeLeftLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * stopSensorButton;
-@property (nonatomic) UIView * lifeMeterContainer;
-@property (nonatomic) _TtC10Dexcom_ONE9LifeMeter * lifeMeter;
-@property (nonatomic) UILabel * warmupTimeLabel;
-- (id)initWithCoder:(id)v1;
-- (void)dealloc;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)cancelTapped:(id)v1;
-- (void)stopSensorTapped:(id)v1;
-- (void)updateSessionInfoIfNeeded;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE33PhoneConflictDetailViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id conflictTitle;
-    id conflictDescription;
-    id instructionsTitle;
-    id actionButtonView;
-    id actionButton;
-    id instructionsTable;
-    id instructionsViewHeight;
-    id conflictType;
-    id instructionsList;
-    id viewModel;
-    id cellSpacing;
-    id instructionCellIdentifier;
-}
-@property (nonatomic) UILabel * conflictTitle;
-@property (nonatomic) UILabel * conflictDescription;
-@property (nonatomic) UILabel * instructionsTitle;
-@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * actionButtonView;
-@property (nonatomic) UIButton * actionButton;
-@property (nonatomic) UITableView * instructionsTable;
-@property (nonatomic) NSLayoutConstraint * instructionsViewHeight;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(bool)v1;
-- (void)viewDidDisappear:(bool)v1;
-- (void)openSettings:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE43TransmitterAlreadyPairedAlertViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id scrollView;
-    id scrollableContentView;
-    id nonScrollableContentView;
-    id noAlertsLabel;
-    id titleLabel;
-    id descriptionLabel;
-    id instructionTitleLabel;
-    id firstInstructionLabel;
-    id secondInstructionLabel;
-    id thirdInstructionLabel;
-    id okButton;
-    id actionSheetDelegate;
-}
-@property (nonatomic) UIScrollView * scrollView;
-@property (nonatomic) UIView * scrollableContentView;
-@property (nonatomic) UIView * nonScrollableContentView;
-@property (nonatomic) UILabel * noAlertsLabel;
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UILabel * instructionTitleLabel;
-@property (nonatomic) UILabel * firstInstructionLabel;
-@property (nonatomic) UILabel * secondInstructionLabel;
-@property (nonatomic) UILabel * thirdInstructionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed:(id)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE31TransmitterSNHintViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id hintLabel;
-    id viewModel;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * hintLabel;
-- (void)viewWillAppear:(bool)v1;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE23BaseAlertViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id actionSheetDelegate;
-}
-- (void)viewDidLoad;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE19TransmitterEOLAlert : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
-    id descriptionLabel;
-    id okButton;
-}
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
-- (void)viewDidLoad;
-- (void)OKButtonPressed;
-- (id)initWithNibName:(id)v1 bundle:(id)v2;
-- (id)initWithCoder:(id)v1;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE16D1AppCoreAdaptor : _TtCs12_SwiftObject {
-    id d1DisplayState;
-    id bleState;
-    id blePermissionState;
-    id isCommunicatingWithTx;
-    id authStatus;
-    id persistenceErrorEvent;
-    id diskSpaceState;
-    id timeLossState;
-    id appCoreSubscriptions;
-    id $__lazy_storage_$_urlRepository;
-}
+- (id)animationControllerForPresentedController:(id)v1 presentingController:(id)v2 sourceController:(id)v3;
+- (id)animationControllerForDismissedController:(id)v1;
+- (id)interactionControllerForPresentation:(id)v1;
+- (id)interactionControllerForDismissal:(id)v1;
+- (id)presentationControllerForPresentedViewController:(id)v1 presentingViewController:(id)v2 sourceViewController:(id)v3;
+- (id)init;
 @end
 
 
@@ -6207,17 +2954,1864 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE32PhonePlacementHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+@interface _TtC10Dexcom_ONE31AppleHealthPickerViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id descriptionPart1;
+    id subTitleLabel;
+    id descriptionPart2;
+    id activateButton;
+    id actionSheetDelegate;
+    id delegate;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionPart1;
+@property (nonatomic) UILabel * subTitleLabel;
+@property (nonatomic) UILabel * descriptionPart2;
+@property (nonatomic) UIButton * activateButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)activateButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29GcsConfirmationViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id countryOfResidenceLabel;
+    id unitOfMeasureLabel;
+    id wrongCountryButton;
+    id confirmButton;
+    id $__lazy_storage_$_appStateRepository;
+}
+@property (nonatomic) UILabel * countryOfResidenceLabel;
+@property (nonatomic) UILabel * unitOfMeasureLabel;
+@property (nonatomic) UIButton * wrongCountryButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * confirmButton;
+- (void)viewDidLoad;
+- (void)onTechnicalSupportButtonTap:(id)v1;
+- (void)onConfirmButtonTap:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23AcknowledgeableSnackBar : _TtC10Dexcom_ONE8Snackbar
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21BulkDataLoggingHelper : _TtCs12_SwiftObject {
+    id _timeProvider;
+    id cgmBulkDataLogger;
+    id subscribers;
+    id firstTime;
+}
+- (void)logAppBecomesInactive;
+- (void)appWillTerminate;
+- (void)logPowerStateChanged;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20BlockingAlertsHelper : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25GlucoseTimeIntervalButton : _TtC10Dexcom_ONE14DXCMPillButton {
+    id timeInterval;
+}
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29SignalLossAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id noAlertsLabel;
     id titleLabel;
     id descriptionLabel;
-    id distanceLabel;
-    id backButtonAccessibilityIDText;
+    id okButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26WarmupStatusViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id warmupTime;
+    id statusLabel;
+    id titleLabel;
+    id detailLabel;
+    id helpButton;
+    id titleLabelTopConstraint;
+    id warmupStatusViewModel;
+    id statusTextSubscriber;
+    id timeRemainingTextSubscriber;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * warmupTime;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) NSLayoutConstraint * titleLabelTopConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34OnboardingTrendGraphViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id trendGraphImage;
+    id titleLabel;
+    id trendGraphTitleLabel;
+    id trendGraphDescription;
+    id nextButton;
+}
+@property (nonatomic) UIImageView * trendGraphImage;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * trendGraphTitleLabel;
+@property (nonatomic) UILabel * trendGraphDescription;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)nextButtonPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE11AudioPlayer : NSObject {
+    id player;
+    id observers;
+}
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE35DiskSpaceVeryLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
 }
 @property (nonatomic) UILabel * titleLabel;
 @property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) UILabel * distanceLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23GCSURLRepositoryMonitor : _TtCs12_SwiftObject {
+    id urlRepository;
+    id onURLUpdate;
+    id urls;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12SoundManager : _TtCs12_SwiftObject {
+    id alertProfilesRepositoryMonitor;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26BluetoothOffViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+    id imageHeightConstraint;
+    id imageTopConstraint;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
 - (id)initWithCoder:(id)v1;
 - (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21CalibrationFooterView : UITableViewHeaderFooterView {
+    id textView;
+    id learnMoreButton;
+}
+@property (nonatomic) UITextView * textView;
+@property (nonatomic) UIButton * learnMoreButton;
+- (void)awakeFromNib;
+- (id)initWithReuseIdentifier:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29AppBluetoothOffViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+    id imageHeightConstraint;
+    id imageTopConstraint;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28MVVMOnboardingViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id viewModel;
+}
+- (id)initWithCoder:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33PhoneConflictNavigationController : UINavigationController {
+    id viewModel;
+    id phoneConflictHelpSubscription;
+}
+- (void)viewDidLoad;
+- (id)initWithCoder:(id)v1;
+- (void)dismissViewControllerAnimated:(bool)v1 completion:(void (^ /* unknown block signature */)(void))v2;
+- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
+- (id)initWithRootViewController:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24AppleHealthTableViewCell : UITableViewCell {
+    id titleLabel;
+    id statusLabel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * statusLabel;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24LocalNotificationManager : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32TransmitterSettingsTableViewCell : UITableViewCell {
+    id titleLabel;
+    id transmitterIcon;
+    id statusLabel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UIImageView * transmitterIcon;
+@property (nonatomic) UILabel * statusLabel;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25GlucoseCollectionViewCell : UICollectionViewCell
+- (id)preferredLayoutAttributesFittingAttributes:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE36TransmitterPairingHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id searchingLabel;
+    id pairingLabel;
+    id toPairLabel;
+    id sensorLabel;
+    id transmitterLabel;
+    id keepPhoneCloseLabel;
+    id checkTransmitterLabel;
+    id doneButton;
+    id navItem;
+    id transmitterAttachedView;
+    id transmitterHolderView;
+    id keepPhoneCloseView;
+    id checkTransmitterSNView;
+    id topConstraint;
+    id topConstraintFactor;
+    id bottomConstraintFactor;
+    id backButtonAccessibilityIDText;
+    id txId;
+}
+@property (nonatomic) UILabel * searchingLabel;
+@property (nonatomic) UILabel * pairingLabel;
+@property (nonatomic) UILabel * toPairLabel;
+@property (nonatomic) UILabel * sensorLabel;
+@property (nonatomic) UILabel * transmitterLabel;
+@property (nonatomic) UILabel * keepPhoneCloseLabel;
+@property (nonatomic) UILabel * checkTransmitterLabel;
+@property (nonatomic) UIBarButtonItem * doneButton;
+@property (nonatomic) UINavigationItem * navItem;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterAttachedView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterHolderView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * keepPhoneCloseView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * checkTransmitterSNView;
+@property (nonatomic) NSLayoutConstraint * topConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)dismissHelpScreen;
+- (void)doneButtonTapped:(id)v1;
+- (void)touchesBegan:(id)v1 withEvent:(id)v2;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30OnboardingAlertsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id titleLabel;
+    id alertsTitleLabel;
+    id alertsDescriptionLabel;
+    id alertsYellowLineDescription;
+    id alertsRedLineDescriptionLabel;
+    id alertSettingsTitleLabel;
+    id settingsAlertsDescriptionLabel;
+    id lowAlertLabel;
+    id highAlertLabel;
+    id signalLossLabel;
+    id bsiLabel;
+    id alertGraphImage;
+    id defaultLowAlertLabel;
+    id defaultHighAlertLabel;
+    id defaultSignalLossAlertLabel;
+    id defaultBSIAlertLabel;
+    id nextButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * alertsTitleLabel;
+@property (nonatomic) UILabel * alertsDescriptionLabel;
+@property (nonatomic) UILabel * alertsYellowLineDescription;
+@property (nonatomic) UILabel * alertsRedLineDescriptionLabel;
+@property (nonatomic) UILabel * alertSettingsTitleLabel;
+@property (nonatomic) UILabel * settingsAlertsDescriptionLabel;
+@property (nonatomic) UILabel * lowAlertLabel;
+@property (nonatomic) UILabel * highAlertLabel;
+@property (nonatomic) UILabel * signalLossLabel;
+@property (nonatomic) UILabel * bsiLabel;
+@property (nonatomic) UIImageView * alertGraphImage;
+@property (nonatomic) UILabel * defaultLowAlertLabel;
+@property (nonatomic) UILabel * defaultHighAlertLabel;
+@property (nonatomic) UILabel * defaultSignalLossAlertLabel;
+@property (nonatomic) UILabel * defaultBSIAlertLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)nextButtonPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34CalibrationLearnMoreViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id learnMoreDescriptionLabel;
+    id moreInformationTextView;
+}
+@property (nonatomic) UILabel * learnMoreDescriptionLabel;
+@property (nonatomic) UITextView * moreInformationTextView;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30BaseUICollectionViewController : UICollectionViewController {
+    id _timeProvider;
+    id screenDisplayStartTime;
+}
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewDidDisappear:(bool)v1;
+- (id)initWithCollectionViewLayout:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30AboutCalibrationViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id aboutCalibrationSubtitleLabel;
+    id aboutCalibrationMessageLabel;
+    id iUnderstandButton;
+    id eventRecord;
+    id bloodGlucoseValueString;
+}
+@property (nonatomic) UILabel * aboutCalibrationSubtitleLabel;
+@property (nonatomic) UILabel * aboutCalibrationMessageLabel;
+@property (nonatomic) _TtC10Dexcom_ONE15D1PrimaryButton * iUnderstandButton;
+- (void)onIUnderstandButtonTap:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE22SettingsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id tableView;
+    id titleIconCellIdentifier;
+    id headerViewIdentifier;
+    id sensorCellIdentifier;
+    id transmitterCellIdentifier;
+    id appleHealthCellIdentifier;
+    id settingsViewModel;
+    id sensorSessionViewModel;
+    id headerHeight;
+    id subscriptions;
+    id sensorSessionCell;
+}
+@property (nonatomic,retain) UITableView * tableView;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
+- (void)viewDidAppear:(bool)v1;
+- (void)dealloc;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10GCSService : _TtCs12_SwiftObject {
+    id cloudSyncOperationQueue;
+    id gcsURLRepositoryMonitor;
+    id featureFlagRepositoryMonitor;
+    id alertProfileRepositoryMonitor;
+    id gcsApi;
+    id statusPublisher;
+    id gcsURLResult;
+    id gcsFeatureFlagResult;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32UnrecoverableErrorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id subtitleLabel;
+    id bodyLabel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * subtitleLabel;
+@property (nonatomic) UILabel * bodyLabel;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34PhoneConflictSummaryViewController : UIViewController {
+    id closeBarButtonItem;
+    id conflictsTitle;
+    id tableView;
+    id phoneConflictsIcon;
+    id mainDescription;
+    id viewModel;
+    id conflictItemIdentifier;
+    id phoneConflictHelpSubscription;
+    id $__lazy_storage_$_dataSource;
+}
+@property (nonatomic) UIBarButtonItem * closeBarButtonItem;
+@property (nonatomic) UILabel * conflictsTitle;
+@property (nonatomic) UITableView * tableView;
+@property (nonatomic) UIImageView * phoneConflictsIcon;
+@property (nonatomic) UILabel * mainDescription;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewDidDisappear:(bool)v1;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)close:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19OnboardingViewModel : _TtCs12_SwiftObject {
+    id glucoseUnits;
+    id mode;
+    id popToViewController;
+    id normalFont;
+    id boldFont;
+    id blePermission;
+    id notificationPermission;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23TimeIssueViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27UserEventsRepositoryMonitor : _TtCs12_SwiftObject {
+    id eventRepository;
+    id subscribers;
+    id _eventCache;
+    id lastUpdatedEvent;
+}
+- (void)processEvents;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20SupportTableViewCell : UITableViewCell {
+    id titleLabel;
+    id badge;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * badge;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32AllowNotificationsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id shortNextButton;
+    id fullWhiteNextButton;
+    id fullGreenNextButton;
+    id titleLabel;
+    id descriptionLabel;
+}
+@property (nonatomic) UIButton * shortNextButton;
+@property (nonatomic) UIButton * fullWhiteNextButton;
+@property (nonatomic) UIButton * fullGreenNextButton;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)viewWillAppear:(bool)v1;
+- (void)appMovedToForeground;
+- (void)fullGreenNextButtonPressed;
+- (void)shortNextButtonPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29GcsConfirmUoMOptionsViewModel : _TtCs12_SwiftObject {
+    id unitOfMeasure;
+    id countryCode;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24GlucoseRepositoryMonitor : _TtCs12_SwiftObject {
+    id warmupTimer;
+    id warmupEndTime;
+    id warmCompletedEveryFifteenTimer;
+    id pairingExpireTimer;
+    id subscribers;
+    id warmupSnackbarDelegate;
+    id _sensorReadings;
+    id _hasHistoricalGlucoseData;
+    id _warmupTimeRemaining;
+    id _appCoreService;
+    id latestDisplayState;
+}
+- (void)updateWarmupTime;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23HealthKitSetupAssistant : _TtCs12_SwiftObject {
+    id healthKitStore;
+    id healthKitDataTypeProvider;
+    id healthKitQueue;
+    id healthKitPreferencesSubscriber;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26SettingsTitleTableViewCell : UITableViewCell {
+    id iconImageView;
+    id titleLabel;
+}
+@property (nonatomic) UIImageView * iconImageView;
+@property (nonatomic) UILabel * titleLabel;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37CalibrationDateTimeCollectionViewCell : UICollectionViewCell {
+    id dateTimeLabel;
+    id dateAndTimeLabel;
+    id $__lazy_storage_$_shortDateFormatter;
+    id calibrationDate;
+}
+@property (nonatomic) UILabel * dateTimeLabel;
+@property (nonatomic) UILabel * dateAndTimeLabel;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE43TransmitterAlreadyPairedAlertViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id scrollView;
+    id scrollableContentView;
+    id nonScrollableContentView;
+    id noAlertsLabel;
+    id titleLabel;
+    id descriptionLabel;
+    id instructionTitleLabel;
+    id firstInstructionLabel;
+    id secondInstructionLabel;
+    id thirdInstructionLabel;
+    id okButton;
+    id actionSheetDelegate;
+}
+@property (nonatomic) UIScrollView * scrollView;
+@property (nonatomic) UIView * scrollableContentView;
+@property (nonatomic) UIView * nonScrollableContentView;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) UILabel * instructionTitleLabel;
+@property (nonatomic) UILabel * firstInstructionLabel;
+@property (nonatomic) UILabel * secondInstructionLabel;
+@property (nonatomic) UILabel * thirdInstructionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30RecoverableErrorViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id subtitleLabel;
+    id bodyLabel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * subtitleLabel;
+@property (nonatomic) UILabel * bodyLabel;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE36SensorSiteInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
+    id step1Title;
+    id step1Text1;
+    id step1Text2;
+    id step1Text3;
+    id step1Text4;
+    id step1Text5;
+    id step1Text5Bones;
+    id step1Text5IrritatedSkin;
+    id step1Text5Tatoos;
+    id step1Text5bumpedAreas;
+    id step2Title;
+    id step2Text1;
+    id step2Text2;
+    id step2Text3;
+    id step3Title;
+    id step3Text1;
+    id step3Text2;
+    id nextButton;
+}
+@property (nonatomic) UILabel * step1Title;
+@property (nonatomic) UILabel * step1Text1;
+@property (nonatomic) UILabel * step1Text2;
+@property (nonatomic) UILabel * step1Text3;
+@property (nonatomic) UILabel * step1Text4;
+@property (nonatomic) UILabel * step1Text5;
+@property (nonatomic) UILabel * step1Text5Bones;
+@property (nonatomic) UILabel * step1Text5IrritatedSkin;
+@property (nonatomic) UILabel * step1Text5Tatoos;
+@property (nonatomic) UILabel * step1Text5bumpedAreas;
+@property (nonatomic) UILabel * step2Title;
+@property (nonatomic) UILabel * step2Text1;
+@property (nonatomic) UILabel * step2Text2;
+@property (nonatomic) UILabel * step2Text3;
+@property (nonatomic) UILabel * step3Title;
+@property (nonatomic) UILabel * step3Text1;
+@property (nonatomic) UILabel * step3Text2;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)nextButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE14AboutViewModel : _TtCs12_SwiftObject {
+    id accessibilityIDText;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE18RepositoryMonitors : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE8Snackbar : UIView {
+    id animationDirection;
+    id contentView;
+    id stackView;
+    id messageLabel;
+    id contentHeight;
+    id animationDuration;
+    id animatedConstraint;
+    id swipeRecognizer;
+    id viewController;
+    id contentViewController;
+    id duration;
+    id message;
+    id dismissCompletion;
+}
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) UIStackView * stackView;
+@property (nonatomic) UILabel * messageLabel;
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void)dealloc;
+- (void)hide;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE36PhoneBluetoothOffAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id noAlertsLabel;
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37BriefSensorIssueAlertOnViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id messageView;
+}
+@property (nonatomic) UILabel * messageView;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23AcknowledgableToastable : UIView {
+    id stackView;
+    id titleLabel;
+    id bodyLabel;
+    id contentView;
+    id acknowledgeButton;
+    id title;
+    id body;
+    id buttonTitle;
+    id identifier;
+    id timeToDismiss;
+    id completion;
+    id defaultSpacing;
+}
+@property (nonatomic) UIStackView * stackView;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * bodyLabel;
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) UIButton * acknowledgeButton;
+- (id)initWithCoder:(id)v1;
+- (void)acknowledgeButtonPressed:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE18CalibrateViewModel : _TtCs12_SwiftObject {
+    id bloodGlucoseMgdlValidRange;
+    id bloodGlucoseMmolValidRange;
+    id eventRepositoryMonitor;
+    id currentTextEntry;
+    id $__lazy_storage_$_dateFormatter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29PhoneConflictInstructionsCell : UITableViewCell {
+    id lineNumber;
+    id instructionLabel;
+    id lineNumberWidth;
+}
+@property (nonatomic) UILabel * lineNumber;
+@property (nonatomic) UILabel * instructionLabel;
+@property (nonatomic) NSLayoutConstraint * lineNumberWidth;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17ProfileFooterView : UITableViewHeaderFooterView {
+    id _textLabel;
+    id footerAccessibilityIdentifier;
+}
+@property (nonatomic,retain) UILabel * textLabel;
+- (id)initWithReuseIdentifier:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23SensorCodeHintViewModel : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE13HelpViewModel : _TtCs12_SwiftObject {
+    id accessibilityIDText;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12CAMSCloudAPI : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21GlucoseAlertViewModel : _TtCs12_SwiftObject {
+    id glucoseViewDataSource;
+    id alertType;
+    id glucoseCompassPresenter;
+    id viewModelSubscriber;
+    id _shouldDismissPublisher;
+    id _currentGlucose;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19DebugViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate> {
+    id trendPickerComponentNumber;
+    id egvTextField;
+    id trendPickerView;
+    id secretTextField;
+    id messageLabel;
+    id trendPickerData;
+}
+@property (nonatomic) UITextField * egvTextField;
+@property (nonatomic) UIPickerView * trendPickerView;
+@property (nonatomic) UITextField * secretTextField;
+@property (nonatomic) UILabel * messageLabel;
+- (void)sendNewEGVPressed:(id)v1;
+- (void)sendThreeDaysOfEGVPressed:(id)v1;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)dismissPressedWithSender:(id)v1;
+- (void)showDBInfo:(id)v1;
+- (void)showHumanFactorViewController:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27TimeLossAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id noAlertsLabel;
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31SensorFailedAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id bannerTitleLabel;
+    id noAlertsLabel;
+    id instructionTitleLabel;
+    id instructionDescriptionLabel;
+    id okButton;
+    id sensorRemovalInstructionsButton;
+}
+@property (nonatomic) UILabel * bannerTitleLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * instructionTitleLabel;
+@property (nonatomic) UILabel * instructionDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (void)sensorRemovalInstructionsButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24ComputeACMViewController : _TtC10Dexcom_ONE20BaseUIViewController
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24ConnectionErrorViewModel : _TtCs12_SwiftObject {
+    id _authManager;
+    id gcsService;
+    id accessToken;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19TransmitterEOLAlert : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10BackButton : UIButton {
+    id contentView;
+    id button;
+}
+@property (nonatomic,retain) UIView * contentView;
+@property (nonatomic) UIButton * button;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21BlockingAlertsMonitor : _TtCs12_SwiftObject {
+    id currentBlockingAlert;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24InvalidCORViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id errorTitle;
+    id invalidCORTitle;
+    id descriptionLabel;
+    id step1Description;
+    id step2Description;
+}
+@property (nonatomic) UILabel * errorTitle;
+@property (nonatomic) UILabel * invalidCORTitle;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) UILabel * step1Description;
+@property (nonatomic) UILabel * step2Description;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31TransmitterSNHintViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id hintLabel;
+    id viewModel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * hintLabel;
+- (void)viewWillAppear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32OnboardingOverviewViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id overviewCard;
+    id overviewButton;
+    id overviewTitleLabel;
+    id overviewDescriptionLabel;
+    id overviewImage;
+    id overviewTopSpacer;
+    id appSetupCard;
+    id appSetupTopSpacer;
+    id appSetupImage;
+    id appSetupButton;
+    id appSetupTitleLabel;
+    id appSetupDescriptionLabel;
+    id startSensorCard;
+    id startSensorTopSpacer;
+    id startSensorImage;
+    id startSensorButton;
+    id startSensorTitleLabel;
+    id startSensorDescriptionLabel;
+    id subscribers;
+    id showInitialLegalAgreements;
+    id showGCSConfirmationModal;
+}
+@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * overviewCard;
+@property (nonatomic) UIButton * overviewButton;
+@property (nonatomic) UILabel * overviewTitleLabel;
+@property (nonatomic) UILabel * overviewDescriptionLabel;
+@property (nonatomic) UIImageView * overviewImage;
+@property (nonatomic) UIView * overviewTopSpacer;
+@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * appSetupCard;
+@property (nonatomic) UIView * appSetupTopSpacer;
+@property (nonatomic) UIImageView * appSetupImage;
+@property (nonatomic) UIButton * appSetupButton;
+@property (nonatomic) UILabel * appSetupTitleLabel;
+@property (nonatomic) UILabel * appSetupDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE12DXCMCardView * startSensorCard;
+@property (nonatomic) UIView * startSensorTopSpacer;
+@property (nonatomic) UIImageView * startSensorImage;
+@property (nonatomic) UIButton * startSensorButton;
+@property (nonatomic) UILabel * startSensorTitleLabel;
+@property (nonatomic) UILabel * startSensorDescriptionLabel;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)handleOverviewTap:(id)v1;
+- (void)handleAppSetupTap:(id)v1;
+- (void)handleStartSensorTap:(id)v1;
+- (void)overviewTapped:(id)v1;
+- (void)appSetupTapped:(id)v1;
+- (void)onStartSensor;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20SetupWizardViewModel : _TtCs12_SwiftObject {
+    id accessibilityIDText;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31AlertThresholdSettingsViewModel : _TtCs12_SwiftObject {
+    id thresholdDataSource;
+    id toolTipDescription;
+    id currentSetting;
+    id tooltipDelegate;
+    id showLowGlucoseAlertInfo;
+    id showHighGlucoseAlertInfo;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25AppStateRepositoryMonitor : _TtCs12_SwiftObject {
+    id keyValueRepository;
+    id _showAlertThresholdWarning;
+    id _showAlertSettingsWarning;
+    id _showLowGlucoseAlertInfo;
+    id _showHighGlucoseAlertInfo;
+    id _showInitialLegalAgreements;
+    id _showGCSConfirmationModal;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10BadgeLabel : UILabel
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void)prepareForInterfaceBuilder;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24PersistentCountdownTimer : _TtCs12_SwiftObject {
+    id _countdownCompleted;
+    id countdownCheckTimer;
+    id countdownTimerName;
+    id countdownStartDate;
+    id countdownTimeInterval;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21GlucoseViewDataSource : _TtCs12_SwiftObject {
+    id _appCoreService;
+    id _trendGraphDataSource;
+    id _cgmStatusViewModel;
+    id _trendGraphAvailable;
+    id _timeIntervalInHours;
+    id cgmStatusSubscriber;
+    id trendGraphCombinedSubscriber;
+    id trendGraphCGMReadingsSubscriber;
+    id trendGraphAvailabilitySubscriber;
+    id glucoseRepositoryMonitor;
+    id settingsRepositoryMonitor;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32PairNewTransmitterViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id pairNewTransmitterButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * pairNewTransmitterButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)pairNewTransmitterPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE16ReLoginViewModel : _TtCs12_SwiftObject {
+    id _authManager;
+    id localizeURL;
+    id webViewAction;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE23AlertInfoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id icon;
+    id titleLabel;
+    id descriptionTextView;
+    id acknowledgeButton;
+    id onAcknowledge;
+}
+@property (nonatomic) UIImageView * icon;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UITextView * descriptionTextView;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * acknowledgeButton;
+- (void)viewDidLoad;
+- (void)onAcknowledge:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19BSIDetailsViewModel : _TtCs12_SwiftObject {
+    id indexPaths;
+    id accessibilityIDText;
+    id accessibilityText;
+    id defaultBSIAlertSound;
+    id forMoreThanMinuteInterval;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10CameraView : UIView {
+    id timeoutLength;
+    id zoomFactor;
+    id captureSession;
+    id captureDevice;
+    id pixelBuffer;
+    id $__lazy_storage_$_detectBarcodeRequest;
+    id timeoutTimer;
+    id subscribers;
+    id scannerPreviewLayer;
+    id delegate;
+}
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27SensorRemovalViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id step1Title;
+    id step1Text;
+    id step2Title;
+    id step2Text;
+    id step3Title;
+    id step3Text;
+    id backButton;
+    id accessibilityIDText;
+}
+@property (nonatomic) UILabel * step1Title;
+@property (nonatomic) UILabel * step1Text;
+@property (nonatomic) UILabel * step2Title;
+@property (nonatomic) UILabel * step2Text;
+@property (nonatomic) UILabel * step3Title;
+@property (nonatomic) UILabel * step3Text;
+@property (nonatomic,retain) UIBarButtonItem * backButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)backPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27AlertsEnabledViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id messageView;
+}
+@property (nonatomic) UILabel * messageView;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE14DXCMPillButton : UIButton {
+    id customTitleInsets;
+    id isHaptic;
+    id borderColor;
+    id borderWidth;
+    id tapMargin;
+    id alwaysShowBorder;
+}
+@property (nonatomic) bool isHaptic;
+@property (nonatomic,retain) UIColor * borderColor;
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double tapMargin;
+@property (nonatomic) bool alwaysShowBorder;
+@property (nonatomic,readonly) struct CGSize intrinsicContentSize;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+- (void)sendAction:(SEL)v1 to:(id)v2 forEvent:(id)v3;
+- (bool)pointInside:(struct CGPoint)v1 withEvent:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24PhoneConflictSummaryCell : UITableViewCell {
+    id title;
+    id conflictDescription;
+    id howToFixButton;
+}
+@property (nonatomic) UILabel * title;
+@property (nonatomic) UILabel * conflictDescription;
+@property (nonatomic) UIButton * howToFixButton;
+- (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE36SensorInstructionsBaseViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id delegate;
+    id viewModel;
+}
+- (void)viewDidLoad;
+- (void)showConfirmationModal;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34LegalAgreementsModalViewController : DXCMLegalAgreementsModalVC {
+    id networkReachability;
+    id subscribers;
+    id networkIsReachable;
+}
+- (void)viewDidAppear:(bool)v1;
+- (id)initWithAddress:(id)v1;
+- (id)initWithURL:(id)v1;
+- (id)initWithURLRequest:(id)v1;
+- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
+- (id)initWithRootViewController:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE14LoginViewModel : _TtCs12_SwiftObject {
+    id gcsService;
+    id _authManager;
+    id localizeURL;
+    id showLogin;
+    id webViewAction;
+    id gcsResult;
+    id subscribers;
+    id maximumRetryCount;
+    id retryCount;
+    id accessToken;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE11RadioButton : UIButton {
+    id outerCircleLayer;
+    id innerCircleLayer;
+    id outerCircleColor;
+    id innerCircleCircleColor;
+    id outerCircleLineWidth;
+    id innerCircleGap;
+    id outerCircleShouldChangeColor;
+}
+@property (nonatomic,retain) UIColor * outerCircleColor;
+@property (nonatomic,retain) UIColor * innerCircleCircleColor;
+@property (nonatomic) double outerCircleLineWidth;
+@property (nonatomic) double innerCircleGap;
+@property (nonatomic) bool outerCircleShouldChangeColor;
+@property (nonatomic) bool selected;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+- (bool)isSelected;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE38OnboardingSensorReadingsViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id magGlassImage;
+    id sensorReadingTitleLabel;
+    id numAndArrowLabel;
+    id magGlassImageDescription1;
+    id magGlassImageDescription2;
+    id trendArrowsTitleLabel;
+    id arrowsDescription1;
+    id arrowsDescription2;
+    id arrowsDescription3;
+    id arrowsDescription4;
+    id arrowsDescription5;
+    id arrowsDescription6;
+    id nextButton;
+}
+@property (nonatomic) UIImageView * magGlassImage;
+@property (nonatomic) UILabel * sensorReadingTitleLabel;
+@property (nonatomic) UILabel * numAndArrowLabel;
+@property (nonatomic) UILabel * magGlassImageDescription1;
+@property (nonatomic) UILabel * magGlassImageDescription2;
+@property (nonatomic) UILabel * trendArrowsTitleLabel;
+@property (nonatomic) UILabel * arrowsDescription1;
+@property (nonatomic) UILabel * arrowsDescription2;
+@property (nonatomic) UILabel * arrowsDescription3;
+@property (nonatomic) UILabel * arrowsDescription4;
+@property (nonatomic) UILabel * arrowsDescription5;
+@property (nonatomic) UILabel * arrowsDescription6;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)nextButtonPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12WebViewModel : _TtCs12_SwiftObject {
+    id url;
+    id localizeURL;
+    id webViewAction;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE40TransmitterPairingTimedOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id takePhotoButton;
+    id enterManuallyButton;
+    id actionSheetDelegate;
+    id delegate;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterManuallyButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)takePhotoPressed:(id)v1;
+- (void)enterManuallyPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28BackdoorDebugAlertsViewModel : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE35BriefSensorIssueAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id noAlertsLabel;
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE15LegalAgreements : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE22PhoneConflictViewModel : _TtCs12_SwiftObject {
+    id _count;
+    id currentConflicts;
+    id currentBlockingConflicts;
+    id offerHelp;
+    id snackBarDisplayHistory;
+    id phoneConflictSubscriptions;
+    id backgroundTimerSubscription;
+    id displayHistoryRepo;
+    id phoneConflictRepo;
+    id backgroundTimer;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE22LegalAgreementsManager : DXCMLegalAgreementsManager
+- (void)presentViewOnlyAgreementsFromVC:(id)v1;
+- (id)init;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17BaseUIApplication : UIApplication
+- (bool)sendAction:(SEL)v1 to:(id)v2 from:(id)v3 forEvent:(id)v4;
+- (id)init;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27TransmitterEOLTwoWeeksAlert : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29FeatureFlagsRepositoryMonitor : _TtCs12_SwiftObject {
+    id featureFlagRepository;
+    id onFeatureFlagUpdate;
+    id featureFlags;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17MaterialTextField : UIView {
+    id errorText;
+    id inactiveBorderColor;
+    id inactivePlaceholderColor;
+    id inactiveBackgroundColor;
+    id editingBorderColor;
+    id editingPlaceholderColor;
+    id editingBackgroundColor;
+    id invalidBorderColor;
+    id invalidPlaceholderColor;
+    id invalidBackgroundColor;
+    id contentView;
+    id stack;
+    id borderAndBackgroundContainer;
+    id placeholderLabel;
+    id textField;
+    id clearTextButton;
+    id errorLabel;
+    id errorBadge;
+    id _text;
+    id editingBegan;
+    id editingEnded;
+}
+@property (nonatomic) double borderWidth;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic,copy) NSString * placeholder;
+@property (nonatomic,copy) NSString * errorText;
+@property (nonatomic,retain) UIColor * inactiveBorderColor;
+@property (nonatomic,retain) UIColor * inactivePlaceholderColor;
+@property (nonatomic,retain) UIColor * inactiveBackgroundColor;
+@property (nonatomic,retain) UIColor * editingBorderColor;
+@property (nonatomic,retain) UIColor * editingPlaceholderColor;
+@property (nonatomic,retain) UIColor * editingBackgroundColor;
+@property (nonatomic,retain) UIColor * invalidBorderColor;
+@property (nonatomic,retain) UIColor * invalidPlaceholderColor;
+@property (nonatomic,retain) UIColor * invalidBackgroundColor;
+@property (nonatomic,retain) UIView * contentView;
+@property (nonatomic) UIStackView * stack;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * borderAndBackgroundContainer;
+@property (nonatomic) UILabel * placeholderLabel;
+@property (nonatomic) UITextField * textField;
+@property (nonatomic) UIButton * clearTextButton;
+@property (nonatomic) UILabel * errorLabel;
+@property (nonatomic) UIButton * errorBadge;
+@property (nonatomic,readonly) struct CGSize intrinsicContentSize;
+@property (nonatomic,copy) NSString * accessibilityIdentifier;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (bool)becomeFirstResponder;
+- (bool)resignFirstResponder;
+- (void)editingDidBegin;
+- (void)editingChanged;
+- (void)eiditingDidEnd;
+- (void)clearTextTapped;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33PhoneConflictDetailViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id conflictTitle;
+    id conflictDescription;
+    id instructionsTitle;
+    id actionButtonView;
+    id actionButton;
+    id instructionsTable;
+    id instructionsViewHeight;
+    id conflictType;
+    id instructionsList;
+    id viewModel;
+    id cellSpacing;
+    id instructionCellIdentifier;
+}
+@property (nonatomic) UILabel * conflictTitle;
+@property (nonatomic) UILabel * conflictDescription;
+@property (nonatomic) UILabel * instructionsTitle;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * actionButtonView;
+@property (nonatomic) UIButton * actionButton;
+@property (nonatomic) UITableView * instructionsTable;
+@property (nonatomic) NSLayoutConstraint * instructionsViewHeight;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewDidDisappear:(bool)v1;
+- (void)openSettings:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20BaseUIViewController : UIViewController {
+    id _timeProvider;
+    id screenDisplayStartTime;
+}
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewDidDisappear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17SnackbarToastable : UIView {
+    id contentView;
+    id stackView;
+    id iconImageView;
+    id messageLabel;
+    id duration;
+    id message;
+    id icon;
+}
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) UIStackView * stackView;
+@property (nonatomic) UIImageView * iconImageView;
+@property (nonatomic) UILabel * messageLabel;
+- (id)initWithCoder:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31ActionSheetPresentationAnimator : NSObject<UIViewControllerAnimatedTransitioning>
+- (double)transitionDuration:(id)v1;
+- (void)animateTransition:(id)v1;
+- (id)init;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33PairingUnsuccessfulViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+    id txId;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)helpButtonTapped:(id)v1;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (void).cxx_destruct;
 @end
@@ -6245,16 +4839,232 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE32SixHourSensorAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
-    id titleLabel;
+@interface _TtC10Dexcom_ONE32TransmitterPairingViewController : _TtC10Dexcom_ONE20BaseUIViewController {
     id descriptionLabel;
-    id okButton;
+    id helpButton;
+    id loadingImageView;
+    id noAlertsLabel;
+    id txId;
+    id subscribers;
+}
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) UIImageView * loadingImageView;
+@property (nonatomic) UILabel * noAlertsLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)helpButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17SettingsViewModel : _TtCs12_SwiftObject {
+    id _appCoreService;
+    id _transmitterSettingsModel;
+    id _appleHealthModel;
+    id eventRepositoryMonitor;
+    id featureFlagsRepositoryMonitor;
+    id latestDisplayState;
+    id observers;
+    id displayStateSubscriber;
+    id lastCalibration;
+    id $__lazy_storage_$_dateFormatter;
+    id $__lazy_storage_$_timeFormatter;
+    id accessibilityIDText;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24DataConsentsWebViewModel : _TtCs12_SwiftObject {
+    id _authManager;
+    id localizeURL;
+    id webViewAction;
+    id subscribers;
+    id isDataSharePermitted;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32ActionSheetInteractionController : UIPercentDrivenInteractiveTransition<UIGestureRecognizerDelegate> {
+    id shouldCompleteTransition;
+    id viewController;
+    id interactionInProgress;
+    id isCanceled;
+}
+- (bool)gestureRecognizerShouldBegin:(id)v1;
+- (void)handleGesture:(id)v1;
+- (void)cancelInteractiveTransition;
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26SignalLossDetailsViewModel : _TtCs12_SwiftObject {
+    id indexPaths;
+    id accessibilityIDText;
+    id accessibilityText;
+    id defaultSignalLossAlertSound;
+    id forMoreThanMinuteInterval;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37PairingUnsuccessfulHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id tryAgainButton;
+    id troubleshootingLabel;
+    id tip1TitleLabel;
+    id tip2TitleLabel;
+    id tip3TitleLabel;
+    id tip4TitleLabel;
+    id doneButton;
+    id tryPairingAgainButton;
+    id replaceSensorButton;
+    id transmitterAttachedView;
+    id transmitterHolderView;
+    id keepPhoneCloseView;
+    id checkTransmitterView;
+    id navItem;
+    id scrollView;
+    id contentView;
+    id backButtonAccessibilityIDText;
+    id txId;
 }
 @property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionLabel;
-@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * tryAgainButton;
+@property (nonatomic) UILabel * troubleshootingLabel;
+@property (nonatomic) UILabel * tip1TitleLabel;
+@property (nonatomic) UILabel * tip2TitleLabel;
+@property (nonatomic) UILabel * tip3TitleLabel;
+@property (nonatomic) UILabel * tip4TitleLabel;
+@property (nonatomic) UIBarButtonItem * doneButton;
+@property (nonatomic) UIButton * tryPairingAgainButton;
+@property (nonatomic) UIButton * replaceSensorButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterAttachedView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * transmitterHolderView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * keepPhoneCloseView;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * checkTransmitterView;
+@property (nonatomic) UINavigationItem * navItem;
+@property (nonatomic) UIScrollView * scrollView;
+@property (nonatomic) UIView * contentView;
+- (id)initWithCoder:(id)v1;
 - (void)viewDidLoad;
-- (void)OKButtonPressed;
+- (void)viewDidLayoutSubviews;
+- (void)doneButtonTapped:(id)v1;
+- (void)tryPairingAgainButtonTapped:(id)v1;
+- (void)replaceSensorButtonTapped:(id)v1;
+- (void)onTransmitterAttachedViewTapped:(id)v1;
+- (void)onTransmitterHolderViewTapped:(id)v1;
+- (void)onPhoneCloseViewTapped:(id)v1;
+- (void)onCheckTransmitterSNViewTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE16DesignableButton : UIButton {
+    id imageColor;
+}
+@property (nonatomic) double borderWidth;
+@property (nonatomic,retain) UIColor * borderColor;
+@property (nonatomic) double cornerRadius;
+@property (nonatomic,retain) UIColor * imageColor;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32SensorCodeTimedOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id noCodeFoundLabel;
+    id takePhotoButton;
+    id enterCodeManuallyButton;
+    id actionSheetDelegate;
+    id delegate;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * noCodeFoundLabel;
+@property (nonatomic) UIButton * takePhotoButton;
+@property (nonatomic) UIButton * enterCodeManuallyButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)takePhotoPressed:(id)v1;
+- (void)enterManuallyPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20ActionSheetContainer : _TtC10Dexcom_ONE20BaseUIViewController {
+    id contentView;
+    id contentViewHeightConstraint;
+    id contentViewController;
+    id presentationManager;
+    id interactionController;
+    id toolTipDescription;
+    id isDismissable;
+}
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) NSLayoutConstraint * contentViewHeightConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29InLineAcknowledgableToastable : UIView {
+    id contentView;
+    id bodyLabel;
+    id acknowledgeButton;
+    id body;
+    id identifier;
+    id timeToDismiss;
+    id completion;
+}
+@property (nonatomic,retain) UIView * contentView;
+@property (nonatomic) UILabel * bodyLabel;
+@property (nonatomic) UIButton * acknowledgeButton;
+- (id)initWithCoder:(id)v1;
+- (void)acknowledgeButtonPressed:(id)v1;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21ToolTipViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id descriptionLabel;
+    id contentView;
+    id descriptionText;
+    id currentSettingText;
+}
+@property (nonatomic,retain) UILabel * descriptionLabel;
+@property (nonatomic,retain) UIView * contentView;
+- (void)viewDidLoad;
+- (void)viewSafeAreaInsetsDidChange;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -6263,14 +5073,277 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE19CustomCodeLabelView : UIView {
-    id codeLabel;
-    id grayView;
+@interface _TtC10Dexcom_ONE27TimeIssueHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id actionSheetDelegate;
+    id noAlertsWarningLabel;
+    id titleLabel;
+    id textLabel1;
+    id textLabel2;
 }
-@property (nonatomic,retain) UILabel * codeLabel;
-@property (nonatomic,retain) UIView * grayView;
+@property (nonatomic) UILabel * noAlertsWarningLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * textLabel1;
+@property (nonatomic) UILabel * textLabel2;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12DXCMCardView : UIView {
+    id cornerRadius;
+    id shadowRadius;
+    id shadowOffset;
+    id shadowColor;
+    id shadowOpacity;
+    id borderWidth;
+    id borderColor;
+}
+@property (nonatomic) double cornerRadius;
+@property (nonatomic) double shadowRadius;
+@property (nonatomic) struct CGSize shadowOffset;
+@property (nonatomic,retain) UIColor * shadowColor;
+@property (nonatomic) float shadowOpacity;
+@property (nonatomic) double borderWidth;
+@property (nonatomic,retain) UIColor * borderColor;
 - (id)initWithFrame:(struct CGRect)v1;
 - (id)initWithCoder:(id)v1;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31TransmitterSNHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id transmitterIDLabel;
+    id titleLabel;
+    id subTitle1Label;
+    id description1Label;
+    id subTitle2Label;
+    id description2Label;
+    id enterTxSnButton;
+    id backButtonAccessibilityIDText;
+    id txId;
+}
+@property (nonatomic) UILabel * transmitterIDLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * subTitle1Label;
+@property (nonatomic) UILabel * description1Label;
+@property (nonatomic) UILabel * subTitle2Label;
+@property (nonatomic) UILabel * description2Label;
+@property (nonatomic) UIButton * enterTxSnButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)editTransmitterSNButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE17ProfileHeaderView : UITableViewHeaderFooterView {
+    id infoButton;
+    id _textLabel;
+    id isInfoButtonVisible;
+    id headerAccessibilityIdentifier;
+}
+@property (nonatomic,retain) UILabel * textLabel;
+@property (nonatomic) UIButton * infoButton;
+- (id)initWithReuseIdentifier:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE47AlertThresholdsActionSheetContentViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id actionSheetDelegate;
+    id viewModel;
+    id recommendedSettingsViewModel;
+    id snackBar;
+    id subscribers;
+    id alertsTitleLabel;
+    id highAlertLabel;
+    id lowAlertLabel;
+    id lowThresholdSwitch;
+    id highThresholdSwitch;
+    id lowThresholdSlider;
+    id highThresholdSlider;
+    id lowSliderView;
+    id highSliderView;
+    id lowThresholdValueLabel;
+    id highThresholdValueLabel;
+    id lowThresholdStatusLabel;
+    id highThresholdStatusLabel;
+    id sliderHapticFeedbackGenerator;
+    id previousSliderValue;
+    id alertProfiles;
+}
+@property (nonatomic) UILabel * alertsTitleLabel;
+@property (nonatomic) UILabel * highAlertLabel;
+@property (nonatomic) UILabel * lowAlertLabel;
+@property (nonatomic) UISwitch * lowThresholdSwitch;
+@property (nonatomic) UISwitch * highThresholdSwitch;
+@property (nonatomic) UISlider * lowThresholdSlider;
+@property (nonatomic) UISlider * highThresholdSlider;
+@property (nonatomic) UIView * lowSliderView;
+@property (nonatomic) UIView * highSliderView;
+@property (nonatomic) UILabel * lowThresholdValueLabel;
+@property (nonatomic) UILabel * highThresholdValueLabel;
+@property (nonatomic) UILabel * lowThresholdStatusLabel;
+@property (nonatomic) UILabel * highThresholdStatusLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewWillDisappear:(bool)v1;
+- (void)switchChanged:(id)v1;
+- (void)sliderChange:(id)v1;
+- (void)didEndChanging:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19ACMDetailsViewModel : _TtCs12_SwiftObject {
+    id resultId;
+    id screenTitle;
+    id message;
+    id messageID;
+    id canAcknowledge;
+    id moreInfoUrl;
+    id upgradeUrl;
+    id primaryButtonTitle;
+    id secondaryButtonTitle;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE41OnboardingSafetyInformationViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+    id fullStatementButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * fullStatementButton;
+- (void)viewDidLoad;
+- (void)next;
+- (void)showSafetyStatement;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE20TargetRangeViewModel : _TtCs12_SwiftObject {
+    id isOn;
+    id accessibilityIDText;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25BaseUITableViewController : UITableViewController {
+    id _timeProvider;
+    id screenDisplayStartTime;
+}
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewDidDisappear:(bool)v1;
+- (id)initWithStyle:(long long)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19NetworkReachability : _TtCs12_SwiftObject {
+    id networkStatus;
+    id monitor;
+    id queue;
+    id currentNetworkPath;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12SplashScreen : _TtC10Dexcom_ONE20BaseUIViewController {
+    id copyrightLabel;
+}
+@property (nonatomic) UILabel * copyrightLabel;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE19AlertsSettingsModel : _TtCs12_SwiftObject {
+    id alertThresholdSettingsViewModel;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26SensorSessionCellViewModel : _TtCs12_SwiftObject {
+    id _appCoreService;
+    id displayStateSubscriber;
+    id warmupTimeSubscriber;
+    id sessionModeSubscriber;
+    id mode;
+    id delegate;
+    id warmupTime;
+    id insertionTime;
+    id expireTime;
+    id transmitterIsPairing;
+    id maximumGracePeriod;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29CrawlerMenuCollectionViewCell : UICollectionViewCell {
+    id menuElementLabel;
+    id menuElement;
+}
+@property (nonatomic) UILabel * menuElementLabel;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE38TransmitterPlacementHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id backButtonAccessibilityIDText;
+}
+@property (nonatomic) UILabel * titleLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (void).cxx_destruct;
 @end
 
@@ -6291,6 +5364,649 @@ struct anonymous_type_25 {
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32CalibrationConfirmationViewModel : _TtCs12_SwiftObject {
+    id _appCore;
+    id eventRecord;
+    id valueString;
+    id eventRepositoryMonitor;
+    id $__lazy_storage_$_dateFormatter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31PhoneConflictHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id phoneConflictsIcon;
+    id tableView;
+    id tableViewHeight;
+    id mainTitle;
+    id mainDescription;
+    id howToFixButton;
+    id dismissButton;
+    id conflictItemIdentifier;
+    id viewModel;
+    id phoneConflictHelpSubscription;
+    id $__lazy_storage_$_dataSource;
+    id actionSheetDelegate;
+}
+@property (nonatomic) UIImageView * phoneConflictsIcon;
+@property (nonatomic) UITableView * tableView;
+@property (nonatomic) NSLayoutConstraint * tableViewHeight;
+@property (nonatomic) UILabel * mainTitle;
+@property (nonatomic) UILabel * mainDescription;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * howToFixButton;
+@property (nonatomic) UIButton * dismissButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (void)showHowTo:(id)v1;
+- (void)dismiss:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28SensorCodeHintViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id hintLabel;
+    id viewModel;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * hintLabel;
+- (void)viewWillAppear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE35PairTransmitterManualViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextInputTraits> {
+    id enterTxSNLabel;
+    id transmitterSNStackView;
+    id successSnackBar;
+    id submitButton;
+    id submitView;
+    id submitViewBottomConstraint;
+    id snackBarBottomConstraint;
+    id snackBarText;
+    id isKeyBoardShown;
+    id transmitterSN;
+    id maxTransmitterSNLength;
+    id snackBarBottomConstant;
+    id accessibilityIDText;
+    id delegate;
+    id keyboardType;
+    id keyboardAppearance;
+    id canEdit;
+}
+@property (nonatomic) UILabel * enterTxSNLabel;
+@property (nonatomic) UIStackView * transmitterSNStackView;
+@property (nonatomic) UIView * successSnackBar;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * submitButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * submitView;
+@property (nonatomic) NSLayoutConstraint * submitViewBottomConstraint;
+@property (nonatomic) NSLayoutConstraint * snackBarBottomConstraint;
+@property (nonatomic) UILabel * snackBarText;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic,readonly) bool canBecomeFirstResponder;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
+- (void)keyboardActivityWithNotification:(id)v1;
+- (void)submitButtonTapped:(id)v1;
+- (void)showKeyboard;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24MainTabBarViewController : UITabBarController {
+    id mainTabBar;
+    id _authManager;
+    id _appCoreService;
+    id subscribers;
+    id repositoryMonitor;
+    id warmingProcessViewModel;
+}
+@property (nonatomic) UITabBar * mainTabBar;
+- (void)viewDidLoad;
+- (void)viewDidAppear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28AllowBluetoothViewController : _TtC10Dexcom_ONE28MVVMOnboardingViewController {
+    id titleText;
+    id descriptionText;
+    id step1Label;
+    id step2Label;
+    id step3Label;
+    id step4Label;
+    id allowButton;
+    id nextButton;
+    id instructionsStackView;
+    id scrollViewTopConstraint;
+    id scrollView;
+    id contentStackView;
+    id _appCoreService;
+    id subscribers;
+    id appLifeCycleSubscription;
+}
+@property (nonatomic) UILabel * titleText;
+@property (nonatomic) UILabel * descriptionText;
+@property (nonatomic) UILabel * step1Label;
+@property (nonatomic) UILabel * step2Label;
+@property (nonatomic) UILabel * step3Label;
+@property (nonatomic) UILabel * step4Label;
+@property (nonatomic) UIButton * allowButton;
+@property (nonatomic) UIButton * nextButton;
+@property (nonatomic) UIStackView * instructionsStackView;
+@property (nonatomic) NSLayoutConstraint * scrollViewTopConstraint;
+@property (nonatomic) UIScrollView * scrollView;
+@property (nonatomic) UIStackView * contentStackView;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewDidLayoutSubviews;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)enableBluetooth;
+- (void)nextButtonPressed:(id)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28ActionSheetDismissalAnimator : NSObject<UIViewControllerAnimatedTransitioning> {
+    id interactionController;
+}
+- (double)transitionDuration:(id)v1;
+- (void)animateTransition:(id)v1;
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE29SensorCodeStartViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id accessibilityIDText;
+    id heightConstant;
+    id onboardingModel;
+    id enterSensorLabel;
+    id enterSensorDescriptionLabel;
+    id backButton;
+    id imageHeightConstraint;
+    id alreadyInSessionButton;
+    id takePhotoButton;
+    id enterCodeManuallyButton;
+}
+@property (nonatomic) UILabel * enterSensorLabel;
+@property (nonatomic) UILabel * enterSensorDescriptionLabel;
+@property (nonatomic) UIBarButtonItem * backButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+@property (nonatomic) _TtC10Dexcom_ONE16DesignableButton * alreadyInSessionButton;
+@property (nonatomic) UIButton * takePhotoButton;
+@property (nonatomic) UIButton * enterCodeManuallyButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)backPressed:(id)v1;
+- (void)takePhotoButtonTapped:(id)v1;
+- (void)enterCodeManuallyButtonTapped:(id)v1;
+- (void)alreadyInSessionButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31DiskSpaceLowAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE9LifeMeter : UIView {
+    id contentView;
+    id fineIndicatorView;
+    id coarseIndicatorStackView;
+    id fineViewWidthConstraint;
+    id fineIndicatorViewBackground;
+    id timeLeft;
+}
+@property (nonatomic,retain) UIView * contentView;
+@property (nonatomic) UIView * fineIndicatorView;
+@property (nonatomic) UIStackView * coarseIndicatorStackView;
+@property (nonatomic) NSLayoutConstraint * fineViewWidthConstraint;
+@property (nonatomic) UIView * fineIndicatorViewBackground;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30GlucoseContainerViewController : UIViewController {
+    id glucoseViewDataSource;
+    id observers;
+    id glucoseViewController;
+    id glucoseContainerHeaderView;
+}
+@property (nonatomic) UIView * glucoseContainerHeaderView;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewDidAppear:(bool)v1;
+- (id)embedGlucoseViewControllerWithCoder:(id)v1 sender:(id)v2 segueIdentifier:(id)v3;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE18AlertsStatusLogger : _TtCs12_SwiftObject {
+    id alertEventsQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21AlertDetailsViewModel : _TtCs12_SwiftObject {
+    id selectedIndex;
+    id accessibilityText;
+    id accessibilityIDText;
+    id alertLevelPickerData;
+    id levelPickerData;
+    id levelPickerSelectedIndex;
+    id thresholdType;
+    id defaultLowAlertSound;
+    id defaultHighAlertSound;
+    id toolTipDescription;
+    id currentSetting;
+    id tooltipDelegate;
+    id alertThresholdSettingsViewModel;
+    id thresholdSettings;
+    id subscribers;
+    id showLowGlucoseAlertInfo;
+    id showHighGlucoseAlertInfo;
+    id forMoreThanMinuteInterval;
+    id minimumSnoozeDurationForHigh;
+    id minimumSnoozeDurationForLow;
+    id minimumDelayFirstAlertDuration;
+    id maximumSnoozeDuration;
+    id maximumDelayFirstAlertDuration;
+    id delayFirstAlertSection;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33ActionSheetPresentationController : UIPresentationController {
+    id dimmingView;
+    id dimmingViewAlpha;
+}
+@property (nonatomic,readonly) struct CGRect frameOfPresentedViewInContainerView;
+- (id)initWithPresentedViewController:(id)v1 presentingViewController:(id)v2;
+- (void)presentationTransitionWillBegin;
+- (void)dismissalTransitionWillBegin;
+- (void)containerViewWillLayoutSubviews;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21ReportsViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id clarityViewModel;
+    id clarityDayCountSubscriber;
+    id clarityInfoButtonSubscriber;
+    id clarityDayCountKey;
+    id glucoseRepositoryMonitor;
+    id clarityCardViewModel;
+    id createdToaster;
+}
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)viewDidLayoutSubviews;
+- (void)viewDidAppear:(bool)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21MinutePickerViewModel : _TtCs12_SwiftObject {
+    id pickerMinutes;
+    id originalMinutes;
+    id currentRow;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32EnterTransmitterSNViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id enterTxSNLabel;
+    id enterTxSNDescriptionLabel;
+    id takePhotoButton;
+    id enterSNManuallyButton;
+    id backButton;
+    id alreadyInSessionButton;
+    id imageHeightConstraint;
+    id onboardingModel;
+    id accessibilityIDText;
+    id heightConstant;
+}
+@property (nonatomic) UILabel * enterTxSNLabel;
+@property (nonatomic) UILabel * enterTxSNDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * takePhotoButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * enterSNManuallyButton;
+@property (nonatomic) UIBarButtonItem * backButton;
+@property (nonatomic) _TtC10Dexcom_ONE16DesignableButton * alreadyInSessionButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)prepareForSegue:(id)v1 sender:(id)v2;
+- (void)backPressed:(id)v1;
+- (void)takePhotoButtonTapped:(id)v1;
+- (void)enterSNManuallyButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE37TransmitterExpiredAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id bannerTitleLabel;
+    id noAlertsLabel;
+    id instructionTitleLabel;
+    id instructionDescriptionLabel;
+    id okButton;
+    id sensorRemovalInstructionsButton;
+}
+@property (nonatomic) UILabel * bannerTitleLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * instructionTitleLabel;
+@property (nonatomic) UILabel * instructionDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed:(id)v1;
+- (void)sensorRemovalInstructionsButtonPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33MoreInformationCollectionViewCell : UICollectionViewCell {
+    id moreInformationLabel;
+    id learnMoreButton;
+}
+@property (nonatomic) UILabel * moreInformationLabel;
+@property (nonatomic) UIButton * learnMoreButton;
+- (void)awakeFromNib;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE9TactSMach : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE38SensorAttachInstructionsViewController : _TtC10Dexcom_ONE36SensorInstructionsBaseViewController {
+    id sensorAttachStep7Title;
+    id sensorAttachStep7aText;
+    id sensorAttachStep7bText;
+    id sensorAttachStep7cText;
+    id sensorAttachStep7dText;
+    id sensorAttachStep7eText;
+    id nextButton;
+}
+@property (nonatomic) UILabel * sensorAttachStep7Title;
+@property (nonatomic) UILabel * sensorAttachStep7aText;
+@property (nonatomic) UILabel * sensorAttachStep7bText;
+@property (nonatomic) UILabel * sensorAttachStep7cText;
+@property (nonatomic) UILabel * sensorAttachStep7dText;
+@property (nonatomic) UILabel * sensorAttachStep7eText;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * nextButton;
+- (void)viewDidLoad;
+- (void)nextButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30BriefSensorIssueViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+    id imageHeightConstraint;
+    id imageTopConstraint;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28SecurityScreenViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id copyrightLabel;
+}
+@property (nonatomic) UILabel * copyrightLabel;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28OnboardingHomeViewController : UINavigationController<UINavigationControllerDelegate>
+- (void)viewDidLoad;
+- (void)navigationController:(id)v1 willShowViewController:(id)v2 animated:(bool)v3;
+- (id)initWithNavigationBarClass:(Class)v1 toolbarClass:(Class)v2;
+- (id)initWithRootViewController:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12DebugManager : _TtCs12_SwiftObject {
+    id currentAppCoreServiceType;
+    id appCoreService;
+    id debugAppCoreService;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE22D1AlertSettingsFactory : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE39TransmitterPairingSuccessViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id sensorCode;
+    id shouldJoinExistingSession;
+    id titleLabel;
+    id descriptionLabel;
+    id continueButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * continueButton;
+- (void)viewDidLoad;
+- (id)initWithCoder:(id)v1;
+- (void)continueButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE25SettingsRepositoryMonitor : _TtCs12_SwiftObject {
+    id _appleHealthEnabledStatus;
+    id _unitOfMeasure;
+    id _thresholds;
+    id _trendGraphHeight;
+    id _trendGraphTargetRangeStatus;
+    id _trendGraphTimeRange;
+    id observers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE13SceneDelegate : UIResponder<UIWindowSceneDelegate> {
+    id applicationServiceStarter;
+    id _appCoreService;
+    id _authManager;
+    id window;
+    id splashWindow;
+    id privacyWindow;
+    id onboardingState;
+}
+@property (nonatomic,retain) UIWindow * window;
+- (void)scene:(id)v1 willConnectToSession:(id)v2 options:(id)v3;
+- (void)sceneWillEnterForeground:(id)v1;
+- (void)sceneDidEnterBackground:(id)v1;
+- (void)sceneDidBecomeActive:(id)v1;
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE10ColorTheme : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE33AppBluetoothOffHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id actionSheetDelegate;
+    id titleLabel;
+    id textLabel1;
+    id textLabel2;
+    id textLabel3;
+    id textLabel4;
+    id phoneSettingsButton;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * textLabel1;
+@property (nonatomic) UILabel * textLabel2;
+@property (nonatomic) UILabel * textLabel3;
+@property (nonatomic) UILabel * textLabel4;
+@property (nonatomic) UIButton * phoneSettingsButton;
+- (void)viewDidLoad;
+- (void)openAppSettings:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE32PhonePlacementHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id descriptionLabel;
+    id distanceLabel;
+    id backButtonAccessibilityIDText;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) UILabel * distanceLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE13AlertsManager : _TtCs12_SwiftObject {
+    id _timeProvider;
+    id minimumAlertTimeSpacing;
+    id _nextUIAlert;
+    id currentNotificationViewController;
+    id latestUIAlertLocalNotificationIdentifier;
+    id firedLocalNotificationIdentifiers;
+    id nextUIAlertSubscriber;
+    id scheduledAlertTimes;
+    id localNotificationSubscriberPool;
+}
 @end
 
 
@@ -6336,23 +6052,381 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE15TimeLossMonitor : _TtCs12_SwiftObject {
-    id alertsTimeLossEventPublisher;
-    id timeLossSubscriber;
+@interface _TtC10Dexcom_ONE38TransmitterSettingsTableViewController : _TtC10Dexcom_ONE25BaseUITableViewController {
+    id pairNewTitle;
+    id snTitle;
+    id abTitle;
+    id activatedOnTitle;
+    id firmwareTitle;
+    id softwareNumberTitle;
+    id pairNewTransmitterCell;
+    id snValueLabel;
+    id abValueLabel;
+    id activatedOnLabel;
+    id firmwareValueLabel;
+    id softwareNumberValueLabel;
+    id transmitterSettingsSubscriber;
+    id sensorSessionViewModel;
+    id settingsViewModel;
+    id accessibilityIDText;
+}
+@property (nonatomic) UILabel * pairNewTitle;
+@property (nonatomic) UILabel * snTitle;
+@property (nonatomic) UILabel * abTitle;
+@property (nonatomic) UILabel * activatedOnTitle;
+@property (nonatomic) UILabel * firmwareTitle;
+@property (nonatomic) UILabel * softwareNumberTitle;
+@property (nonatomic) UITableViewCell * pairNewTransmitterCell;
+@property (nonatomic) UILabel * snValueLabel;
+@property (nonatomic) UILabel * abValueLabel;
+@property (nonatomic) UILabel * activatedOnLabel;
+@property (nonatomic) UILabel * firmwareValueLabel;
+@property (nonatomic) UILabel * softwareNumberValueLabel;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
+- (id)initWithStyle:(long long)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24WarmupHelpViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id helpTextLabel;
+    id bottomConstraint;
+    id actionSheetDelegate;
+    id bottomConstraintFactor;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * helpTextLabel;
+@property (nonatomic) NSLayoutConstraint * bottomConstraint;
+- (void)viewDidLoad;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE28EventValueCollectionViewCell : UICollectionViewCell {
+    id textLabel;
+    id valueTextField;
+    id valueUnitsLabel;
+    id highlightSeparatorView;
+    id bottomHighlightSeparatorView;
+    id viewModel;
+    id text;
+    id valueText;
+    id valueUnits;
+}
+@property (nonatomic) UILabel * textLabel;
+@property (nonatomic) UITextField * valueTextField;
+@property (nonatomic) UILabel * valueUnitsLabel;
+@property (nonatomic) UIView * highlightSeparatorView;
+@property (nonatomic) UIView * bottomHighlightSeparatorView;
+- (void)awakeFromNib;
+- (void)onEditingStarted:(id)v1;
+- (void)onEditingEnded:(id)v1;
+- (void)dismissKeyboard;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24ClarityCardInfoViewModel : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONEP33_E929746528AB43759A76DD570BC4F92B5Toast : _TtCs12_SwiftObject {
+    id uuid;
+    id state;
+    id toastableView;
+    id needsDismissal;
+    id horizontalPadding;
+    id siblingToasterIDs;
+    id containerView;
+    id leftConstraint;
+    id rightConstraint;
+    id bottomConstraint;
+    id heightConstraint;
+}
+- (void)dismiss;
+- (void)tap;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30PhoneConflictRepositoryMonitor : _TtCs12_SwiftObject {
+    id _currentConflicts;
+    id _currentBlockingConflicts;
+    id applicationStatusSubscriber;
+    id notificationCenter;
+    id phoneConflictListUpdated;
+    id phoneConflictDetailsVisible;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE24PhoneConflictSummaryCell : UITableViewCell {
-    id title;
-    id conflictDescription;
-    id howToFixButton;
+@interface _TtC10Dexcom_ONE24ACMTimeOutViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id dimmingView;
+    id loadingImageView;
+    id connectionErrorLabel;
+    id retryButton;
+    id retryingLabel;
+    id retryBlock;
 }
-@property (nonatomic) UILabel * title;
-@property (nonatomic) UILabel * conflictDescription;
-@property (nonatomic) UIButton * howToFixButton;
+@property (nonatomic) UIView * dimmingView;
+@property (nonatomic) UIImageView * loadingImageView;
+@property (nonatomic) UILabel * connectionErrorLabel;
+@property (nonatomic) UIButton * retryButton;
+@property (nonatomic) UILabel * retryingLabel;
+- (void)viewDidLoad;
+- (void)retryButtonPressed:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE38SensorFailedRestartAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id bannerTitleLabel;
+    id noAlertsLabel;
+    id instructionTitleLabel;
+    id instructionDescriptionLabel;
+    id okButton;
+    id sensorRemovalInstructionsButton;
+}
+@property (nonatomic) UILabel * bannerTitleLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * instructionTitleLabel;
+@property (nonatomic) UILabel * instructionDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (void)sensorRemovalInstructionsButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE31InvalidSensorCodeViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id titleLabel;
+    id reEnterCodeLabel;
+    id takePhotoButton;
+    id enterCodeManuallyButton;
+    id actionSheetDelegate;
+    id delegate;
+}
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * reEnterCodeLabel;
+@property (nonatomic) UIButton * takePhotoButton;
+@property (nonatomic) UIButton * enterCodeManuallyButton;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)takePhotoButtonTapped:(id)v1;
+- (void)enterCodeManuallyButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE24SignalLossViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id noAlertsLabel;
+    id statusLabel;
+    id detailLabel;
+    id helpButton;
+    id imageHeightConstraint;
+    id imageTopConstraint;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * statusLabel;
+@property (nonatomic) UILabel * detailLabel;
+@property (nonatomic) UIButton * helpButton;
+@property (nonatomic) NSLayoutConstraint * imageHeightConstraint;
+@property (nonatomic) NSLayoutConstraint * imageTopConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)helpButtonClicked:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE36TransmitterFailedAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id bannerTitleLabel;
+    id noAlertsLabel;
+    id instructionTitleLabel;
+    id instructionDescriptionLabel;
+    id okButton;
+    id sensorRemovalInstructionsButton;
+}
+@property (nonatomic) UILabel * bannerTitleLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * instructionTitleLabel;
+@property (nonatomic) UILabel * instructionDescriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) UIButton * sensorRemovalInstructionsButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (void)sensorRemovalInstructionsButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE26MinutePickerViewController : _TtC10Dexcom_ONE20BaseUIViewController<UIPickerViewDataSource,UIPickerViewDelegate> {
+    id saveButton;
+    id cancelButton;
+    id minutePickerView;
+    id minuteLabel;
+    id alertTitleLabel;
+    id alertDescriptionLabel;
+    id minutesLeadingConstraint;
+    id minutePickerViewBottomConstraint;
+    id delegate;
+    id actionSheetDelegate;
+    id alertTitle;
+    id alertDescription;
+    id valueComponentIndex;
+    id defaultCompnentCount;
+    id minutePickerViewModel;
+    id pickerViewLeadingConstant;
+    id pickerViewHeightConstant;
+    id pickerViewBottomPaddingConstant;
+}
+@property (nonatomic) UIButton * saveButton;
+@property (nonatomic) UIButton * cancelButton;
+@property (nonatomic) UIPickerView * minutePickerView;
+@property (nonatomic) UILabel * minuteLabel;
+@property (nonatomic) UILabel * alertTitleLabel;
+@property (nonatomic) UILabel * alertDescriptionLabel;
+@property (nonatomic) NSLayoutConstraint * minutesLeadingConstraint;
+@property (nonatomic) NSLayoutConstraint * minutePickerViewBottomConstraint;
+- (id)initWithCoder:(id)v1;
+- (void)viewDidLoad;
+- (void)savePressed:(id)v1;
+- (void)cancelPressed:(id)v1;
+- (long long)numberOfComponentsInPickerView:(id)v1;
+- (long long)pickerView:(id)v1 numberOfRowsInComponent:(long long)v2;
+- (double)pickerView:(id)v1 rowHeightForComponent:(long long)v2;
+- (id)pickerView:(id)v1 viewForRow:(long long)v2 forComponent:(long long)v3 reusingView:(id)v4;
+- (void)pickerView:(id)v1 didSelectRow:(long long)v2 inComponent:(long long)v3;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE34AppBluetoothOffAlertViewController : _TtC10Dexcom_ONE23BaseAlertViewController {
+    id noAlertsLabel;
+    id titleLabel;
+    id descriptionLabel;
+    id okButton;
+}
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * titleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+- (void)viewDidLoad;
+- (void)OKButtonPressed;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE14BulkDataLogger : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE11AppDelegate : UIResponder<UIApplicationDelegate> {
+    id applicationServiceStarter;
+}
+- (bool)application:(id)v1 didFinishLaunchingWithOptions:(id)v2;
+- (bool)application:(id)v1 shouldAllowExtensionPointIdentifier:(id)v2;
+- (void)applicationWillEnterForeground:(id)v1;
+- (void)applicationDidBecomeActive:(id)v1;
+- (id)application:(id)v1 configurationForConnectingSceneSession:(id)v2 options:(id)v3;
+- (void)application:(id)v1 didDiscardSceneSessions:(id)v2;
+- (void)applicationWillTerminate:(id)v1;
+- (void)applicationSignificantTimeChange:(id)v1;
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE14DesignableView : UIView
+@property (nonatomic) double borderWidth;
+@property (nonatomic,retain) UIColor * borderColor;
+@property (nonatomic) double cornerRadius;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE27BackdoorTableViewController : _TtC10Dexcom_ONE25BaseUITableViewController {
+    id mockSwitch;
+    id unitsOfMeasureValueLabel;
+    id targetRangeValueLabel;
+    id switchEnvironmentsCell;
+    id debugViewModel;
+}
+@property (nonatomic) UISwitch * mockSwitch;
+@property (nonatomic) UILabel * unitsOfMeasureValueLabel;
+@property (nonatomic) UILabel * targetRangeValueLabel;
+@property (nonatomic) UITableViewCell * switchEnvironmentsCell;
+- (void)viewDidLoad;
+- (id)tableView:(id)v1 cellForRowAtIndexPath:(id)v2;
+- (void)tableView:(id)v1 didSelectRowAtIndexPath:(id)v2;
+- (void)mockSwitchChangeWithSender:(id)v1;
+- (id)initWithStyle:(long long)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE21PhoneConflictItemCell : UITableViewCell {
+    id conflictName;
+}
+@property (nonatomic) UILabel * conflictName;
 - (id)initWithStyle:(long long)v1 reuseIdentifier:(id)v2;
 - (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
@@ -6361,40 +6435,144 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE11TimeManager : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC10Dexcom_ONE11AudioPlayer : NSObject {
-    id player;
-    id observers;
+@interface _TtC10Dexcom_ONE23TakePhotoViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id cameraView;
+    id successSnackBar;
+    id snackBarText;
+    id cancelButton;
+    id topLabel;
+    id firstInstructionLabel;
+    id secondInstructionLabel;
+    id tipLabel;
+    id instructionsScrollView;
+    id instructionsContentView;
+    id scrollViewIndicator;
+    id delegate;
+    id viewModel;
 }
-- (id)init;
+@property (nonatomic,retain) _TtC10Dexcom_ONE10CameraView * cameraView;
+@property (nonatomic) UIView * successSnackBar;
+@property (nonatomic) UILabel * snackBarText;
+@property (nonatomic) UIButton * cancelButton;
+@property (nonatomic) UILabel * topLabel;
+@property (nonatomic) UILabel * firstInstructionLabel;
+@property (nonatomic) UILabel * secondInstructionLabel;
+@property (nonatomic) UILabel * tipLabel;
+@property (nonatomic) UIScrollView * instructionsScrollView;
+@property (nonatomic) UIView * instructionsContentView;
+@property (nonatomic) UIView * scrollViewIndicator;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewDidAppear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
+- (void)cancel;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
 - (void).cxx_destruct;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC10Dexcom_ONE31AppleHealthPickerViewController : _TtC10Dexcom_ONE20BaseUIViewController {
-    id titleLabel;
-    id descriptionPart1;
-    id subTitleLabel;
-    id descriptionPart2;
-    id activateButton;
+@interface _TtC10Dexcom_ONE26SessionEndedViewController : _TtC10Dexcom_ONE20BaseUIViewController {
+    id sessionEndedBannerView;
+    id alertsIconHeightConstraint;
+    id contentView;
+    id scrollView;
+    id sessionEndedLabel;
+    id noAlertsLabel;
+    id removeSensorTitleLabel;
+    id descriptionLabel;
+    id okButton;
+    id sensorRemovalButton;
+    id contentHeight;
     id actionSheetDelegate;
-    id delegate;
 }
-@property (nonatomic) UILabel * titleLabel;
-@property (nonatomic) UILabel * descriptionPart1;
-@property (nonatomic) UILabel * subTitleLabel;
-@property (nonatomic) UILabel * descriptionPart2;
-@property (nonatomic) UIButton * activateButton;
+@property (nonatomic) UIView * sessionEndedBannerView;
+@property (nonatomic) NSLayoutConstraint * alertsIconHeightConstraint;
+@property (nonatomic) UIView * contentView;
+@property (nonatomic) UIScrollView * scrollView;
+@property (nonatomic) UILabel * sessionEndedLabel;
+@property (nonatomic) UILabel * noAlertsLabel;
+@property (nonatomic) UILabel * removeSensorTitleLabel;
+@property (nonatomic) UILabel * descriptionLabel;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * okButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * sensorRemovalButton;
+- (void)viewDidLoad;
+- (void)okButtonTapped:(id)v1;
+- (void)removeSensorInstructionsButtonTapped:(id)v1;
+- (id)initWithNibName:(id)v1 bundle:(id)v2;
+- (id)initWithCoder:(id)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE12D1PillButton : UIButton {
+    id buttonProps;
+    id isHaptic;
+    id tapMargin;
+    id paragraphTextAlignment;
+    id buttonSize;
+}
+@property (nonatomic) bool highlighted;
+@property (nonatomic) bool enabled;
+@property (nonatomic,readonly) struct CGSize intrinsicContentSize;
+- (bool)isHighlighted;
+- (bool)isEnabled;
+- (id)initWithFrame:(struct CGRect)v1;
+- (id)initWithCoder:(id)v1;
+- (void)prepareForInterfaceBuilder;
+- (void)layoutSubviews;
+- (void)accessibilityElementDidBecomeFocused;
+- (void)accessibilityElementDidLoseFocus;
+- (void)sendAction:(SEL)v1 to:(id)v2 forEvent:(id)v3;
+- (bool)pointInside:(struct CGPoint)v1 withEvent:(id)v2;
+- (void)setTitle:(id)v1 forState:(unsigned long long)v2;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30SensorCodeManualViewController : _TtC10Dexcom_ONE20BaseUIViewController<UITextInputTraits> {
+    id enterSensorCodeLabel;
+    id sensorCodeStackView;
+    id successSnackBar;
+    id submitButton;
+    id submitView;
+    id submitViewBottomConstraint;
+    id snackBarBottomConstraint;
+    id successSnackBarLabel;
+    id isKeyBoardShown;
+    id sensorCode;
+    id maxSensorCodeLength;
+    id sensorCodeSpacingConstant;
+    id snackBarBottomConstant;
+    id delegate;
+    id keyboardType;
+    id keyboardAppearance;
+    id canEdit;
+}
+@property (nonatomic) UILabel * enterSensorCodeLabel;
+@property (nonatomic) UIStackView * sensorCodeStackView;
+@property (nonatomic) UIView * successSnackBar;
+@property (nonatomic) _TtC10Dexcom_ONE14DXCMPillButton * submitButton;
+@property (nonatomic) _TtC10Dexcom_ONE14DesignableView * submitView;
+@property (nonatomic) NSLayoutConstraint * submitViewBottomConstraint;
+@property (nonatomic) NSLayoutConstraint * snackBarBottomConstraint;
+@property (nonatomic) UILabel * successSnackBarLabel;
+@property (nonatomic) long long keyboardType;
+@property (nonatomic) long long keyboardAppearance;
+@property (nonatomic,readonly) bool canBecomeFirstResponder;
 - (id)initWithCoder:(id)v1;
 - (void)viewDidLoad;
-- (void)activateButtonTapped:(id)v1;
+- (void)viewWillAppear:(bool)v1;
+- (void)viewWillDisappear:(bool)v1;
+- (void)keyboardActivityWithNotification:(id)v1;
+- (void)submitButtonTapped:(id)v1;
+- (void)showKeyboard;
 - (id)initWithNibName:(id)v1 bundle:(id)v2;
 - (void).cxx_destruct;
 @end
@@ -6402,8 +6580,27 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC18AlertsStateMachine13AnyStateEvent : _TtCs12_SwiftObject {
-    id timestamp;
+@interface _TtC10Dexcom_ONE26TransmitterSNHintViewModel : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC10Dexcom_ONE30TechnicalAlertDetailsViewModel : _TtCs12_SwiftObject {
+    id accessibilityText;
+    id defaultTechnicalAlertSound;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC18AlertsStateMachine15AlertAttributes : _TtCs12_SwiftObject {
+    id isPlatformEnabled;
+    id isUserEnabled;
+    id reAlertType;
+    id forMoreThanType;
+    id alertAcknowledgmentType;
 }
 @end
 
@@ -6419,42 +6616,36 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC18AlertsStateMachine24ThresholdAlertAttributes : _TtC18AlertsStateMachine15AlertAttributes {
-    id mgdlThreshold;
+@interface _TtC18AlertsStateMachine34HysteresisThresholdAlertAttributes : _TtC18AlertsStateMachine24ThresholdAlertAttributes {
+    id suspendType;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC18AlertsStateMachine35TransmitterNotFoundProjectionHelper : _TtCs12_SwiftObject
+@interface _TtC18AlertsStateMachine13AlertingState : _TtCs12_SwiftObject {
+    id alertProjectionsMap;
+    id dictionaryOfAlerts;
+}
 @end
 
 
 /*****************************************************************/
 
 @interface _TtC18AlertsStateMachine12AlertsEngine : _TtCs12_SwiftObject {
-    id underlyingCurrentAlertingState;
-    id alertStatePublisher;
+    id alertsMapPublisher;
+    id _lastCalibrationNotUsedTimestamp;
+    id currentAlertingState;
     id dataLogger;
     id repository;
-    id timeProvider;
+    id _timeProvider;
     id settingsPublisher;
-    id bluetoothEventPublisher;
-    id txSessionEventPublisher;
-    id databaseEventPublisher;
-    id diskSpaceEventPublisher;
-    id timeLossEventPublisher;
-    id underlyingCurrentInternalState;
+    id _currentInternalState;
     id currentAlertSettings;
     id settingsSubscriber;
-    id bluetoothStateSubscriber;
-    id txSessionEventSubscriber;
-    id databaseStateSubscriber;
-    id diskSpaceStateSubscriber;
-    id timeLossStateSubscriber;
+    id systemStateSubscriber;
     id alertingStateQueue;
-    id internalStateQueue;
 }
 @end
 
@@ -6469,21 +6660,11 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC18AlertsStateMachine15G7AlertSettings : _TtC18AlertsStateMachine13AlertSettings
-@end
-
-
-/*****************************************************************/
-
 @interface _TtC18AlertsStateMachine13AlertSettings : _TtCs12_SwiftObject {
-    id sensorSessionDurationWithoutGracePeriod;
-    id sensorSessionDurationWithGracePeriod;
-    id transmitterDurationWithoutGracePeriod;
-    id gracePeriodInSeconds;
     id isSensorExpiredCalculated;
     id isSensorFailedDueToRestartDerived;
     id isAutomaticSessionStart;
-    id reAlertPaddingInSeconds;
+    id intervals;
     id urgentLowGlucose;
     id urgentLowSoonGlucose;
     id lowGlucose;
@@ -6524,73 +6705,18 @@ struct anonymous_type_25 {
     id sensorUnsupported;
     id bluetoothRadioOff;
     id appBluetoothOff;
+    id deviceBatteryLow;
+    id deviceBatteryVeryLow;
+    id deviceBatteryCritical;
+    id deviceBatteryNotCharging;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC18AlertsStateMachine34HysteresisThresholdAlertAttributes : _TtC18AlertsStateMachine24ThresholdAlertAttributes {
-    id suspendType;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC18AlertsStateMachine13AlertingState : _TtCs12_SwiftObject {
-    id alertMap;
-    id dictionaryOfAlerts;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC18AlertsStateMachine15AlertAttributes : _TtCs12_SwiftObject {
-    id isPlatformEnabled;
-    id isUserEnabled;
-    id reAlertType;
-    id forMoreThanType;
-    id alertAcknowledgmentType;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC18AlertsStateMachine15D1AlertSettings : _TtC18AlertsStateMachine13AlertSettings
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9AppCompat14AcmHttpRequest : _TtCs12_SwiftObject {
-    id sessionConfig;
-    id $__lazy_storage_$_session;
-    id networkTimeout;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9AppCompat6AcmApi : _TtCs12_SwiftObject {
-    id cloudApi;
-    id appId;
-    id repository;
-    id timeProvider;
-    id runtimeInformation;
-    id checkFrequency;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9AppCompat11AcmCloudApi : _TtCs12_SwiftObject {
-    id baseUrl;
-    id httpRequest;
+@interface _TtC18AlertsStateMachine24ThresholdAlertAttributes : _TtC18AlertsStateMachine15AlertAttributes {
+    id mgdlThreshold;
 }
 @end
 
@@ -6658,6 +6784,15 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
+@interface _TtC8BulkData20BulkDataContentEntry : _TtCs12_SwiftObject {
+    id recordType;
+    id records;
+}
+@end
+
+
+/*****************************************************************/
+
 @interface _TtC8BulkData16BulkDataManifest : _TtCs12_SwiftObject {
     id recordType;
     id count;
@@ -6665,29 +6800,6 @@ struct anonymous_type_25 {
     id lastDateTime;
     id firstKey;
     id lastKey;
-    id $__lazy_storage_$_unixDateFormatter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC8BulkData11BulkDataAPI : _TtCs12_SwiftObject {
-    id requestSubscriber;
-    id serialQueue;
-    id receiveQueue;
-    id maxPostSizeInBytes;
-    id currentDataPost;
-    id accountID;
-    id dataStreamType;
-    id transmitterID;
-    id postSequenceNumber;
-    id secureTransit;
-    id timeProvider;
-    id persistenceDelegate;
-    id transmitterSoftware;
-    id transmitterVersion;
-    id installationID;
 }
 @end
 
@@ -6716,9 +6828,1007 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC8BulkData20BulkDataContentEntry : _TtCs12_SwiftObject {
-    id recordType;
-    id records;
+@interface _TtC8BulkData11BulkDataAPI : _TtCs12_SwiftObject {
+    id requestSubscriber;
+    id serialQueue;
+    id receiveQueue;
+    id maxPostSizeInBytes;
+    id currentDataPost;
+    id accountID;
+    id dataStreamType;
+    id transmitterID;
+    id postSequenceNumber;
+    id secureTransit;
+    id _timeProvider;
+    id persistenceDelegate;
+    id transmitterSoftware;
+    id transmitterVersion;
+    id installationID;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC13CgmFoundation14InjectedValues : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC13CgmFoundation19InjectableContainer : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC13CgmFoundationP33_C0E003908C74438D8941A8CBDF9FB82914InjectionQueue : _TtCs12_SwiftObject {
+    id dispatchQueue;
+    id isSuspended;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC13CgmFoundation17CgmStateFormatter : _TtCs12_SwiftObject {
+    id unitOfMeasure;
+    id lowEGVDisplay;
+    id highEGVDisplay;
+    id mmolFormatter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15AlertRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id alertRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21DeviceBatteryProvider : _TtCs12_SwiftObject {
+    id deviceBattery;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18UserEventRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21AuthManagerRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id authKeyValueRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18WatchCommunication : NSObject {
+    id softwareNumber;
+    id session;
+    id decoder;
+    id encoder;
+    id messageCollectionRecorders;
+    id messageWrapperCollectors;
+    id watchStateChangePublisher;
+    id messagePublisher;
+    id filePublisher;
+    id watchEventLogger;
+}
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14AlertRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21FeatureFlagRepository : _TtCs12_SwiftObject {
+    id persistedFeatureFlagRecord;
+    id persistenceEventPublisher;
+    id featureFlagRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15CgmOrchestrator : _TtCs12_SwiftObject {
+    id cgmCore;
+    id txStateManager;
+    id alertsEngine;
+    id timeStateManager;
+    id acmProvider;
+    id diskSpaceService;
+    id timeLossService;
+    id watchCommunication;
+    id consentEventLogMonitor;
+    id subscriptions;
+    id bulkDataManager;
+    id secureNetworkingManager;
+    id namedValuesManager;
+    id settingsSyncManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit9CgmEngine : _TtCs12_SwiftObject {
+    id _systemState;
+    id txStateManager;
+    id persistenceEventMonitor;
+    id timeLossService;
+    id diskSpaceService;
+    id eventScheduler;
+    id cgmEngineQueue;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit28DeviceMetadataSyncingService : _TtCs12_SwiftObject {
+    id counterpartMetadataPublisher;
+    id deviceMetadataProvider;
+    id watchCommunication;
+    id _timeProvider;
+    id persistence;
+    id subscriptions;
+    id deviceMetadataContextKey;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit13DeviceBattery : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit23DeviceMetadataRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22AlertSettingsRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit26SecureNetworkingRepository : _TtCs12_SwiftObject {
+    id keychain;
+    id sessionKeysAlias;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit26SyncableKeyValueRepository : _TtCs12_SwiftObject {
+    id counterpartSyncedKeyValue;
+    id updatedKeyValue;
+    id deletedKeyValue;
+    id persistenceEventPublisher;
+    id keyValueRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14RealtimeRecord : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20FeatureFlagRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit17KeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20UserAlertsRepository : _TtCs12_SwiftObject {
+    id syncedAlertProfile;
+    id updatedCounterpartAlertProfiles;
+    id updatedAlertProfiles;
+    id persistenceEventPublisher;
+    id alertProfileRecordDao;
+    id alertScheduleRecordDao;
+    id alertSettingsRecordDao;
+    id _timeProvider;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14EventLoggerDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25SyncableKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14EventScheduler : _TtCs12_SwiftObject {
+    id activeTimers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit13CgmSystemCalc : _TtCs12_SwiftObject {
+    id signalLossInterval;
+    id pairingUnsuccessfulInterval;
+    id pairingTakingTooLongInterval;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit26QuietModesRecordRepository : _TtCs12_SwiftObject {
+    id persistedQuietModesRecord;
+    id updatedQuietModesRecord;
+    id persistenceEventPublisher;
+    id quietModesRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit11AcmCloudApi : _TtCs12_SwiftObject {
+    id baseUrl;
+    id httpRequest;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit23PersistenceEventMonitor : _TtCs12_SwiftObject {
+    id _persistenceErrorEvent;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit35CounterpartDeviceMetadataRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id recordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25PartitionWrapperCollector : _TtCs12_SwiftObject {
+    id id;
+    id lastIndexReceived;
+    id collectionDataSize;
+    id lastModified;
+    id data;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit19QuietModesRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit13AcmRepository : _TtCs12_SwiftObject {
+    id acmKeyValueRecordDao;
+    id persistenceEventPublisher;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit32LegacySecureNetworkingRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id secureNetworkingKeyValueRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKitP33_EBCD805B203F9C1F4034DCBA33EB4AB223TransientModelContainer : _TtCs12_SwiftObject {
+    id timeLossWarning;
+    id bleUnavailableWarning;
+    id diskSpaceWarning;
+    id deviceBatteryWarning;
+    id deviceBatteryNotChargingWarning;
+    id diskSpaceCriticalBlockingReason;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25ShareAlertEventRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id alertRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22DeviceMetadataProvider : _TtCs12_SwiftObject {
+    id watchCommunication;
+    id _metadata;
+    id subscriptions;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit11GcsCloudApi : _TtCs12_SwiftObject {
+    id baseUrl;
+    id httpRequest;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25CgmEngineTransientStorage : _TtCs12_SwiftObject {
+    id modelContainer;
+    id isDirty;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20UserEventsRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id userEventRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit27RequestSecureTransitManager : _TtCs12_SwiftObject {
+    id secureNetworkingManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit11Persistence : _TtCs12_SwiftObject {
+    id databaseManager;
+    id timeProviderRepository;
+    id developerLogRepository;
+    id eventLoggerRepository;
+    id bulkDataApiRepository;
+    id bulkDataManagerRepository;
+    id secureNetworkingRepository;
+    id authManagerRepository;
+    id acmRepository;
+    id alertRepo;
+    id userEventsRepo;
+    id alertProfileRepo;
+    id quietModesRecordRepo;
+    id urlRepo;
+    id featureFlagRepo;
+    id keyValueRepo;
+    id syncableKeyValueRepo;
+    id shareAlertEventRepo;
+    id counterpartMetadataRepo;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit16GCSURLRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id gcsUrlRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18BLEPermissionProxy : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit27CLMProxyCertificateProvider : _TtCs12_SwiftObject {
+    id secureNetworkingManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit11AcmProvider : _TtCs12_SwiftObject {
+    id acmRepository;
+    id appId;
+    id appSoftwareNumber;
+    id _acmApi;
+    id acmConfig;
+    id acmSettings;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit7CgmCore : _TtCs12_SwiftObject {
+    id persistence;
+    id config;
+    id persistenceEventMonitor;
+    id developerLogger;
+    id keychainManager;
+    id eventLogger;
+    id certificateManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit17DiskSpaceProvider : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18KeyValueRepository : _TtCs12_SwiftObject {
+    id updatedKeyValue;
+    id deletedKeyValue;
+    id persistenceEventPublisher;
+    id keyValueRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20AcmKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15GCSURLRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit23UserCertificateProvider : _TtCs12_SwiftObject {
+    id certManager;
+    id defaultTimeout;
+    id keyValueRepository;
+    id bulkDataManager;
+    id bulkDataLastUploadedUserCertKey;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25BulkDataKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18BLEEventLogMonitor : _TtCs12_SwiftObject {
+    id eventLogger;
+    id subscribers;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit6GcsApi : _TtCs12_SwiftObject {
+    id gcsCloudApi;
+    id softwareNumber;
+    id appVersion;
+    id secureNetworkingManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit19ShareAlertRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit16DiskSpaceService : _TtCs12_SwiftObject {
+    id diskSpaceProvider;
+    id diskSpaceConfig;
+    id serialQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18NamedValuesManager : _TtCs12_SwiftObject {
+    id secureNetworkingManager;
+    id subscriptions;
+    id queue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15TimeProviderDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15TimeLossService : _TtCs12_SwiftObject {
+    id txStateManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18ShareServerManager : _TtCs12_SwiftObject {
+    id requestSecureTransitManager;
+    id $__lazy_storage_$_followerManager;
+    id $__lazy_storage_$_monitoringManager;
+    id $__lazy_storage_$_runtimeInformationManager;
+    id $__lazy_storage_$_eventsManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22DeveloperLogRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id developerLogRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15DeveloperLogger : DDAbstractDatabaseLogger {
+    id repository;
+    id _timeProvider;
+    id logBuffer;
+    id operationQueue;
+}
+- (bool)db_log:(id)v1;
+- (void)db_save;
+- (void)db_delete;
+- (void)db_saveAndDelete;
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit39LegacySecureNetworkingKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21DeveloperLogRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15DatabaseManager : _TtCs12_SwiftObject {
+    id dbPool;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit23AlertsSettingsPublisher : _TtCs12_SwiftObject {
+    id initialValue;
+    id newSettings;
+    id persistenceEventPublisher;
+    id subscriptions;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25SystemStateSyncingService : _TtCs12_SwiftObject {
+    id counterpartSystemStatePublisher;
+    id cgmEngine;
+    id watchCommunication;
+    id _timeProvider;
+    id persistence;
+    id subscriptions;
+    id systemStateContextKey;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit18CertificateManager : _TtCs12_SwiftObject {
+    id _deviceCertificateChain;
+    id _userCertificateChain;
+    id _userPrivateKey;
+    id _devicePrivateKey;
+    id algorithm;
+    id secureNetworkManager;
+    id certificateExpirationWindow;
+    id _timeProvider;
+    id keychain;
+    id rootCertificate;
+    id certificateProvider;
+    id certificateManagerDispatch;
+    id maxCertificateLength;
+    id defaultCertificateRequestTimeout;
+    id persistence;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22AlertScheduleRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit24ShareAlertRealtimeRecord : _TtC6CgmKit14RealtimeRecord {
+    id recordVersion;
+    id recordedTime;
+    id timestamp;
+    id alertID;
+    id alertName;
+    id alertState;
+    id sourceStream;
+    id txSw;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21AlertProfileRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit11EventLogger : _TtCs12_SwiftObject {
+    id eventLoggerRepository;
+    id _timeProvider;
+    id eventLoggerConfig;
+    id operationQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20DeviceBatteryService : _TtCs12_SwiftObject {
+    id deviceBatteryProvider;
+    id deviceBatteryConfig;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21GlucoseRealtimeRecord : _TtC6CgmKit14RealtimeRecord {
+    id recordVersion;
+    id recordedTime;
+    id timestamp;
+    id algorithmState;
+    id isBackfilled;
+    id txId;
+    id txSessionStartTime;
+    id txTime;
+    id trendRate;
+    id trendArrow;
+    id value;
+    id predictedValue;
+    id secondaryAlgorithmState;
+    id txSw;
+    id sourceStream;
+    id status;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14AcmHttpRequest : _TtCs12_SwiftObject {
+    id networkTimeout;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit25BulkDataManagerRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id bulkDataKeyValueRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14GcsHttpRequest : _TtCs12_SwiftObject {
+    id sessionConfig;
+    id $__lazy_storage_$_session;
+    id networkTimeout;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit14EventLogRecord : _TtCs12_SwiftObject {
+    id recordId;
+    id type;
+    id subType;
+    id time;
+    id moreInfo;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21BulkDataApiRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id bulkDataDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit15BulkDataManager : _TtCs12_SwiftObject {
+    id _systemService;
+    id _uploadResult;
+    id transmitterID;
+    id txInfoDelegate;
+    id bulkDataAPI;
+    id accountID;
+    id uploadFrequencyDefault;
+    id uploadFrequencyRetry;
+    id dailyRecordsUpdateInterval;
+    id timeCheckDelta;
+    id minUploadFrequency;
+    id maxUploadFrequency;
+    id $__lazy_storage_$_uploadFrequency;
+    id _timeProvider;
+    id kKeyLastUploadAttempt;
+    id kKeyLastDeviceSettingsUpdate;
+    id kKeyLastInventoryRecordUpdate;
+    id kKeyLastDeveloperLogsFetch;
+    id kKeyLastEventsFetch;
+    id kKeyLastUploadFrequency;
+    id kKeyInstallationID;
+    id _isNetworkReachable;
+    id _isUploadingBulkData;
+    id _lifeCycleManager;
+    id _authManager;
+    id subscriptions;
+    id persistenceDelegate;
+    id apiRepository;
+    id eventLogger;
+    id devLogger;
+    id backgroundTaskName;
+    id serialQueue;
+    id accessQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21BulkDataPostRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit16TimeStateManager : _TtCs12_SwiftObject {
+    id _timeProviderService;
+    id _timeProvider;
+    id eventLogger;
+    id timeSubscriber;
+    id isoDateFormatterNative;
+    id isoDateFormatterUTC;
+    id _timeState;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit33TimeProviderBackgroundTaskManager : _TtCs12_SwiftObject {
+    id backgroundTaskManager;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21AuthKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit20AlertsBulkDataLogger : _TtCs12_SwiftObject {
+    id eventLogger;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit6AcmApi : _TtCs12_SwiftObject {
+    id cloudApi;
+    id appId;
+    id repository;
+    id _timeProvider;
+    id runtimeInformation;
+    id checkFrequency;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit19SettingsSyncManager : _TtCs12_SwiftObject {
+    id _lifeCycleManager;
+    id settingsSyncConfig;
+    id namedValuesManager;
+    id _authManager;
+    id eventLogger;
+    id _timeProvider;
+    id persistence;
+    id snoozeEnabledAlerts;
+    id delayEnabledAlerts;
+    id rateEnabledAlerts;
+    id subscriptions;
+    id backgroundTaskName;
+    id watchCommunication;
+    id watchCommSettingsSync;
+    id settingsQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit21EventLoggerRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id eventLoggerDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22TimeProviderRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id dao;
+    id phoneTimeKey;
+    id rtcTimeKey;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC6CgmKit22ConsentEventLogMonitor : _TtCs12_SwiftObject {
+    id currentConsentStatus;
+    id eventLogger;
+    id subscribers;
 }
 @end
 
@@ -6988,293 +8098,22 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC22CloudCommonServiceCore11JSONHelpers : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
 @interface _TtC22CloudCommonServiceCore6Base64 : _TtCs12_SwiftObject
 @end
 
 
 /*****************************************************************/
 
-@interface _TtCO9D1AppCore14TxSessionState6Failed : _TtCs12_SwiftObject {
-    id txId;
-    id txLifetime;
-    id warmupLength;
-    id sensorSessionDuration;
-    id txStartCalculatedTime;
-    id timeProvider;
-    id txTimeOffsetInfo;
-    id txStaticInfo;
+@interface _TtC22CloudCommonServiceCoreP33_C6A49EF019E18E01B862A51AFB22981C17ISO8601Formatters : _TtCs12_SwiftObject {
+    id withFractionalSeconds;
+    id withoutFractionalSeconds;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC9D1AppCore6D1Core : _TtCs12_SwiftObject {
-    id persistence;
-    id appId;
-    id appSoftwareNumber;
-    id txService;
-    id dexKit;
-    id bleEventLogMonitor;
-    id transmitterEventLogMonitor;
-    id bulkDataMonitor;
-    id subscriptions;
-    id txSessionStateManager;
-    id bleStateMonitor;
-    id blePermissionMonitor;
-    id timeLossStateManager;
-    id persistenceEventMonitor;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore9TxService : _TtCs12_SwiftObject {
-    id txServiceRepository;
-    id txConfiguration;
-    id timeProvider;
-    id txTickTimeProvider;
-    id appLifeCycleManager;
-    id sensorCommandQueue;
-    id commandState;
-    id bleStatePassthrough;
-    id _isCommunicating;
-    id _txCommRecord;
-    id txDisconnectEventPublisher;
-    id txDisconnectEventInfo;
-    id txCommRecordAggregator;
-    id bleAuthSubscription;
-    id txController;
-    id startCommandResponse;
-    id stopCommandResponse;
-    id subscriptions;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore11Persistence : _TtCs12_SwiftObject {
-    id databaseManager;
-    id txServiceRepository;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore23TxPairingStartRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore21TxSessionStateManager : _TtCs12_SwiftObject {
-    id _txSessionState;
-    id _isCommunicating;
-    id txService;
-    id timeProvider;
-    id eventLogger;
-    id appLifeCycleManager;
-    id eventScheduler;
-    id txSessionStateQueue;
-    id incomingQueue;
-    id timeUntilSignalLoss;
-    id subscriptions;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore21CommandStateRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore18TxTickTimeProvider : _TtCs12_SwiftObject {
-    id txTickTime;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore24TxControllerTimeProvider : _TtCs12_SwiftObject {
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore19TxKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtCO9D1AppCore14TxSessionState7Pairing : _TtCs12_SwiftObject {
-    id txId;
-    id pairingStartTime;
-    id communicationError;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore19TxServiceRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id commandStateRecordDao;
-    id txServiceRecordDao;
-    id txKeyValueRecordDao;
-    id txPairingStartRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore26TransmitterEventLogMonitor : _TtCs12_SwiftObject {
-    id lastTxStaticInfoKey;
-    id txService;
-    id eventLogger;
-    id timeProvider;
-    id appLifeCycleManager;
-    id subscriptions;
-    id txSessionStateManager;
-    id previousTxSessionState;
-    id keyValueStore;
-    id incomingQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtCO9D1AppCore14TxSessionState10SignalLoss : _TtCO9D1AppCore14TxSessionState18BaseTxSessionState {
-    id lastKnownIsBatteryLow;
-    id communicationError;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtCO9D1AppCore14TxSessionState7Nominal : _TtCO9D1AppCore14TxSessionState18BaseTxSessionState {
-    id isBatteryLow;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore19BulkDataCoreMonitor : _TtCs12_SwiftObject {
-    id bulkDataManager;
-    id timeProvider;
-    id txService;
-    id appSoftwareNumber;
-    id subscriptions;
-    id incomingQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore14EventScheduler : _TtCs12_SwiftObject {
-    id activeTimers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore18TxServiceRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore22TxCommRecordAggregator : _TtCs12_SwiftObject {
-    id txId;
-    id communicationStartTime;
-    id isBatteryLow;
-    id txTimeOffsetInfo;
-    id txStatusError;
-    id diagnosticData;
-    id batteryInfo;
-    id calibrationBounds;
-    id sensorReadings;
-    id authenticationErrors;
-    id communicationErrors;
-    id commandResult;
-    id startCommandResponse;
-    id stopCommandResponse;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore21BaseD1AppCoreProvider : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtCO9D1AppCore14TxSessionState18BaseTxSessionState : _TtCs12_SwiftObject {
-    id txId;
-    id sensorReadings;
-    id pendingCommand;
-    id txLifetime;
-    id warmupLength;
-    id sensorSessionDuration;
-    id txStartCalculatedTime;
-    id txStaticInfo;
-    id txTimeOffsetInfo;
-    id eventTime;
-    id lastInSessionReading;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore20TimeLossStateManager : _TtCs12_SwiftObject {
-    id _timeLossState;
-    id timeProvider;
-    id txSessionStateManager;
-    id subscriptions;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9D1AppCore22TxControllerRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id globalTxId;
-    id txServiceRepository;
-}
+@interface _TtC22CloudCommonServiceCore11JSONHelpers : _TtCs12_SwiftObject
 @end
 
 
@@ -7926,684 +8765,17 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC9DexAppKit17AuthManagerReader : _TtCs12_SwiftObject {
-    id subscriptions;
-    id timeProvider;
-    id repo;
-    id watchCommunication;
-    id _authStatus;
-}
+@interface CSR : NSObject
+- (id)makeCertificateSigningRequest:(id)v1 signRequestBlock:(void (^ /* unknown block signature */)(void))v2;
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC9DexAppKit16TimeStateManager : _TtCs12_SwiftObject {
-    id timeProvider;
-    id eventLogger;
-    id timeSubscriber;
-    id isoDateFormatterNative;
-    id isoDateFormatterUTC;
-    id _timeState;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18NamedValuesManager : _TtCs12_SwiftObject {
-    id secureNetworkingManager;
-    id subscriptions;
-    id queue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18BLEPermissionProxy : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit20BLEPermissionMonitor : _TtCs12_SwiftObject {
-    id permissionProxy;
-    id _authorization;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18DexKitOrchestrator : _TtCs12_SwiftObject {
-    id persistence;
-    id persistenceEventMonitor;
-    id timeProvider;
-    id developerLogger;
-    id keychainManager;
-    id eventLogger;
-    id timeStateManager;
-    id acmProvider;
-    id diskSpaceMonitor;
-    id watchCommunication;
-    id authManager;
-    id consentEventLogMonitor;
-    id appId;
-    id appSoftwareNumber;
-    id subscriptions;
-    id bulkDataManager;
-    id secureNetworkingManager;
-    id namedValuesManager;
-    id settingsSyncManager;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit28SecureNetworkingTimeProvider : _TtCs12_SwiftObject {
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit26SecureNetworkingRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id secureNetworkingKeyValueRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21AuthManagerRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id authKeyValueRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit25BulkDataManagerRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id bulkDataKeyValueRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit20AcmKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit17DiskSpaceProvider : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21AlertProfileRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit20FeatureFlagRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit16DiskSpaceMonitor : _TtCs12_SwiftObject {
-    id _currentStatus;
-    id diskSpaceProvider;
-    id lifeCycleSubscriber;
-    id lifeCycleManager;
-    id backgroundTaskName;
-    id diskSpaceConfig;
-    id serialQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22TimeProviderRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id dao;
-    id phoneTimeKey;
-    id rtcTimeKey;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit11AlertRecord : _TtCs12_SwiftObject {
-    id recordId;
-    id uuid;
-    id identifier;
-    id currentStatus;
-    id changeType;
-    id lifeTimeAlertCount;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21EventLoggerRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id eventLoggerDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21AuthKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15BulkDataManager : _TtCs12_SwiftObject {
-    id _uploadResult;
-    id transmitterID;
-    id txInfoDelegate;
-    id bulkDataAPI;
-    id accountID;
-    id uploadFrequencyDefault;
-    id uploadFrequencyRetry;
-    id dailyRecordsUpdateInterval;
-    id timeCheckDelta;
-    id minUploadFrequency;
-    id maxUploadFrequency;
-    id $__lazy_storage_$_uploadFrequency;
-    id timeProvider;
-    id kKeyLastUploadAttempt;
-    id kKeyLastDeviceSettingsUpdate;
-    id kKeyLastInventoryRecordUpdate;
-    id kKeyLastDeveloperLogsFetch;
-    id kKeyLastEventsFetch;
-    id kKeyLastUploadFrequency;
-    id kKeyInstallationID;
-    id isNetworkReachablePrivate;
-    id isUploadingBulkDataPrivate;
-    id lifeCycleManager;
-    id authManager;
-    id subscriptions;
-    id persistenceDelegate;
-    id apiRepository;
-    id eventLogger;
-    id devLogger;
-    id backgroundTaskName;
-    id serialQueue;
-    id accessQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit16GCSURLRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id gcsUrlRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit19QuietModesRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit11AcmProvider : _TtCs12_SwiftObject {
-    id acmRepository;
-    id timeProvider;
-    id appId;
-    id appSoftwareNumber;
-    id _acmApi;
-    id acmConfig;
-    id acmSettings;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit14AlertRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21FeatureFlagRepository : _TtCs12_SwiftObject {
-    id persistedFeatureFlagRecord;
-    id persistenceEventPublisher;
-    id featureFlagRecordDao;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18KeyValueRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id keyValueRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21BulkDataPostRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22AlertSettingsRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18WatchCommunication : NSObject {
-    id session;
-    id decoder;
-    id encoder;
-    id watchStateChangePublisher;
-    id messagePublisher;
-    id filePublisher;
-    id watchEventLogger;
-}
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit13AcmRepository : _TtCs12_SwiftObject {
-    id acmKeyValueRecordDao;
-    id persistenceEventPublisher;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22AlertProfileRepository : _TtCs12_SwiftObject {
-    id syncedAlertProfile;
-    id updatedAlertProfiles;
-    id persistenceEventPublisher;
-    id alertProfileRecordDao;
-    id alertScheduleRecordDao;
-    id alertSettingsRecordDao;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit26SyncableKeyValueRepository : _TtCs12_SwiftObject {
-    id syncedKeyValue;
-    id updatedKeyValue;
-    id deletedKeyValue;
-    id persistenceEventPublisher;
-    id keyValueRecordDao;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit14EventLoggerDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18BLEEventLogMonitor : _TtCs12_SwiftObject {
-    id bleStateMonitor;
-    id blePermissionMonitor;
-    id eventLogger;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit19AppLifeCycleManager : _TtCs12_SwiftObject {
-    id observers;
-    id backgroundTasks;
-    id backgroundTaskSignposts;
-    id logFlusher;
-    id serialQueue;
-    id appLifeCycleEvent;
-    id userNotificationRequests;
-    id appForegroundStatus;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit11Persistence : _TtCs12_SwiftObject {
-    id databaseManager;
-    id timeProviderRepository;
-    id developerLogRepository;
-    id eventLoggerRepository;
-    id bulkDataApiRepository;
-    id bulkDataManagerRepository;
-    id secureNetworkingRepository;
-    id authManagerRepository;
-    id acmRepository;
-    id alertRepo;
-    id userEventsRepo;
-    id alertProfileRepo;
-    id quietModesRecordRepo;
-    id urlRepo;
-    id featureFlagRepo;
-    id keyValueRepo;
-    id syncableKeyValueRepo;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit26QuietModesRecordRepository : _TtCs12_SwiftObject {
-    id updatedQuietModesRecord;
-    id persistenceEventPublisher;
-    id quietModesRecordDao;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15AlertRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id alertRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21DeveloperLogRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15AcmTimeProvider : _TtCs12_SwiftObject {
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit23PersistenceEventMonitor : _TtCs12_SwiftObject {
-    id persistenceErrorEvent;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit19SettingsSyncManager : _TtCs12_SwiftObject {
-    id settingsSyncConfig;
-    id namedValuesManager;
-    id lifeCycleManager;
-    id authManager;
-    id eventLogger;
-    id timeProvider;
-    id persistence;
-    id snoozeEnabledAlerts;
-    id delayEnabledAlerts;
-    id rateEnabledAlerts;
-    id subscriptions;
-    id backgroundTaskName;
-    id watchCommunication;
-    id watchCommSettingsSync;
-    id settingsQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22AlertScheduleRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15DeveloperLogger : DDAbstractDatabaseLogger {
-    id repository;
-    id timeProvider;
-    id logBuffer;
-    id operationQueue;
-}
-- (bool)db_log:(id)v1;
-- (void)db_save;
-- (void)db_delete;
-- (void)db_saveAndDelete;
-- (id)init;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15TimeProviderDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit17KeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit11AuthManager : _TtCs12_SwiftObject {
-    id serialQueue;
-    id subscriptions;
-    id tokenNeedsRefresh;
-    id activeRefreshTokenCallbackUrl;
-    id activeRefreshTokenFuture;
-    id activeAccessTokenFuture;
-    id config;
-    id timeProvider;
-    id repo;
-    id networkClient;
-    id eventLogger;
-    id watchCommunication;
-    id _authStatus;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit25BulkDataKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit18UserEventRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15GCSURLRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22DeveloperLogRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id developerLogRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15BLEStateMonitor : _TtCs12_SwiftObject {
-    id _bleState;
-    id subscriber;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit25SyncableKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit21BulkDataApiRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id bulkDataDao;
-    id timeProvider;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit33TimeProviderBackgroundTaskManager : _TtCs12_SwiftObject {
-    id backgroundTaskManager;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit15DatabaseManager : _TtCs12_SwiftObject {
-    id dbPool;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit33SecureNetworkingKeyValueRecordDao : _TtCs12_SwiftObject {
-    id dbWriter;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit22ConsentEventLogMonitor : _TtCs12_SwiftObject {
-    id currentConsentStatus;
-    id eventLogger;
-    id subscribers;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit11EventLogger : _TtCs12_SwiftObject {
-    id eventLoggerRepository;
-    id timeProvider;
-    id eventLoggerConfig;
-    id operationQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit20UserEventsRepository : _TtCs12_SwiftObject {
-    id persistenceEventPublisher;
-    id userEventRecordDao;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC9DexAppKit14EventLogRecord : _TtCs12_SwiftObject {
-    id recordId;
-    id type;
-    id subType;
-    id time;
-    id moreInfo;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity12ECJPakePhase : _TtCs12_SwiftObject {
-    id createPayload;
-    id verifyPayload;
-    id verifyPayloadData;
+@interface _TtC14DexcomSecurity14ECJPakePayload : _TtCs12_SwiftObject {
+    id publicKey;
+    id epherealKey;
+    id schnorrSignature;
 }
 @end
 
@@ -8619,60 +8791,6 @@ struct anonymous_type_25 {
 @interface _TtC14DexcomSecurity9ECKeyPair : _TtCs12_SwiftObject {
     id publicPoint;
     id privatePoint;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity6BigInt : _TtCs12_SwiftObject {
-    id bigNumData;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity12CSRGenerator : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface CSR : NSObject
-- (id)makeCertificateSigningRequest:(id)v1 signRequestBlock:(void (^ /* unknown block signature */)(void))v2;
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity7ECPoint : _TtCs12_SwiftObject {
-    id x;
-    id y;
-    id curve;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity15ChallengeHelper : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity7ECJPake : _TtCs12_SwiftObject {
-    id curve;
-    id payloadFactory;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14DexcomSecurity16ECKeyPairFactory : _TtCs12_SwiftObject {
-    id curve;
 }
 @end
 
@@ -8701,10 +8819,10 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface _TtC14DexcomSecurity14ECJPakePayload : _TtCs12_SwiftObject {
-    id publicKey;
-    id epherealKey;
-    id schnorrSignature;
+@interface _TtC14DexcomSecurity7ECPoint : _TtCs12_SwiftObject {
+    id x;
+    id y;
+    id curve;
 }
 @end
 
@@ -8713,6 +8831,53 @@ struct anonymous_type_25 {
 
 @interface _TtC14DexcomSecurity21ECJPakePayloadFactory : _TtCs12_SwiftObject {
     id curve;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity7ECJPake : _TtCs12_SwiftObject {
+    id curve;
+    id payloadFactory;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity16ECKeyPairFactory : _TtCs12_SwiftObject {
+    id curve;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity12ECJPakePhase : _TtCs12_SwiftObject {
+    id createPayload;
+    id verifyPayload;
+    id verifyPayloadData;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity12CSRGenerator : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity15ChallengeHelper : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14DexcomSecurity6BigInt : _TtCs12_SwiftObject {
+    id bigNumData;
 }
 @end
 
@@ -8816,6 +8981,7 @@ struct anonymous_type_25 {
 + (void)setDefaultDispatchQueue:(id)v1;
 + (id)pendingPromise;
 + (id)resolvedWith:(id)v1;
++ (void)noop;
 - (void (^ /* unknown block signature */)(void))validate;
 - (void (^ /* unknown block signature */)(void))validateOn;
 - (id)validate:(void (^ /* unknown block signature */)(void))v1;
@@ -8928,7 +9094,6 @@ struct anonymous_type_25 {
 - (void)clearDataCollectionSwitchFromUserDefaults;
 - (void)subscribeForAppDidBecomeActiveNotifications;
 - (void)appDidBecomeActive:(id)v1;
-- (void)logCoreTelemetryIfEnabled;
 - (void).cxx_destruct;
 @end
 
@@ -9012,14 +9177,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface FIRCoreDiagnosticsConnector : NSObject
-+ (void)initialize;
-+ (void)logCoreTelemetryWithOptions:(id)v1;
-@end
-
-
-/*****************************************************************/
-
 @interface FIRDependency : NSObject {
     bool _isRequired;
     Protocol * _protocol;
@@ -9029,22 +9186,6 @@ struct anonymous_type_25 {
 + (id)dependencyWithProtocol:(id)v1;
 + (id)dependencyWithProtocol:(id)v1 isRequired:(bool)v2;
 - (id)initWithProtocol:(id)v1 isRequired:(bool)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface FIRDiagnosticsData : NSObject<FIRCoreDiagnosticsData> {
-    NSMutableDictionary * _diagnosticObjects;
-}
-@property (retain,nonatomic) NSDictionary * diagnosticObjects;
-@property (readonly) unsigned long long hash;
-@property (readonly) Class superclass;
-@property (readonly,copy) NSString * description;
-@property (readonly,copy) NSString * debugDescription;
-- (id)init;
-- (void)insertValue:(id)v1 forKey:(id)v2;
 - (void).cxx_destruct;
 @end
 
@@ -9075,14 +9216,6 @@ struct anonymous_type_25 {
 
 /*****************************************************************/
 
-@interface FIRHeartbeatInfo : NSObject
-+ (bool)updateIfNeededHeartbeatDateForTag:(id)v1;
-+ (long long)heartbeatCodeForTag:(id)v1;
-@end
-
-
-/*****************************************************************/
-
 @interface FIRHeartbeatLogger : NSObject<FIRHeartbeatLoggerProtocol> {
     FIRHeartbeatController * _heartbeatController;
     void (^ /* unknown block signature */)(void) _userAgentProvider;
@@ -9107,6 +9240,7 @@ struct anonymous_type_25 {
 
 @interface FIRLoggerWrapper : NSObject
 + (void)logWithLevel:(long long)v1 withService:(id)v2 withCode:(id)v3 withMessage:(id)v4 withArgs:(char *)v5;
++ (void)logWithLevel:(long long)v1 service:(id)v2 code:(id)v3 message:(id)v4;
 @end
 
 
@@ -9128,8 +9262,6 @@ struct anonymous_type_25 {
 @property (readonly,copy,nonatomic) NSString * libraryVersionID;
 @property (nonatomic) bool usingOptionsFromDefaultPlist;
 @property (readonly,nonatomic) bool isMeasurementEnabled;
-@property (readonly,nonatomic) bool isAnalyticsEnabled;
-@property (readonly,nonatomic) bool isSignInEnabled;
 @property (nonatomic,getter=isEditingLocked) bool editingLocked;
 @property (copy,nonatomic) NSString * APIKey;
 @property (copy,nonatomic) NSString * bundleID;
@@ -9159,49 +9291,6 @@ struct anonymous_type_25 {
 - (unsigned long long)hash;
 - (id)analyticsOptionsDictionaryWithInfoDictionary:(id)v1;
 - (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface FIRCoreDiagnosticsLog : NSObject {
-    struct _logs_proto_mobilesdk_ios_ICoreConfiguration _config;
-}
-@property (nonatomic) struct _logs_proto_mobilesdk_ios_ICoreConfiguration config;
-- (id)initWithConfig:(struct _logs_proto_mobilesdk_ios_ICoreConfiguration)v1;
-- (id)transportBytes;
-- (void)dealloc;
-@end
-
-
-/*****************************************************************/
-
-@interface FIRCoreDiagnostics : NSObject<FIRCoreDiagnosticsInterop> {
-    NSObject<OS_dispatch_queue> * _diagnosticsQueue;
-    GDTCORTransport * _transport;
-    GULHeartbeatDateStorage * _heartbeatDateStorage;
-}
-@property (readonly,nonatomic) NSObject<OS_dispatch_queue> * diagnosticsQueue;
-@property (readonly,nonatomic) GDTCORTransport * transport;
-@property (readonly,nonatomic) GULHeartbeatDateStorage * heartbeatDateStorage;
-@property (readonly) unsigned long long hash;
-@property (readonly) Class superclass;
-@property (readonly,copy) NSString * description;
-@property (readonly,copy) NSString * debugDescription;
-+ (id)sharedInstance;
-+ (void)sendDiagnosticsData:(id)v1;
-- (id)init;
-- (id)initWithTransport:(id)v1 heartbeatDateStorage:(id)v2;
-- (void)sendDiagnosticsData:(id)v1;
-- (void)setHeartbeatFlagIfNeededToConfig:(struct _logs_proto_mobilesdk_ios_ICoreConfiguration *)v1;
-- (bool)isDate:(id)v1 inSameDayOrBeforeThan:(id)v2;
-- (void).cxx_destruct;
-@end
-
-
-/*****************************************************************/
-
-@interface PodsDummy_FirebaseCoreDiagnostics : NSObject
 @end
 
 
@@ -9302,13 +9391,13 @@ struct anonymous_type_25 {
 @interface FIRCLSApplicationIdentifierModel : NSObject {
     NSDictionary * _architectureUUIDMap;
     NSString * _buildInstanceID;
-    struct anonymous_type_11 _builtSDK;
-    struct anonymous_type_12 _minimumSDK;
+    struct anonymous_type_9 _builtSDK;
+    struct anonymous_type_10 _minimumSDK;
 }
 @property (copy,nonatomic) NSDictionary * architectureUUIDMap;
 @property (copy,nonatomic) NSString * buildInstanceID;
-@property (readonly,nonatomic) struct anonymous_type_13 builtSDK;
-@property (readonly,nonatomic) struct anonymous_type_14 minimumSDK;
+@property (readonly,nonatomic) struct anonymous_type_11 builtSDK;
+@property (readonly,nonatomic) struct anonymous_type_12 minimumSDK;
 @property (readonly,nonatomic) NSString * bundleID;
 @property (readonly,nonatomic) NSString * displayName;
 @property (readonly,nonatomic) NSString * platform;
@@ -9695,7 +9784,7 @@ struct anonymous_type_25 {
 - (id)initWithInstallations:(id)v1;
 - (id)readInstallationUUID;
 - (id)generateInstallationUUID;
-- (bool)regenerateInstallIDIfNeeded;
+- (bool)regenerateInstallIDIfNeededWithBlock:(void (^ /* unknown block signature */)(void))v1;
 - (bool)rotateCrashlyticsInstallUUIDWithIID:(id)v1 error:(id)v2;
 - (void).cxx_destruct;
 @end
@@ -9783,14 +9872,14 @@ struct anonymous_type_25 {
     struct FIRCLSMachOSlice _slice;
     NSString * _uuidString;
     NSArray * _linkedDylibs;
-    struct anonymous_type_17 _minimumOSVersion;
-    struct anonymous_type_18 _linkedSDKVersion;
+    struct anonymous_type_15 _minimumOSVersion;
+    struct anonymous_type_16 _linkedSDKVersion;
 }
 @property (readonly,copy,nonatomic) NSString * uuid;
 @property (readonly,copy,nonatomic) NSString * architectureName;
 @property (readonly,nonatomic) NSArray * linkedDylibs;
-@property (readonly,nonatomic) struct anonymous_type_19 minimumOSVersion;
-@property (readonly,nonatomic) struct anonymous_type_20 linkedSDKVersion;
+@property (readonly,nonatomic) struct anonymous_type_17 minimumOSVersion;
+@property (readonly,nonatomic) struct anonymous_type_18 linkedSDKVersion;
 + (id)runningSlice;
 - (id)initWithSlice:(struct FIRCLSMachOSlice *)v1;
 - (void).cxx_destruct;
@@ -10057,6 +10146,7 @@ struct anonymous_type_25 {
 @interface FIRCLSReportAdapter : NSObject<GDTCOREventDataObject> {
     bool _hasCrashed;
     FIRCLSInstallIdentifierModel * _installIDModel;
+    NSString * _fiid;
     NSString * _folderPath;
     NSString * _googleAppID;
     FIRCLSRecordIdentity * _identity;
@@ -10065,6 +10155,7 @@ struct anonymous_type_25 {
     struct _google_crashlytics_Report _report;
 }
 @property (retain,nonatomic) FIRCLSInstallIdentifierModel * installIDModel;
+@property (copy,nonatomic) NSString * fiid;
 @property (readonly,nonatomic) bool hasCrashed;
 @property (retain,nonatomic) NSString * folderPath;
 @property (retain,nonatomic) NSString * googleAppID;
@@ -10078,7 +10169,7 @@ struct anonymous_type_25 {
 @property (readonly,copy) NSString * debugDescription;
 + (id)combinedDictionariesFromFilePath:(id)v1;
 + (id)dictionariesFromEachLineOfFile:(id)v1;
-- (id)initWithPath:(id)v1 googleAppId:(id)v2 installIDModel:(id)v3;
+- (id)initWithPath:(id)v1 googleAppId:(id)v2 installIDModel:(id)v3 fiid:(id)v4;
 - (void)dealloc;
 - (void)loadMetaDataFile;
 - (id)transportBytes;
@@ -10154,6 +10245,7 @@ struct anonymous_type_25 {
     NSObject<FIRAnalyticsInterop> * _analytics;
     NSOperationQueue * _operationQueue;
     FIRCLSFileManager * _fileManager;
+    NSString * _fiid;
     GDTCORTransport * _googleTransport;
     FIRCLSInstallIdentifierModel * _installIDModel;
     NSString * _googleAppID;
@@ -10163,6 +10255,7 @@ struct anonymous_type_25 {
 @property (readonly,nonatomic) NSString * googleAppID;
 @property (readonly,nonatomic) NSOperationQueue * operationQueue;
 @property (readonly,nonatomic) FIRCLSFileManager * fileManager;
+@property (copy,nonatomic) NSString * fiid;
 - (id)initWithManagerData:(id)v1;
 - (void)prepareAndSubmitReport:(id)v1 dataCollectionToken:(id)v2 asUrgent:(bool)v3 withProcessing:(bool)v4;
 - (void)uploadPackagedReportAtPath:(id)v1 dataCollectionToken:(id)v2 asUrgent:(bool)v3;
@@ -10275,7 +10368,7 @@ struct anonymous_type_25 {
 - (id)init;
 - (bool)loadBinaryImagesFromFile:(id)v1;
 - (id)loadedBinaryImageForPC:(unsigned long long)v1;
-fillInImageDetails:forUUID: (IMP @0x10127ff50);
+fillInImageDetails:forUUID: (IMP @0x10178e5c0);
 - (id)frameForAddress:(unsigned long long)v1;
 - (bool)updateStackFrame:(id)v1;
 - (void).cxx_destruct;
@@ -10419,12 +10512,12 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
     NSString * _reportID;
     NSDate * _dateCreated;
     bool _hasCrash;
-    struct anonymous_type_28 _logStorage;
+    struct anonymous_type_27 _logStorage;
     const  char * _activeLogPath;
     unsigned int _internalKVCounter;
-    struct anonymous_type_29 _internalKVStorage;
+    struct anonymous_type_28 _internalKVStorage;
     unsigned int _userKVCounter;
-    struct anonymous_type_30 _userKVStorage;
+    struct anonymous_type_29 _userKVStorage;
     FIRCLSInternalReport * _internalReport;
 }
 @property (retain,nonatomic) FIRCLSInternalReport * internalReport;
@@ -10895,30 +10988,515 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
-@interface _TtC3GCS6GcsApi : _TtCs12_SwiftObject {
-    id gcsCloudApi;
-    id softwareNumber;
-    id appVersion;
-    id secureNetworkingManager;
+@interface _TtC14G6TxController9G6Reading : _TtCs12_SwiftObject {
+    id txTime;
+    id egv;
+    id algorithmState;
+    id predictiveEgv;
+    id sessionStartTime;
+    id rate;
+    id flags;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC3GCS11GcsCloudApi : _TtCs12_SwiftObject {
-    id baseUrl;
-    id httpRequest;
+@interface _TtC14G6TxController19G6DiagnosticReading : _TtCs12_SwiftObject {
+    id type;
+    id startTime;
+    id endTime;
+    id data;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC3GCS14GcsHttpRequest : _TtCs12_SwiftObject {
-    id sessionConfig;
-    id $__lazy_storage_$_session;
-    id networkTimeout;
+@interface _TtC14G6TxController20StartSessionResponse : _TtC14G6TxController21SensorSessionResponse {
+    id code;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController25CalibrationBoundsResponse : _TtC14G6TxController10TxResponse {
+    id weight;
+    id error1;
+    id error0;
+    id min;
+    id max;
+    id lastBGvalue;
+    id lastCalibrationTime;
+    id autoCalibration;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController10TxResponse : _TtCs12_SwiftObject {
+    id txStatus;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController19BatteryInfoResponse : _TtC14G6TxController10TxResponse {
+    id staticVoltage;
+    id dynamicVoltage;
+    id transmitterRuntime;
+    id temperature;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController17TxVersionResponse : _TtC14G6TxController10TxResponse {
+    id versionMajor;
+    id versionMinor;
+    id versionRevision;
+    id versionBuild;
+    id swNumber;
+    id storageModeDays;
+    id apiVersion;
+    id maxRuntimeDays;
+    id maxStorageTimeDays;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController19StopSessionResponse : _TtC14G6TxController21SensorSessionResponse {
+    id code;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController12TxRepository : _TtCs12_SwiftObject {
+    id map;
+    id serialQueue;
+    id transmitterRepository;
+    id decoder;
+    id encoder;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController16StreamingService : _TtCs12_SwiftObject {
+    id egvList;
+    id config;
+    id repo;
+    id cacheAccessQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController14TxTimeResponse : _TtC14G6TxController10TxResponse {
+    id txTime;
+    id sessionSignature;
+    id txTimeResponsePayloadSize;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController25TxExtendedVersionResponse : _TtC14G6TxController10TxResponse {
+    id sessionDays;
+    id featureFlags;
+    id warmupSeconds;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController21SensorSessionResponse : _TtC14G6TxController10TxResponse {
+    id time;
+    id sessionSignature;
+    id processedTime;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController24DataStreamResponseRecord : _TtC14G6TxController10TxResponse {
+    id status;
+    id streamId;
+    id startTime;
+    id endTime;
+    id length;
+    id streamCrc;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController17ConnectionManager : _TtCs12_SwiftObject {
+    id managerQueue;
+    id serviceStatus;
+    id isProcessing;
+    id passedAuth;
+    id needToBond;
+    id connectionCompleted;
+    id timeout;
+    id shouldReconnect;
+    id controller;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController11EGVResponse : _TtC14G6TxController10TxResponse {
+    id seqNum;
+    id timeStamp;
+    id value;
+    id flags;
+    id algorithmState;
+    id rate;
+    id predictiveValue;
+    id egvPayloadSize;
+    id predictiveEgvQueryPayloadSize;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController17CalibrateResponse : _TtC14G6TxController10TxResponse {
+    id status;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController12G6Controller : _TtCs12_SwiftObject {
+    id commandQueue;
+    id repository;
+    id configuration;
+    id _systemTime;
+    id bleManager;
+    id connectionManager;
+    id streamingService;
+    id delegateQueue;
+    id controllerDelegate;
+    id userCommandDelegate;
+    id isActive;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController15ChallengeHelper : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC14G6TxController12CommandQueue : _TtCs12_SwiftObject {
+    id queue;
+    id repo;
+    id commandDelegate;
+    id delegateQueue;
+    id processingQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit19TxServiceRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id commandStateRecordDao;
+    id txServiceRecordDao;
+    id txKeyValueRecordDao;
+    id txPairingStartRecordDao;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit26TransmitterEventLogMonitor : _TtCs12_SwiftObject {
+    id lastTxStaticInfoKey;
+    id txService;
+    id eventLogger;
+    id _timeProvider;
+    id subscriptions;
+    id txStateManager;
+    id previousTxState;
+    id keyValueStore;
+    id incomingQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit25G6TxStateTransientStorage : _TtCs12_SwiftObject {
+    id modelContainer;
+    id isDirty;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit16G6TxStateManager : _TtCs12_SwiftObject {
+    id _txState;
+    id txService;
+    id txStateQueue;
+    id txStateIncoming;
+    id subscriptions;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit19BulkDataCoreMonitor : _TtCs12_SwiftObject {
+    id bulkDataManager;
+    id _timeProvider;
+    id txService;
+    id appSoftwareNumber;
+    id subscriptions;
+    id incomingQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit19TxKeyValueRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCO7G6TxKit16G6TxSessionState12NominalModel : _TtCO7G6TxKit16G6TxSessionState23BaseTxSessionStateModel {
+    id expirationInfo;
+    id nominalSensorReading;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit6G6Core : _TtCs12_SwiftObject {
+    id persistence;
+    id appId;
+    id appSoftwareNumber;
+    id txService;
+    id cgmOrchestrator;
+    id bleEventLogMonitor;
+    id transmitterEventLogMonitor;
+    id bulkDataMonitor;
+    id subscriptions;
+    id pairingCodePublisher;
+    id internalTxStateManager;
+    id persistenceEventMonitor;
+    id cgmCore;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKitP33_C9B866CD714828215ADF5DD87DB033C023TransientModelContainer : _TtCs12_SwiftObject {
+    id notPairedModel;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit9TxService : _TtCs12_SwiftObject {
+    id txServiceRepository;
+    id txConfiguration;
+    id _timeProvider;
+    id txTickTimeProvider;
+    id _appLifecycleManager;
+    id commandState;
+    id bleAuthSubscription;
+    id bleStatePassthrough;
+    id _txCommRecord;
+    id pairingCodePublisher;
+    id txDisconnectEventPublisher;
+    id txDisconnectEventInfo;
+    id txCommRecordAggregator;
+    id dataSource;
+    id txController;
+    id startCommandResponse;
+    id stopCommandResponse;
+    id calibrationStrategy;
+    id subscriptions;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCO7G6TxKit16G6TxSessionState15SignalLossModel : _TtCO7G6TxKit16G6TxSessionState23BaseTxSessionStateModel {
+    id expirationInfo;
+    id inSessionAlgorithmState;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit18BaseG6CoreProvider : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit22TxCommRecordAggregator : _TtCs12_SwiftObject {
+    id txId;
+    id communicationStartTime;
+    id isBatteryLow;
+    id txTimeOffsetInfo;
+    id txStatusError;
+    id diagnosticData;
+    id batteryInfo;
+    id calibrationBounds;
+    id sensorReadings;
+    id authenticationErrors;
+    id communicationErrors;
+    id commandResult;
+    id startCommandResponse;
+    id stopCommandResponse;
+    id calibrationCommandResponse;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCO7G6TxKit16G6TxSessionState23BaseTxSessionStateModel : _TtCs12_SwiftObject {
+    id pairingCode;
+    id txId;
+    id staticInfo;
+    id deviceList;
+    id calibrationBounds;
+    id pendingUserCommands;
+    id commandResults;
+    id activatedOnTime;
+    id txTimeOffsetInfo;
+    id errors;
+    id eventTime;
+    id lastInSessionReading;
+    id baseSensorReading;
+    id gracePeriodTimeRemaining;
+    id areCalibrationsPermitted;
+    id txLifetime;
+    id warmupLength;
+    id sensorSessionDuration;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit18TxServiceRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCO7G6TxKit16G6TxSessionState17OutOfSessionModel : _TtCs12_SwiftObject {
+    id pairingCode;
+    id txId;
+    id sensorReading;
+    id activatedOnTime;
+    id txTimeOffsetInfo;
+    id staticInfo;
+    id pendingUserCommands;
+    id commandResults;
+    id outOfSessionAlgorithmState;
+    id errors;
+    id communicationEndTime;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit22TxControllerRepository : _TtCs12_SwiftObject {
+    id persistenceEventPublisher;
+    id globalTxId;
+    id txServiceRepository;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit23TxPairingStartRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit11Persistence : _TtCs12_SwiftObject {
+    id databaseManager;
+    id txServiceRepository;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCO7G6TxKit16G6TxSessionState14InSessionModel : _TtCO7G6TxKit16G6TxSessionState23BaseTxSessionStateModel {
+    id expirationInfo;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit16G6ExpirationInfo : _TtCs12_SwiftObject {
+    id sessionEndTime;
+    id gracePeriodStartTime;
+    id gracePeriodRemaining;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit21CommandStateRecordDao : _TtCs12_SwiftObject {
+    id dbWriter;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC7G6TxKit18TxTickTimeProvider : _TtCs12_SwiftObject {
+    id txTickTime;
 }
 @end
 
@@ -12053,6 +12631,7 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
     id sliderValue;
     id radioButton;
     id detailLabel;
+    id warningBadge;
     id disclosureView;
     id accessoryType;
     id titleAccessoryType;
@@ -12236,7 +12815,7 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 @interface _TtC12PhoenixUIKit23GlucoseCompassPresenter : _TtCs12_SwiftObject {
     id frameworkBundle;
     id glucoseUnits;
-    id currentGlucoseData;
+    id currentSensorReading;
     id postDelineatorFontRatio;
     id compassView;
     id currentGlucoseCompassThemable;
@@ -12341,7 +12920,7 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 @interface _TtC12PhoenixUIKit24GlucoseSwimlanePresenter : _TtC12PhoenixUIKit21BaseSwimlanePresenter {
     id glucoseYAxisTickMarkPresenter;
     id enableAreaShading;
-    id cgmReadings;
+    id sensorReadings;
     id glucoseUnitType;
     id nowDotDisplayInterval;
     id glucoseConfig;
@@ -12445,8 +13024,45 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
+@interface _TtC12PhoenixUIKit19IntrospectionUIView : UIView {
+    id moveToWindowHandler;
+}
+- (id)init;
+- (id)initWithCoder:(id)v1;
+- (void)didMoveToWindow;
+- (id)initWithFrame:(struct CGRect)v1;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC12PhoenixUIKit10Introspect : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC12PhoenixUIKit16MockTimeProvider : _TtCs12_SwiftObject {
+    id staticDate;
+    id mockTimeAhead;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC12PhoenixUIKit26PhoenixSwiftUIKitResources : NSObject
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
 @interface _TtC12PhoenixUIKit21PhoenixUIKitResources : NSObject
 - (id)init;
+- (void).cxx_destruct;
 @end
 
 
@@ -12542,6 +13158,12 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
+@interface _TtC12PhoenixUIKit11PUKColorsUI : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
 @interface _TtC12PhoenixUIKit13PUKColorTheme : _TtCs12_SwiftObject
 @end
 
@@ -12584,10 +13206,18 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
     id slider;
     id detailLabel;
     id sliderValueChangedCallback;
+    id sliderEditingDidEndCallback;
 }
 - (id)initWithCoder:(id)v1;
 - (void)sliderCallback:(id)v1;
+- (void)sliderEditingDidEndCallback:(id)v1;
 - (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC12PhoenixUIKit10ColorTheme : _TtCs12_SwiftObject
 @end
 
 
@@ -12804,26 +13434,50 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
-@interface _TtC19SecureNetworkingAPI14CryptoProvider : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC19SecureNetworkingAPI20SecureRequestHandler : _TtCs12_SwiftObject {
-    id accountId;
-    id appId;
+@interface _TtC16SecureNetworking23SecureNetworkingManager : _TtCs12_SwiftObject {
     id keyResolver;
-    id httpClient;
-    id timeProvider;
     id cryptoProvider;
+    id clmProxyUrl;
+    id shareUrl;
+    id gcsUrl;
+    id runtimeInfo;
+    id networkClient;
+    id secureRequestHandler;
+    id accountId;
+    id userCertificateProvider;
+    id repository;
+    id requestTimeout;
+    id managerQueue;
+    id sessionKeysPublisher;
+    id userCertPublisher;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC19SecureNetworkingAPI11KeyResolver : _TtCs12_SwiftObject {
+@interface _TtC16SecureNetworking19SignedMessageHeader : _TtCs12_SwiftObject {
+    id encKey;
+    id saltID;
+    id timestamp;
+    id nonce;
+    id requestID;
+    id accountId;
+    id softwareID;
+    id isZip;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking4Gzip : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking17LegacyKeyResolver : _TtCs12_SwiftObject {
     id repository;
     id rsaKey;
     id rsaKeyIndex;
@@ -12833,25 +13487,33 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
-@interface _TtC19SecureNetworkingAPI23SecureNetworkingManager : _TtCs12_SwiftObject {
-    id deviceKeyEndpoint;
-    id emptyBodyData;
-    id config;
-    id repository;
-    id timeProvider;
+@interface _TtC16SecureNetworking26LegacySecureRequestHandler : _TtCs12_SwiftObject {
+    id accountId;
+    id appId;
     id keyResolver;
-    id networkClient;
-    id secureRequestHandler;
-    id deviceKeyUrl;
+    id httpClient;
     id cryptoProvider;
-    id accessTokenProvider;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC19SecureNetworkingAPI17XMLResponseParser : NSObject {
+@interface _TtC16SecureNetworking20SecureRequestHandler : _TtCs12_SwiftObject {
+    id keyResolver;
+    id cryptoProvider;
+    id _timeProvider;
+    id networkClient;
+    id accountId;
+    id sessionKeysIdentifier;
+    id requestTimeoutQueue;
+}
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking17XMLResponseParser : NSObject {
     id parser;
     id attributes;
     id exceptionElement;
@@ -12864,7 +13526,35 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
-@interface _TtC15TimeProviderAPI19RTCTickTimeProvider : _TtCs12_SwiftObject
+@interface _TtC16SecureNetworking20LegacyCryptoProvider : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking19SecureNetworkClient : NSObject {
+    id credential;
+    id urlSession;
+}
+- (id)init;
+- (void).cxx_destruct;
+@end
+
+
+/*****************************************************************/
+
+@interface _TtC16SecureNetworking29LegacySecureNetworkingManager : _TtCs12_SwiftObject {
+    id deviceKeyEndpoint;
+    id emptyBodyData;
+    id config;
+    id repository;
+    id _timeProvider;
+    id keyResolver;
+    id networkClient;
+    id secureRequestHandler;
+    id deviceKeyUrl;
+    id cryptoProvider;
+}
 @end
 
 
@@ -12889,253 +13579,21 @@ fillInImageDetails:forUUID: (IMP @0x10127ff50);
 
 /*****************************************************************/
 
-@interface _TtC15TimeProviderAPI12TimeProvider : _TtCs12_SwiftObject {
-    id baseUrl;
-    id timeSyncEndpoint;
-    id _latestSyncTimeEvent;
-    id phoneTimeProvider;
-    id rtcTickTimeProvider;
-    id repository;
-    id txTickTimeSubscriber;
-    id backgroundTaskManager;
-    id fetchTimeTaskIdentifier;
-    id rtcPhoneTimeOffsetCache;
-    id rtcServerTimeOffsetCache;
-    id phoneTimeOffsets;
-    id timeoutDuration;
-    id fetchTimeCompletion;
-    id serialQueue;
-    id completionQueue;
-    id httpSuccessCodeRage;
-    id timeSyncRequestThrottleLimit;
-    id lastRequestRTCTime;
-    id urlSession;
+@interface _TtC15TimeProviderAPI19RTCTickTimeProvider : _TtCs12_SwiftObject
+@end
+
+
+/*****************************************************************/
+
+@interface _TtCC15TimeProviderAPI19TimeProviderServiceP33_4B04F12CB8A82460858569041AF6665D12TimeProvider : _TtCs12_SwiftObject {
+    id service;
 }
 @end
 
 
 /*****************************************************************/
 
-@interface _TtC14TxControllerG619BatteryInfoResponse : _TtC14TxControllerG610TxResponse {
-    id staticVoltage;
-    id dynamicVoltage;
-    id transmitterRuntime;
-    id temperature;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG69G6Reading : _TtCs12_SwiftObject {
-    id txTime;
-    id egv;
-    id algorithmState;
-    id predictiveEgv;
-    id sessionStartTime;
-    id rate;
-    id flags;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG624DataStreamResponseRecord : _TtC14TxControllerG610TxResponse {
-    id status;
-    id streamId;
-    id startTime;
-    id endTime;
-    id length;
-    id streamCrc;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG625CalibrationBoundsResponse : _TtC14TxControllerG610TxResponse {
-    id weight;
-    id error1;
-    id error0;
-    id min;
-    id max;
-    id lastBGvalue;
-    id lastCalibrationTime;
-    id autoCalibration;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG612G6Controller : _TtCs12_SwiftObject {
-    id commandQueue;
-    id repository;
-    id configuration;
-    id systemTime;
-    id bleManager;
-    id connectionManager;
-    id streamingService;
-    id delegateQueue;
-    id controllerDelegate;
-    id userCommandDelegate;
-    id isActive;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG611EGVResponse : _TtC14TxControllerG610TxResponse {
-    id seqNum;
-    id timeStamp;
-    id value;
-    id flags;
-    id algorithmState;
-    id rate;
-    id predictiveValue;
-    id egvPayloadSize;
-    id predictiveEgvQueryPayloadSize;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG619G6DiagnosticReading : _TtCs12_SwiftObject {
-    id type;
-    id startTime;
-    id endTime;
-    id data;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG616StreamingService : _TtCs12_SwiftObject {
-    id egvList;
-    id config;
-    id repo;
-    id cacheAccessQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG617ConnectionManager : _TtCs12_SwiftObject {
-    id managerQueue;
-    id serviceStatus;
-    id isProcessing;
-    id passedAuth;
-    id needToBond;
-    id connectionCompleted;
-    id timeout;
-    id shouldReconnect;
-    id controller;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG617TxVersionResponse : _TtC14TxControllerG610TxResponse {
-    id versionMajor;
-    id versionMinor;
-    id versionRevision;
-    id versionBuild;
-    id swNumber;
-    id storageModeDays;
-    id apiVersion;
-    id maxRuntimeDays;
-    id maxStorageTimeDays;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG619StopSessionResponse : _TtC14TxControllerG621SensorSessionResponse {
-    id code;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG615ChallengeHelper : _TtCs12_SwiftObject
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG610TxResponse : _TtCs12_SwiftObject {
-    id txStatus;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG621SensorSessionResponse : _TtC14TxControllerG610TxResponse {
-    id time;
-    id sessionSignature;
-    id processedTime;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG614TxTimeResponse : _TtC14TxControllerG610TxResponse {
-    id txTime;
-    id sessionSignature;
-    id txTimeResponsePayloadSize;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG612TxRepository : _TtCs12_SwiftObject {
-    id map;
-    id serialQueue;
-    id transmitterRepository;
-    id decoder;
-    id encoder;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG620StartSessionResponse : _TtC14TxControllerG621SensorSessionResponse {
-    id code;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG612CommandQueue : _TtCs12_SwiftObject {
-    id queue;
-    id repo;
-    id commandDelegate;
-    id delegateQueue;
-    id processingQueue;
-}
-@end
-
-
-/*****************************************************************/
-
-@interface _TtC14TxControllerG625TxExtendedVersionResponse : _TtC14TxControllerG610TxResponse {
-    id sessionDays;
-    id featureFlags;
-    id warmupSeconds;
-}
+@interface _TtC15TimeProviderAPI8Internal : _TtCs12_SwiftObject
 @end
 
 
