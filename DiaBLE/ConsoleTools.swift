@@ -94,6 +94,7 @@ struct ShellView: View {
                                                                 // print(Data(unwrappedUInt8).reduce("", { $0 + String(format: "%02x", $1)}))
 
                                                                 // TODO: parse rest of libre3Plist
+                                                            }
                                                         }
                                                     }
                                                 }
