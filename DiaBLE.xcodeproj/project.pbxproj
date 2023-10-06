@@ -17,6 +17,7 @@
 		C55D12B429ACB5E00050F567 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D12B329ACB5E00050F567 /* Crypto.swift */; };
 		C55D12B529ACB5E00050F567 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D12B329ACB5E00050F567 /* Crypto.swift */; };
 		C55D12B729ACB9CB0050F567 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55D12B629ACB9CB0050F567 /* CryptoSwift */; };
+		C55E70C92AD099FD0040F827 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E70C82AD099FD0040F827 /* HamburgerMenu.swift */; };
 		C5916E4E29827E860051AC06 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4629827E860051AC06 /* DataView.swift */; };
 		C5916E4F29827E860051AC06 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4729827E860051AC06 /* SettingsView.swift */; };
 		C5916E5029827E860051AC06 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4829827E860051AC06 /* Details.swift */; };
@@ -126,6 +127,7 @@
 		C53F77C529894478004F275A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C541C7592AB66ABB0049ECFF /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		C55D12B329ACB5E00050F567 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		C55E70C82AD099FD0040F827 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
 		C5916E4629827E860051AC06 /* DataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		C5916E4729827E860051AC06 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C5916E4829827E860051AC06 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C5916E4D29827E860051AC06 /* ContentView.swift */,
+				C55E70C82AD099FD0040F827 /* HamburgerMenu.swift */,
 				C5916E4C29827E860051AC06 /* Monitor.swift */,
 				C5916E4A29827E860051AC06 /* Graph.swift */,
 				C5916E4829827E860051AC06 /* Details.swift */,
@@ -453,6 +456,7 @@
 			files = (
 				C59184462981E73400A6DA89 /* App.swift in Sources */,
 				C5E4007D29825E4E0021C6B7 /* Abbott.swift in Sources */,
+				C55E70C92AD099FD0040F827 /* HamburgerMenu.swift in Sources */,
 				C5916E5529827E860051AC06 /* ContentView.swift in Sources */,
 				C5E4006C29825DDE0021C6B7 /* Bluetooth.swift in Sources */,
 				C5916E4E29827E860051AC06 /* DataView.swift in Sources */,
