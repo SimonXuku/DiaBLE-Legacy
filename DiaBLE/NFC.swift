@@ -369,7 +369,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                 }
             }
 
-            if sensor.type == .libre3 && sensor.state != .notActivated && taskRequest == .none {
+            if sensor.type == .libre3 && sensor.state != .notActivated && (taskRequest == .none || taskRequest == .enableStreaming) {
                 // get the current Libre 3 blePIN and activationTime by sending `A0` to an already activated sensor
                 taskRequest = .activate
 
@@ -377,7 +377,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
 
             if taskRequest != .none {
 
-                if sensor.securityGeneration > 1 && taskRequest != .activate {
+                if sensor.securityGeneration > 1 && taskRequest != .activate && taskRequest != .enableStreaming {
                     await testNFCCommands()
                 }
 
