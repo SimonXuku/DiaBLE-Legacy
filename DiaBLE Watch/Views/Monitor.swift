@@ -20,7 +20,9 @@ struct Monitor: View {
 
     var body: some View {
 
-        ScrollView {
+        // ScrollView {  // watchOS 9
+
+        NavigationView {
 
             VStack(spacing: 0) {
 
@@ -102,6 +104,7 @@ struct Monitor: View {
                 }
 
                 Graph().frame(width: 31 * 4 + 60, height: 80)
+                    .padding(.vertical, 3)
 
                 HStack(spacing: 2) {
 
