@@ -296,13 +296,19 @@ struct Details: View {
 
                 if settings.userLevel > .basic {
                     Section(header: Text("Known Devices")) {
-                        VStack(alignment: .leading) {
+                        List {
                             ForEach(app.main.bluetoothDelegate.knownDevices.sorted(by: { $0.key < $1.key }), id: \.key) { uuid, device in
-                                Text(device.name).font(.callout).foregroundColor(.blue)
-                                if !device.isConnectable {
-                                    Spacer()
-                                    Image(systemName: "nosign").foregroundColor(.red)
+                                HStack {
+                                    Text(device.name).font(.callout).foregroundColor(.blue)
+                                    if !device.isConnectable {
+                                        Spacer()
+                                        Image(systemName: "nosign").foregroundColor(.red)
+                                    } else if device.isIgnored {
+                                        Spacer()
+                                        Image(systemName: "hand.raised.slash.fill").foregroundColor(.red)
+                                    }
                                 }
+//                                .listRowBackground(app.device != nil && uuid == app.device!.peripheral!.identifier.uuidString ? Color(.secondarySystemGroupedBackground) : Color(.tertiarySystemGroupedBackground))
                             }
                         }
                     }
@@ -338,6 +344,7 @@ struct Details: View {
 
                 Button {
                     if app.device != nil {
+                        app.main.bluetoothDelegate.knownDevices[app.device.peripheral!.identifier.uuidString]!.isIgnored = true
                         app.main.centralManager.cancelPeripheralConnection(app.device.peripheral!)
                     }
                 } label: {

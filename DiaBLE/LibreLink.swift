@@ -109,7 +109,7 @@ class LibreLinkUp: Logging {
         var request = URLRequest(url: URL(string: "\(siteURL)/\(loginEndpoint)")!)
         let credentials = [
             "email": settings.libreLinkUpEmail,
-            "password":settings.libreLinkUpPassword
+            "password": settings.libreLinkUpPassword
         ]
         request.httpMethod = "POST"
         for (header, value) in headers {
