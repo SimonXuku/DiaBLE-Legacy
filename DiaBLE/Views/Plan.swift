@@ -47,7 +47,7 @@ struct Plan_Previews: PreviewProvider {
         Group {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environmentObject(AppState.test(tab: .data))
+                .environmentObject(AppState.test(tab: .plan))
                 .environmentObject(Log())
                 .environmentObject(History.test)
                 .environmentObject(Settings())
