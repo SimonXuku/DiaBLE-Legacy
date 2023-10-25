@@ -162,7 +162,7 @@ struct Monitor: View {
                                 Text("OOP")
                             }
                             .toggleStyle(SwitchToggleStyle(tint: Color.blue))
-                            .onChange(of: settings.usingOOP) { usingOOP in
+                            .onChange(of: settings.usingOOP) {
                                 Task {
                                     await app.main.applyOOP(sensor: app.sensor)
                                     app.main.didParseSensor(app.sensor)
@@ -279,9 +279,9 @@ struct CalibrationView: View {
                 Text("Calibration")
             }
             .toggleStyle(SwitchToggleStyle(tint: Color.purple))
-            .onChange(of: settings.calibrating) { calibrating in
+            .onChange(of: settings.calibrating) {
 
-                if !calibrating {
+                if !settings.calibrating {
                     withAnimation {
                         editingCalibration = false
                     }

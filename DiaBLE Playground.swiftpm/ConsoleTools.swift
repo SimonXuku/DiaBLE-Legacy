@@ -283,11 +283,11 @@ struct CrcCalculator: View {
                 Toggle("Trailing CRC", isOn: $trailingCrc)
                     .controlSize(.mini)
                     .fixedSize()
-                    .onChange(of: trailingCrc) { trailingCrc in updateCRC() }
+                    .onChange(of: trailingCrc) { updateCRC() }
             }
 
         }
         .font(.subheadline)
-        .onChange(of: hexString) { trailingCrc in updateCRC() }
+        .onChange(of: hexString) { updateCRC() }
     }
 }
