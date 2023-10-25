@@ -128,7 +128,7 @@ class Limitter: Droplet {
 // }
 
 
-class Watlaa: Watch {
+@Observable class Watlaa: Watch {
     // override class var type: DeviceType { DeviceType.watch(.watlaa) }
     override class var name: String { "Watlaa" }
 
@@ -205,9 +205,9 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var bridgeStatus: BridgeStatus = .unknown
+    var bridgeStatus: BridgeStatus = .unknown
 
-    @Published var slope: Float = 0.0 {
+    var slope: Float = 0.0 {
         didSet(slope) {
             if slope != self.slope && slope != 0.0 {
                 writeAlertsSettings()
@@ -215,7 +215,7 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var intercept: Float = 0.0 {
+    var intercept: Float = 0.0 {
         didSet(intercept) {
             if intercept != self.intercept && intercept != 0.0 {
                 writeAlertsSettings()
@@ -223,10 +223,10 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var lastGlucose: Int = 0
-    @Published var lastGlucoseAge: Int = 0
+    var lastGlucose: Int = 0
+    var lastGlucoseAge: Int = 0
 
-    @Published var unit: GlucoseUnit = .mgdl {
+    var unit: GlucoseUnit = .mgdl {
         didSet(unit) {
             if unit != self.unit {
                 write([UInt8(GlucoseUnit.allCases.firstIndex(of: self.unit)!)], for: .glucoseUnit)
@@ -234,7 +234,7 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var alarmHigh: Float = 0.0 {
+    var alarmHigh: Float = 0.0 {
         didSet(alarmHigh) {
             if alarmHigh != self.alarmHigh && alarmHigh != 0.0 {
                 writeAlertsSettings()
@@ -242,42 +242,42 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var alarmLow: Float = 0.0 {
+    var alarmLow: Float = 0.0 {
         didSet(alarmLow) {
             if alarmLow != self.alarmLow && alarmLow != 0.0 {
                 writeAlertsSettings()
             }
         }
     }
-    @Published var connectionCheckInterval: Int = 0 {
+    var connectionCheckInterval: Int = 0 {
         didSet(connectionCheckInterval) {
             if connectionCheckInterval != self.connectionCheckInterval && connectionCheckInterval != 0 {
                 writeAlertsSettings()
             }
         }
     }
-    @Published var snoozeLow: Int = 0 {
+    var snoozeLow: Int = 0 {
         didSet(snoozeLow) {
             if snoozeLow != self.snoozeLow && snoozeLow != 0 {
                 writeAlertsSettings()
             }
         }
     }
-    @Published var snoozeHigh: Int = 0 {
+    var snoozeHigh: Int = 0 {
         didSet(snoozeHigh) {
             if snoozeHigh != self.snoozeHigh && snoozeHigh != 0 {
                 writeAlertsSettings()
             }
         }
     }
-    @Published var sensorLostVibration: Bool = true {
+    var sensorLostVibration: Bool = true {
         didSet(sensorLostVibration) {
             if sensorLostVibration != self.sensorLostVibration {
                 writeAlertsSettings()
             }
         }
     }
-    @Published var glucoseVibration: Bool = true {
+    var glucoseVibration: Bool = true {
         didSet(glucoseVibration) {
             if glucoseVibration != self.glucoseVibration {
                 writeAlertsSettings()
@@ -285,7 +285,7 @@ class Watlaa: Watch {
         }
     }
 
-    @Published var lastReadingDate: Date = Date()
+    var lastReadingDate: Date = Date()
 
 
     func writeAlertsSettings() {
@@ -489,9 +489,12 @@ struct WatlaaDetailsView: View {
     @EnvironmentObject var app: AppState
     @Environment(Settings.self) var settings: Settings
 
-    @ObservedObject var device: Watlaa = Watlaa()
+    var device: Watlaa = Watlaa()
 
     var body: some View {
+
+        @Bindable var device = device
+
         Group {
             Section {
                 HStack {
