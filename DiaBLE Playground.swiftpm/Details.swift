@@ -4,7 +4,7 @@ import SwiftUI
 
 struct Details: View {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
 
     @State private var showingNFCAlert = false
     @State private var showingCalibrationInfoForm = false
@@ -184,6 +184,8 @@ struct Details: View {
 
                     Section(header: Text("BLE Setup").font(.headline)) {
 
+                        @Bindable var settings = settings
+
                         if app.sensor?.type != .libre3 {
 
                             HStack {
@@ -289,6 +291,8 @@ struct Details: View {
                 if (app.device != nil && app.device.type == .transmitter(.dexcom)) || settings.preferredTransmitter == .dexcom {
 
                     Section(header: Text("BLE Setup").font(.headline)) {
+
+                        @Bindable var settings = settings
 
                         HStack {
                             Text("Transmitter Serial")
@@ -426,12 +430,12 @@ struct Details_Preview: PreviewProvider {
             Details()
                 .preferredColorScheme(.dark)
                 .environmentObject(AppState.test(tab: .monitor))
-                .environmentObject(Settings())
+                .environment(Settings())
             NavigationView {
                 Details()
                     .preferredColorScheme(.dark)
                     .environmentObject(AppState.test(tab: .monitor))
-                    .environmentObject(Settings())
+                    .environment(Settings())
             }
         }
     }

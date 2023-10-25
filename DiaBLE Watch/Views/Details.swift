@@ -5,7 +5,7 @@ import SwiftUI
 struct Details: View {
     @EnvironmentObject var app: AppState
     @EnvironmentObject var history: History
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
 
     @State private var showingCalibrationInfoForm = false
 
@@ -186,6 +186,8 @@ struct Details: View {
 
                     Section(header: Text("BLE Setup")) {
 
+                        @Bindable var settings = settings
+
                         HStack {
                             Text("Patch Info")
                             Spacer(minLength: 32)
@@ -275,6 +277,8 @@ struct Details: View {
                 if (app.device != nil && app.device.type == .transmitter(.dexcom)) || settings.preferredTransmitter == .dexcom {
 
                     Section(header: Text("BLE Setup")) {
+
+                        @Bindable var settings = settings
 
                         HStack {
                             Text("Transmitter Serial")
@@ -393,11 +397,11 @@ struct Details_Preview: PreviewProvider {
         Group {
             Details()
                 .environmentObject(AppState.test(tab: .monitor))
-                .environmentObject(Settings())
+                .environment(Settings())
             NavigationView {
                 Details()
                     .environmentObject(AppState.test(tab: .monitor))
-                    .environmentObject(Settings())
+                    .environment(Settings())
             }
         }
     }

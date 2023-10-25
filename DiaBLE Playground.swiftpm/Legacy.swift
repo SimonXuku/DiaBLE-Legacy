@@ -487,7 +487,7 @@ class Watlaa: Watch {
 
 struct WatlaaDetailsView: View {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
 
     @ObservedObject var device: Watlaa = Watlaa()
 
@@ -582,12 +582,12 @@ struct WatlaaDetailsView: View {
 
 struct Watch_Previews: PreviewProvider {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
     static var previews: some View {
         Group {
             WatlaaDetailsView(device: Watlaa())
                 .environmentObject(AppState.test(tab: .monitor))
-                .environmentObject(Settings())
+                .environment(Settings())
                 .environment(\.colorScheme, .dark)
         }
     }

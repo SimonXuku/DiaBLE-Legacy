@@ -5,7 +5,7 @@ import SwiftUI
 struct Monitor: View {
     @EnvironmentObject var app: AppState
     @EnvironmentObject var history: History
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
 
     @State var showingHamburgerMenu = false
 
@@ -158,6 +158,8 @@ struct Monitor: View {
 
                         HStack {
 
+                            @Bindable var settings = settings
+
                             Toggle(isOn: $settings.usingOOP.animation()) {
                                 Text("OOP")
                             }
@@ -261,7 +263,7 @@ struct CalibrationView: View {
 
     @EnvironmentObject var app: AppState
     @EnvironmentObject var history: History
-    @EnvironmentObject var settings: Settings
+    @Environment(Settings.self) var settings: Settings
 
     @Binding var showingCalibrationParameters: Bool
     @Binding var editingCalibration: Bool
@@ -274,6 +276,8 @@ struct CalibrationView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+
+            @Bindable var settings = settings
 
             Toggle(isOn: $settings.calibrating.animation()) {
                 Text("Calibration")
@@ -438,7 +442,7 @@ struct Monitor_Previews: PreviewProvider {
                 .environmentObject(AppState.test(tab: .monitor))
                 .environmentObject(Log())
                 .environmentObject(History.test)
-                .environmentObject(Settings())
+                .environment(Settings())
         }
     }
 }
