@@ -15,7 +15,7 @@ extension MeasurementColor {
 
 
 struct OnlineView: View {
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(History.self) var history: History
     @Environment(Settings.self) var settings: Settings
 
@@ -34,7 +34,7 @@ struct OnlineView: View {
 
 
     func reloadLibreLinkUp() async {
-        if let libreLinkUp = app.main?.libreLinkUp {
+        if let libreLinkUp = await app.main?.libreLinkUp {
             var dataString = ""
             var retries = 0
         loop: repeat {
@@ -231,6 +231,8 @@ struct OnlineView: View {
 
                     if settings.selectedService == .nightscout {
 
+                        @Bindable var app = app
+
                         WebView(site: settings.nightscoutSite, query: "token=\(settings.nightscoutToken)", delegate: app.main?.nightscout )
                             .frame(height: UIScreen.main.bounds.size.height * 0.60)
                             .alert("JavaScript", isPresented: $app.showingJavaScriptConfirmAlert) {
@@ -326,7 +328,7 @@ struct OnlineView_Previews: PreviewProvider {
         Group {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environmentObject(AppState.test(tab: .online))
+                .environment(AppState.test(tab: .online))
                 .environment(Log())
                 .environment(History.test)
                 .environment(Settings())

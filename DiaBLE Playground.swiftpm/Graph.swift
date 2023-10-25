@@ -175,7 +175,7 @@ struct Graph_Previews: PreviewProvider {
         Group {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environmentObject(AppState.test(tab: .monitor))
+                .environment(AppState.test(tab: .monitor))
                 .environment(Log())
                 .environment(History.test)
                 .environment(Settings())

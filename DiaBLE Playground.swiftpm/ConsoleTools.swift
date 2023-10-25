@@ -11,7 +11,7 @@ import RealmSwift
 
 struct ShellView: View {
 
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(Log.self) var log: Log
     @Environment(Settings.self) var settings: Settings
 
@@ -217,7 +217,7 @@ struct ShellView_Previews: PreviewProvider {
         Group {
             ShellView()
                 .preferredColorScheme(.dark)
-                .environmentObject(AppState.test(tab: .console))
+                .environment(AppState.test(tab: .console))
                 .environment(Log())
                 .environment(Settings())
         }

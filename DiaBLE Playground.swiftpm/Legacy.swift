@@ -486,7 +486,7 @@ class Limitter: Droplet {
 #if !os(watchOS)
 
 struct WatlaaDetailsView: View {
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(Settings.self) var settings: Settings
 
     var device: Watlaa = Watlaa()
@@ -584,12 +584,12 @@ struct WatlaaDetailsView: View {
 
 
 struct Watch_Previews: PreviewProvider {
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(Settings.self) var settings: Settings
     static var previews: some View {
         Group {
             WatlaaDetailsView(device: Watlaa())
-                .environmentObject(AppState.test(tab: .monitor))
+                .environment(AppState.test(tab: .monitor))
                 .environment(Settings())
                 .environment(\.colorScheme, .dark)
         }

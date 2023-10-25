@@ -3,7 +3,7 @@ import SwiftUI
 
 
 struct Monitor: View {
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(Log.self) var log: Log
     @Environment(History.self) var history: History
     @Environment(Settings.self) var settings: Settings
@@ -48,8 +48,8 @@ struct Monitor: View {
                                 }
                             }
                             .frame(maxWidth: .infinity, alignment: .trailing).padding(.trailing, 12).foregroundColor(Color(.lightGray))
-                            .onReceive(app.$lastReadingDate) { readingDate in
-                                minutesSinceLastReading = Int(Date().timeIntervalSince(readingDate)/60)
+                            .onChange(of: app.lastReadingDate) {
+                                minutesSinceLastReading = Int(Date().timeIntervalSince(app.lastReadingDate)/60)
                             }
 
                             Text(app.currentGlucose > 0 ? "\(app.currentGlucose.units) " : "--- ")
@@ -262,7 +262,7 @@ struct Monitor: View {
 
 struct CalibrationView: View {
 
-    @EnvironmentObject var app: AppState
+    @Environment(AppState.self) var app: AppState
     @Environment(History.self) var history: History
     @Environment(Settings.self) var settings: Settings
 
@@ -295,6 +295,8 @@ struct CalibrationView: View {
             }
 
             if settings.calibrating {
+
+                @Bindable var app = app
 
                 DisclosureGroup(isExpanded: $showingCalibrationParameters) {
 
@@ -440,7 +442,7 @@ struct Monitor_Previews: PreviewProvider {
         Group {
             ContentView()
                 .preferredColorScheme(.dark)
-                .environmentObject(AppState.test(tab: .monitor))
+                .environment(AppState.test(tab: .monitor))
                 .environment(Log())
                 .environment(History.test)
                 .environment(Settings())

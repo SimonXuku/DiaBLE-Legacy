@@ -12,7 +12,7 @@ struct DiaBLEApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(main.app)
+                .environment(main.app)
                 .environment(main.log)
                 .environment(main.history)
                 .environment(main.settings)
@@ -39,36 +39,36 @@ enum OnlineService: String, CustomStringConvertible, CaseIterable {
 }
 
 
-class AppState: ObservableObject {
+@Observable class AppState {
 
-    @Published var device: Device!
-    @Published var transmitter: Transmitter!
-    @Published var sensor: Sensor!
+    var device: Device!
+    var transmitter: Transmitter!
+    var sensor: Sensor!
 
     var main: MainDelegate!
 
-    @Published var currentGlucose: Int = 0
-    @Published var lastReadingDate: Date = Date.distantPast
-    @Published var oopGlucose: Int = 0
-    @Published var oopAlarm: OOP.Alarm = .unknown
-    @Published var oopTrend: OOP.TrendArrow = .unknown
-    @Published var trendDelta: Int = 0
-    @Published var trendDeltaMinutes: Int = 0
+    var currentGlucose: Int = 0
+    var lastReadingDate: Date = Date.distantPast
+    var oopGlucose: Int = 0
+    var oopAlarm: OOP.Alarm = .unknown
+    var oopTrend: OOP.TrendArrow = .unknown
+    var trendDelta: Int = 0
+    var trendDeltaMinutes: Int = 0
 
-    @Published var deviceState: String = ""
-    @Published var lastConnectionDate: Date = Date.distantPast
-    @Published var status: String = "Welcome to DiaBLE!"
+    var deviceState: String = ""
+    var lastConnectionDate: Date = Date.distantPast
+    var status: String = "Welcome to DiaBLE!"
 
-    @Published var calibration: Calibration = Calibration() {
+    var calibration: Calibration = Calibration() {
         didSet(value) {
             main?.applyCalibration(sensor: sensor)
         }
     }
-    @Published var editingCalibration = false
+    var editingCalibration = false
 
-    @Published var showingJavaScriptConfirmAlert = false
-    @Published var JavaScriptConfirmAlertMessage: String = ""
-    @Published var JavaScriptAlertReturn: String = ""
+    var showingJavaScriptConfirmAlert = false
+    var JavaScriptConfirmAlertMessage: String = ""
+    var JavaScriptAlertReturn: String = ""
 }
 
 
