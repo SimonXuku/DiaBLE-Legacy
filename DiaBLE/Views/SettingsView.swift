@@ -240,8 +240,8 @@ struct SettingsView_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
                 .environmentObject(AppState.test(tab: .settings))
-                .environmentObject(Log())
-                .environmentObject(History.test)
+                .environment(Log())
+                .environment(History.test)
                 .environment(Settings())
         }
     }

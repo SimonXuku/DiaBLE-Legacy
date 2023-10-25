@@ -4,7 +4,8 @@ import SwiftUI
 
 struct Monitor: View {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var history: History
+    @Environment(Log.self) var log: Log
+    @Environment(History.self) var history: History
     @Environment(Settings.self) var settings: Settings
 
     @State var showingHamburgerMenu = false
@@ -262,7 +263,7 @@ struct Monitor: View {
 struct CalibrationView: View {
 
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var history: History
+    @Environment(History.self) var history: History
     @Environment(Settings.self) var settings: Settings
 
     @Binding var showingCalibrationParameters: Bool
@@ -440,8 +441,8 @@ struct Monitor_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
                 .environmentObject(AppState.test(tab: .monitor))
-                .environmentObject(Log())
-                .environmentObject(History.test)
+                .environment(Log())
+                .environment(History.test)
                 .environment(Settings())
         }
     }

@@ -17,7 +17,7 @@ struct ConsoleTab: View {
 
 struct Console: View {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var log: Log
+    @Environment(Log.self) var log: Log
     @Environment(Settings.self) var settings: Settings
 
     @Environment(\.colorScheme) var colorScheme
@@ -270,7 +270,7 @@ struct Console: View {
 
 struct ConsoleSidebar: View {
     @EnvironmentObject var app: AppState
-    @EnvironmentObject var log: Log
+    @Environment(Log.self) var log: Log
     @Environment(Settings.self) var settings: Settings
 
     @Binding var showingNFCAlert: Bool
@@ -434,8 +434,8 @@ struct Console_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
                 .environmentObject(AppState.test(tab: .console))
-                .environmentObject(Log())
-                .environmentObject(History.test)
+                .environment(Log())
+                .environment(History.test)
                 .environment(Settings())
         }
     }

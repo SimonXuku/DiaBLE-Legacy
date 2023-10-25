@@ -13,8 +13,8 @@ struct DiaBLEApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(main.app)
-                .environmentObject(main.log)
-                .environmentObject(main.history)
+                .environment(main.log)
+                .environment(main.history)
                 .environment(main.settings)
         }
     }
@@ -109,9 +109,9 @@ struct LogEntry: Identifiable {
 }
 
 
-class Log: ObservableObject {
-    @Published var entries: [LogEntry]
-    @Published var labels: Set<String>
+@Observable class Log {
+    var entries: [LogEntry]
+    var labels: Set<String>
     init(_ text: String = "Log \(Date().local)\n") {
         entries = [LogEntry(message: text)]
         labels = []
@@ -119,16 +119,16 @@ class Log: ObservableObject {
 }
 
 
-class History: ObservableObject {
-    @Published var values:        [Glucose] = []
-    @Published var rawValues:     [Glucose] = []
-    @Published var rawTrend:      [Glucose] = []
-    @Published var factoryValues: [Glucose] = []
-    @Published var factoryTrend:  [Glucose] = []
-    @Published var calibratedValues: [Glucose] = []
-    @Published var calibratedTrend:  [Glucose] = []
-    @Published var storedValues:     [Glucose] = []
-    @Published var nightscoutValues: [Glucose] = []
+@Observable class History {
+    var values:        [Glucose] = []
+    var rawValues:     [Glucose] = []
+    var rawTrend:      [Glucose] = []
+    var factoryValues: [Glucose] = []
+    var factoryTrend:  [Glucose] = []
+    var calibratedValues: [Glucose] = []
+    var calibratedTrend:  [Glucose] = []
+    var storedValues:     [Glucose] = []
+    var nightscoutValues: [Glucose] = []
 }
 
 
