@@ -6,7 +6,6 @@ import Foundation
     static let defaults: [String: Any] = [
         "preferredTransmitter": TransmitterType.none.id,
         "preferredDevicePattern": BLE.knownDevicesIds.joined(separator: " "),
-        "activeTransmitterIdentifier": "",
         "stoppedBluetooth": false,
 
         "selectedTab": Tab.monitor.rawValue,
@@ -57,6 +56,8 @@ import Foundation
         "activeSensorCalibrationInfo": try! JSONEncoder().encode(CalibrationInfo()),
         "activeSensorBlePIN": Data(),
 
+        // Dexcom
+        "activeTransmitterIdentifier": "",
         "activeTransmitterSerial": "",
         "activeSensorCode": "",
 
@@ -91,10 +92,6 @@ import Foundation
             }
         }
         didSet { UserDefaults.standard.set(self.preferredDevicePattern, forKey: "preferredDevicePattern") }
-    }
-
-    var activeTransmitterIdentifier: String = UserDefaults.standard.string(forKey: "activeTransmitterIdentifier")! {
-        didSet { UserDefaults.standard.set(self.activeTransmitterIdentifier, forKey: "activeTransmitterIdentifier") }
     }
 
     var stoppedBluetooth: Bool = UserDefaults.standard.bool(forKey: "stoppedBluetooth") {
@@ -253,6 +250,10 @@ import Foundation
 
     var activeSensorBlePIN: Data = UserDefaults.standard.data(forKey: "activeSensorBlePIN")! {
         didSet { UserDefaults.standard.set(self.activeSensorBlePIN, forKey: "activeSensorBlePIN") }
+    }
+
+    var activeTransmitterIdentifier: String = UserDefaults.standard.string(forKey: "activeTransmitterIdentifier")! {
+        didSet { UserDefaults.standard.set(self.activeTransmitterIdentifier, forKey: "activeTransmitterIdentifier") }
     }
 
     var activeTransmitterSerial: String = UserDefaults.standard.string(forKey: "activeTransmitterSerial")! {
