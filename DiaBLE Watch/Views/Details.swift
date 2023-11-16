@@ -313,7 +313,7 @@ struct Details: View {
                                             if let appDevice = app.device {
                                                 app.main.centralManager.cancelPeripheralConnection(appDevice.peripheral!)
                                             }
-                                            // app.main.centralManager.connect(peripheral)
+                                            app.main.settings.preferredTransmitter = .none
                                             app.main.bluetoothDelegate.centralManager(app.main.centralManager, didDiscover: peripheral, advertisementData: [:], rssi: 0)
                                         }
                                     }
