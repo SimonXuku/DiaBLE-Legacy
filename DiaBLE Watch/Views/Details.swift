@@ -281,6 +281,7 @@ struct Details: View {
 
                         HStack {
                             Text("Transmitter Serial")
+                            Spacer(minLength: 32)
                             TextField("Transmitter Serial", text: $settings.activeTransmitterSerial)
                                 .multilineTextAlignment(.trailing)
                                 .foregroundColor(.blue)
@@ -288,6 +289,7 @@ struct Details: View {
 
                         HStack {
                             Text("Sensor Code")
+                            Spacer(minLength: 32)
                             TextField("Sensor Code", text: $settings.activeSensorCode)
                                 .multilineTextAlignment(.trailing)
                                 .foregroundColor(.blue)
