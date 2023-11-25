@@ -18,6 +18,14 @@
 		C55D12B529ACB5E00050F567 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D12B329ACB5E00050F567 /* Crypto.swift */; };
 		C55D12B729ACB9CB0050F567 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55D12B629ACB9CB0050F567 /* CryptoSwift */; };
 		C55E70C92AD099FD0040F827 /* HamburgerMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E70C82AD099FD0040F827 /* HamburgerMenu.swift */; };
+		C580E2DD2B12507E00695F89 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C580E2DC2B12507E00695F89 /* WidgetKit.framework */; };
+		C580E2DF2B12507E00695F89 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C580E2DE2B12507E00695F89 /* SwiftUI.framework */; };
+		C580E2E22B12507E00695F89 /* DiaBLEWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C580E2E12B12507E00695F89 /* DiaBLEWidgetBundle.swift */; };
+		C580E2E42B12507E00695F89 /* DiaBLEWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C580E2E32B12507E00695F89 /* DiaBLEWidgetLiveActivity.swift */; };
+		C580E2E62B12507E00695F89 /* DiaBLEWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C580E2E52B12507E00695F89 /* DiaBLEWidget.swift */; };
+		C580E2E82B12507E00695F89 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C580E2E72B12507E00695F89 /* AppIntent.swift */; };
+		C580E2EA2B12508100695F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C580E2E92B12508100695F89 /* Assets.xcassets */; };
+		C580E2EE2B12508100695F89 /* DiaBLEWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C580E2DB2B12507E00695F89 /* DiaBLEWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C5916E4E29827E860051AC06 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4629827E860051AC06 /* DataView.swift */; };
 		C5916E4F29827E860051AC06 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4729827E860051AC06 /* SettingsView.swift */; };
 		C5916E5029827E860051AC06 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5916E4829827E860051AC06 /* Details.swift */; };
@@ -94,6 +102,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C580E2EC2B12508100695F89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5AAA60D2981CF7000CA3EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C580E2DA2B12507E00695F89;
+			remoteInfo = DiaBLEWidgetExtension;
+		};
 		C5BE8E5C29916D3600604237 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5AAA60D2981CF7000CA3EC1 /* Project object */;
@@ -104,6 +119,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C580E2F02B12508100695F89 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C580E2EE2B12508100695F89 /* DiaBLEWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C5BE8E5E29916D3600604237 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +152,16 @@
 		C541C7592AB66ABB0049ECFF /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		C55D12B329ACB5E00050F567 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
 		C55E70C82AD099FD0040F827 /* HamburgerMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerMenu.swift; sourceTree = "<group>"; };
+		C580E2DB2B12507E00695F89 /* DiaBLEWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DiaBLEWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C580E2DC2B12507E00695F89 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C580E2DE2B12507E00695F89 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C580E2E12B12507E00695F89 /* DiaBLEWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaBLEWidgetBundle.swift; sourceTree = "<group>"; };
+		C580E2E32B12507E00695F89 /* DiaBLEWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaBLEWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		C580E2E52B12507E00695F89 /* DiaBLEWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaBLEWidget.swift; sourceTree = "<group>"; };
+		C580E2E72B12507E00695F89 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		C580E2E92B12508100695F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C580E2EB2B12508100695F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C580E2EF2B12508100695F89 /* DiaBLEWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiaBLEWidgetExtension.entitlements; sourceTree = "<group>"; };
 		C5916E4629827E860051AC06 /* DataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 		C5916E4729827E860051AC06 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C5916E4829827E860051AC06 /* Details.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
@@ -181,6 +217,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C580E2D82B12507E00695F89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C580E2DF2B12507E00695F89 /* SwiftUI.framework in Frameworks */,
+				C580E2DD2B12507E00695F89 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C59960DC2981E381005999C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +247,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C580E2E02B12507E00695F89 /* DiaBLEWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C580E2E12B12507E00695F89 /* DiaBLEWidgetBundle.swift */,
+				C580E2E32B12507E00695F89 /* DiaBLEWidgetLiveActivity.swift */,
+				C580E2E52B12507E00695F89 /* DiaBLEWidget.swift */,
+				C580E2E72B12507E00695F89 /* AppIntent.swift */,
+				C580E2E92B12508100695F89 /* Assets.xcassets */,
+				C580E2EB2B12508100695F89 /* Info.plist */,
+			);
+			path = DiaBLEWidget;
+			sourceTree = "<group>";
+		};
 		C5916E4529827E860051AC06 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +290,7 @@
 		C5AAA60C2981CF7000CA3EC1 = {
 			isa = PBXGroup;
 			children = (
+				C580E2EF2B12508100695F89 /* DiaBLEWidgetExtension.entitlements */,
 				49DE8D3329AFFB3000BB7CF4 /* DiaBLE.xcconfig */,
 				49DE8D3429AFFB3000BB7CF4 /* DiaBLEOverride.xcconfig */,
 				C5E015DF2989B0EA00F6EDF9 /* README.md */,
@@ -239,6 +298,7 @@
 				C5E015E52989B10500F6EDF9 /* LICENSE.md */,
 				C5AAA6172981CF7000CA3EC1 /* DiaBLE */,
 				C59960E02981E381005999C2 /* DiaBLE Watch */,
+				C580E2E02B12507E00695F89 /* DiaBLEWidget */,
 				C5AAA6162981CF7000CA3EC1 /* Products */,
 				C5BE8E5A29916D3600604237 /* Frameworks */,
 			);
@@ -249,6 +309,7 @@
 			children = (
 				C5AAA6152981CF7000CA3EC1 /* DiaBLE.app */,
 				C59960DF2981E381005999C2 /* DiaBLE Watch.app */,
+				C580E2DB2B12507E00695F89 /* DiaBLEWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +353,8 @@
 		C5BE8E5A29916D3600604237 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C580E2DC2B12507E00695F89 /* WidgetKit.framework */,
+				C580E2DE2B12507E00695F89 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -327,6 +390,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C580E2DA2B12507E00695F89 /* DiaBLEWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C580E2F32B12508100695F89 /* Build configuration list for PBXNativeTarget "DiaBLEWidgetExtension" */;
+			buildPhases = (
+				C580E2D72B12507E00695F89 /* Sources */,
+				C580E2D82B12507E00695F89 /* Frameworks */,
+				C580E2D92B12507E00695F89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiaBLEWidgetExtension;
+			productName = DiaBLEWidgetExtension;
+			productReference = C580E2DB2B12507E00695F89 /* DiaBLEWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C59960DE2981E381005999C2 /* DiaBLE Watch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C59960EC2981E383005999C2 /* Build configuration list for PBXNativeTarget "DiaBLE Watch" */;
@@ -355,11 +435,13 @@
 				C5AAA6122981CF7000CA3EC1 /* Frameworks */,
 				C5AAA6132981CF7000CA3EC1 /* Resources */,
 				C5BE8E5E29916D3600604237 /* Embed Watch Content */,
+				C580E2F02B12508100695F89 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				C5BE8E5D29916D3600604237 /* PBXTargetDependency */,
+				C580E2ED2B12508100695F89 /* PBXTargetDependency */,
 			);
 			name = DiaBLE;
 			packageProductDependencies = (
@@ -378,9 +460,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					C580E2DA2B12507E00695F89 = {
+						CreatedOnToolsVersion = 15.1;
+					};
 					C59960DE2981E381005999C2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -408,11 +493,20 @@
 			targets = (
 				C5AAA6142981CF7000CA3EC1 /* DiaBLE */,
 				C59960DE2981E381005999C2 /* DiaBLE Watch */,
+				C580E2DA2B12507E00695F89 /* DiaBLEWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C580E2D92B12507E00695F89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C580E2EA2B12508100695F89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C59960DD2981E381005999C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,6 +540,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C580E2D72B12507E00695F89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C580E2E62B12507E00695F89 /* DiaBLEWidget.swift in Sources */,
+				C580E2E82B12507E00695F89 /* AppIntent.swift in Sources */,
+				C580E2E22B12507E00695F89 /* DiaBLEWidgetBundle.swift in Sources */,
+				C580E2E42B12507E00695F89 /* DiaBLEWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C59960DB2981E381005999C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -526,6 +631,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C580E2ED2B12508100695F89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C580E2DA2B12507E00695F89 /* DiaBLEWidgetExtension */;
+			targetProxy = C580E2EC2B12508100695F89 /* PBXContainerItemProxy */;
+		};
 		C5BE8E5D29916D3600604237 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			platformFilter = ios;
@@ -535,6 +645,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		C580E2F12B12508100695F89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DiaBLEWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaBLEWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DiaBLEWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.DiaBLE.DiaBLEWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C580E2F22B12508100695F89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DiaBLEWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiaBLEWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DiaBLEWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = name.DiaBLE.DiaBLEWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		C59960EA2981E383005999C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49DE8D3329AFFB3000BB7CF4 /* DiaBLE.xcconfig */;
@@ -737,6 +915,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49DE8D3329AFFB3000BB7CF4 /* DiaBLE.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiaBLE/DiaBLE.entitlements;
@@ -785,6 +964,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49DE8D3329AFFB3000BB7CF4 /* DiaBLE.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiaBLE/DiaBLE.entitlements;
@@ -832,6 +1012,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C580E2F32B12508100695F89 /* Build configuration list for PBXNativeTarget "DiaBLEWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C580E2F12B12508100695F89 /* Debug */,
+				C580E2F22B12508100695F89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C59960EC2981E383005999C2 /* Build configuration list for PBXNativeTarget "DiaBLE Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
