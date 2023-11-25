@@ -1,10 +1,3 @@
-//
-//  DiaBLEWidget.swift
-//  DiaBLEWidget
-//
-//  Created by Guido Soranzio on 25/11/23.
-//
-
 import WidgetKit
 import SwiftUI
 
