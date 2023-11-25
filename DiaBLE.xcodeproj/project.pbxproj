@@ -247,7 +247,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C580E2E02B12507E00695F89 /* DiaBLEWidget */ = {
+		C580E2E02B12507E00695F89 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
 				C580E2E12B12507E00695F89 /* DiaBLEWidgetBundle.swift */,
@@ -256,8 +256,9 @@
 				C580E2E72B12507E00695F89 /* AppIntent.swift */,
 				C580E2E92B12508100695F89 /* Assets.xcassets */,
 				C580E2EB2B12508100695F89 /* Info.plist */,
+				C580E2EF2B12508100695F89 /* DiaBLEWidgetExtension.entitlements */,
 			);
-			path = DiaBLEWidget;
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 		C5916E4529827E860051AC06 /* Views */ = {
@@ -290,7 +291,6 @@
 		C5AAA60C2981CF7000CA3EC1 = {
 			isa = PBXGroup;
 			children = (
-				C580E2EF2B12508100695F89 /* DiaBLEWidgetExtension.entitlements */,
 				49DE8D3329AFFB3000BB7CF4 /* DiaBLE.xcconfig */,
 				49DE8D3429AFFB3000BB7CF4 /* DiaBLEOverride.xcconfig */,
 				C5E015DF2989B0EA00F6EDF9 /* README.md */,
@@ -298,7 +298,6 @@
 				C5E015E52989B10500F6EDF9 /* LICENSE.md */,
 				C5AAA6172981CF7000CA3EC1 /* DiaBLE */,
 				C59960E02981E381005999C2 /* DiaBLE Watch */,
-				C580E2E02B12507E00695F89 /* DiaBLEWidget */,
 				C5AAA6162981CF7000CA3EC1 /* Products */,
 				C5BE8E5A29916D3600604237 /* Frameworks */,
 			);
@@ -319,6 +318,7 @@
 			children = (
 				C5E4004329825C710021C6B7 /* Media */,
 				C5E4004D29825C930021C6B7 /* Views */,
+				C580E2E02B12507E00695F89 /* Widgets */,
 				C5E4006429825D1F0021C6B7 /* Extensions.swift */,
 				C5AAA6182981CF7000CA3EC1 /* App.swift */,
 				C5E4006729825DCD0021C6B7 /* Settings.swift */,
@@ -651,13 +651,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = DiaBLEWidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DiaBLE/Widgets/DiaBLEWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiaBLEWidget/Info.plist;
+				INFOPLIST_FILE = DiaBLE/Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DiaBLEWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
@@ -688,13 +688,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = DiaBLEWidgetExtension.entitlements;
+				CODE_SIGN_ENTITLEMENTS = DiaBLE/Widgets/DiaBLEWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DiaBLEWidget/Info.plist;
+				INFOPLIST_FILE = DiaBLE/Widgets/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = DiaBLEWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
