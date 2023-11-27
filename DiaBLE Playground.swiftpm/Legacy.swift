@@ -32,14 +32,14 @@ class Droplet: Transmitter {
     override func read(_ data: Data, for uuid: String) {
         if sensor == nil {
             sensor = Sensor(transmitter: self)
-            main.app.sensor = sensor
+            app.sensor = sensor
         }
         if data.count == 8 {
             sensor!.uid = Data(data)
-            main.log("\(name): sensor serial number: \(sensor!.serial))")
+            log("\(name): sensor serial number: \(sensor!.serial))")
         } else {
-            main.log("\(name) response: 0x\(data[0...0].hex)")
-            main.log("\(name) response data length: \(Int(data[1]))")
+            log("\(name) response: 0x\(data[0...0].hex)")
+            log("\(name) response data length: \(Int(data[1]))")
         }
         // TODO:  9999 = error
     }
@@ -60,33 +60,33 @@ class Limitter: Droplet {
 
         if sensor == nil {
             sensor = Sensor(transmitter: self)
-            main.app.sensor = sensor
+            app.sensor = sensor
         }
 
         let fields = data.string.split(separator: " ")
         guard fields.count == 4 else { return }
 
         battery = Int(fields[2])!
-        main.log("\(name): battery: \(battery)")
+        log("\(name): battery: \(battery)")
 
         let firstField = fields[0]
         guard !firstField.hasPrefix("000") else {
-            main.log("\(name): no sensor data")
+            log("\(name): no sensor data")
             main.status("\(name): no data from sensor")
             if firstField.hasSuffix("999") {
                 let err = fields[1]
-                main.log("\(name): error \(err)\n(0001 = low battery, 0002 = badly positioned)")
+                log("\(name): error \(err)\n(0001 = low battery, 0002 = badly positioned)")
             }
             return
         }
 
         let rawValue = Int(firstField.dropLast(2))!
-        main.log("\(name): glucose raw value: \(rawValue)")
+        log("\(name): glucose raw value: \(rawValue)")
         main.status("\(name) raw glucose: \(rawValue)")
-        main.app.currentGlucose = rawValue / 10
+        app.currentGlucose = rawValue / 10
 
         let sensorType = LibreType(rawValue: String(firstField.suffix(2)))!.description
-        main.log("\(name): sensor type = \(sensorType)")
+        log("\(name): sensor type = \(sensorType)")
 
         sensor!.age = Int(fields[3])! * 10
         if Double(sensor!.age)/60/24 < 14.5 {
@@ -94,7 +94,7 @@ class Limitter: Droplet {
         } else {
             sensor!.state = .expired
         }
-        main.log("\(name): sensor age: \(Int(sensor!.age)) minutes (\(String(format: "%.1f", Double(sensor!.age)/60/24)) days)")
+        log("\(name): sensor age: \(Int(sensor!.age)) minutes (\(String(format: "%.1f", Double(sensor!.age)/60/24)) days)")
         main.status("\(sensorType)  +  \(name)")
     }
 }
@@ -327,7 +327,7 @@ class Limitter: Droplet {
     override func read(_ data: Data, for uuid: String) {
 
         let description = UUID(rawValue: uuid)?.description ?? uuid
-        main.log("\(name): received value for \(description) characteristic")
+        log("\(name): received value for \(description) characteristic")
 
         switch UUID(rawValue: uuid) {
 
@@ -339,7 +339,7 @@ class Limitter: Droplet {
 
             let response = ResponseType(rawValue: data[0])
             if bridge.buffer.count == 0 {
-                main.log("\(bridgeName) response: \(response?.description ?? "unknown") (0x\(data[0...0].hex))")
+                log("\(bridgeName) response: \(response?.description ?? "unknown") (0x\(data[0...0].hex))")
             }
             if data.count == 1 {
                 if response == .noSensor {
@@ -352,26 +352,26 @@ class Limitter: Droplet {
             } else if data.count == 2 {
                 if response == .frequencyChange {
                     if data[1] == 0x01 {
-                        main.log("\(bridgeName): success changing frequency")
+                        log("\(bridgeName): success changing frequency")
                     } else {
-                        main.log("\(bridgeName): failed to change frequency")
+                        log("\(bridgeName): failed to change frequency")
                     }
                 }
             } else {
                 if bridge.sensor == nil {
                     bridge.sensor = Sensor(transmitter: bridge)
-                    main.app.sensor = bridge.sensor
+                    app.sensor = bridge.sensor
                 }
-                if bridge.buffer.count == 0 { bridge.sensor!.lastReadingDate = main.app.lastReadingDate }
+                if bridge.buffer.count == 0 { bridge.sensor!.lastReadingDate = app.lastReadingDate }
                 bridge.buffer.append(data)
-                main.log("\(bridgeName): partial buffer size: \(bridge.buffer.count)")
+                log("\(bridgeName): partial buffer size: \(bridge.buffer.count)")
                 if bridge.buffer.count >= 363 {
-                    main.log("\(bridgeName): data size: \(Int(bridge.buffer[1]) << 8 + Int(bridge.buffer[2]))")
+                    log("\(bridgeName): data size: \(Int(bridge.buffer[1]) << 8 + Int(bridge.buffer[2]))")
 
                     bridge.battery  = Int(bridge.buffer[13])
                     bridge.firmware = bridge.buffer[14...15].hex
                     bridge.hardware = bridge.buffer[16...17].hex
-                    main.log("\(bridgeName): battery: \(battery), firmware: \(firmware), hardware: \(hardware)")
+                    log("\(bridgeName): battery: \(battery), firmware: \(firmware), hardware: \(hardware)")
 
                     bridge.sensor!.age = Int(bridge.buffer[3]) << 8 + Int(bridge.buffer[4])
                     let uid = Data(bridge.buffer[5...12])
@@ -380,11 +380,11 @@ class Limitter: Droplet {
                     } else {
                         bridge.sensor!.uid = Data()
                     }
-                    main.log("\(bridgeName): sensor age: \(bridge.sensor!.age) minutes (\(String(format: "%.1f", Double(bridge.sensor!.age)/60/24)) days), patch uid: \(uid.hex), serial number: \(bridge.sensor!.serial)")
+                    log("\(bridgeName): sensor age: \(bridge.sensor!.age) minutes (\(String(format: "%.1f", Double(bridge.sensor!.age)/60/24)) days), patch uid: \(uid.hex), serial number: \(bridge.sensor!.serial)")
 
                     if bridge.buffer.count > 369 {
                         bridge.sensor!.patchInfo = Data(bridge.buffer[363...368])
-                        main.log("\(bridgeName): patch info: \(bridge.sensor!.patchInfo.hex)")
+                        log("\(bridgeName): patch info: \(bridge.sensor!.patchInfo.hex)")
                     } else {
                         bridge.sensor!.patchInfo = Data([0xDF, 0x00, 0x00, 0x01, 0x01, 0x02])
                     }
@@ -401,17 +401,17 @@ class Limitter: Droplet {
             let bridgeName = "\(transmitter!.name) + \(name)"
 
             if bridge.sensor == nil {
-                if main.app.sensor != nil {
-                    bridge.sensor = main.app.sensor
+                if app.sensor != nil {
+                    bridge.sensor = app.sensor
                 } else {
                     bridge.sensor = Sensor(transmitter: bridge)
-                    main.app.sensor = bridge.sensor
+                    app.sensor = bridge.sensor
                 }
             }
-            if bridge.buffer.count == 0 { bridge.sensor!.lastReadingDate = main.app.lastReadingDate }
-            lastReadingDate = main.app.lastReadingDate
+            if bridge.buffer.count == 0 { bridge.sensor!.lastReadingDate = app.lastReadingDate }
+            lastReadingDate = app.lastReadingDate
             bridge.buffer.append(data)
-            main.log("\(bridgeName): partial buffer size: \(bridge.buffer.count)")
+            log("\(bridgeName): partial buffer size: \(bridge.buffer.count)")
 
             if bridge.buffer.count == 344 {
                 let fram = bridge.buffer[..<344]
@@ -426,24 +426,24 @@ class Limitter: Droplet {
             let age   = Int(data[3]) << 8 + Int(data[2])
             lastGlucose = value
             lastGlucoseAge = age
-            main.log("\(name): last raw glucose: \(value), age: \(age) minutes")
+            log("\(name): last raw glucose: \(value), age: \(age) minutes")
 
         case .calibration:
             let slope:     Float = Data(data[0...3]).withUnsafeBytes { $0.load(as: Float.self) }
             let intercept: Float = Data(data[4...7]).withUnsafeBytes { $0.load(as: Float.self) }
             self.slope = slope
             self.intercept = intercept
-            main.log("\(name): slope: \(slope), intercept: \(intercept)")
+            log("\(name): slope: \(slope), intercept: \(intercept)")
 
         case .glucoseUnit:
             if let unit = GlucoseUnit(rawValue: GlucoseUnit.allCases[Int(data[0])].rawValue) {
-                main.log("\(name): glucose unit: \(unit)")
+                log("\(name): glucose unit: \(unit)")
                 self.unit = unit
             }
 
         case .bridgeStatus:
             bridgeStatus = data[0] < BridgeStatus.unknown.rawValue ? BridgeStatus(rawValue: data[0])! : .unknown
-            main.log("\(name): transmitter status: \(bridgeStatus.description)")
+            log("\(name): transmitter status: \(bridgeStatus.description)")
 
         case .alerts:
             alarmHigh = Data(data[0...3]).withUnsafeBytes { $0.load(as: Float.self) }
@@ -455,7 +455,7 @@ class Limitter: Droplet {
             sensorLostVibration = (signals >> 3) & 1 == 1
             glucoseVibration    = (signals >> 1) & 1 == 1
 
-            main.log("\(name): alerts: high: \(alarmHigh), low: \(alarmLow), bridge connection check: \(connectionCheckInterval) minutes, snooze low: \(snoozeLow) minutes, snooze high: \(snoozeHigh) minutes, sensor lost vibration: \(sensorLostVibration), glucose vibration: \(glucoseVibration)")
+            log("\(name): alerts: high: \(alarmHigh), low: \(alarmLow), bridge connection check: \(connectionCheckInterval) minutes, snooze low: \(snoozeLow) minutes, snooze high: \(snoozeHigh) minutes, sensor lost vibration: \(sensorLostVibration), glucose vibration: \(glucoseVibration)")
 
         case .unknown2:
             var sensorSerial = data.string
@@ -464,7 +464,7 @@ class Limitter: Droplet {
             } else {
                 sensorSerial = "N/A"
             }
-            main.log("\(name): sensor serial number: \(sensorSerial)")
+            log("\(name): sensor serial number: \(sensorSerial)")
 
         default:
             break

@@ -97,7 +97,7 @@ class Bubble: Transmitter {
             // TODO: instantiate specifically a Libre2() (when detecting A4 in the uid, i. e.)
             if sensor == nil {
                 sensor = Sensor(transmitter: self)
-                main.app.sensor = sensor
+                app.sensor = sensor
             }
             if response == .serialNumber {
                 sensorUid = Data(data[2...9])
@@ -125,8 +125,8 @@ class Bubble: Transmitter {
 
             } else if response == .dataPacket || response == .decryptedDataPacket {
                 if buffer.count == 0 {
-                    main.app.lastReadingDate = main.app.lastConnectionDate
-                    sensor!.lastReadingDate = main.app.lastConnectionDate
+                    app.lastReadingDate = app.lastConnectionDate
+                    sensor!.lastReadingDate = app.lastConnectionDate
                 }
                 buffer.append(data.suffix(from: 4))
                 log("\(name): partial buffer size: \(buffer.count)")

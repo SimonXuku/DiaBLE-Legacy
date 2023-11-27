@@ -137,7 +137,7 @@ class BluCon: Transmitter {
             // TODO: instantiate specifically a Libre2() (when detecting A4 in the uid, i. e.)
             if sensor == nil {
                 sensor = Sensor(transmitter: self)
-                main.app.sensor = sensor
+                app.sensor = sensor
             }
             if dataHex.hasPrefix(ResponseType.sensorInfo.rawValue) {
                 sensorUid = Data(data[3...10])
@@ -193,8 +193,8 @@ class BluCon: Transmitter {
 
             } else if dataHex.hasPrefix(ResponseType.multipleBlocks.rawValue) {
                 if buffer.count == 0 {
-                    main.app.lastReadingDate = main.app.lastConnectionDate
-                    sensor!.lastReadingDate = main.app.lastConnectionDate
+                    app.lastReadingDate = app.lastConnectionDate
+                    sensor!.lastReadingDate = app.lastConnectionDate
                 }
                 buffer.append(data.suffix(from: 4))
                 log("\(name): partial buffer size: \(buffer.count)")

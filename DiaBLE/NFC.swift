@@ -299,9 +299,9 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                 }
             }
 
-            let currentSensor = await main.app.sensor
+            let currentSensor = app.sensor
             if currentSensor != nil && currentSensor!.uid == Data(tag.identifier.reversed()) {
-                sensor = await main.app.sensor
+                sensor = app.sensor
                 sensor.patchInfo = patchInfo
             } else {
                 if patchInfo.count == 0 {
@@ -319,7 +319,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
                 }
                 sensor.patchInfo = patchInfo
                 DispatchQueue.main.async {
-                    self.main.app.sensor = self.sensor
+                    self.app.sensor = self.sensor
                 }
             }
 
@@ -444,7 +444,7 @@ class NFC: NSObject, NFCTagReaderSessionDelegate, Logging {
 
                 // "Publishing changes from background threads is not allowed"
                 DispatchQueue.main.async {
-                    self.main.app.lastReadingDate = lastReadingDate
+                    self.app.lastReadingDate = lastReadingDate
                 }
                 sensor.lastReadingDate = lastReadingDate
 

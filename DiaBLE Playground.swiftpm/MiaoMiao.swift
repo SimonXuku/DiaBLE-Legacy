@@ -93,11 +93,11 @@ class MiaoMiao: Transmitter {
             // TODO: instantiate specifically a Libre2() (when detecting A4 in the uid, i. e.)
             if sensor == nil {
                 sensor = Sensor(transmitter: self)
-                main.app.sensor = sensor
+                app.sensor = sensor
             }
             if buffer.count == 0 {
-                main.app.lastReadingDate = main.app.lastConnectionDate
-                sensor!.lastReadingDate = main.app.lastConnectionDate
+                app.lastReadingDate = app.lastConnectionDate
+                sensor!.lastReadingDate = app.lastConnectionDate
             }
             buffer.append(data)
             log("\(name): partial buffer size: \(buffer.count)")
@@ -134,7 +134,7 @@ class MiaoMiao: Transmitter {
                         libreProSensor.patchInfo = sensor!.patchInfo
                         libreProSensor.lastReadingDate = sensor!.lastReadingDate
                         sensor = libreProSensor
-                        main.app.sensor = sensor
+                        app.sensor = sensor
 
                         // TODO: manage the 21 partial historic blocks (28 measurements)
                         framBlocks = 43 // 22
