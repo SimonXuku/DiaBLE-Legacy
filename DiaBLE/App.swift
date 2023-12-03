@@ -21,6 +21,11 @@ struct DiaBLEApp: App {
                 .environment(main.settings)
         }
         .onChange(of: scenePhase) {
+            if scenePhase == .active {
+                #if !os(watchOS)
+                UIApplication.shared.isIdleTimerDisabled = main.settings.caffeinated
+                #endif
+            }
             if scenePhase == .background {
                 if main.settings.userLevel >= .devel {
                     main.debugLog("DEBUG: app went background at \(Date.now.shortTime)")
