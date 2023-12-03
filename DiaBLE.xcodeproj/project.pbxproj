@@ -10,6 +10,8 @@
 		C50B9AD32AA7396500FF1EA3 /* ConsoleTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */; };
 		C51F1B0929B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
 		C51F1B0A29B243AE0014A500 /* Dexcom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1B0829B243AE0014A500 /* Dexcom.swift */; };
+		C531FB052B1C8F5D00D0C557 /* Libre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531FB042B1C8F5D00D0C557 /* Libre.swift */; };
+		C531FB062B1C8F5D00D0C557 /* Libre.swift in Sources */ = {isa = PBXBuildFile; fileRef = C531FB042B1C8F5D00D0C557 /* Libre.swift */; };
 		C541C75A2AB66ABB0049ECFF /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C541C7592AB66ABB0049ECFF /* Realm.swift */; };
 		C55A112C2AB668D2004E26D3 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112B2AB668D2004E26D3 /* Realm */; };
 		C55A112E2AB668D2004E26D3 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C55A112D2AB668D2004E26D3 /* RealmSwift */; };
@@ -148,6 +150,7 @@
 		49DE8D3429AFFB3000BB7CF4 /* DiaBLEOverride.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = DiaBLEOverride.xcconfig; sourceTree = "<group>"; };
 		C50B9AD22AA7396500FF1EA3 /* ConsoleTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleTools.swift; sourceTree = "<group>"; };
 		C51F1B0829B243AE0014A500 /* Dexcom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dexcom.swift; sourceTree = "<group>"; };
+		C531FB042B1C8F5D00D0C557 /* Libre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Libre.swift; sourceTree = "<group>"; };
 		C53F77C529894478004F275A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C541C7592AB66ABB0049ECFF /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		C55D12B329ACB5E00050F567 /* Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
@@ -331,6 +334,7 @@
 				C55D12B329ACB5E00050F567 /* Crypto.swift */,
 				C51F1B0829B243AE0014A500 /* Dexcom.swift */,
 				C5E4007B29825E4E0021C6B7 /* Abbott.swift */,
+				C531FB042B1C8F5D00D0C557 /* Libre.swift */,
 				C5E4008129825E8B0021C6B7 /* Libre2.swift */,
 				C5BF60A72A66630D005DC208 /* Gen2.swift */,
 				C5E4008429825E990021C6B7 /* Libre3.swift */,
@@ -573,6 +577,7 @@
 				C5E4007A29825E450021C6B7 /* Sensor.swift in Sources */,
 				C5BF60A92A66630D005DC208 /* Gen2.swift in Sources */,
 				C5E4009729825F120021C6B7 /* LibreLink.swift in Sources */,
+				C531FB062B1C8F5D00D0C557 /* Libre.swift in Sources */,
 				C5E4008329825E8B0021C6B7 /* Libre2.swift in Sources */,
 				C5E4006F29825DEA0021C6B7 /* Device.swift in Sources */,
 				C5E4009129825EEE0021C6B7 /* NFC.swift in Sources */,
@@ -604,6 +609,7 @@
 				C541C75A2AB66ABB0049ECFF /* Realm.swift in Sources */,
 				C5E4008229825E8B0021C6B7 /* Libre2.swift in Sources */,
 				C5E4005C29825C930021C6B7 /* ViewRepresentables.swift in Sources */,
+				C531FB052B1C8F5D00D0C557 /* Libre.swift in Sources */,
 				C5E4006829825DCD0021C6B7 /* Settings.swift in Sources */,
 				C5E4005F29825C930021C6B7 /* OnlineView.swift in Sources */,
 				C5E4006E29825DEA0021C6B7 /* Device.swift in Sources */,
