@@ -747,6 +747,7 @@ extension String {
                         send(securityCommand: .challengeLoadDone)
                     }
 
+
                 case .challengeLoadDone:
                     let first = payload.subdata(in:  0 ..< 60)
                     let nonce = payload.subdata(in: 60 ..< 67)
@@ -760,7 +761,6 @@ extension String {
                     // let r1    = decr.subdata(in: 16 ..< 32)
                     // let kEnc  = decr.subdata(in: 32 ..< 48)
                     // let ivEnc = decr.subdata(in: 48 ..< 56)
-                    transmitter!.peripheral?.setNotifyValue(true, for: transmitter!.characteristics[UUID.patchStatus.rawValue]!)
                     transmitter!.peripheral?.setNotifyValue(true, for: transmitter!.characteristics[UUID.patchStatus.rawValue]!)
                     log("\(type) \(transmitter!.peripheral!.name!): enabling notifications on the patch status characteristic")
                     currentSecurityCommand = nil
